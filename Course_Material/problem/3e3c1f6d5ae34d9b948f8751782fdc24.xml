@@ -1,0 +1,59 @@
+<problem display_name="len recur" markdown="null" weight="5.0">
+  <p>
+    <b>ESTIMATED TIME TO COMPLETE: 6 minutes</b>
+  </p>
+  <text>
+    <p>For this problem, write a recursive function, <code>lenRecur</code>, which 
+      computes the length of an input argument (a string), by counting up the number of 
+      characters in the string. </p>
+    <p><b class="bfseries">Hint: </b><a href="http://www.greenteapress.com/thinkpython/html/thinkpython009.html#toc89" target="_blank">String slicing</a> may be useful in this problem... </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def lenRecur(aStr):
+    '''
+    aStr: a string
+    
+    returns: int, the length of aStr
+    '''
+    # Your code here
+</initial_display>
+      <answer_display>
+def lenRecur(aStr):
+    '''
+    aStr: a string
+    
+    returns: int, the length of aStr
+    '''
+    # Base case: When aStr is the empty string,
+    #  its length is zero.
+    if aStr == '':
+        return 0
+
+    # Recursive case: If the string is not zero-length, then remove the first
+    #  character and the length is 1 + the length of the rest of the string
+    return 1 + lenRecur(aStr[1:])
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L5/lenRecur/grade_lenRecur.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <text>
+    <p>Note: In programming there are many ways to solve a problem. For your code to check correctly 
+  here, though, you must write your recursive function such that you make a recursive call 
+  directly to the function <code>lenRecur</code>. Thank you for understanding.
+</p>
+    <p>Hint: How would you check if a string is empty without using <code>len()</code>? 
+  An easy way you can check if a string, <code>s</code>, is empty is to check the 
+  condition, 
+<pre>
+  s == '' 
+</pre>
+</p>
+    <p><b>If you are getting the error stating that "Your code should be recursive" when you already make a call to <code>lenRecur</code></b>: check your indention -- specifically, a common mistake is that your function and docstring do not start at the same indentation level.
+    </p>
+  </text>
+</problem>

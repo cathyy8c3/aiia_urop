@@ -1,0 +1,74 @@
+<problem display_name="Exercise 6" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 6 minutes</b>
+    </p>
+    <p>
+Consider the following Python procedures. For each one, specify its order of growth. </p>
+    <ol class="enumerate">
+      <li>
+        <pre>
+# Assume n has been previously bound to some value
+i = 0
+while i &lt; 5:
+   n *= 2
+   i += 1
+
+print(n)
+</pre>
+        <p>
+          <optionresponse>
+            <optioninput options="('O(1)','O(log(n))','O(n)','O(i)','O(i log(n))','O(n log(i))')" correct="O(1)"/>
+          </optionresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+def iterPower(a, b):
+   result = 1
+   while b &gt; 0:
+      result *= a
+      b -= 1
+   return result
+</pre>
+        <p>
+          <optionresponse>
+            <optioninput options="('O(1)','O(log(a))','O(log(b))','O(a)','O(b)','O(a*b)','O(a^b)')" correct="O(b)"/>
+          </optionresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+def recurPower(a, b):
+   print(a, b)
+   if b == 0:
+      return 1
+   else:
+      return a * recurPower(a, b-1)
+</pre>
+        <p>
+          <optionresponse>
+            <optioninput options="('O(1)','O(log(a))','O(log(b))','O(a)','O(b)','O(a*b)','O(a^b)')" correct="O(b)"/>
+          </optionresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+def recurPowerNew(a, b):
+   print(a, b)
+   if b == 0:
+      return 1
+   elif b%2 == 0:
+      return recurPowerNew(a*a, b/2)
+   else:
+      return a * recurPowerNew(a, b-1)
+</pre>
+        <p>
+          <optionresponse>
+            <optioninput options="('O(1)','O(log(a))','O(log(b))','O(a)','O(b)','O(a*b)','O(a^b)')" correct="O(log(b))"/>
+          </optionresponse>
+        </p>
+      </li>
+    </ol>
+  </text>
+</problem>

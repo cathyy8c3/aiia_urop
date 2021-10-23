@@ -1,0 +1,227 @@
+<problem display_name="Exercise 1" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 10 minutes</b>
+    </p>
+    <p>Here is some code from lecture:</p>
+    <pre>def linearSearch(L, x):
+    for e in L:
+        if e == x:
+            return True
+    return False</pre>
+    <p>Choose which of the following inputs to <code>linearSearch</code> 
+  would give the best case, average case, or worst case run time.</p>
+    <ol>
+      <li>
+        <p>Best Case Run Time</p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="false" name="1">
+                <span>
+                  <text>
+                    <code>linearSearch([14, 15, 6, 27, 13, 16, 25, 11, 7], 15)</code>
+                  </text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text>
+                    <code>linearSearch([21, 1, 25, 22, 30, 13, 7, 24, 12], 24)</code>
+                  </text>
+                </span>
+              </choice>
+              <choice correct="true" name="3">
+                <span>
+                  <text>
+                    <code>linearSearch([20, 10, 1, 7, 4, 22, 25, 12, 31], 20)</code>
+                  </text>
+                </span>
+              </choice>
+              <choice correct="false" name="4">
+                <span>
+                  <text>
+                    <code>linearSearch([9, 3, 12, 24, 7, 8, 23, 11, 19], 8)</code>
+                  </text>
+                </span>
+              </choice>
+              <choice correct="false" name="5">
+                <span>
+                  <text>
+                    <code>linearSearch([4, 12, 20, 17, 9, 14, 7, 24, 6], 7)</code>
+                  </text>
+                </span>
+              </choice>
+              <choice correct="false" name="6">
+                <span>
+                  <text>
+                    <code>linearSearch([13, 9, 22, 3, 10, 17, 11, 2, 12], 26)</code>
+                  </text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+      </li>
+      <li>
+        <p>Worst Case Run Time</p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="false" name="1">
+                <span>
+                  <text>
+                    <code>linearSearch([14, 15, 6, 27, 13, 16, 25, 11, 7], 15)</code>
+                  </text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text>
+                    <code>linearSearch([21, 1, 25, 22, 30, 13, 7, 24, 12], 24)</code>
+                  </text>
+                </span>
+              </choice>
+              <choice correct="false" name="3">
+                <span>
+                  <text>
+                    <code>linearSearch([20, 10, 1, 7, 4, 22, 25, 12, 31], 20)</code>
+                  </text>
+                </span>
+              </choice>
+              <choice correct="false" name="4">
+                <span>
+                  <text>
+                    <code>linearSearch([9, 3, 12, 24, 7, 8, 23, 11, 19], 8)</code>
+                  </text>
+                </span>
+              </choice>
+              <choice correct="false" name="5">
+                <span>
+                  <text>
+                    <code>linearSearch([4, 12, 20, 17, 9, 14, 7, 24, 6], 7)</code>
+                  </text>
+                </span>
+              </choice>
+              <choice correct="true" name="6">
+                <span>
+                  <text>
+                    <code>linearSearch([13, 9, 22, 3, 10, 17, 11, 2, 12], 26)</code>
+                  </text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+      </li>
+      <li>
+        <p>Average Case Run Time</p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="false" name="1">
+                <span>
+                  <text>
+                    <code>linearSearch([14, 15, 6, 27, 13, 16, 25, 11, 7], 15)</code>
+                  </text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text>
+                    <code>linearSearch([21, 1, 25, 22, 30, 13, 7, 24, 12], 24)</code>
+                  </text>
+                </span>
+              </choice>
+              <choice correct="false" name="3">
+                <span>
+                  <text>
+                    <code>linearSearch([20, 10, 1, 7, 4, 22, 25, 12, 31], 20)</code>
+                  </text>
+                </span>
+              </choice>
+              <choice correct="true" name="4">
+                <span>
+                  <text>
+                    <code>linearSearch([9, 3, 12, 24, 7, 8, 23, 11, 19], 8)</code>
+                  </text>
+                </span>
+              </choice>
+              <choice correct="false" name="5">
+                <span>
+                  <text>
+                    <code>linearSearch([4, 12, 20, 17, 9, 14, 7, 24, 6], 7)</code>
+                  </text>
+                </span>
+              </choice>
+              <choice correct="false" name="6">
+                <span>
+                  <text>
+                    <code>linearSearch([13, 9, 22, 3, 10, 17, 11, 2, 12], 26)</code>
+                  </text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+      </li>
+      <li>
+        <p>What is the number of steps it will take to run <code>linearSearch</code>
+	in the best case? Express your answer in terms of <i>n</i>, the number of 
+	elements in the list <code>L</code>. </p>
+        <p>Indicate addition and multiplication explicitly, with <code>+</code> and <code>*</code> symbols.
+	Indicate exponentiation with the caret (<code>^</code>) symbol.</p>
+        <p>
+          <formularesponse type="cs" samples="n@1:5#10" answer="1">
+            <responseparam type="tolerance" default="0.00001"/>
+            <formulaequationinput size="40"/>
+          </formularesponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>In the best case scenario, <code>L</code> is an empty list. Thus
+	      one step is taken: <code>return False</code>.</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>What is the number of steps it will take to run <code>linearSearch</code>
+	in the worst case? Express your answer in terms of <i>n</i>, the number of 
+	elements in the list <code>L</code>. </p>
+        <p>Indicate addition and multiplication explicitly, with <code>+</code> and <code>*</code> symbols.
+	Indicate exponentiation with the caret (<code>^</code>) symbol.</p>
+        <p>
+          <formularesponse type="cs" samples="n@1:5#10" answer="2*n + 1">
+            <responseparam type="tolerance" default="0.00001"/>
+            <formulaequationinput size="40"/>
+          </formularesponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>In the worst case scenario, <code>x</code> is not present in <code>L</code>. Thus
+	      we go through the for loop <i>n</i> times. This means we execute assignment of <code>e</code> to each 
+	      element of <code>L</code> (this takes place in the line <code>for e in L</code>) to enter the 
+	      <code>for</code> loop, and also execute the check</p>
+              <pre>        if e == x:</pre>
+              <p>once each for every element. So this is 2*n steps. Finally at the end of the 
+	      <code>for</code> loop, we execute the return statement one time.</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+    </ol>
+    <p>Reminder: You do not lose points for trying a problem multiple times, nor 
+      do you lose points if you hit "Show Answer". If this problem has you stumped after 
+      you've tried it a few times, feel free to reveal the solution.</p>
+    <p>Click the "Reset" button to clear your answers.</p>
+  </text>
+</problem>

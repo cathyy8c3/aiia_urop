@@ -1,0 +1,43 @@
+<problem display_name="Problem 8" markdown="null" max_attempts="10" showanswer="never" weight="20.0">
+  <text>
+    <p>
+      Write a Python function called <code>satisfiesF</code> that has the specification below. Then make the function call <code>run_satisfiesF(L, satisfiesF)</code>. Your code should look like:</p>
+    <pre>def satisfiesF(L):
+    """
+    Assumes L is a list of strings
+    Assume function f is already defined for you and it maps a string to a Boolean
+    Mutates L such that it contains all of the strings, s, originally in L such
+            that f(s) returns True, and no other elements. Remaining elements in L
+            should be in the same order.
+    Returns the length of L after mutation
+    """
+    # Your function implementation here
+
+run_satisfiesF(L, satisfiesF)</pre>
+    <p>For your own testing of <code>satisfiesF</code>, for example, see the following test function <code>f</code> and test code:</p>
+    <pre>def f(s):
+    return 'a' in s
+      
+L = ['a', 'b', 'a']
+print satisfiesF(L)
+print L</pre>
+    <p>Should print:</p>
+    <pre>2
+['a', 'a']</pre>
+    <p>Paste your entire function <code>satisfiesF</code>, including the definition, in the box below. <b>After you define your function, make a function call to <code>run_satisfiesF(L, satisfiesF)</code>. Do not define <code>f</code> or <code>run_satisfiesF</code>. </b>Do not leave any debugging print statements.  <b>Note that we ask you to write a function only -- you cannot rely on any variables defined outside your function for your code to work correctly.</b></p>
+    <p>
+      For this question, you will <b>not be able to see the test cases we run</b>. This problem will test your ability to come up with your own test cases. If you are getting "Incorrect", first <b>check to make sure you have no indentation errors</b>. For example, make sure the line <code>run_satisfiesF(L, satisfiesF)</code> does not have any spaces before it.
+    </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display># Paste your function here</initial_display>
+      <answer_display>
+      </answer_display>
+      <grader_payload>
+        {"grader": "quiz/60001r_s2015/satisfiesF/grade_satisfiesF.py", "hide_output": true}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

@@ -1,0 +1,42 @@
+<problem markdown="null">
+  <text>
+    <!--
+    <p>
+      <b>
+        <font color="red">If you are done with the exam, <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSJ_0tgVY6o2nomXB5hdaQCorHR7RCsNq0-s_pYpzJweJwGw/viewform?usp=sf_link" target="_blank">click here to checkout</a>. Only checkout once to remove your quiz access. <br/> If you do not checkout you will receive a zero on the exam.</font>
+      </b>
+    </p>
+-->
+    <p>Write a function that meets the following specifications. </p>
+    <pre>def is_digit_sum_prime(L):
+    """ 
+    L is a non-empty list of positive integers
+    Returns a list the same length as L. At each index, the new list will either 
+    be the boolean True or False. The element is True if the sum of the 
+    digits of the element at that index in L is a prime number, and False otherwise.
+    Remember that 1 is not a prime number. 
+    """
+    # your code here
+</pre>
+    <p>For example:</p>
+    <pre>print(is_digit_sum_prime([1]))       # prints [False]
+print(is_digit_sum_prime([17,3,1,2]))     # prints [False, True, False, True]
+print(is_digit_sum_prime([17,12,10]))     # prints [False, True, False]
+print(is_digit_sum_prime([4,6,1111,202])) # prints [False, False, False, False]
+print(is_digit_sum_prime([4,5,13,98]))    # prints [False, True, False, True]</pre>
+    <p>You may not use any libraries. Paste your entire function, including the definition, in the box below. Do not leave any debugging print statements.</p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="10" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display># Paste your function here</initial_display>
+      <grader_payload>
+        {"grader": "ase/is_digit_sum_prime/grade_is_digit_sum_prime.py", "hide_output": false}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <p><b>Note: An L379 or L397 error:</b> means that your code has an infinite loop for some test case. You will receive a zero for this problem if your code has an infinite loop.
+  </p>
+  <p><b>Note on Score Shown:</b> Your code will ultimately be run on our test cases. Getting "Correct"/green check during the exam does not mean you will get full points. The test cases here ensures you do not have a copy/paste error from your IDE.
+  </p>
+</problem>

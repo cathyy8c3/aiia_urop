@@ -1,0 +1,388 @@
+<problem display_name="Exercise 2" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 18 minutes</b>
+    </p>
+    <p>This problem will ask a series of questions about generators.</p>
+    <ol>
+      <li>
+        <p>Thinking about the <code>genPrimes</code> generator from the last problem, which 
+	  of the following can be done only by using a generator, instead of defining a function 
+	  (that uses any type of construct we've learned about, except generators)?</p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="false" name="1">
+                <span>
+                  <text>Return 1000000 prime numbers</text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text>Print every 10th prime number, until you've printed 20 of them</text>
+                </span>
+              </choice>
+              <choice correct="false" name="3">
+                <span>
+                  <text>Keep printing the prime number until the user stops the program</text>
+                </span>
+              </choice>
+              <choice correct="true" name="4">
+                <span>
+                  <text>Everything that can be done with generator can be done with a function</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>We could write a function that does any of the choices. However a generator is nice because we can
+		ask the generator for the next item, one at a time, and we don't waste time computing values that we
+		don't ultimately want (or won't want for a long time).</p>
+              <p>Here are some examples of how one might code a function for each of the above options without a generator:</p>
+              <pre>def genPrimesFn():
+    '''Function to return 1000000 prime numbers'''
+    primes = []   # primes generated so far
+    last = 1      # last number tried
+    while len(primes) &lt; 1000000:
+        last += 1
+        for p in primes:
+            if last % p == 0:
+                break
+        else:
+            primes.append(last)
+    return primes
+
+def genPrimesFn():
+    '''Function to print every 10th prime 
+    number, until you've printed 20 of them.'''
+    primes = []   # primes generated so far
+    last = 1      # last number tried
+    counter = 1
+    while True:
+        last += 1
+        for p in primes:
+            if last % p == 0:
+                break
+        else:
+            primes.append(last)
+            counter += 1
+            if counter % 10 == 0:
+                # Print every 10th prime
+                print(last)
+            if counter % (20*10) == 0:
+                # Quit when we've printed the 10th prime 20 times (ie we've
+                # printed the 200th prime)
+                return
+
+
+
+def genPrimesFn():
+    '''Function to keep printing the prime number until the user stops the program.
+    This way uses user input; you can also just run an infinite loop (while True)
+    that the user can quit out of by hitting control-c'''
+    primes = []   # primes generated so far
+    last = 1      # last number tried
+    uinp = 'y'    # Assume we want to at least print the first prime...
+    while uinp != 'n':
+        last += 1
+        for p in primes:
+            if last % p == 0:
+                break
+        else:
+            primes.append(last)
+            print(last)
+            uinp = input("Print the next prime? [y/n] ")
+            while uinp != 'y' and uinp != 'n':
+                print("Sorry, I did not understand your input. Please enter 'y' for yes, or 'n' for no.")
+                uinp = input("Print the next prime? [y/n] ")
+</pre>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>Every procedure that has a <code>yield</code> statement is a generator.</p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="true" name="3">
+                <span>
+                  <text>True</text>
+                </span>
+              </choice>
+              <choice correct="false" name="4">
+                <span>
+                  <text>False</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>See <a href="https://docs.python.org/3/reference/expressions.html?highlight=yield">https://docs.python.org/3/reference/expressions.html?highlight=yield</a>.
+		The Python documentation is always your friend!</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>If a procedure has only one <code>yield</code> statement, but that statement will never 
+	  be executed, then the procedure is not a generator.</p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="false" name="3">
+                <span>
+                  <text>True</text>
+                </span>
+              </choice>
+              <choice correct="true" name="4">
+                <span>
+                  <text>False</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>Examine the following code; play around with it in Python.</p>
+              <pre>def generator1():
+    if True:
+        yield 1 
+
+def generator2():
+    if False:   
+        yield 1
+
+g1 = generator1()
+g2 = generator2()
+
+print(type(g1))
+print(type(g2))
+print(next(gen))
+print(next(gen))</pre>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>If we were to use a generator to iterate over a million numbers,
+	  how many numbers do we need to store in memory at once? </p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="false" name="1">
+                <span>
+                  <text>1</text>
+                </span>
+              </choice>
+              <choice correct="true" name="2">
+                <span>
+                  <text>2</text>
+                </span>
+              </choice>
+              <choice correct="false" name="3">
+                <span>
+                  <text>1000</text>
+                </span>
+              </choice>
+              <choice correct="false" name="4">
+                <span>
+                  <text>1000000</text>
+                </span>
+              </choice>
+              <choice correct="false" name="5">
+                <span>
+                  <text>Don't need to store anything in memory</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>We need to store 2 numbers - one for the current value, and one for the max value.</p>
+              <pre>def genOneMillion():
+    maxNum = 1000000
+    current = -1
+    while current &lt; maxNum:
+        current += 1
+        yield current</pre>
+              <p>Python actually provides this! The <code>range</code> function is a generator. </p>
+            </div>
+          </solution>
+        </p>
+      </li>
+    </ol>
+    <p>For the following tasks, would it be best to use a generator, a standard function, or either?</p>
+    <ol>
+      <li>
+        <p>Finding the nth Fibonacci number </p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="false" name="1">
+                <span>
+                  <text>Generator</text>
+                </span>
+              </choice>
+              <choice correct="true" name="2">
+                <span>
+                  <text>Standard function</text>
+                </span>
+              </choice>
+              <choice correct="false" name="3">
+                <span>
+                  <text>Either a generator or standard function is fine</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+      </li>
+      <li>
+        <p>Printing out an unbounded sequence of Fibonacci numbers </p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="true" name="1">
+                <span>
+                  <text>Generator</text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text>Standard function</text>
+                </span>
+              </choice>
+              <choice correct="false" name="3">
+                <span>
+                  <text>Either a generator or standard function is fine</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+      </li>
+      <li>
+        <p>Printing out a bounded sequence of prime numbers, where the prime numbers
+	  are successively computed by division by smaller primes</p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="false" name="1">
+                <span>
+                  <text>Generator</text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text>Standard function</text>
+                </span>
+              </choice>
+              <choice correct="true" name="3">
+                <span>
+                  <text>Either a generator or standard function is fine</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+      </li>
+      <li>
+        <p>Printing out an unbounded sequence of prime numbers, where the prime numbers
+	  are successively computed by division by smaller primes</p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="true" name="1">
+                <span>
+                  <text>Generator</text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text>Standard function</text>
+                </span>
+              </choice>
+              <choice correct="false" name="3">
+                <span>
+                  <text>Either a generator or standard function is fine</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+      </li>
+      <li>
+        <p>Finding the score of a word from the 6.00x Word Game of Pset 4 </p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="false" name="1">
+                <span>
+                  <text>Generator</text>
+                </span>
+              </choice>
+              <choice correct="true" name="2">
+                <span>
+                  <text>Standard function</text>
+                </span>
+              </choice>
+              <choice correct="false" name="3">
+                <span>
+                  <text>Either a generator or standard function is fine</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+      </li>
+      <li>
+        <p>Iterating over a sequence of numbers in a random order, where no number
+	  is repeated</p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="false" name="1">
+                <span>
+                  <text>Generator</text>
+                </span>
+              </choice>
+              <choice correct="true" name="2">
+                <span>
+                  <text>Standard function</text>
+                </span>
+              </choice>
+              <choice correct="false" name="3">
+                <span>
+                  <text>Either a generator or standard function is fine</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+      </li>
+    </ol>
+  </text>
+</problem>

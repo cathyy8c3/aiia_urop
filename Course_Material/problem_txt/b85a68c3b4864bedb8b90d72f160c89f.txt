@@ -1,0 +1,9 @@
+
+  
+The worst case time complexity for selection sort is [mathjaxinline]O(n^2)[/mathjaxinline].
+
+    
+
+      
+True
+False

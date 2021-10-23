@@ -1,0 +1,28 @@
+<problem>
+  <text>
+    <p>
+      Write a function called <code>general_poly</code>, that meets the specifications below. For example, 
+      <code>general_poly([1, 2, 3, 4])(10)</code>  should evaluate to <code>1234</code> because [mathjaxinline]1*10^3+2*10^2+3*10^1+4*10^0[/mathjaxinline]. 
+
+
+</p>
+    <pre>def general_poly (L):
+    """ L, a list of numbers (n0, n1, n2, ... nk)
+    Returns a function, which when applied to a value x, returns the value 
+    n0 * x^k + n1 * x^(k-1) + ... nk * x^0 """
+    #YOUR CODE HERE</pre>
+    <p/>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display># Paste your function here</initial_display>
+      <answer_display>
+      </answer_display>
+      <grader_payload>
+        {"grader": "ase/general_poly/grade_general_poly.py", "hide_output": true}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <p><b><font color="red">If you are getting "exception thrown", you should read the specification CAREFULLY for what you need to return.</font></b></p>
+</problem>

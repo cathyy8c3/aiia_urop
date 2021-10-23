@@ -1,0 +1,9 @@
+
+  
+Bisection search is an example of linear time complexity
+
+    
+
+      
+True
+False

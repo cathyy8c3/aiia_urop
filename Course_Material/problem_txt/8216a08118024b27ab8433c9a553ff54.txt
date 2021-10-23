@@ -1,0 +1,18 @@
+
+  
+
+    
+
+Consider the following Python procedure. Specify its order of growth. 
+def recur(n):
+    if n <= 0:
+        return 1
+    else:
+        return n*recur(n-1)
+        
+  
+    
+
+      
+
+        

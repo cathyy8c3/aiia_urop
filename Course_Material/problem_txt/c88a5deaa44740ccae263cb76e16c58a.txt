@@ -1,0 +1,13 @@
+
+  
+Suppose you have two different functions that each assign a variable called 
+x
+x
+x
+x
+
+    
+
+      
+True
+False

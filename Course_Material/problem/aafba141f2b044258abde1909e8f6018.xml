@@ -1,0 +1,111 @@
+<problem display_name="Exercise 4" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 4 minutes</b>
+    </p>
+    <p>
+Consider the following function definition: </p>
+    <pre>
+def union(set1, set2):
+   """
+   set1 and set2 are collections of objects, each of which might be empty.
+   Each set has no duplicates within itself, but there may be objects that
+   are in both sets. Objects are assumed to be of the same type.
+
+   This function returns one set containing all elements from
+   both input sets, but with no duplicates.
+   """
+   if len(set1) == 0:
+      return set2
+   elif set1[0] in set2:
+      return union(set1[1:], set2)
+   else:
+      return set1[0] + union(set1[1:], set2)
+</pre>
+    <p>
+Assume that <code>union</code> is called with strings as arguments. </p>
+    <p>
+      Please select the best glass box test suite for the function <code>union</code>
+      from the following options:
+    </p>
+    <p>
+      <choiceresponse>
+        <radiogroup direction="vertical">
+          <choice correct="false" name="1">
+            <span>
+              <text> Test Suite A:
+	      <code> union('','')</code>, <code>union('','a')</code>, <code>union('','ab')</code>, <code>union('a','')</code>, <code>union('a','b')</code>, <code>union('c','ab')</code>, <code>union('de','')</code>, <code>union('ab','c')</code>, <code>union('cd','ab')</code> 
+	  </text>
+            </span>
+          </choice>
+          <choice correct="false" name="2">
+            <span>
+              <text> Test Suite B:
+	      <code> union('abc','')</code>, <code>union('abc','a')</code>, <code>union('abc','ab')</code>, <code>union('abc','d')</code>, <code>union('abc', 'abcd')</code> 
+	  </text>
+            </span>
+          </choice>
+          <choice correct="false" name="3">
+            <span>
+              <text> Test Suite C:
+	      <code> union('','abc')</code>, <code>union('a','abc')</code>, <code>union('ab','abc')</code>, <code>union('abc','abc')</code> 
+	  </text>
+            </span>
+          </choice>
+          <choice correct="true" name="4">
+            <span>
+              <text> Test Suite D:
+	      <code> union('','abc')</code>, <code>union('a','abc')</code>, <code>union('ab','abc')</code>, <code>union('d','abc')</code> 
+	  </text>
+            </span>
+          </choice>
+        </radiogroup>
+      </choiceresponse>
+    </p>
+    <p>
+      <solution>
+        <div class="detailed-solution">
+          <p>
+            <b>Explanation:</b>
+          </p>
+          <p>A good glass box test suite would try to test a good sample of all 
+	    the possible paths through the code. So, it should contain tests that 
+	    test when <code>set1</code> is empty, when <code>set1[0]</code> is in 
+	    <code>set2</code>, and when <code>set1[0]</code> is not in <code>set2</code>.
+	    The test suite should also test when the recursion depth is 0, 1, and greater 
+	    than 1.</p>
+          <p> Remember that glass box testing is a method of software testing that tests 
+	    the internal structures and workings of a piece of code. When we look at the 
+	    code for <code>union</code>, we see a set of conditionals that ask about 
+	    <code>set1</code>. Thus a good glass box test suite will contain tests that 
+	    match the following lines from the conditional statements in the code:</p>
+          <ul>
+            <li><code>len(set1) == 0</code> - matched by the test <code>union('', 'abc')</code></li>
+            <li><code>set1[0] in set2</code> - matched by the test <code>union('a', 'abc')</code></li>
+            <li><code>set1[0] not in set2</code> (this is the <code>else:</code> of the conditional)  - matched by the test <code>union('d', 'abc')</code></li>
+          </ul>
+          <p>In addition, because <code>union</code> is a recursive function, we should 
+	    make sure our test set considers a recursion depth of 0, 1, and many. In this 
+	    case, recursion depth is covered by some of the tests we've already chosen:</p>
+          <ul>
+            <li>Recursion depth = 0 - matched by the test <code>union('', 'abc')</code></li>
+            <li>Recursion depth = 1 - matched by the tests <code>union('a', 'abc')</code>, <code>union('d', 'abc')</code></li>
+            <li>Recursion depth &gt; 1 - matched by the test <code>union('ab', 'abc')</code></li>
+          </ul>
+          <p>Note that this test suite is NOT path complete because it would take essentially 
+	    infinite time to test all possible recursive depths. </p>
+          <p>Let's examine now why the other test suites weren't as good as Test Suite D:</p>
+          <ul>
+            <li>Test Suite A looks at a good sampling of set sizes for <code>set1</code> and 
+	      <code>set2</code>, but does not explore the if-else paths in the code. 
+	      <code>set1</code> never contains any element in <code>set2</code>.</li>
+            <li>Test Suite B does not explore the paths in the code because it never varies 
+	      the contents of <code>set1</code>.</li>
+            <li>Test Suite C does not contain a test that explores the path when 
+	      <code>set1</code> has an element that is not in <code>set2</code>.</li>
+          </ul>
+        </div>
+      </solution>
+    </p>
+  </text>
+</problem>

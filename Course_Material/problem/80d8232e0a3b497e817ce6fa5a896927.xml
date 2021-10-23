@@ -1,0 +1,37 @@
+<problem display_name="Exercises 4" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 2 minutes</b>
+      <br/>
+      <b>      Note that you will have to answer all questions before you can click the Check button.</b>
+    </p>
+    <p>Choose the term described by each of the following definitions.</p>
+    <p>Definitions: </p>
+    <ol>
+      <li>
+        <p>Determines whether a string is legal </p>
+        <p>
+          <optionresponse>
+            <optioninput options="('Semantics','Static semantics','Syntax')" correct="Syntax"/>
+          </optionresponse>
+        </p>
+      </li>
+      <li>
+        <p>Determines whether a string has meaning </p>
+        <p>
+          <optionresponse>
+            <optioninput options="('Semantics','Static semantics','Syntax')" correct="Static semantics"/>
+          </optionresponse>
+        </p>
+      </li>
+      <li>
+        <p>Assigns a meaning to a legal sentence </p>
+        <p>
+          <optionresponse>
+            <optioninput options="('Semantics','Static semantics','Syntax')" correct="Semantics"/>
+          </optionresponse>
+        </p>
+      </li>
+    </ol>
+  </text>
+</problem>

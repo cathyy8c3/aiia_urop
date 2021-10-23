@@ -1,0 +1,165 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 6 minutes
+      Note that you will have to answer all questions before you can click the Check button.
+For each of the following expressions, indicate the value returned, 
+      or if the evaluation would lead to an error, write the word 'error' 
+      (note this is a word, not a string, no quotes). While you could simply type 
+      these expressions into your IDE, we encourage you to answer 
+      them directly since this will help reinforce your understanding of 
+      basic Python expressions. 
+
+      
+
+        
+
+          
+
+            
+Hint: Python boolean types
+Remember that in Python words are case-sensitive. The word 
+True
+true
+Python documentation on Boolean values
+
+          
+
+            
+Hint: Priority order of Boolean operations
+
+            
+For these problems, it's important to understand the priority of 
+	      Boolean operations. The order of operations is as follows: 
+
+              
+
+                
+Parentheses. Before operating on anything else, 
+		  Python must evaluate all parentheticals starting at the innermost level. 
+
+                
+not
+
+                
+and
+
+                
+or
+What this means is that an expression like 
+
+not True and False
+
+evaluates to 
+False
+not
+not True
+False
+and
+False and False
+False
+However the expression 
+
+not (True and False)
+
+evaluates to 
+True
+True and False
+False
+not
+not False
+True
+Overall, you should always use parenthesis when writing expressions to make it clear what order 
+	      you wish to have Python evaluate your expression. As we've seen here, 
+not (True and False)
+(not True) and False
+not True and False
+
+      
+
+        
+
+          
+3 > 4
+
+            
+
+        
+
+          
+4.0 > 3.999
+
+            
+
+        
+
+          
+4 > 4
+
+            
+
+        
+
+          
+4 > + 4
+
+            
+
+        
+
+          
+2 + 2 == 4
+
+            
+
+        
+
+          
+True or False
+
+            
+
+        
+
+          
+False or False
+
+            
+
+        
+
+          
+not False
+
+            
+
+        
+
+          
+3.0 - 1.0 != 5.0 - 3.0
+
+            
+
+        
+
+          
+3 > 4 or (2 < 3 and 9 > 10)
+
+            
+
+        
+
+          
+4 > 5 or 3 < 4 and 9 > 8
+
+            
+
+        
+
+          
+not(4 > 3 and 100 > 6)
+
+            

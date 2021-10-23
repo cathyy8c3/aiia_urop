@@ -1,0 +1,17 @@
+
+  
+
+    
+
+Consider the following Python procedure. Specify its order of growth. 
+def baz(n):
+    for i in range(n):
+        for j in range(n):
+            print( i,j )
+        
+  
+    
+
+      
+
+        

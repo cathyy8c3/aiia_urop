@@ -1,0 +1,69 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 4 minutes
+
+def test_list(expect, ans):
+  # Check that expect & ans are lists
+  assert (expect[0] == '[' and expect[-1] == ']')
+  if '[' not in ans or ']' not in ans: return False
+
+  expect = list( expect.replace(' ','')[1:-1].split(',') )
+  ans = list( ans.replace(' ','')[1:-1].split(',') )
+  return len(expect) == len(ans) and not (False in [e == a for (e,a) in zip(expect, ans)])
+
+
+Here is a different piece of code for working with lists: 
+
+def applyEachTo(L, x):
+    result = []
+    for i in range(len(L)):
+        result.append(L[i](x))
+    return result
+
+
+Suppose that you are given the following functions: 
+
+def square(a):
+    return a*a
+
+def halve(a):
+    return a/2
+
+def inc(a):
+    return a+1
+
+
+For each of the following questions, indicate what value is returned. If you believe that an error will occur, write the word 'error'. 
+
+      
+
+        
+
+applyEachTo([inc, square, halve, abs], -3)
+ 
+
+          
+
+            
+
+        
+
+applyEachTo([inc, square, halve, abs], 3.0)
+ 
+
+          
+
+            
+
+        
+
+applyEachTo([inc, max, int], -3)
+ 
+
+          
+
+            

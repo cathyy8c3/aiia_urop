@@ -1,0 +1,142 @@
+
+  
+
+    
+ESTIMATED TIME TO COMPLETE: 3 minutes
+The previous problem shows the benefits of having a good hash function.
+	Hashing on length of word is very problematic. In English, there
+	are only two words - 'a' and 'I' - that are one letter long. However
+	there are thousands that are 5 letters long - in words.txt (from PS4,
+	which had a very limited set of words) there are 8938 5-letter words.
+Ideally we'd like to pick a hash function that 
+uniformly distributes
+A good hash function will uniformly distribute words in the English language across a set of buckets.
+	A bad one will - like hashing on word length - be skewed (ie some buckets will be
+	MUCH more common than others). Note that for this problem we will be asking about valid words
+	in the English language, not random strings of characters. 
+Read more about the properties of good hash functions 
+over
+	  at Wikipedia
+
+    
+
+      
+Hash function: 
+def hash(s):
+    return string.ascii_lowercase.index(s[0])
+Number of buckets: 26
+
+        
+
+          
+
+            
+
+              
+
+                
+Good hash function
+
+              
+
+                
+ Bad hash function
+
+      
+Hash function: 
+def hash(s):
+    return string.ascii_lowercase.index(s[-1])
+Number of buckets: 26
+
+        
+
+          
+
+            
+
+              
+
+                
+Good hash function
+
+              
+
+                
+ Bad hash function
+
+      
+Hash function: 
+def hash(s):
+    total = 0
+    for char in s:
+        total += string.ascii_lowercase.index(char)
+    return total % 26
+Number of buckets: 26
+
+        
+
+          
+
+            
+
+              
+
+                
+Good hash function
+
+              
+
+                
+ Bad hash function
+
+    
+
+      
+
+        
+
+          
+Explanation:
+The first two hash functions are not particularly good because the distribution of English
+		words is not even (for example, many more words begin with 'm', 's', or 't' than 'j', 'q' or 'x';
+		similiarly, English words much more commonly end with 'd', 'g' or 's' than 'c', 'q' or 'z'). The
+		third hash function, however, doesn't rely on such a specific property.
+This function relies on 
+modular arithmetic
+A student in 6.00x, March 2013 wrote some code to visually show why this third hash function is much
+		better than the first two. He visualized the hash functions to see what's going on, using the word 
+		list provided for Problem Set 4. It has 80,000+ words. There are many more words in the English language, 
+		but this representative word list does suffice to give a fair idea of the situation. For plotting, he used 
+		the matplotlib library, which you will learn in Week 7.
+These graphs plot the number of words in each hash bucket. The x-axis represents the buckets (0 - 25) and the y-axis
+		represents the number of words in each bucket. Click on each image to see it full-sized.
+First hash function:
+
+          
+
+            
+
+              
+Second hash function:
+
+          
+
+            
+
+              
+Third hash function:
+
+          
+
+            
+
+              
+As you can see, the third hash function clearly gives a much more even distribution of words
+		in each bucket. This is the hallmark of a good hash function!
+Click here
+For those of you who aren't native English speakers, it would be interesting to run a similar
+		experiment using your native language. You may have to change the number of buckets available depending
+		on the size of your alphabet, and of course you'd need to find a representative word list.
+		The course staff's best guess (for languages that use the Roman alphabet) is that the same results
+		will hold - the first two hash functions won't be good (but will of course have different high/low buckets),
+		while the third proves to be a decent hash function. Let us know in the forums if you run this experiment!

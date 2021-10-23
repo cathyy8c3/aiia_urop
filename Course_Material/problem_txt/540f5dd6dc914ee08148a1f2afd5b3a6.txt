@@ -1,0 +1,74 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 20 minutes
+For this exercise, you will be coding your very first class, a 
+      
+Queue
+In your 
+Queue
+
+      
+__init__
+Queue
+object attribute
+insert
+Queue
+remove
+Queue
+When you're done, you should test your implementation. Your results
+      should look something like this:
+>>> queue = Queue()
+>>> queue.insert(5)
+>>> queue.insert(6)
+>>> queue.remove()
+5
+>>> queue.insert(7)
+>>> queue.remove()
+6
+>>> queue.remove()
+7
+>>> queue.remove()
+Traceback (most recent call last):
+  File "<stdin>", line 26, in <module>
+  File "queue.py", line 15, in remove
+    raise ValueError()
+ValueError
+Be sure to handle that last case correctly - when popping from an
+  empty 
+Queue
+
+    
+
+      
+
+class Queue(object):
+
+    def __init__(self):
+        "Initializes 1 attribute: a list to keep track of the queue's elements"
+        self.qlist = []
+
+    def insert(self, element):
+        "Adds an element to the attribute list using append"
+        self.qlist.append(element)
+
+    def remove(self):
+        "Removes an element from the attribute list"
+        # Check if the list is empty; if so then raise a ValueError
+        if self.qlist == []:
+            raise ValueError()
+        else:
+            # Otherwise we want to remove the first element from the list
+            # and return that to the user.
+            element = self.qlist[0]
+            self.qlist.remove(element)
+            return element
+            # Could also do this in 1 line:
+            # return self.qlist.pop(0)
+
+
+{"grader": "finger_exercises/L10/queue/grade_queue.py"}
+

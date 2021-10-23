@@ -1,0 +1,218 @@
+<problem display_name="Exercise 6" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 20 minutes</b>
+    </p>
+    <script type="text/python" system_path="python_lib">
+def test_str(expect, ans):
+  # Strip away ' ' or " " wrapping string input answer
+  # (check which, if any, are present - don't want to pull valid
+  #  characters out of the center of a string, eg "That's crazy!",
+  #  nor do we wish to accept an input with mismatched modifiers, 
+  #  eg 'abc")
+
+  if ans[0] == "'" and ans[-1] == "'": ans = ans.strip("'")
+  elif ans[0] == '"' and ans[-1] == '"': ans = ans.strip('"')
+
+  if expect[0] == "'": expect = expect.strip("'")
+  elif expect[0] == '"': expect = expect.strip('"')
+
+  return expect == ans
+</script>
+    <p>
+As we'll see in subsequent lectures, everything in Python is an <i class="it">object</i>. Objects are special because we can associate special functions, referred to as <i class="it">object methods</i>, with the object. In this problem you'll be working with string objects, and their built-in methods. </p>
+    <p>
+A complete description of the methods available to string objects can be found in the <a href="http://docs.python.org/library/stdtypes.html#string-methods" target="_blank">Python library reference on string methods</a>.  </p>
+    <p>
+In this exercise, we want you to get some experience in using methods as functions. The convention for object methods is to use the "dot" notation, so that if <tt class="tt">s</tt> is a string, evaluating <tt class="tt">s.upper</tt> will return the actual function, and evaluating <tt class="tt">s.upper()</tt> will cause the function itself to be evaluated (in this case it returns a new string, since strings are immutable) with every character now in upper case. An example of this follows: </p>
+    <pre>
+&gt;&gt;&gt; s = 'abc'
+&gt;&gt;&gt; s.capitalize
+&lt;built-in method capitalize of str object at 0x104c35878&gt;
+&gt;&gt;&gt; s.capitalize()
+'Abc'
+</pre>
+    <p>
+For each of the expressions in this problem, specify its type and value. If it generates an error, select type 'NoneType' and put the word 'error' in the box for the value. If it would be a function, select type 'function' and put the word 'function' in the box for the value. </p>
+    <p>
+Assume we've made the following assignments: </p>
+    <pre>
+&gt; str1 = 'exterminate!' 
+&gt; str2 = 'number one - the larch'
+</pre>
+    <p>
+Assume that the expressions are evaluated in the order shown - that is, each problem part is evaluated directly after the previous problem part(s). </p>
+    <ol class="enumerate">
+      <li>
+        <p>
+          <tt class="tt">str1.upper</tt>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string')" correct="function"/>
+          </optionresponse>
+          <stringresponse answer="function">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <tt class="tt">str1.upper()</tt>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string')" correct="string"/>
+          </optionresponse>
+          <customresponse cfn="test_str" expect="'EXTERMINATE!'">
+            <textline size="50" correct_answer="'EXTERMINATE!'"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <tt class="tt">str1</tt>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string')" correct="string"/>
+          </optionresponse>
+          <customresponse cfn="test_str" expect="'exterminate!'">
+            <textline size="50" correct_answer="'exterminate!'"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <tt class="tt">str1.isupper()</tt>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string')" correct="boolean"/>
+          </optionresponse>
+          <stringresponse answer="False">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <tt class="tt">str1.islower()</tt>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string')" correct="boolean"/>
+          </optionresponse>
+          <stringresponse answer="True">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <tt class="tt">str2 = str2.capitalize()</tt>
+          <br/>
+          <tt class="tt">str2</tt>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string')" correct="string"/>
+          </optionresponse>
+          <customresponse cfn="test_str" expect="'Number one - the larch'">
+            <textline size="50" correct_answer="'Number one - the larch'"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <tt class="tt">str2.swapcase()</tt>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string')" correct="string"/>
+          </optionresponse>
+          <customresponse cfn="test_str" expect="'nUMBER ONE - THE LARCH'">
+            <textline size="50" correct_answer="'nUMBER ONE - THE LARCH'"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <tt class="tt">str1.index('e')</tt>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string')" correct="int"/>
+          </optionresponse>
+          <stringresponse answer="0">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <tt class="tt">str2.index('n')</tt>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string')" correct="int"/>
+          </optionresponse>
+          <stringresponse answer="8">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <tt class="tt">str2.find('n')</tt>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string')" correct="int"/>
+          </optionresponse>
+          <stringresponse answer="8">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <tt class="tt">str2.index('!')</tt>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string')" correct="NoneType"/>
+          </optionresponse>
+          <stringresponse answer="error">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <tt class="tt">str2.find('!')</tt>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string')" correct="int"/>
+          </optionresponse>
+          <stringresponse answer="-1">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+        <p><i class="it">Note:</i> Be sure to make note of the difference between the <tt class="tt">find</tt> and <tt class="tt">index</tt> string methods... </p>
+      </li>
+      <li>
+        <p>
+          <tt class="tt">str1.count('e')</tt>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string')" correct="int"/>
+          </optionresponse>
+          <stringresponse answer="3">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <tt class="tt">str1 = str1.replace('e', '*')</tt>
+          <br/>
+          <tt class="tt">str1</tt>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string')" correct="string"/>
+          </optionresponse>
+          <customresponse cfn="test_str" expect="'*xt*rminat*!'">
+            <textline size="50" correct_answer="'*xt*rminat*!'"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <tt class="tt">str2.replace('one', 'seven')</tt>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string')" correct="string"/>
+          </optionresponse>
+          <customresponse cfn="test_str" expect="'Number seven - the larch'">
+            <textline size="50" correct_answer="'Number seven - the larch'"/>
+          </customresponse>
+        </p>
+      </li>
+    </ol>
+  </text>
+</problem>

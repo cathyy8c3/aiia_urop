@@ -1,0 +1,22 @@
+
+  
+
+    
+Examine the following code snippet:
+
+  stuff  = _____
+  for thing in stuff:
+        if thing == 'iQ':
+           print("Found it")
+Select all the values of the variable "stuff" that 
+      will make the code print "Found it".
+
+      
+
+        
+["iBoy", "iGirl", "iQ", "iC","iPaid","iPad"]
+("iBoy", "iGirl", "iQ", "iC","iPaid","iPad")
+[ ( "iBoy", "iGirl", "iQ", "iC","iPaid","iPad") ]
+( [ "iBoy", "iGirl", "iQ", "iC","iPaid","iPad" ], )
+["iQ"]
+"iQ"

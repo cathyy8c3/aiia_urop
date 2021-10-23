@@ -1,0 +1,224 @@
+<problem title="You and Your Computer" attempts="30" type="lecture" display_name="Problem 7" markdown="null" max_attempts="30" showanswer="never">
+  <text>
+    <p>Now that your computer can choose a word, you need to
+      give the computer the option to play.
+      Write the code that re-implements the <code>playGame</code>
+      function. You will modify the function to behave as
+      described below in the function's comments. As
+      before, you should use the <code>HAND_SIZE</code> constant to
+      determine the number of cards in a hand. Be sure to
+      try out different values for <code>HAND_SIZE</code> with
+      your program.</p>
+    <section class="hints">
+      <h3>Sample Output and Hints</h3>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="ht2">Here is how the game output should look...</a>
+        </header>
+        <section id="ht2">
+          <pre>
+Enter n to deal a new hand, r to replay the last hand, or e to end game: n
+
+Enter u to have yourself play, c to have the computer play: u
+
+Current Hand: a s r e t t t
+Enter word, or a "." to indicate that you are finished: tatters
+"tatters" earned 99 points. Total: 99 points
+
+Run out of letters. Total score: 99 points.
+
+Enter n to deal a new hand, r to replay the last hand, or e to end game: r
+
+Enter u to have yourself play, c to have the computer play: c
+
+Current Hand:  a s r e t t t
+"stretta" earned 99 points. Total: 99 points
+
+Total score: 99 points.
+
+Enter n to deal a new hand, r to replay the last hand, or e to end game: x
+Invalid command.
+
+Enter n to deal a new hand, r to replay the last hand, or e to end game: n
+
+Enter u to have yourself play, c to have the computer play: me
+Invalid command.
+
+Enter u to have yourself play, c to have the computer play: you
+Invalid command.
+
+Enter u to have yourself play, c to have the computer play: c
+
+Current Hand:  a c e d x l n
+"axled" earned 65 points. Total: 65 points
+
+Current Hand:  c n
+Total score: 65 points.
+
+Enter n to deal a new hand, r to replay the last hand, or e to end game: n
+
+Enter u to have yourself play, c to have the computer play: u
+
+Current Hand: a p y h h z o
+Enter word, or a "." to indicate that you are finished: zap 
+"zap" earned 42 points. Total: 42 points
+
+Current Hand: y h h o
+Enter word, or a "." to indicate that you are finished: oy
+"oy" earned 10 points. Total: 52 points
+
+Current Hand: h h
+Enter word, or a "." to indicate that you are finished: .
+Goodbye! Total score: 52 points.
+
+Enter n to deal a new hand, r to replay the last hand, or e to end game: r
+
+Enter u to have yourself play, c to have the computer play: c
+
+Current Hand:  a p y h h z o
+"hypha" earned 80 points. Total: 80 points
+
+Current Hand:  z o
+Total score: 80 points.
+
+Enter n to deal a new hand, r to replay the last hand, or e to end game: e
+</pre>
+        </section>
+      </div>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="ht3">Hints about the output</a>
+        </header>
+        <section id="ht3">
+          <p>Be sure to inspect the above sample output carefully - very little is actually printed out 
+	in this function specifically. Most of the printed output actually comes from the code you wrote
+	in <code>playHand</code> and <code>compPlayHand</code> - be sure that your code is modular and 
+	uses function calls to these helper functions! </p>
+          <p>You should also make calls to the <code>dealHand</code> helper function. You shouldn't make calls
+	to any other helper function that we've written so far - in fact, this function can be written in
+	about 15-20 lines of code.</p>
+          <p>Here is the above output, with the output from <code>playHand</code> and
+	<code>compPlayHand</code> obscured:</p>
+          <pre>
+Enter n to deal a new hand, r to replay the last hand, or e to end game: r
+You have not played a hand yet. Please play a new hand first!
+            
+Enter n to deal a new hand, r to replay the last hand, or e to end game: n
+
+Enter u to have yourself play, c to have the computer play: u
+
+&lt;call to playHand&gt; 
+
+Enter n to deal a new hand, r to replay the last hand, or e to end game: r
+
+Enter u to have yourself play, c to have the computer play: c
+
+&lt;call to compPlayHand&gt; 
+
+Enter n to deal a new hand, r to replay the last hand, or e to end game: x
+Invalid command.
+
+Enter n to deal a new hand, r to replay the last hand, or e to end game: n
+
+Enter u to have yourself play, c to have the computer play: me
+Invalid command.
+
+Enter u to have yourself play, c to have the computer play: you
+Invalid command.
+
+Enter u to have yourself play, c to have the computer play: c
+
+&lt;call to compPlayHand&gt; 
+
+Enter n to deal a new hand, r to replay the last hand, or e to end game: n
+
+Enter u to have yourself play, c to have the computer play: u
+
+&lt;call to playHand&gt; 
+
+Enter n to deal a new hand, r to replay the last hand, or e to end game: r
+
+Enter u to have yourself play, c to have the computer play: c
+
+&lt;call to compPlayHand&gt; 
+
+Enter n to deal a new hand, r to replay the last hand, or e to end game: e
+</pre>
+          <p>Hopefully this hint makes the problem seem a bit more approachable.</p>
+        </section>
+      </div>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="ht1">A Note On Runtime</a>
+        </header>
+        <section id="ht1">
+          <p>You may notice that things run slowly when the
+      computer plays. This is to be expected. If you want
+      (totally optional!), feel free to investigate ways of
+      making the computer's turn go faster - one way is to
+      preprocess the word list into a dictionary (string -&gt;
+      int) so looking up the score of a word becomes much faster
+      in the <code>compChooseWord</code> function. </p>
+          <p>Be careful though - you only want to do this preprocessing <i>one
+        time</i> - probably right after we generate the wordList
+      for you (at the bottom of the file). If you choose to do
+      this, you'll have to modify what inputs your functions take
+      (they'll probably take a word dictionary instead of a word
+      list, for example).</p>
+          <p><b>IMPORTANT:</b>Don't worry about this issue when running
+    your code in the checker below! We load a very small sample wordList 
+    (<i>much</i> smaller than 83667 words!) to avoid having your code 
+    time out. Your code will work even if you don't implement a form
+    of pre-processing as described.</p>
+        </section>
+      </div>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="ht4">Entering Your Code</a>
+        </header>
+        <section id="ht4">
+          <p>Be sure to only paste your definition for <code>playGame</code> from <code>ps4b.py</code>
+	in the following box. Do not include any other function definitions.</p>
+        </section>
+      </div>
+    </section>
+    <br/>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="70" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def playGame(wordList):
+    """
+    Allow the user to play an arbitrary number of hands.
+ 
+    1) Asks the user to input 'n' or 'r' or 'e'.
+        * If the user inputs 'e', immediately exit the game.
+        * If the user inputs anything that's not 'n', 'r', or 'e', keep asking them again.
+
+    2) Asks the user to input a 'u' or a 'c'.
+        * If the user inputs anything that's not 'c' or 'u', keep asking them again.
+
+    3) Switch functionality based on the above choices:
+        * If the user inputted 'n', play a new (random) hand.
+        * Else, if the user inputted 'r', play the last hand again.
+          But if no hand was played, output "You have not played a hand yet. 
+          Please play a new hand first!"
+        
+        * If the user inputted 'u', let the user play the game
+          with the selected hand, using playHand.
+        * If the user inputted 'c', let the computer play the 
+          game with the selected hand, using compPlayHand.
+
+    4) After the computer or user has played the hand, repeat from step 1
+
+    wordList: list (string)
+    """
+    # TO DO...
+</initial_display>
+      <grader_payload>
+{"grader": "ps04/fullGame/grade_fullGame.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

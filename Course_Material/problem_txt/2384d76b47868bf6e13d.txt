@@ -1,0 +1,40 @@
+
+  
+
+    
+Write a function called 
+gcd
+One way is recursively, where the greatest common denominator of 
+a
+b
+gcd(a, b) = gcd(b, a mod b)
+
+      For example, the greatest common divisor (gcd) between 
+a = 20
+b = 12
+gcd(20,12)
+gcd(12, 20 mod 12)	= gcd(12,8)
+gcd(12,8)
+gcd(8, 12 mod 8)		= gcd(8,4)
+gcd(8,4)
+gcd(4, 8 mod 4) 		= gcd(4,0)
+a
+b
+def gcd(a, b):
+    """
+    a, b: two positive integers
+    Returns the greatest common divisor of a and b
+    """
+    #YOUR CODE HERE
+
+
+Paste your entire function, including the definition, in the box below. Do not leave any print statements.
+
+    
+
+      
+# Paste your code here
+
+
+        {"grader": "quiz/60001_f2016/gcd/grade_gcd.py", "hide_output": true}
+

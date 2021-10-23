@@ -1,0 +1,50 @@
+<problem display_name="Exercise: iter power" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" weight="5.0">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 6 minutes</b>
+    </p>
+    <p>Write an iterative function <code>iterPower(base, exp)</code> 
+      that calculates the exponential [mathjaxinline]\mathrm{base}^{\mathrm{exp}}[/mathjaxinline] 
+      by simply using successive multiplication. For example, 
+      <code>iterPower(base, exp)</code> should compute 
+      [mathjaxinline]\mathrm{base}^{\mathrm{exp}}[/mathjaxinline] by multiplying 
+      <code>base</code> times itself <code>exp</code> times. Write such 
+      a function below. </p>
+    <p>This function should take in two values - <code>base</code> can be a 
+      float or an integer; <code>exp</code> will be an integer [mathjaxinline]\geq[/mathjaxinline] 0. 
+      It should return one numerical value. Your code must be iterative - use of the 
+      <code>**</code> operator is not allowed. </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def iterPower(base, exp):
+    '''
+    base: int or float.
+    exp: int &gt;= 0
+ 
+    returns: int or float, base^exp
+    '''
+    # Your code here
+</initial_display>
+      <answer_display>
+def iterPower(base, exp):
+    '''
+    base: int or float.
+    exp: int &gt;= 0
+
+    returns: int or float, base^exp
+    '''
+    result = 1
+    while exp &gt; 0:
+        result *=base
+        exp -= 1
+    return result
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L5/iterPower/grade_iterPower.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

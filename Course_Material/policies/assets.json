@@ -1,0 +1,4461 @@
+{
+    "01.PNG": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "01.PNG",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "01.PNG",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@01.PNG",
+        "import_path": "01.PNG",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "01-PNG.jpg",
+            null
+        ]
+    },
+    "02.PNG": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "02.PNG",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "02.PNG",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@02.PNG",
+        "import_path": "02.PNG",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "02-PNG.jpg",
+            null
+        ]
+    },
+    "03.PNG": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "03.PNG",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "03.PNG",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@03.PNG",
+        "import_path": "03.PNG",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "03-PNG.jpg",
+            null
+        ]
+    },
+    "04.PNG": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "04.PNG",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "04.PNG",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@04.PNG",
+        "import_path": "04.PNG",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "04-PNG.jpg",
+            null
+        ]
+    },
+    "05.PNG": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "05.PNG",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "05.PNG",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@05.PNG",
+        "import_path": "05.PNG",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "05-PNG.jpg",
+            null
+        ]
+    },
+    "06.PNG": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "06.PNG",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "06.PNG",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@06.PNG",
+        "import_path": "06.PNG",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "06-PNG.jpg",
+            null
+        ]
+    },
+    "07.PNG": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "07.PNG",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "07.PNG",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@07.PNG",
+        "import_path": "07.PNG",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "07-PNG.jpg",
+            null
+        ]
+    },
+    "1_string_slicing.pdf": {
+        "contentType": "application/pdf",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "1_string_slicing.pdf",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "1_string_slicing.pdf",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@1_string_slicing.pdf",
+        "import_path": "1_string_slicing.pdf",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "2_boolean_expressions.pdf": {
+        "contentType": "application/pdf",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "2_boolean_expressions.pdf",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "2_boolean_expressions.pdf",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@2_boolean_expressions.pdf",
+        "import_path": "2_boolean_expressions.pdf",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "3_control_flow.pdf": {
+        "contentType": "application/pdf",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "3_control_flow.pdf",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "3_control_flow.pdf",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@3_control_flow.pdf",
+        "import_path": "3_control_flow.pdf",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "4_functions_structure.pdf": {
+        "contentType": "application/pdf",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "4_functions_structure.pdf",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "4_functions_structure.pdf",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@4_functions_structure.pdf",
+        "import_path": "4_functions_structure.pdf",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "5_tuples.pdf": {
+        "contentType": "application/pdf",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "5_tuples.pdf",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "5_tuples.pdf",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@5_tuples.pdf",
+        "import_path": "5_tuples.pdf",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "6001x_Notebook.ipynb": {
+        "contentType": "application/octet-stream",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "6001x_Notebook.ipynb",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "6001x_Notebook.ipynb",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@6001x_Notebook.ipynb",
+        "import_path": "6001x_Notebook.ipynb",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "6001x_additional_resources.pdf": {
+        "contentType": "application/pdf",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "6001x_additional_resources.pdf",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "6001x_additional_resources.pdf",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@6001x_additional_resources.pdf",
+        "import_path": "6001x_additional_resources.pdf",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "6001x_collaboration_guidelines.pdf": {
+        "contentType": "application/pdf",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "6001x_collaboration_guidelines.pdf",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "6001x_collaboration_guidelines.pdf",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017_2+type@asset+block@6001x_collaboration_guidelines.pdf",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "6001x_course_philosophy.pdf": {
+        "contentType": "application/pdf",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "6001x_course_philosophy.pdf",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "6001x_course_philosophy.pdf",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@6001x_course_philosophy.pdf",
+        "import_path": "6001x_course_philosophy.pdf",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "6001x_cta.pdf": {
+        "contentType": "application/pdf",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "6001x_cta.pdf",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "6001x_cta.pdf",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@6001x_cta.pdf",
+        "import_path": "6001x_cta.pdf",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "6001x_forum_guidelines.pdf": {
+        "contentType": "application/pdf",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "6001x_forum_guidelines.pdf",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "6001x_forum_guidelines.pdf",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@6001x_forum_guidelines.pdf",
+        "import_path": "6001x_forum_guidelines.pdf",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "6001x_syllabus.pdf": {
+        "contentType": "application/pdf",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "6001x_syllabus.pdf",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "6001x_syllabus.pdf",
+        "filename": "asset-v1:MITx+6.00.1x+2T2021+type@asset+block@6001x_syllabus.pdf",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "6_bisection_search.pdf": {
+        "contentType": "application/pdf",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "6_bisection_search.pdf",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "6_bisection_search.pdf",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@6_bisection_search.pdf",
+        "import_path": "6_bisection_search.pdf",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "7_oop.pdf": {
+        "contentType": "application/pdf",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "7_oop.pdf",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "7_oop.pdf",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@7_oop.pdf",
+        "import_path": "7_oop.pdf",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "JupyterNotebookTutorial.pdf": {
+        "contentType": "application/pdf",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "JupyterNotebookTutorial.pdf",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "JupyterNotebookTutorial.pdf",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@JupyterNotebookTutorial.pdf",
+        "import_path": "JupyterNotebookTutorial.pdf",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "L379.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "L379.png",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "L379.png",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@L379.png",
+        "import_path": "L379.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "L379-png.jpg",
+            null
+        ]
+    },
+    "Lecture1.zip": {
+        "contentType": "application/zip",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "Lecture1.zip",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "Lecture1.zip",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture1.zip",
+        "import_path": "Lecture1.zip",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "Lecture10.zip": {
+        "contentType": "application/zip",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "Lecture10.zip",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "Lecture10.zip",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture10.zip",
+        "import_path": "Lecture10.zip",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "Lecture11.zip": {
+        "contentType": "application/zip",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "Lecture11.zip",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "Lecture11.zip",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture11.zip",
+        "import_path": "Lecture11.zip",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "Lecture12.zip": {
+        "contentType": "application/zip",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "Lecture12.zip",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "Lecture12.zip",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture12.zip",
+        "import_path": "Lecture12.zip",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "Lecture13.zip": {
+        "contentType": "application/zip",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "Lecture13.zip",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "Lecture13.zip",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture13.zip",
+        "import_path": "Lecture13.zip",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "Lecture2.zip": {
+        "contentType": "application/zip",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "Lecture2.zip",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "Lecture2.zip",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture2.zip",
+        "import_path": "Lecture2.zip",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "Lecture3.zip": {
+        "contentType": "application/zip",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "Lecture3.zip",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "Lecture3.zip",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture3.zip",
+        "import_path": "Lecture3.zip",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "Lecture4.zip": {
+        "contentType": "application/zip",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "Lecture4.zip",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "Lecture4.zip",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture4.zip",
+        "import_path": "Lecture4.zip",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "Lecture5.zip": {
+        "contentType": "application/zip",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "Lecture5.zip",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "Lecture5.zip",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture5.zip",
+        "import_path": "Lecture5.zip",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "Lecture6.zip": {
+        "contentType": "application/zip",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "Lecture6.zip",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "Lecture6.zip",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture6.zip",
+        "import_path": "Lecture6.zip",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "Lecture7.zip": {
+        "contentType": "application/zip",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "Lecture7.zip",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "Lecture7.zip",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture7.zip",
+        "import_path": "Lecture7.zip",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "Lecture8.zip": {
+        "contentType": "application/zip",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "Lecture8.zip",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "Lecture8.zip",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture8.zip",
+        "import_path": "Lecture8.zip",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "Lecture9.zip": {
+        "contentType": "application/zip",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "Lecture9.zip",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "Lecture9.zip",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture9.zip",
+        "import_path": "Lecture9.zip",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "ProblemSet4.zip": {
+        "contentType": "application/zip",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "ProblemSet4.zip",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "ProblemSet4.zip",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@ProblemSet4.zip",
+        "import_path": "ProblemSet4.zip",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "Uncover4.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "Uncover4.png",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "Uncover4.png",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Uncover4.png",
+        "import_path": "Uncover4.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "Uncover4-png.jpg",
+            null
+        ]
+    },
+    "WhyPseudocode.pdf": {
+        "contentType": "application/pdf",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "WhyPseudocode.pdf",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "WhyPseudocode.pdf",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@WhyPseudocode.pdf",
+        "import_path": "WhyPseudocode.pdf",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "bisection_prepost.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "bisection_prepost.png",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "bisection_prepost.png",
+        "filename": "asset-v1:MITx+6.00.1x+2T2019a+type@asset+block@bisection_prepost.png",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "bisection_prepost-png.jpg",
+            null
+        ]
+    },
+    "certificate640.jpg": {
+        "contentType": "image/jpeg",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "certificate640.jpg",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "certificate640.jpg",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@certificate640.jpg",
+        "import_path": "certificate640.jpg",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "certificate640.jpg",
+            null
+        ]
+    },
+    "course_image.jpg": {
+        "contentType": "image/jpeg",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "course_image.jpg",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "course_image.jpg",
+        "filename": "asset-v1:MITx+6.00.1x+2T2021+type@asset+block@course_image.jpg",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "course_image.jpg",
+            null
+        ]
+    },
+    "error.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "error.png",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "error.png",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@error.png",
+        "import_path": "error.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "error-png.jpg",
+            null
+        ]
+    },
+    "ex_01.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "ex_01.png",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "ex_01.png",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@ex_01.png",
+        "import_path": "ex_01.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "ex_01-png.jpg",
+            null
+        ]
+    },
+    "ex_02.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "ex_02.png",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "ex_02.png",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@ex_02.png",
+        "import_path": "ex_02.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "ex_02-png.jpg",
+            null
+        ]
+    },
+    "ex_03.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "ex_03.png",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "ex_03.png",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@ex_03.png",
+        "import_path": "ex_03.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "ex_03-png.jpg",
+            null
+        ]
+    },
+    "ex_04.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "ex_04.png",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "ex_04.png",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@ex_04.png",
+        "import_path": "ex_04.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "ex_04-png.jpg",
+            null
+        ]
+    },
+    "ex_05.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "ex_05.png",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "ex_05.png",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@ex_05.png",
+        "import_path": "ex_05.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "ex_05-png.jpg",
+            null
+        ]
+    },
+    "finger_exercises_L8_ogrowth.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "finger_exercises_L8_ogrowth.png",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "finger_exercises_L8_ogrowth.png",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@finger_exercises_L8_ogrowth.png",
+        "import_path": "finger_exercises_L8_ogrowth.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "finger_exercises_L8_ogrowth-png.jpg",
+            null
+        ]
+    },
+    "finger_exercises_hand.py": {
+        "contentType": "text/plain",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "finger_exercises_hand.py",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "finger_exercises_hand.py",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@finger_exercises_hand.py",
+        "import_path": "finger_exercises_hand.py",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "full_output.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "full_output.png",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "full_output.png",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@full_output.png",
+        "import_path": "full_output.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "full_output-png.jpg",
+            null
+        ]
+    },
+    "getstarted1.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "getstarted1.png",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "getstarted1.png",
+        "filename": "asset-v1:MITx+6.00.1x+2T2018+type@asset+block@getstarted1.png",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "getstarted1-png.jpg",
+            null
+        ]
+    },
+    "getstarted2.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "getstarted2.png",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "getstarted2.png",
+        "filename": "asset-v1:MITx+6.00.1x+2T2018+type@asset+block@getstarted2.png",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "getstarted2-png.jpg",
+            null
+        ]
+    },
+    "grimson_transparent.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "grimson_transparent.png",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "grimson_transparent.png",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@grimson_transparent.png",
+        "import_path": "grimson_transparent.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "grimson_transparent-png.jpg",
+            null
+        ]
+    },
+    "guttag_transparent.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "guttag_transparent.png",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "guttag_transparent.png",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@guttag_transparent.png",
+        "import_path": "guttag_transparent.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "guttag_transparent-png.jpg",
+            null
+        ]
+    },
+    "hand.py": {
+        "contentType": "application/octet-stream",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "hand.py",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "hand.py",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@hand.py",
+        "import_path": "hand.py",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "handouts_Big_O.pdf": {
+        "contentType": "application/pdf",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "handouts_Big_O.pdf",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "handouts_Big_O.pdf",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@handouts_Big_O.pdf",
+        "import_path": "handouts_Big_O.pdf",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "infinite.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "infinite.png",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "infinite.png",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@infinite.png",
+        "import_path": "infinite.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "infinite-png.jpg",
+            null
+        ]
+    },
+    "install_3x5.PNG": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "install_3x5.PNG",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "install_3x5.PNG",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@install_3x5.PNG",
+        "import_path": "install_3x5.PNG",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "install_3x5-PNG.jpg",
+            null
+        ]
+    },
+    "install_anaconda.PNG": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "install_anaconda.PNG",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "install_anaconda.PNG",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@install_anaconda.PNG",
+        "import_path": "install_anaconda.PNG",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "install_anaconda-PNG.jpg",
+            null
+        ]
+    },
+    "install_folder.PNG": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "install_folder.PNG",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "install_folder.PNG",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@install_folder.PNG",
+        "import_path": "install_folder.PNG",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "install_folder-PNG.jpg",
+            null
+        ]
+    },
+    "install_hello.PNG": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "install_hello.PNG",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "install_hello.PNG",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@install_hello.PNG",
+        "import_path": "install_hello.PNG",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "install_hello-PNG.jpg",
+            null
+        ]
+    },
+    "install_launcher.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "install_launcher.png",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "install_launcher.png",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@install_launcher.png",
+        "import_path": "install_launcher.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "install_launcher-png.jpg",
+            null
+        ]
+    },
+    "install_lin.PNG": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "install_lin.PNG",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "install_lin.PNG",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@install_lin.PNG",
+        "import_path": "install_lin.PNG",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "install_lin-PNG.jpg",
+            null
+        ]
+    },
+    "install_mac.PNG": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "install_mac.PNG",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "install_mac.PNG",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@install_mac.PNG",
+        "import_path": "install_mac.PNG",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "install_mac-PNG.jpg",
+            null
+        ]
+    },
+    "install_out.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "install_out.png",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "install_out.png",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@install_out.png",
+        "import_path": "install_out.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "install_out-png.jpg",
+            null
+        ]
+    },
+    "install_path.PNG": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "install_path.PNG",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "install_path.PNG",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@install_path.PNG",
+        "import_path": "install_path.PNG",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "install_path-PNG.jpg",
+            null
+        ]
+    },
+    "install_pylab.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "install_pylab.png",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "install_pylab.png",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@install_pylab.png",
+        "import_path": "install_pylab.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "install_pylab-png.jpg",
+            null
+        ]
+    },
+    "install_save.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "install_save.png",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "install_save.png",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@install_save.png",
+        "import_path": "install_save.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "install_save-png.jpg",
+            null
+        ]
+    },
+    "install_spyder.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "install_spyder.png",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "install_spyder.png",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@install_spyder.png",
+        "import_path": "install_spyder.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "install_spyder-png.jpg",
+            null
+        ]
+    },
+    "install_win.PNG": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "install_win.PNG",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "install_win.PNG",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@install_win.PNG",
+        "import_path": "install_win.PNG",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "install_win-PNG.jpg",
+            null
+        ]
+    },
+    "installers.PNG": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "installers.PNG",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "installers.PNG",
+        "filename": "asset-v1:MITx+6.00.1x+1T2021+type@asset+block@installers.PNG",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "installers-PNG.jpg",
+            null
+        ]
+    },
+    "krishna-signature-transparent__5_.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "krishna-signature-transparent__5_.png",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "krishna-signature-transparent (5).png",
+        "filename": "asset-v1:MITx+6.00.1x+2T2018+type@asset+block@krishna-signature-transparent__5_.png",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "krishna-signature-transparent__5_-png.jpg",
+            null
+        ]
+    },
+    "lec14_wrapup.pdf": {
+        "contentType": "application/pdf",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "lec14_wrapup.pdf",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "lec14_wrapup.pdf",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@lec14_wrapup.pdf",
+        "import_path": "lec14_wrapup.pdf",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "mementopython3-english.pdf": {
+        "contentType": "application/pdf",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "mementopython3-english.pdf",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "mementopython3-english.pdf",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@mementopython3-english.pdf",
+        "import_path": "mementopython3-english.pdf",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "ps3_hangman.py": {
+        "contentType": "application/octet-stream",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "ps3_hangman.py",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "ps3_hangman.py",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@ps3_hangman.py",
+        "import_path": "ps3_hangman.py",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "ps6.zip": {
+        "contentType": "application/zip",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "ps6.zip",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "ps6.zip",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@ps6.zip",
+        "import_path": "ps6.zip",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "python35cheatsheet.pdf": {
+        "contentType": "application/pdf",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "python35cheatsheet.pdf",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "python35cheatsheet.pdf",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@python35cheatsheet.pdf",
+        "import_path": "python35cheatsheet.pdf",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "queue.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "queue.png",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "queue.png",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@queue.png",
+        "import_path": "queue.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "queue-png.jpg",
+            null
+        ]
+    },
+    "sarma_transparent.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "sarma_transparent.png",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "sarma_transparent.png",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@sarma_transparent.png",
+        "import_path": "sarma_transparent.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "MITx",
+            "6.00.1x",
+            "thumbnail",
+            "sarma_transparent-png.jpg",
+            null
+        ]
+    },
+    "subs_08V2ukhKe1k.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_08V2ukhKe1k.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_08V2ukhKe1k.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_08V2ukhKe1k.srt.sjson",
+        "import_path": "subs_08V2ukhKe1k.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_1wx8C0vqhCw.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_1wx8C0vqhCw.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_1wx8C0vqhCw.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_1wx8C0vqhCw.srt.sjson",
+        "import_path": "subs_1wx8C0vqhCw.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_22WtQAUFvtM.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_22WtQAUFvtM.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_22WtQAUFvtM.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_22WtQAUFvtM.srt.sjson",
+        "import_path": "subs_22WtQAUFvtM.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_23btiMw7SqY.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_23btiMw7SqY.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_23btiMw7SqY.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_23btiMw7SqY.srt.sjson",
+        "import_path": "subs_23btiMw7SqY.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_2Dy-JQZwz5A.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_2Dy-JQZwz5A.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_2Dy-JQZwz5A.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017_2+type@asset+block@subs_2Dy-JQZwz5A.srt.sjson",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_2SRXg8Or-Pc.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_2SRXg8Or-Pc.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_2SRXg8Or-Pc.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_2SRXg8Or-Pc.srt.sjson",
+        "import_path": "subs_2SRXg8Or-Pc.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_2m23hcYoo5w.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_2m23hcYoo5w.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_2m23hcYoo5w.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_2m23hcYoo5w.srt.sjson",
+        "import_path": "subs_2m23hcYoo5w.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_4MbDZho3pIY.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_4MbDZho3pIY.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_4MbDZho3pIY.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_4MbDZho3pIY.srt.sjson",
+        "import_path": "subs_4MbDZho3pIY.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_56-SJIONewc.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_56-SJIONewc.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_56-SJIONewc.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_56-SJIONewc.srt.sjson",
+        "import_path": "subs_56-SJIONewc.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_5hZZX6A2HI0.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_5hZZX6A2HI0.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_5hZZX6A2HI0.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_5hZZX6A2HI0.srt.sjson",
+        "import_path": "subs_5hZZX6A2HI0.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_61Z9-RP04xk.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_61Z9-RP04xk.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_61Z9-RP04xk.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_61Z9-RP04xk.srt.sjson",
+        "import_path": "subs_61Z9-RP04xk.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_6CbZiKX5mRw.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_6CbZiKX5mRw.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_6CbZiKX5mRw.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017_2+type@asset+block@subs_6CbZiKX5mRw.srt.sjson",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_6h4CzRPuTIc.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_6h4CzRPuTIc.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_6h4CzRPuTIc.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_6h4CzRPuTIc.srt.sjson",
+        "import_path": "subs_6h4CzRPuTIc.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_6wMNPuoudrA.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_6wMNPuoudrA.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_6wMNPuoudrA.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_6wMNPuoudrA.srt.sjson",
+        "import_path": "subs_6wMNPuoudrA.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_7-8dQnky4to.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_7-8dQnky4to.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_7-8dQnky4to.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_7-8dQnky4to.srt.sjson",
+        "import_path": "subs_7-8dQnky4to.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_72pcR7C9vdo.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_72pcR7C9vdo.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_72pcR7C9vdo.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_72pcR7C9vdo.srt.sjson",
+        "import_path": "subs_72pcR7C9vdo.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_8MU6b1Y9XoM.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_8MU6b1Y9XoM.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_8MU6b1Y9XoM.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_8MU6b1Y9XoM.srt.sjson",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_8vr3nyg5QcM.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_8vr3nyg5QcM.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_8vr3nyg5QcM.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_8vr3nyg5QcM.srt.sjson",
+        "import_path": "subs_8vr3nyg5QcM.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_9oYFH4OmYDY.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_9oYFH4OmYDY.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_9oYFH4OmYDY.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_9oYFH4OmYDY.srt.sjson",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_AmRlnKiF6q0.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_AmRlnKiF6q0.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_AmRlnKiF6q0.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_AmRlnKiF6q0.srt.sjson",
+        "import_path": "subs_AmRlnKiF6q0.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_BLWn90kEYMk.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_BLWn90kEYMk.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_BLWn90kEYMk.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_BLWn90kEYMk.srt.sjson",
+        "import_path": "subs_BLWn90kEYMk.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_BqrRaoS3U0A.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_BqrRaoS3U0A.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_BqrRaoS3U0A.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_BqrRaoS3U0A.srt.sjson",
+        "import_path": "subs_BqrRaoS3U0A.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_CcdevFqBsaM.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_CcdevFqBsaM.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_CcdevFqBsaM.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_CcdevFqBsaM.srt.sjson",
+        "import_path": "subs_CcdevFqBsaM.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_Ck8Z7ZRNsO8.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_Ck8Z7ZRNsO8.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_Ck8Z7ZRNsO8.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_Ck8Z7ZRNsO8.srt.sjson",
+        "import_path": "subs_Ck8Z7ZRNsO8.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_CsLr93VJ2HA.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_CsLr93VJ2HA.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_CsLr93VJ2HA.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_CsLr93VJ2HA.srt.sjson",
+        "import_path": "subs_CsLr93VJ2HA.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_CwZyWaap5Z8.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_CwZyWaap5Z8.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_CwZyWaap5Z8.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_CwZyWaap5Z8.srt.sjson",
+        "import_path": "subs_CwZyWaap5Z8.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_DI61Lh6wiuk.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_DI61Lh6wiuk.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_DI61Lh6wiuk.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_DI61Lh6wiuk.srt.sjson",
+        "import_path": "subs_DI61Lh6wiuk.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_Edeb8ues1cA.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_Edeb8ues1cA.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_Edeb8ues1cA.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_Edeb8ues1cA.srt.sjson",
+        "import_path": "subs_Edeb8ues1cA.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_F2fF_PdfTcU.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_F2fF_PdfTcU.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_F2fF_PdfTcU.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_F2fF_PdfTcU.srt.sjson",
+        "import_path": "subs_F2fF_PdfTcU.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_GVTYhfaPdfo.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_GVTYhfaPdfo.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_GVTYhfaPdfo.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_GVTYhfaPdfo.srt.sjson",
+        "import_path": "subs_GVTYhfaPdfo.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_Gur2OUe8Was.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_Gur2OUe8Was.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_Gur2OUe8Was.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_Gur2OUe8Was.srt.sjson",
+        "import_path": "subs_Gur2OUe8Was.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_IxKLyEa4DsI.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_IxKLyEa4DsI.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_IxKLyEa4DsI.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_IxKLyEa4DsI.srt.sjson",
+        "import_path": "subs_IxKLyEa4DsI.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_K05AI_VEiqI.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_K05AI_VEiqI.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_K05AI_VEiqI.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_K05AI_VEiqI.srt.sjson",
+        "import_path": "subs_K05AI_VEiqI.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_KI_Wa8DA4_Y.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_KI_Wa8DA4_Y.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_KI_Wa8DA4_Y.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_KI_Wa8DA4_Y.srt.sjson",
+        "import_path": "subs_KI_Wa8DA4_Y.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L10_S1.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L10_S1.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L10_S1.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L10_S1.srt.sjson",
+        "import_path": "subs_L10_S1.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L10_S2.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L10_S2.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L10_S2.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L10_S2.srt.sjson",
+        "import_path": "subs_L10_S2.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L10_S3.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L10_S3.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L10_S3.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L10_S3.srt.sjson",
+        "import_path": "subs_L10_S3.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L10_S4.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L10_S4.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L10_S4.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L10_S4.srt.sjson",
+        "import_path": "subs_L10_S4.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L10_S5.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L10_S5.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L10_S5.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L10_S5.srt.sjson",
+        "import_path": "subs_L10_S5.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L10_S6.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L10_S6.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L10_S6.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L10_S6.srt.sjson",
+        "import_path": "subs_L10_S6.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L11_S1.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L11_S1.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L11_S1.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L11_S1.srt.sjson",
+        "import_path": "subs_L11_S1.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L11_S2.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L11_S2.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L11_S2.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L11_S2.srt.sjson",
+        "import_path": "subs_L11_S2.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L11_S3.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L11_S3.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L11_S3.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L11_S3.srt.sjson",
+        "import_path": "subs_L11_S3.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L11_S4.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L11_S4.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L11_S4.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L11_S4.srt.sjson",
+        "import_path": "subs_L11_S4.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L11_S5.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L11_S5.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L11_S5.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L11_S5.srt.sjson",
+        "import_path": "subs_L11_S5.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L11_S6.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L11_S6.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L11_S6.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L11_S6.srt.sjson",
+        "import_path": "subs_L11_S6.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L12_S1.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L12_S1.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L12_S1.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L12_S1.srt.sjson",
+        "import_path": "subs_L12_S1.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L12_S2.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L12_S2.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L12_S2.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L12_S2.srt.sjson",
+        "import_path": "subs_L12_S2.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L12_S3.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L12_S3.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L12_S3.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L12_S3.srt.sjson",
+        "import_path": "subs_L12_S3.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L12_S4.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L12_S4.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L12_S4.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L12_S4.srt.sjson",
+        "import_path": "subs_L12_S4.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L12_S5.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L12_S5.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L12_S5.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L12_S5.srt.sjson",
+        "import_path": "subs_L12_S5.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L12_S6.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L12_S6.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L12_S6.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L12_S6.srt.sjson",
+        "import_path": "subs_L12_S6.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L13_S1.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L13_S1.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L13_S1.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L13_S1.srt.sjson",
+        "import_path": "subs_L13_S1.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L13_S2.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L13_S2.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L13_S2.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L13_S2.srt.sjson",
+        "import_path": "subs_L13_S2.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L13_S3.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L13_S3.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L13_S3.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L13_S3.srt.sjson",
+        "import_path": "subs_L13_S3.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L13_S4.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L13_S4.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L13_S4.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L13_S4.srt.sjson",
+        "import_path": "subs_L13_S4.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L13_S5.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L13_S5.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L13_S5.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L13_S5.srt.sjson",
+        "import_path": "subs_L13_S5.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L13_S6.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L13_S6.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L13_S6.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L13_S6.srt.sjson",
+        "import_path": "subs_L13_S6.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L14_S1.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L14_S1.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L14_S1.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L14_S1.srt.sjson",
+        "import_path": "subs_L14_S1.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L1_S1.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L1_S1.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L1_S1.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L1_S1.srt.sjson",
+        "import_path": "subs_L1_S1.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L1_S2.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L1_S2.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L1_S2.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L1_S2.srt.sjson",
+        "import_path": "subs_L1_S2.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L1_S3.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L1_S3.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L1_S3.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L1_S3.srt.sjson",
+        "import_path": "subs_L1_S3.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L1_S4.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L1_S4.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L1_S4.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L1_S4.srt.sjson",
+        "import_path": "subs_L1_S4.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L1_S5.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L1_S5.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L1_S5.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L1_S5.srt.sjson",
+        "import_path": "subs_L1_S5.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L1_S6.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L1_S6.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L1_S6.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L1_S6.srt.sjson",
+        "import_path": "subs_L1_S6.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L1_S7.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L1_S7.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L1_S7.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L1_S7.srt.sjson",
+        "import_path": "subs_L1_S7.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L2_S1.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L2_S1.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L2_S1.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L2_S1.srt.sjson",
+        "import_path": "subs_L2_S1.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L2_S2.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L2_S2.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L2_S2.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L2_S2.srt.sjson",
+        "import_path": "subs_L2_S2.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L2_S3.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L2_S3.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L2_S3.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L2_S3.srt.sjson",
+        "import_path": "subs_L2_S3.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L2_S4.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L2_S4.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L2_S4.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L2_S4.srt.sjson",
+        "import_path": "subs_L2_S4.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L2_S5.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L2_S5.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L2_S5.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L2_S5.srt.sjson",
+        "import_path": "subs_L2_S5.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L2_S6.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L2_S6.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L2_S6.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L2_S6.srt.sjson",
+        "import_path": "subs_L2_S6.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L2_S7.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L2_S7.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L2_S7.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L2_S7.srt.sjson",
+        "import_path": "subs_L2_S7.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L3_S1.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L3_S1.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L3_S1.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L3_S1.srt.sjson",
+        "import_path": "subs_L3_S1.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L3_S2.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L3_S2.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L3_S2.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L3_S2.srt.sjson",
+        "import_path": "subs_L3_S2.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L3_S3.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L3_S3.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L3_S3.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L3_S3.srt.sjson",
+        "import_path": "subs_L3_S3.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L3_S4.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L3_S4.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L3_S4.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L3_S4.srt.sjson",
+        "import_path": "subs_L3_S4.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L3_S5.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L3_S5.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L3_S5.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L3_S5.srt.sjson",
+        "import_path": "subs_L3_S5.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L4_S1.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L4_S1.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L4_S1.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L4_S1.srt.sjson",
+        "import_path": "subs_L4_S1.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L4_S10.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L4_S10.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L4_S10.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L4_S10.srt.sjson",
+        "import_path": "subs_L4_S10.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L4_S11.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L4_S11.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L4_S11.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L4_S11.srt.sjson",
+        "import_path": "subs_L4_S11.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L4_S2.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L4_S2.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L4_S2.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L4_S2.srt.sjson",
+        "import_path": "subs_L4_S2.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L4_S3.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L4_S3.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L4_S3.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L4_S3.srt.sjson",
+        "import_path": "subs_L4_S3.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L4_S4.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L4_S4.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L4_S4.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L4_S4.srt.sjson",
+        "import_path": "subs_L4_S4.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L4_S5.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L4_S5.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L4_S5.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L4_S5.srt.sjson",
+        "import_path": "subs_L4_S5.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L4_S6.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L4_S6.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L4_S6.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L4_S6.srt.sjson",
+        "import_path": "subs_L4_S6.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L4_S7.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L4_S7.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L4_S7.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L4_S7.srt.sjson",
+        "import_path": "subs_L4_S7.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L4_S8.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L4_S8.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L4_S8.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L4_S8.srt.sjson",
+        "import_path": "subs_L4_S8.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L4_S9.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L4_S9.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L4_S9.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L4_S9.srt.sjson",
+        "import_path": "subs_L4_S9.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L5_S1.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L5_S1.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L5_S1.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L5_S1.srt.sjson",
+        "import_path": "subs_L5_S1.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L5_S2.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L5_S2.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L5_S2.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L5_S2.srt.sjson",
+        "import_path": "subs_L5_S2.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L5_S3.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L5_S3.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L5_S3.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L5_S3.srt.sjson",
+        "import_path": "subs_L5_S3.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L5_S4.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L5_S4.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L5_S4.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L5_S4.srt.sjson",
+        "import_path": "subs_L5_S4.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L6_S1.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L6_S1.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L6_S1.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L6_S1.srt.sjson",
+        "import_path": "subs_L6_S1.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L6_S2.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L6_S2.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L6_S2.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L6_S2.srt.sjson",
+        "import_path": "subs_L6_S2.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L6_S3.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L6_S3.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L6_S3.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L6_S3.srt.sjson",
+        "import_path": "subs_L6_S3.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L6_S4.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L6_S4.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L6_S4.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L6_S4.srt.sjson",
+        "import_path": "subs_L6_S4.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L6_S5.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L6_S5.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L6_S5.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L6_S5.srt.sjson",
+        "import_path": "subs_L6_S5.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L6_S6.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L6_S6.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L6_S6.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L6_S6.srt.sjson",
+        "import_path": "subs_L6_S6.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L7_S1.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L7_S1.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L7_S1.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L7_S1.srt.sjson",
+        "import_path": "subs_L7_S1.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L7_S2.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L7_S2.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L7_S2.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L7_S2.srt.sjson",
+        "import_path": "subs_L7_S2.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L7_S3.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L7_S3.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L7_S3.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L7_S3.srt.sjson",
+        "import_path": "subs_L7_S3.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L7_S4.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L7_S4.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L7_S4.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L7_S4.srt.sjson",
+        "import_path": "subs_L7_S4.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L7_S5.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L7_S5.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L7_S5.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L7_S5.srt.sjson",
+        "import_path": "subs_L7_S5.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L8_S1.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L8_S1.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L8_S1.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L8_S1.srt.sjson",
+        "import_path": "subs_L8_S1.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L8_S2.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L8_S2.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L8_S2.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L8_S2.srt.sjson",
+        "import_path": "subs_L8_S2.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L8_S3.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L8_S3.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L8_S3.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L8_S3.srt.sjson",
+        "import_path": "subs_L8_S3.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L8_S4.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L8_S4.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L8_S4.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L8_S4.srt.sjson",
+        "import_path": "subs_L8_S4.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L9_S1.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L9_S1.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L9_S1.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L9_S1.srt.sjson",
+        "import_path": "subs_L9_S1.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L9_S2.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L9_S2.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L9_S2.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L9_S2.srt.sjson",
+        "import_path": "subs_L9_S2.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L9_S3.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L9_S3.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L9_S3.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L9_S3.srt.sjson",
+        "import_path": "subs_L9_S3.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L9_S4.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L9_S4.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L9_S4.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L9_S4.srt.sjson",
+        "import_path": "subs_L9_S4.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L9_S5.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L9_S5.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L9_S5.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L9_S5.srt.sjson",
+        "import_path": "subs_L9_S5.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L9_S6.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L9_S6.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L9_S6.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L9_S6.srt.sjson",
+        "import_path": "subs_L9_S6.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_L9_S7.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_L9_S7.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_L9_S7.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_L9_S7.srt.sjson",
+        "import_path": "subs_L9_S7.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_LUT2T3lI-xM.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_LUT2T3lI-xM.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_LUT2T3lI-xM.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_LUT2T3lI-xM.srt.sjson",
+        "import_path": "subs_LUT2T3lI-xM.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_LnnEPJebkbU.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_LnnEPJebkbU.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_LnnEPJebkbU.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_LnnEPJebkbU.srt.sjson",
+        "import_path": "subs_LnnEPJebkbU.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_LoavRsbDSeQ.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_LoavRsbDSeQ.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_LoavRsbDSeQ.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_LoavRsbDSeQ.srt.sjson",
+        "import_path": "subs_LoavRsbDSeQ.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_McknXS66wnw.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_McknXS66wnw.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_McknXS66wnw.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_McknXS66wnw.srt.sjson",
+        "import_path": "subs_McknXS66wnw.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_MjTmGAJCviA.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_MjTmGAJCviA.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_MjTmGAJCviA.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_MjTmGAJCviA.srt.sjson",
+        "import_path": "subs_MjTmGAJCviA.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_N1vckuZk9AE.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_N1vckuZk9AE.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_N1vckuZk9AE.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_N1vckuZk9AE.srt.sjson",
+        "import_path": "subs_N1vckuZk9AE.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_PoqZDZeY5LM.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_PoqZDZeY5LM.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_PoqZDZeY5LM.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_PoqZDZeY5LM.srt.sjson",
+        "import_path": "subs_PoqZDZeY5LM.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_RJhZ5SD1AvY.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_RJhZ5SD1AvY.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_RJhZ5SD1AvY.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017_2+type@asset+block@subs_RJhZ5SD1AvY.srt.sjson",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_RJhZ5SD1AvY__1_.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_RJhZ5SD1AvY__1_.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_RJhZ5SD1AvY (1).srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017_2+type@asset+block@subs_RJhZ5SD1AvY__1_.srt.sjson",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_RT_L2UN5Xis.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_RT_L2UN5Xis.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_RT_L2UN5Xis.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_RT_L2UN5Xis.srt.sjson",
+        "import_path": "subs_RT_L2UN5Xis.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_Ra6cPCYdMRw.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_Ra6cPCYdMRw.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_Ra6cPCYdMRw.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_Ra6cPCYdMRw.srt.sjson",
+        "import_path": "subs_Ra6cPCYdMRw.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_UAvednvGZ-8.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_UAvednvGZ-8.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_UAvednvGZ-8.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_UAvednvGZ-8.srt.sjson",
+        "import_path": "subs_UAvednvGZ-8.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_VYX8ia9Q8IY.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_VYX8ia9Q8IY.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_VYX8ia9Q8IY.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_VYX8ia9Q8IY.srt.sjson",
+        "import_path": "subs_VYX8ia9Q8IY.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_Vdmo7r39Jew.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_Vdmo7r39Jew.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_Vdmo7r39Jew.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_Vdmo7r39Jew.srt.sjson",
+        "import_path": "subs_Vdmo7r39Jew.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_Vfw6XoUOOvc.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_Vfw6XoUOOvc.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_Vfw6XoUOOvc.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_Vfw6XoUOOvc.srt.sjson",
+        "import_path": "subs_Vfw6XoUOOvc.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_XIjrEt2lz1U.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_XIjrEt2lz1U.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_XIjrEt2lz1U.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_XIjrEt2lz1U.srt.sjson",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_Xwf4DkNlIPA.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_Xwf4DkNlIPA.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_Xwf4DkNlIPA.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017_2+type@asset+block@subs_Xwf4DkNlIPA.srt.sjson",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_Y4sR0fUq6bY.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_Y4sR0fUq6bY.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_Y4sR0fUq6bY.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_Y4sR0fUq6bY.srt.sjson",
+        "import_path": "subs_Y4sR0fUq6bY.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_Ztoj69Ok4yg.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_Ztoj69Ok4yg.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_Ztoj69Ok4yg.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_Ztoj69Ok4yg.srt.sjson",
+        "import_path": "subs_Ztoj69Ok4yg.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_b86HIT8kBgw.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_b86HIT8kBgw.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_b86HIT8kBgw.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_b86HIT8kBgw.srt.sjson",
+        "import_path": "subs_b86HIT8kBgw.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_bDQB3mH73Rk.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_bDQB3mH73Rk.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_bDQB3mH73Rk.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_bDQB3mH73Rk.srt.sjson",
+        "import_path": "subs_bDQB3mH73Rk.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_cx7m9hDG_OE.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_cx7m9hDG_OE.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_cx7m9hDG_OE.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_cx7m9hDG_OE.srt.sjson",
+        "import_path": "subs_cx7m9hDG_OE.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_dUMS2UZBoiI.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_dUMS2UZBoiI.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_dUMS2UZBoiI.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_dUMS2UZBoiI.srt.sjson",
+        "import_path": "subs_dUMS2UZBoiI.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_eMyWO0tcxKg.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_eMyWO0tcxKg.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_eMyWO0tcxKg.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_eMyWO0tcxKg.srt.sjson",
+        "import_path": "subs_eMyWO0tcxKg.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_elSt5hke-Rs.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_elSt5hke-Rs.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_elSt5hke-Rs.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017_2+type@asset+block@subs_elSt5hke-Rs.srt.sjson",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_gD_xwmuUa7U.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_gD_xwmuUa7U.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_gD_xwmuUa7U.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_gD_xwmuUa7U.srt.sjson",
+        "import_path": "subs_gD_xwmuUa7U.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_gJKQ3eNAxG8.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_gJKQ3eNAxG8.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_gJKQ3eNAxG8.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017_2+type@asset+block@subs_gJKQ3eNAxG8.srt.sjson",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_gkID44RVLkI.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_gkID44RVLkI.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_gkID44RVLkI.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_gkID44RVLkI.srt.sjson",
+        "import_path": "subs_gkID44RVLkI.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_hu3MswxA3EE.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_hu3MswxA3EE.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_hu3MswxA3EE.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_hu3MswxA3EE.srt.sjson",
+        "import_path": "subs_hu3MswxA3EE.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_hwYb27S6GaQ.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_hwYb27S6GaQ.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_hwYb27S6GaQ.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_hwYb27S6GaQ.srt.sjson",
+        "import_path": "subs_hwYb27S6GaQ.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_idRDTAUV8uY.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_idRDTAUV8uY.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_idRDTAUV8uY.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_idRDTAUV8uY.srt.sjson",
+        "import_path": "subs_idRDTAUV8uY.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_mLuVtmm5q_Y.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_mLuVtmm5q_Y.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_mLuVtmm5q_Y.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_mLuVtmm5q_Y.srt.sjson",
+        "import_path": "subs_mLuVtmm5q_Y.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_mWnpI7WzZtA.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_mWnpI7WzZtA.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_mWnpI7WzZtA.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_mWnpI7WzZtA.srt.sjson",
+        "import_path": "subs_mWnpI7WzZtA.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_nQXFr9Ma2lk.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_nQXFr9Ma2lk.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_nQXFr9Ma2lk.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_nQXFr9Ma2lk.srt.sjson",
+        "import_path": "subs_nQXFr9Ma2lk.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_oUG_oONIZDk.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_oUG_oONIZDk.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_oUG_oONIZDk.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_oUG_oONIZDk.srt.sjson",
+        "import_path": "subs_oUG_oONIZDk.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_pheM3rVmGMU.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_pheM3rVmGMU.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_pheM3rVmGMU.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_pheM3rVmGMU.srt.sjson",
+        "import_path": "subs_pheM3rVmGMU.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_q8vrH626RqM.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_q8vrH626RqM.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_q8vrH626RqM.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_q8vrH626RqM.srt.sjson",
+        "import_path": "subs_q8vrH626RqM.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_qeHMgxAItA0.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_qeHMgxAItA0.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_qeHMgxAItA0.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_qeHMgxAItA0.srt.sjson",
+        "import_path": "subs_qeHMgxAItA0.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_rQBho4-bI3o.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_rQBho4-bI3o.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_rQBho4-bI3o.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017_2+type@asset+block@subs_rQBho4-bI3o.srt.sjson",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_sKSZJn0VGHg.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_sKSZJn0VGHg.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_sKSZJn0VGHg.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_sKSZJn0VGHg.srt.sjson",
+        "import_path": "subs_sKSZJn0VGHg.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_tFikSmNOEag.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_tFikSmNOEag.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_tFikSmNOEag.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017_2+type@asset+block@subs_tFikSmNOEag.srt.sjson",
+        "import_path": null,
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_uGGAxqVdETM.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_uGGAxqVdETM.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_uGGAxqVdETM.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_uGGAxqVdETM.srt.sjson",
+        "import_path": "subs_uGGAxqVdETM.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_v4VIbZywCc4.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_v4VIbZywCc4.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_v4VIbZywCc4.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_v4VIbZywCc4.srt.sjson",
+        "import_path": "subs_v4VIbZywCc4.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_vR3q6aW5L28.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_vR3q6aW5L28.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_vR3q6aW5L28.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_vR3q6aW5L28.srt.sjson",
+        "import_path": "subs_vR3q6aW5L28.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_vrs7bZDPolo.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_vrs7bZDPolo.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_vrs7bZDPolo.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_vrs7bZDPolo.srt.sjson",
+        "import_path": "subs_vrs7bZDPolo.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_yOHAzZjUbEE.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_yOHAzZjUbEE.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_yOHAzZjUbEE.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_yOHAzZjUbEE.srt.sjson",
+        "import_path": "subs_yOHAzZjUbEE.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_z2NLjdfxEyQ.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_z2NLjdfxEyQ.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_z2NLjdfxEyQ.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_z2NLjdfxEyQ.srt.sjson",
+        "import_path": "subs_z2NLjdfxEyQ.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "subs_zWv5sFn6Va0.srt.sjson": {
+        "contentType": "application/json",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "subs_zWv5sFn6Va0.srt.sjson",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "subs_zWv5sFn6Va0.srt.sjson",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@subs_zWv5sFn6Va0.srt.sjson",
+        "import_path": "subs_zWv5sFn6Va0.srt.sjson",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "usresident.py": {
+        "contentType": "application/octet-stream",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "usresident.py",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "usresident.py",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@usresident.py",
+        "import_path": "usresident.py",
+        "locked": false,
+        "thumbnail_location": null
+    },
+    "words.txt": {
+        "contentType": "text/plain",
+        "content_son": {
+            "category": "asset",
+            "course": "6.00.1x",
+            "name": "words.txt",
+            "org": "MITx",
+            "revision": null,
+            "run": "2T2021",
+            "tag": "c4x"
+        },
+        "displayname": "words.txt",
+        "filename": "asset-v1:MITx+6.00.1x+2T2017+type@asset+block@words.txt",
+        "import_path": "words.txt",
+        "locked": false,
+        "thumbnail_location": null
+    }
+}

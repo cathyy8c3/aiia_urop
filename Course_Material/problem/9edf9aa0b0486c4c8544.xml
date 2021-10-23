@@ -1,0 +1,31 @@
+<problem>
+  <text>
+    <p>
+      Write a function that satisfies the following docstring:
+
+</p>
+    <pre>def largest_odd_times(L):
+    """ Assumes L is a non-empty list of ints
+        Returns the largest element of L that occurs an odd number 
+        of times in L. If no such element exists, returns None """
+    # Your code here</pre>
+    <p/>
+    <p>For example, if </p>
+    <ul>
+      <li><code>largest_odd_times([2,2,4,4]) </code> returns <code>None</code></li>
+      <li><code>largest_odd_times([3,9,5,3,5,3]) </code> returns <code>9</code></li>
+    </ul>
+      <p>Paste your entire function, including the definition, in the box below. Do not leave any debugging print statements.</p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display># Paste your function here</initial_display>
+      <answer_display>
+      </answer_display>
+      <grader_payload>
+        {"grader": "quiz/60001_s2017/largest_odd_times/grade_largest_odd_times.py", "hide_output": false}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

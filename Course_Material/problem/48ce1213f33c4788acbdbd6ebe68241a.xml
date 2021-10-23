@@ -1,0 +1,114 @@
+<problem display_name="Exercise 4" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 12 minutes</b>
+    </p>
+    <p>Python supports a limited form of multiple inheritance,
+      demonstrated in the following code:</p>
+    <pre>class A(object):
+    def __init__(self):
+        self.a = 1
+    def x(self):
+        print("A.x")
+    def y(self):
+        print("A.y")
+    def z(self):
+        print("A.z")
+
+class B(A):
+    def __init__(self):
+        A.__init__(self)
+        self.a = 2
+        self.b = 3
+    def y(self):
+        print("B.y")
+    def z(self):
+        print("B.z")
+
+class C(object):
+    def __init__(self):
+        self.a = 4
+        self.c = 5
+    def y(self):
+        print("C.y")
+    def z(self):
+        print("C.z")
+
+class D(C, B):
+    def __init__(self):
+        C.__init__(self)
+        B.__init__(self)
+        self.d = 6
+    def z(self):
+        print("D.z")</pre>
+    <p>Which <code>__init__</code> methods are invoked and in which order is determined
+  by the coding of the individual <code>__init__</code> methods.</p>
+    <p>When resolving a reference to an attribute of an object that's an
+  instance of class <code>D</code>, Python first searches the object's instance
+  variables then uses a simple left-to-right, depth first search through
+  the class hierarchy.  In this case that would mean searching the class
+  <code>C</code>, followed the class <code>B</code> and its superclasses (ie,
+  class <code>A</code>, and then any superclasses it may have, et cetera).</p>
+    <p>With the definitions above if we define</p>
+    <pre>obj = D()</pre>
+    <p>then what is printed by each of the following statements?</p>
+    <ol class="enumerate">
+      <li>
+        <code>print(obj.a)</code>
+        <p>
+          <stringresponse answer="2">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <code>print(obj.b)</code>
+        <p>
+          <stringresponse answer="3">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <code>print(obj.c)</code>
+        <p>
+          <stringresponse answer="5">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <code>print(obj.d)</code>
+        <p>
+          <stringresponse answer="6">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <code>obj.x()</code>
+        <p>
+          <stringresponse answer="A.x">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <code>obj.y()</code>
+        <p>
+          <stringresponse answer="C.y">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <code>obj.z()</code>
+        <p>
+          <stringresponse answer="D.z">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+    </ol>
+  </text>
+</problem>

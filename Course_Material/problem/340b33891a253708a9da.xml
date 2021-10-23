@@ -1,0 +1,45 @@
+<problem>
+  <text>
+    <p>
+      You are given a dictionary <code>aDict</code> that maps integer keys to integer values. Write a Python function that returns a <b>list of keys</b> in <code>aDict</code> that map to <b>dictionary values</b> that appear exactly once in <code>aDict</code>. </p>
+    <ul>
+      <li>This function takes in a dictionary and returns a list.</li>
+      <li>Return the list of keys in <b>increasing order</b>.</li>
+      <li>If <code>aDict</code> does not contain any values appearing exactly once, return an empty list.</li>
+      <li>If <code>aDict</code> is empty, return an empty list.</li>
+    </ul>
+    <p>For example:<br/>
+    If <code>aDict = {1: 1, 3: 2, 6: 0, 7: 0, 8: 4, 10: 0}</code> then your function should return <code>[1, 3, 8]</code><br/>
+      If <code>aDict = {1: 1, 2: 1, 3: 1}</code> then your function should return <code>[]</code></p>
+    <pre>def uniqueValues(aDict):
+    '''
+    aDict: a dictionary
+    returns: a sorted list of keys that map to unique aDict values, empty list if none
+    '''
+    # Your code here
+    </pre>
+    <p>Paste your entire function, including the definition, in the box below. Do not leave any debugging print statements.</p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display/>
+      <answer_display>
+def uniqueValues(aDict):
+    counts = {}
+    unique = []
+    for i in aDict.values():
+        counts[i] = 0  
+    for i in aDict.keys():
+        counts[aDict[i]] += 1
+    for i in aDict.keys():
+        if counts[aDict[i]] == 1:
+            unique.append(i)
+    unique.sort()
+    return unique</answer_display>
+      <grader_payload>
+        {"grader": "quiz/60001r_s2015/unique_values/grade_unique_values.py", "hide_output": true}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

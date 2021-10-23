@@ -1,0 +1,9 @@
+<problem display_name="Problem 1-4" markdown="null" max_attempts="1" showanswer="never">
+  <p>A bisection search algorithm always returns the correct answer when searching for an element in a sorted list.</p>
+  <multiplechoiceresponse>
+    <choicegroup label="7" type="MultipleChoice">
+      <choice correct="true">True</choice>
+      <choice correct="false">False</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

@@ -1,0 +1,232 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 12 minutes
+In this problem, we'll examine how 
+  
+indirection
+a = [1, 2, 3, 4, 0]
+b = [3, 0, 2, 4, 1]
+c = [3, 2, 4, 1, 5]
+
+      
+
+        
+ What is the value of the following expressions? If you think there will be an error, 
+    please type in 'error' (without quotes) in the input box.
+
+          
+
+            
+
+              
+a[0]
+
+                
+
+            
+
+              
+b[1]
+
+                
+
+            
+
+              
+a[a[1]]
+
+                
+
+            
+
+              
+b[b[2]]
+
+                
+
+            
+
+              
+a[b[2]]
+
+                
+
+            
+
+              
+c[a[b[3]]]
+
+                
+
+            
+
+              
+a[c[a[b[0]]]]
+
+                
+
+            
+
+              
+a[c[a[b[3]]]]
+
+                
+
+        
+Assume we have defined the following function:
+def foo(L):
+    val = L[0]
+    while (True):
+        val = L[val]
+Which of the following statement(s) will result in an infinite loop?
+
+          
+
+            
+
+              
+
+                
+
+                  
+
+                    
+foo(a)
+
+                
+
+                  
+
+                    
+foo(b)
+
+                
+
+                  
+
+                    
+foo(c)
+
+          
+
+            
+
+              
+
+                
+Explanation:
+The function 
+foo
+val
+L
+L[0]
+val
+L[L[0]]
+L[L[L[0]]]
+Calling 
+foo
+a
+b
+foo(a)
+foo(b)
+foo(c)
+L[5]
+
+        
+Consider the following code:
+num = ???
+L = [5, 0, 2, 4, 6, 3, 1]
+val = 0
+for i in range(0, num):
+    val = L[L[val]]
+
+print(val)
+
+          
+
+            
+What is the smallest value that 
+num
+
+              
+
+                
+
+                  
+
+                    
+
+                      
+0 
+
+                    
+
+                      
+1 
+
+                    
+
+                      
+3
+
+                    
+
+                      
+5 
+
+                    
+
+                      
+Impossible 
+
+            
+Now, we redefine 
+L
+L = [2, 0, 1, 5, 3, 4]
+What is the smallest value that 
+num
+
+              
+
+                
+
+                  
+
+                    
+
+                      
+0 
+
+                    
+
+                      
+3
+
+                    
+
+                      
+5 
+
+                    
+
+                      
+Impossible 
+
+          
+
+            
+
+              
+
+                
+Explanation:
+When 
+L = [5, 0, 2, 4, 6, 3, 1]
+num = 1
+When 
+L = [2, 0, 1, 5, 3, 4]
+val = 0

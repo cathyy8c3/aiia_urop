@@ -1,0 +1,108 @@
+<problem display_name="Exercises 1" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 4 minutes</b>
+      <br/>
+      <b>      Note that you will have to answer all questions before you can click the Check button.</b>
+    </p>
+    <ol>
+      <li>
+        <p>What is the difference between an Algorithm and a Program? </p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="true" name="1">
+                <span>
+                  <text> An algorithm is a conceptual idea, a program is a concrete instantiation of an algorithm.</text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text>An algorithm is limited to mathematical operation, a program can specify all kinds of operations. </text>
+                </span>
+              </choice>
+              <choice correct="false" name="3">
+                <span>
+                  <text>An algorithm makes a slow program run fast. </text>
+                </span>
+              </choice>
+              <choice correct="false" name="4">
+                <span>
+                  <text> An algorithm deals with computer hardware, a program deals with computer software.</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+      </li>
+      <li>
+        <p>True or False? A computational mode of thinking means that everything 
+	  can be viewed as a math problem involving numbers and formulas. </p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="true" name="1">
+                <span>
+                  <text>True</text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text>False</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+      </li>
+      <li>
+        <p>True or False? Computer Science is the study of how to build efficient machines that run programs. </p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="false" name="1">
+                <span>
+                  <text>True</text>
+                </span>
+              </choice>
+              <choice correct="true" name="2">
+                <span>
+                  <text>False</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+      </li>
+      <li>
+        <p>The two things every computer can do are: </p>
+        <p>
+          <choiceresponse>
+            <checkboxgroup direction="vertical">
+              <choice correct="true" name="1">
+                <span>
+                  <text> Perform calculations</text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text> Convert electricity to numbers </text>
+                </span>
+              </choice>
+              <choice correct="false" name="3">
+                <span>
+                  <text> Display results to a screen </text>
+                </span>
+              </choice>
+              <choice correct="true" name="4">
+                <span>
+                  <text> Remember the results</text>
+                </span>
+              </choice>
+            </checkboxgroup>
+          </choiceresponse>
+        </p>
+      </li>
+    </ol>
+  </text>
+</problem>

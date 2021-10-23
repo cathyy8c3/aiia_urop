@@ -1,0 +1,42 @@
+
+  
+
+    
+ESTIMATED TIME TO COMPLETE: 3 minutes
+
+    
+Although Python provides a built-in function for computing the length of a string, 
+      we can write our own. 
+Write an iterative function, 
+lenIter
+
+    
+
+      
+
+def lenIter(aStr):
+    '''
+    aStr: a string
+    
+    returns: int, the length of aStr
+    '''
+    # Your code here
+
+
+def lenIter(aStr):
+    '''
+    aStr: a string
+    
+    returns: int, the length of aStr
+    '''
+    # Initialize a variable to hold our final count
+    count = 0
+
+    # Iterate over each character in the string, counting each one
+    for char in aStr:
+        count += 1
+    return count
+
+
+{"grader": "finger_exercises/L5/lenIter/grade_lenIter.py"}
+

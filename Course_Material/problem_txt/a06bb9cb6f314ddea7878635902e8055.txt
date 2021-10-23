@@ -1,0 +1,13 @@
+
+  
+Consider the statement: 
+L = {'1':1, '2':2, '3':3}
+
+    
+
+      
+L is a list
+L is immutable
+L contains 6 elements
+L has integer keys
+L maps strings to integers

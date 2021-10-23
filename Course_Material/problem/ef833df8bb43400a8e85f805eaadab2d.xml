@@ -1,0 +1,50 @@
+<problem display_name="is vowel with keyword" markdown="null" weight="5.0">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 4 minutes</b>
+    </p>
+    <p>
+Define a function <tt class="tt">isVowel2(char)</tt> that returns True if <tt class="tt">char</tt> is a vowel ('a', 'e', 'i', 'o', or 'u'), and False otherwise. You can assume that <tt class="tt">char</tt> is a single letter of any case (ie, <tt class="tt">'A'</tt> and <tt class="tt">'a'</tt> are both valid). </p>
+    <p>
+This function is similar to the previous problem - but this time, <b class="bf">do</b> use the keyword <tt class="tt">in</tt>. Your function should take in a single string and return a boolean. </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def isVowel2(char):
+    '''
+    char: a single letter of any case
+
+    returns: True if char is a vowel and False otherwise.
+    '''
+    # Your code here
+</initial_display>
+      <answer_display>
+def isVowel2(char):
+    '''
+    char: a single letter of any case
+
+    returns: True if char is a vowel and False otherwise.
+    '''
+    if char in 'aeiouAEIOU':
+        return True
+    else:
+        return False
+
+
+# A shorter solution
+def isVowel2(char):
+    '''
+    char: a single letter of any case
+
+    returns: True if char is a vowel and False otherwise.
+    '''
+    return char.lower() in 'aeiou'
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L4/isVowel2/grade_isVowel2.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

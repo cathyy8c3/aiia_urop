@@ -1,0 +1,74 @@
+<problem display_name="Exercise 5" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 10 minutes</b>
+    </p>
+    <p>
+Enter the value of the expressions below. </p>
+    <p>
+To get the most out of this problem, try to figure out the answers by reading the code, not running it. Run the code only after you've used up a few of your checks. </p>
+    <p><b class="bfseries">Hint:</b> If you are confused, you may find it helpful to draw out an environment diagram similar to what was presented in lecture. </p>
+    <ol class="enumerate">
+      <li>
+        <pre>
+def foo(x, y = 5):
+   def bar(x):
+      return x + 1
+   return bar(y * 2)
+          
+foo(3)
+ </pre>
+        <p>
+          <stringresponse answer="11">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+def foo(x, y = 5):
+   def bar(x):
+      return x + 1
+   return bar(y * 2)
+          
+foo(3, 0)
+ </pre>
+        <p>
+          <stringresponse answer="1">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+def foo (x):
+   def bar (z, x = 0):
+      return z + x
+   return bar(3, x)
+
+foo(2)
+ </pre>
+        <p>
+          <stringresponse answer="5">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+def foo (x):
+   def bar (z, x = 0):
+      return z + x
+   return bar(3)
+
+foo(5)
+ </pre>
+        <p>
+          <stringresponse answer="3">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+    </ol>
+  </text>
+</problem>

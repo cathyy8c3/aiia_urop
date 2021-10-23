@@ -1,0 +1,51 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 10 minutes
+
+For each of the following expressions, select the order of growth class that best describes it from the following list: [mathjaxinline]O(1), O(\log (n)), O(n), O(n\log (n)), O(n^ c)[/mathjaxinline] or [mathjaxinline]O(c^ n)[/mathjaxinline]. 
+
+      
+
+        
+
+[mathjaxinline]5n[/mathjaxinline] 
+
+        
+
+[mathjaxinline]3n^2 + 2n - 100[/mathjaxinline] 
+
+        
+
+[mathjaxinline]10 \log (n) + 5n[/mathjaxinline] 
+
+        
+
+[mathjaxinline]10 \log (n) + 5n^2[/mathjaxinline] 
+
+        
+
+[mathjaxinline]3n^3 - 2000 n^2[/mathjaxinline] 
+
+        
+
+[mathjaxinline]2n^2[/mathjaxinline] 
+
+        
+
+[mathjaxinline]50n + n\log (n)[/mathjaxinline] 
+
+        
+
+[mathjaxinline]1000 + 2000000[/mathjaxinline] 
+
+        
+
+[mathjaxinline]2^ n + n^2[/mathjaxinline] 
+
+        
+
+[mathjaxinline]\log n + 1000[/mathjaxinline] 

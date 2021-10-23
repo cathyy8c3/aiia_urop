@@ -1,0 +1,50 @@
+<problem display_name="Exercise 4" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 6 minutes</b>
+    </p>
+    <p>
+Below is a transcript of a session with the Python shell. Provide the type and value of the expressions being evaluated. If evaluating an expression would cause an error, select NoneType and write 'error' in the box. If the result is a function, select function and write 'function' in the box. </p>
+    <p>
+To get the most out of this problem, try to figure out the answers by reading the code, not running it. Run the code in your interpreter only after you've checked your answers a few times. </p>
+    <p><b class="bfseries">Hint:</b> If you are confused, you may find it helpful to draw out an environment diagram similar to what was presented in lecture. </p>
+    <ol class="enumerate">
+      <li>
+        <pre>
+&gt;&gt;&gt; a = 10
+&gt;&gt;&gt; def f(x):
+      return x + a
+&gt;&gt;&gt; a = 3
+&gt;&gt;&gt; f(1)
+ </pre>
+        <p>
+          <optionresponse>
+            <optioninput options="('NoneType','num','int','float','boolean','function')" correct="int"/>
+          </optionresponse>
+          <stringresponse answer="4">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+&gt;&gt;&gt; x = 12
+&gt;&gt;&gt; def g(x):
+      x = x + 1
+      def h(y):
+          return x + y
+      return h(6)
+&gt;&gt;&gt; g(x)
+ </pre>
+        <p>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function')" correct="int"/>
+          </optionresponse>
+          <stringresponse answer="19">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+    </ol>
+  </text>
+</problem>

@@ -1,0 +1,59 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 5 minutes
+In this problem you'll be given a chance to practice writing some while loops.
+1. Convert the following into code that uses a while loop.
+prints 
+2
+4
+6
+8
+10
+Goodbye!
+
+    
+
+      
+
+# There are many ways to solve this problem! Here is one:
+num = 2
+while num < 11:
+    print(num)
+    num += 2
+print("Goodbye!")
+
+# Here is another:
+num = 2
+while num <= 10:
+    print(num)
+    num += 2
+print("Goodbye!")
+
+# And another:
+num = 0
+while True:
+    num += 2
+    print(num)
+    if num >= 10:
+        print("Goodbye!")
+        break
+
+# And one more:
+num = 1
+while num <= 10:
+    if num % 2 == 0:
+        print(num)
+    num += 1
+print("Goodbye!")
+
+# There are always many, many different ways to solve a programming
+# problem. Here are just four examples and surely there are quite
+# a few more.
+
+
+{"grader": "finger_exercises/L3/while2a/grade_while2a.py"}
+

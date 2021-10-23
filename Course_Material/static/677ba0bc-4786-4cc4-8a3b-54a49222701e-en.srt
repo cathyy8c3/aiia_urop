@@ -1,0 +1,544 @@
+0
+00:00:00,000 --> 00:00:00,500
+...
+
+1
+00:00:00,500 --> 00:00:02,680
+Having the ability to deal with exceptions,
+
+2
+00:00:02,680 --> 00:00:04,760
+to raise our own exceptions, to basically
+
+3
+00:00:04,760 --> 00:00:08,090
+control how we want to deal with unexpected circumstances,
+
+4
+00:00:08,090 --> 00:00:10,750
+really improves our ability to write good code.
+
+5
+00:00:10,750 --> 00:00:13,757
+And it's part of that theme of defensive programming.
+
+6
+00:00:13,757 --> 00:00:16,090
+If you think about it, what I did in those examples was,
+
+7
+00:00:16,090 --> 00:00:19,140
+I thought ahead to things that could occur that might not
+
+8
+00:00:19,140 --> 00:00:21,640
+be what I normally expect and thought about what
+
+9
+00:00:21,640 --> 00:00:23,110
+I wanted to do in that case.
+
+10
+00:00:23,110 --> 00:00:24,760
+So my example of looking at grades
+
+11
+00:00:24,760 --> 00:00:26,810
+was saying, if there are no grades,
+
+12
+00:00:26,810 --> 00:00:28,150
+how do I want to handle that?
+
+13
+00:00:28,150 --> 00:00:30,900
+And plan ahead so that I don't just throw an error,
+
+14
+00:00:30,900 --> 00:00:33,330
+I actually deal with that circumstance.
+
+15
+00:00:33,330 --> 00:00:36,160
+We can take that idea and use one more tool from Python
+
+16
+00:00:36,160 --> 00:00:38,740
+to think about how to do defensive programming
+
+17
+00:00:38,740 --> 00:00:42,710
+to prevent circumstances from leading to unexpected results.
+
+18
+00:00:42,710 --> 00:00:46,350
+And that last idea is something called an assertion.
+
+19
+00:00:46,350 --> 00:00:48,040
+We talked earlier on about saying,
+
+20
+00:00:48,040 --> 00:00:50,180
+when we write good code, we include things
+
+21
+00:00:50,180 --> 00:00:52,220
+like a docstring that says, here's
+
+22
+00:00:52,220 --> 00:00:54,570
+what I assume the inputs are going to look like.
+
+23
+00:00:54,570 --> 00:00:56,570
+And here's the guarantees I'll put on the output
+
+24
+00:00:56,570 --> 00:01:00,480
+if you give me inputs that satisfy those conditions.
+
+25
+00:01:00,480 --> 00:01:02,970
+But we never enforced that contract, if you like.
+
+26
+00:01:02,970 --> 00:01:05,720
+We simply said, document what you're trying to do.
+
+27
+00:01:05,720 --> 00:01:08,640
+We might want to be sure that the assumptions on the state
+
+28
+00:01:08,640 --> 00:01:12,072
+of the computation really are what we expected-- not
+
+29
+00:01:12,072 --> 00:01:14,530
+just for inputs, although that's a standard place to do it,
+
+30
+00:01:14,530 --> 00:01:16,050
+but maybe more generally.
+
+31
+00:01:16,050 --> 00:01:19,010
+And for that, we can use an "assert" statement
+
+32
+00:01:19,010 --> 00:01:21,800
+to raise an error-- an exception, called an assertion
+
+33
+00:01:21,800 --> 00:01:24,880
+error-- if those assumptions are not met.
+
+34
+00:01:24,880 --> 00:01:26,640
+As I said, could be on inputs.
+
+35
+00:01:26,640 --> 00:01:29,987
+It could be in an intermediate state of the program
+
+36
+00:01:29,987 --> 00:01:32,070
+where I want to check that I'm in the right place.
+
+37
+00:01:32,070 --> 00:01:33,970
+I can do an assertion that says, I
+
+38
+00:01:33,970 --> 00:01:37,260
+assert that the following should be true, and if it's not,
+
+39
+00:01:37,260 --> 00:01:38,500
+raise an exception.
+
+40
+00:01:38,500 --> 00:01:42,170
+A nice example of good defensive programming.
+
+41
+00:01:42,170 --> 00:01:45,470
+Here's an example, if I back to my idea of just taking
+
+42
+00:01:45,470 --> 00:01:47,150
+average of grades.
+
+43
+00:01:47,150 --> 00:01:50,650
+I could assert-- using that special keyword "assert"
+
+44
+00:01:50,650 --> 00:01:53,440
+right here-- when I enter average,
+
+45
+00:01:53,440 --> 00:01:55,620
+that I will expect there to be at least
+
+46
+00:01:55,620 --> 00:01:57,160
+some grades in that list.
+
+47
+00:01:57,160 --> 00:02:02,610
+And so I can assert that the length of grades will not be 0.
+
+48
+00:02:02,610 --> 00:02:07,340
+And what that says is, if I give an input to average that
+
+49
+00:02:07,340 --> 00:02:10,030
+has a list of one or more elements,
+
+50
+00:02:10,030 --> 00:02:12,800
+this statement will not be true, because it won't be 0.
+
+51
+00:02:12,800 --> 00:02:13,910
+It'll be bigger than that.
+
+52
+00:02:13,910 --> 00:02:16,800
+And in that case, I'll skip past the "assert" statement
+
+53
+00:02:16,800 --> 00:02:17,770
+and do the right thing.
+
+54
+00:02:17,770 --> 00:02:19,840
+I'm safe to go ahead and do the division.
+
+55
+00:02:19,840 --> 00:02:22,150
+On the other hand, if I accidentally
+
+56
+00:02:22,150 --> 00:02:28,010
+give it an empty list, then, in fact, the length of the grades
+
+57
+00:02:28,010 --> 00:02:28,530
+is 0.
+
+58
+00:02:28,530 --> 00:02:30,570
+The "not" statement is false.
+
+59
+00:02:30,570 --> 00:02:34,960
+And since that is false, assert, then, will stop the execution,
+
+60
+00:02:34,960 --> 00:02:38,050
+throw an assert error-- throw an assert exception
+
+61
+00:02:38,050 --> 00:02:40,180
+with that message printed out.
+
+62
+00:02:40,180 --> 00:02:42,060
+So it raises an assertion error when
+
+63
+00:02:42,060 --> 00:02:43,470
+I get something I don't want.
+
+64
+00:02:43,470 --> 00:02:45,330
+Otherwise it runs OK.
+
+65
+00:02:45,330 --> 00:02:46,940
+And what's nice about this is it's not
+
+66
+00:02:46,940 --> 00:02:49,920
+going to stop execution as long as I give it legal things.
+
+67
+00:02:49,920 --> 00:02:53,510
+And this is a simple way of enforcing the expectation
+
+68
+00:02:53,510 --> 00:02:56,200
+I have for this function.
+
+69
+00:02:56,200 --> 00:02:59,630
+That's a nice thing to have, because I stop immediately
+
+70
+00:02:59,630 --> 00:03:00,810
+if the assertion is not met.
+
+71
+00:03:00,810 --> 00:03:03,020
+I don't wait til I'm partway through the processing
+
+72
+00:03:03,020 --> 00:03:08,340
+before I stop the execution of this particular procedure.
+
+73
+00:03:08,340 --> 00:03:10,820
+So assertions are really a nice way
+
+74
+00:03:10,820 --> 00:03:13,540
+of doing defensive programming.
+
+75
+00:03:13,540 --> 00:03:17,500
+They don't allow a programmer to-- I'll
+
+76
+00:03:17,500 --> 00:03:20,116
+start again on this slide.
+
+77
+00:03:20,116 --> 00:03:21,740
+So assertions are a good way of dealing
+
+78
+00:03:21,740 --> 00:03:23,790
+with defensive programming.
+
+79
+00:03:23,790 --> 00:03:25,680
+What are the properties of assertions?
+
+80
+00:03:25,680 --> 00:03:28,210
+First of all, assertions don't allow a programmer
+
+81
+00:03:28,210 --> 00:03:30,880
+to control the response to unexpected conditions.
+
+82
+00:03:30,880 --> 00:03:34,620
+It simply is going to ensure that execution halts whenever
+
+83
+00:03:34,620 --> 00:03:37,370
+an unexpected condition is not met.
+
+84
+00:03:37,370 --> 00:03:39,816
+Typically we use it to check inputs.
+
+85
+00:03:39,816 --> 00:03:41,190
+It's the standard place to do it.
+
+86
+00:03:41,190 --> 00:03:42,648
+And you'll see in good programming,
+
+87
+00:03:42,648 --> 00:03:45,430
+often, every function or every critical function
+
+88
+00:03:45,430 --> 00:03:47,960
+will have an assertion at the beginning saying,
+
+89
+00:03:47,960 --> 00:03:50,400
+here's what I expect in terms of the form of the input
+
+90
+00:03:50,400 --> 00:03:52,050
+before it comes out.
+
+91
+00:03:52,050 --> 00:03:53,810
+If I want to be really careful, I
+
+92
+00:03:53,810 --> 00:03:55,500
+could actually use it to check outputs
+
+93
+00:03:55,500 --> 00:03:58,550
+before I return a value from the function to avoid
+
+94
+00:03:58,550 --> 00:04:00,460
+propagating bad values.
+
+95
+00:04:00,460 --> 00:04:03,010
+And if you think about that docstring,
+
+96
+00:04:03,010 --> 00:04:04,860
+I have an expectation on the inputs.
+
+97
+00:04:04,860 --> 00:04:06,720
+I have an expectation on outputs.
+
+98
+00:04:06,720 --> 00:04:09,550
+Having an assertion both on inputs and outputs
+
+99
+00:04:09,550 --> 00:04:12,700
+is a nice way of being very defensive in terms
+
+100
+00:04:12,700 --> 00:04:14,680
+of how I program things.
+
+101
+00:04:14,680 --> 00:04:17,829
+The other nice thing is that having those checks does
+
+102
+00:04:17,829 --> 00:04:20,649
+make it easier to locate the source of a bug,
+
+103
+00:04:20,649 --> 00:04:22,850
+because I'm going to stop the execution as soon as I
+
+104
+00:04:22,850 --> 00:04:26,030
+get an input that doesn't meet the specs of a procedure.
+
+105
+00:04:26,030 --> 00:04:28,770
+And that tells me instantly that the bug
+
+106
+00:04:28,770 --> 00:04:32,154
+must have occurred prior to the call to that function.
+
+107
+00:04:32,154 --> 00:04:34,820
+And it's a little bit like doing that search I did in my earlier
+
+108
+00:04:34,820 --> 00:04:38,450
+example, but using assertions to help me spot the places to find
+
+109
+00:04:38,450 --> 00:04:40,580
+the bugs rather than having to go in and put
+
+110
+00:04:40,580 --> 00:04:44,650
+explicit prints throughout the entire procedure.
+
+111
+00:04:44,650 --> 00:04:46,660
+So where should you use assertions?
+
+112
+00:04:46,660 --> 00:04:48,820
+Well, these are some good examples of it.
+
+113
+00:04:48,820 --> 00:04:51,910
+Our goal is to spot bugs as soon as they're introduced
+
+114
+00:04:51,910 --> 00:04:53,850
+and make clear where they happened.
+
+115
+00:04:53,850 --> 00:04:57,320
+So I can use assertions as a supplement to my testing,
+
+116
+00:04:57,320 --> 00:05:01,550
+raising them anytime a user supplies that input data.
+
+117
+00:05:01,550 --> 00:05:03,480
+And good places to use assertions
+
+118
+00:05:03,480 --> 00:05:06,240
+are to check types of arguments, to check
+
+119
+00:05:06,240 --> 00:05:08,050
+that invariance on a data structure
+
+120
+00:05:08,050 --> 00:05:10,860
+are met-- this is a list of more than one element,
+
+121
+00:05:10,860 --> 00:05:14,490
+for example-- to check constraints on values being
+
+122
+00:05:14,490 --> 00:05:17,050
+returned, and to look for violations
+
+123
+00:05:17,050 --> 00:05:18,630
+of constraints on a procedure.
+
+124
+00:05:18,630 --> 00:05:21,820
+For example, I say I expect a list to have no duplicates.
+
+125
+00:05:21,820 --> 00:05:24,430
+Well, I could enforce that by actually doing a check
+
+126
+00:05:24,430 --> 00:05:26,630
+and raising-- or using an assertion, rather,
+
+127
+00:05:26,630 --> 00:05:30,560
+to stop the execution if I get to that kind of point.
+
+128
+00:05:30,560 --> 00:05:33,240
+So using exceptions to control flow
+
+129
+00:05:33,240 --> 00:05:36,010
+of processing through a procedure,
+
+130
+00:05:36,010 --> 00:05:38,830
+using assertions to check conditions on inputs,
+
+131
+00:05:38,830 --> 00:05:40,650
+outputs, and potentially intermediate
+
+132
+00:05:40,650 --> 00:05:43,000
+values-- two valuable tools to have
+
+133
+00:05:43,000 --> 00:05:46,100
+as you think about how to write code that is bug-free
+
+134
+00:05:46,100 --> 00:05:48,760
+and does defensive programming to try and ensure
+
+135
+00:05:48,760 --> 00:05:50,560
+that it's bug-free.
+

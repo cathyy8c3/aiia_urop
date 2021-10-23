@@ -1,0 +1,71 @@
+<problem display_name="Exercise: integer division" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" weight="5.0">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 4 minutes</b>
+    </p>
+    <p>
+Consider the following function definition: </p>
+    <pre>
+def integerDivision(x, a):
+    """
+    x: a non-negative integer argument
+    a: a positive integer argument
+
+    returns: integer, the integer division of x divided by a.
+    """
+    while x &gt;= a:
+        count += 1
+        x = x - a
+    return count
+</pre>
+    <p>
+When we call </p>
+    <pre>
+print(integerDivision(5, 3))
+</pre>
+    <p>
+we get the following error message: </p>
+    <pre>
+File "temp.py", line 9, in integerDivision
+    count += 1
+UnboundLocalError: local variable 'count' referenced before assignment
+</pre>
+    <p>
+Your task is to modify the code for <code>integerDivision</code> so that this error does not occur. </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def integerDivision(x, a):
+    """
+    x: a non-negative integer argument
+    a: a positive integer argument
+
+    returns: integer, the integer division of x divided by a.
+    """
+    while x &gt;= a:
+        count += 1
+        x = x - a
+    return count
+</initial_display>
+      <answer_display>
+def integerDivision(x, a):
+    """
+    x: a non-negative integer argument
+    a: a positive integer argument
+
+    returns: integer, the integer division of x divided by a.
+    """
+    count = 0
+    while x &gt;= a:
+        count += 1
+        x = x - a
+    return count
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L7/intDiv/grade_intDiv.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

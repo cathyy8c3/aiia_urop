@@ -1,0 +1,41 @@
+
+  
+
+    
+
+Write a Python function that creates and returns a list of prime numbers
+      between 2 and 
+N
+def primes_list(N):
+    '''
+    N: an integer
+    Returns a list of prime numbers
+    '''
+    # Your code here
+    
+
+    
+
+      
+
+def primes_list(N):
+    '''
+    N: an integer
+    '''
+    # Your code here
+      
+
+def primes_list(N):
+    primes_list = [2]
+    for i in range(3, N+1):
+        is_prime = True
+        for j in primes_list:
+            if i % j == 0:
+                is_prime = False
+        if is_prime:
+            primes_list.append(i)
+    return primes_list
+
+
+{"grader": "finger_exercises/L6/primes_list/grade_primes_list.py"}
+

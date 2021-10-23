@@ -1,0 +1,9 @@
+<problem display_name="Problem 1-6" group_access="{}" markdown="null" max_attempts="1" showanswer="never" weight="1.0">
+  <p>It is always possible and feasible for a programmer to come up with test cases that run through every possible path in a program.</p>
+  <multiplechoiceresponse>
+    <choicegroup label="defensive" type="MultipleChoice">
+      <choice correct="false">True</choice>
+      <choice correct="true">False</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

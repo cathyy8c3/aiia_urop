@@ -1,0 +1,18 @@
+<problem display_name="Problem 2-2" markdown="null" max_attempts="1" showanswer="never">
+  <p>Consider the function <code>f</code> below. What is its Big O complexity?</p>
+  <pre>def f(n):
+    def g(m):
+        m = 0
+        for i in range(m):
+            print(m)
+    for i in range(n):
+        g(n)</pre>
+  <multiplechoiceresponse>
+    <choicegroup label="10" type="MultipleChoice">
+      <choice correct="false">[mathjaxinline]O(1)[/mathjaxinline]</choice>
+      <choice correct="false">[mathjaxinline]O(log(n))[/mathjaxinline]</choice>
+      <choice correct="true">[mathjaxinline]O(n)[/mathjaxinline]</choice>
+      <choice correct="false">[mathjaxinline]O(n^2)[/mathjaxinline]</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

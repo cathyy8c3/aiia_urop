@@ -1,0 +1,15 @@
+<video youtube="1.00:2m23hcYoo5w" url_name="fbdbebd2f4d34347a432f79f01c2c0c2" sub="" transcripts="{&quot;en&quot;: &quot;896ab396-4b00-4ffe-83d3-99c1682ee949-en.srt&quot;}" display_name="Video: Towers of Hanoi" download_track="true" download_video="true" edx_video_id="896ab396-4b00-4ffe-83d3-99c1682ee949" handout="/asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture4.zip" html5_sources="[]" youtube_id_1_0="2m23hcYoo5w">
+  <handout src="/asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture4.zip"/>
+  <video_asset client_video_id="L4_S8.mp4" duration="328.24" image="video-images/ee255768123d48ee917d7cce2f6a421c.jpeg">
+    <encoded_video profile="hls" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V003000/MITX60012016-V003000.m3u8" file_size="0" bitrate="0"/>
+    <encoded_video profile="audio_mp3" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V003000_AUD.mp3" file_size="7879503" bitrate="192"/>
+    <encoded_video profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V003000_DTH.mp4" file_size="26220527" bitrate="639"/>
+    <encoded_video profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V003000_MB2.mp4" file_size="12337317" bitrate="300"/>
+    <encoded_video profile="youtube" url="2m23hcYoo5w" file_size="0" bitrate="0"/>
+    <encoded_video profile="mobile_high" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V003000_MB1.mp4" file_size="14998161" bitrate="365"/>
+    <transcripts>
+      <transcript language_code="en" file_format="srt" provider="Custom"/>
+    </transcripts>
+  </video_asset>
+  <transcript language="en" src="896ab396-4b00-4ffe-83d3-99c1682ee949-en.srt"/>
+</video>

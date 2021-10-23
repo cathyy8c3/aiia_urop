@@ -1,0 +1,25 @@
+
+  
+
+    
+Suppose that the variable 
+myString
+myString
+myString
+abcdefg
+aceg
+For problems such as these, do not include 
+input
+
+    
+
+      
+
+s = ""
+for i in range(0,len(myString),2):
+    s += myString[i] 
+print s    
+
+
+{"grader": "finger_exercises/L3/mystring/grade_mystring.py"}
+

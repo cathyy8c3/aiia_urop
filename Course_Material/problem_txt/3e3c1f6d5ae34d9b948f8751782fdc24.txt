@@ -1,0 +1,57 @@
+
+  
+
+    
+ESTIMATED TIME TO COMPLETE: 6 minutes
+
+    
+For this problem, write a recursive function, 
+lenRecur
+Hint: 
+String slicing
+
+    
+
+      
+
+def lenRecur(aStr):
+    '''
+    aStr: a string
+    
+    returns: int, the length of aStr
+    '''
+    # Your code here
+
+
+def lenRecur(aStr):
+    '''
+    aStr: a string
+    
+    returns: int, the length of aStr
+    '''
+    # Base case: When aStr is the empty string,
+    #  its length is zero.
+    if aStr == '':
+        return 0
+
+    # Recursive case: If the string is not zero-length, then remove the first
+    #  character and the length is 1 + the length of the rest of the string
+    return 1 + lenRecur(aStr[1:])
+
+
+{"grader": "finger_exercises/L5/lenRecur/grade_lenRecur.py"}
+
+
+    
+Note: In programming there are many ways to solve a problem. For your code to check correctly 
+  here, though, you must write your recursive function such that you make a recursive call 
+  directly to the function 
+lenRecur
+Hint: How would you check if a string is empty without using 
+len()
+s
+
+  s == '' 
+
+If you are getting the error stating that "Your code should be recursive" when you already make a call to 
+lenRecur

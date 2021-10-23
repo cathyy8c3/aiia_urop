@@ -1,0 +1,29 @@
+
+  
+
+    
+
+    
+      Write a function called 
+general_poly
+For example, 
+      
+general_poly([1, 2, 3, 4])(10)
+1234
+def general_poly(L):
+    """ L, a list of numbers (n0, n1, n2, ... nk)
+    Returns a function, which when applied to a value x, returns the value 
+    n0 * x^k + n1 * x^(k-1) + ... nk * x^0 """
+    #YOUR CODE HERE 
+    
+
+Paste your entire function in the box below. Do not leave any print statements.  
+
+    
+
+      
+# Paste your code here
+
+
+{"grader": "ase/general_poly/grade_general_poly.py", "hide_output": false}
+

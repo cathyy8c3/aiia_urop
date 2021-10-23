@@ -1,0 +1,15 @@
+
+  
+Assume the statement 
+s[1024] = 3
+
+    
+
+      
+type(s)
+str
+type(s)
+tuple
+type(s)
+list
+All of the above

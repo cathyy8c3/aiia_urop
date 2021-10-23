@@ -1,0 +1,115 @@
+<problem display_name="Exercise: is in" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" weight="5.0">
+  <p>
+    <b>ESTIMATED TIME TO COMPLETE: 18 minutes</b>
+  </p>
+  <text>
+    <p>We can use the idea of <b class="bf">bisection search</b> to determine if a character is 
+      in a string, so long as the string is sorted in alphabetical order. </p>
+    <p>First, test the middle character of a string against the character you're looking for 
+      (the "test character"). If they are the same, we are done - we've found the character 
+      we're looking for! </p>
+    <p>If they're not the same, check if the test character is "smaller" than the middle character. 
+      If so, we need only consider the lower half of the string; otherwise, we only consider the upper 
+      half of the string. (Note that you can compare characters using Python's <code>&lt;</code> 
+      function.) </p>
+    <p>Implement the function <code>isIn(char, aStr)</code> which implements the above idea 
+      recursively to test if <code>char</code> is in <code>aStr</code>. 
+      <code>char</code> will be a single character and <code>aStr</code> will be a 
+      string that is in alphabetical order. The function should return a boolean value. </p>
+    <p>As you design the function, think very carefully about what the base cases should be. </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def isIn(char, aStr):
+    '''
+    char: a single character
+    aStr: an alphabetized string
+    
+    returns: True if char is in aStr; False otherwise
+    '''
+    # Your code here
+</initial_display>
+      <answer_display>
+def isIn(char, aStr):
+   '''
+   char: a single character
+   aStr: an alphabetized string
+   
+   returns: True if char is in aStr; False otherwise
+   '''
+   # Base case: If aStr is empty, we did not find the char.
+   if aStr == '':
+      return False
+
+   # Base case: if aStr is of length 1, just see if the chars are equal
+   if len(aStr) == 1:
+      return aStr == char
+
+   # Base case: See if the character in the middle of aStr equals the 
+   #   test character 
+   midIndex = len(aStr)//2
+   midChar = aStr[midIndex]
+   if char == midChar:
+      # We found the character!
+      return True
+   
+   # Recursive case: If the test character is smaller than the middle 
+   #  character, recursively search on the first half of aStr
+   elif char &lt; midChar:
+      return isIn(char, aStr[:midIndex])
+
+   # Otherwise the test character is larger than the middle character,
+   #  so recursively search on the last half of aStr
+   else:
+      return isIn(char, aStr[midIndex+1:])
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L5/isIn/grade_isIn.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <text>
+    <p>Note: In programming there are many ways to solve a problem. For your code to check correctly 
+  here, though, you must write your recursive function such that you make a recursive call 
+  directly to the function <code>isIn</code>. Thank you for understanding.
+</p>
+    <p>
+      <section class="hints">
+        <h3>Hints</h3>
+        <div class="collapsible">
+          <header>
+            <a href="#" id="id71a">Basic function structuring</a>
+          </header>
+          <section id="id71a">
+            <p> Be very careful about how you slice the string in the recursive cases! Before you 
+	      execute the recursive cases, you test the middle character - so if you reach the recursive cases, 
+	      you know the middle character cannot be a match, right? So be careful to <i class="it">not</i> 
+	      include this character when you make your recursive call! </p>
+          </section>
+        </div>
+        <div class="collapsible">
+          <header>
+            <a href="#" id="id71">What should your base case be?</a>
+          </header>
+          <section id="id71">
+	    You should be thinking about 3 situations: 
+	    <ul class="itemize"><li><p>What happens when the string is empty? </p></li><li><p>What happens when the string is of length 1? </p></li><li><p>What happens when the test character equals the middle character? </p></li></ul> 
+	  </section>
+        </div>
+        <div class="collapsible">
+          <header>
+            <a href="#" id="id72">What should your recursive case be?</a>
+          </header>
+          <section id="id72">
+	    You should be thinking about 2 situations: 
+	    <ul class="itemize"><li><p>What happens when the test character is smaller than the middle character? </p></li><li><p>What happens when it is larger? </p></li></ul> 
+	  </section>
+        </div>
+      </section>
+    </p>
+    <p><b>If you are getting the error stating that "Your code should be recursive" when you already make a call to <code>isIn</code></b>: check your indention -- specifically, a common mistake is that your function and docstring do not start at the same indentation level.
+    </p>
+  </text>
+</problem>

@@ -1,0 +1,43 @@
+<problem display_name="Exercise 9" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 3 minutes</b>
+      <br/>
+      <b>      Note that you will have to answer all questions before you can click the Check button.</b>
+    </p>
+    <p>
+Below is a transcript of a session with the Python shell. For each expression being evaluated, provide the type and the value that the <b>last expression in the transcript returns</b>. If evaluating an expression would cause an error, select 'NoneType' and write the word 'error' (note this is a word, not a string, no quotes) in the box. While you could simply type these expressions into your IDE, we encourage you to answer them directly since this will help reinforce your understanding of basic Python expressions. </p>
+    <p>
+Assume that the expressions are evaluated in the order shown - that is, each problem part is evaluated directly after the previous problem part(s). </p>
+    <ol class="enumerate">
+      <li>
+        <p>
+          <pre>
+&gt;&gt;&gt; a = 3
+&gt;&gt;&gt; a == 5.0
+&gt;&gt;&gt; a </pre>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','bool')" correct="int"/>
+          </optionresponse>
+          <stringresponse answer="3">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <pre>
+&gt;&gt;&gt; b = 10
+&gt;&gt;&gt; c = b &gt; 9
+&gt;&gt;&gt; c </pre>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','bool')" correct="bool"/>
+          </optionresponse>
+          <stringresponse answer="True">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+    </ol>
+  </text>
+</problem>

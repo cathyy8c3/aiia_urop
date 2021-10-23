@@ -1,0 +1,30 @@
+<problem display_name="Problem 5" markdown="null" showanswer="never">
+  <text>
+    <p>
+      Write a Python function that returns the sum of the pairwise products of <code>listA</code>
+      and <code>listB</code>. You should assume that <code>listA</code> and <code>listB</code> have the same length and are
+      two lists of integer numbers. For example, if <code>listA = [1, 2, 3]</code> and <code>listB = [4, 5, 6]</code>,
+      the dot product is <code>1*4 + 2*5 + 3*6</code>, meaning your function should return:
+      <code>32</code></p>
+    <p>Hint: You will need to traverse both lists in parallel.</p>
+    <p>This function takes in two lists of numbers and returns a number.</p>
+    <pre>def dotProduct(listA, listB):
+    '''
+    listA: a list of numbers
+    listB: a list of numbers of the same length as listA
+    '''
+    # Your code here
+    </pre>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="10" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display># Paste your function here</initial_display>
+      <answer_display>
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L6/dot_product/grade_dot_product.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

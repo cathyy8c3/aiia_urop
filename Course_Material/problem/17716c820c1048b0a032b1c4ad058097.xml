@@ -1,0 +1,89 @@
+<problem display_name="Exercise 2" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 5 minutes</b>
+    </p>
+    <p>Here is some code for linear search that uses the fact that a set of elements is sorted in increasing order: </p>
+    <pre>
+def search(L, e):
+    for i in range(len(L)):
+        if L[i] == e:
+            return True
+        if L[i] &gt; e:
+            return False
+    return False
+</pre>
+    <p>
+Consider the following code, which is an alternative version of <code>search</code>. </p>
+    <pre>
+def search1(L, e):
+    for i in L:
+        if i == e:
+            return True
+        if i &gt; e:
+            return False
+    return False
+</pre>
+    <p>
+Which of the following statements is correct? You may assume that each function is tested with a list <code>L</code> whose elements are sorted in increasing order; 
+for simplicity, assume <code>L</code> is a list of positive integers.</p>
+    <p>
+      <choiceresponse>
+        <radiogroup direction="vertical">
+          <choice correct="true" name="1">
+            <span>
+              <text><code>search</code> and <code>search1</code> return the same answers.</text>
+            </span>
+          </choice>
+          <choice correct="false" name="2">
+            <span>
+              <text><code>search</code> and <code>search1</code> return the same answers provided <code>L</code> is non-empty.</text>
+            </span>
+          </choice>
+          <choice correct="false" name="3">
+            <span>
+              <text><code>search</code> and <code>search1</code> return the same answers provided <code>L</code> is non-empty and <code>e</code> is in <code>L</code>. </text>
+            </span>
+          </choice>
+          <choice correct="false" name="4">
+            <span>
+              <text><code>search</code> and <code>search1</code> do not return the same answers.</text>
+            </span>
+          </choice>
+          <choice correct="false" name="5">
+            <span>
+              <text><code>search</code> and <code>search1</code> return the same answers for lists of length 0 and 1 only.</text>
+            </span>
+          </choice>
+        </radiogroup>
+      </choiceresponse>
+    </p>
+    <p>
+      <solution>
+        <div class="detailed-solution">
+          <p>
+            <b>Explanation:</b>
+          </p>
+          <p>
+	    It is equally valid to iterate over the indicies of a list (as in <code>search</code>) 
+	    or iterate over the elements of the list itself (as in <code>search1</code>). As we've seen,
+	    Python's <code>for</code> statement iterates over the items of any sequence (a list or a string), 
+	    in the order that they appear in the sequence. As an example, assume <code>L = [4, 9, 2]</code>. The statement
+	  </p>
+          <pre>for i in range(len(L)):</pre>
+          <p>is <i>actually</i> the statement</p>
+          <pre>for i in range(3): </pre>
+          <p>which is <i>actually</i> the statement</p>
+          <pre>for i in [0, 1, 2]: </pre>
+          <p>So iterating over the indicies of a list (as in <code>search</code>) is almost identical to iterating
+	    over the elements of the list itself - the statement </p>
+          <pre>for i in L: </pre>
+          <p>is <i>actually</i> the statement</p>
+          <pre>for i in [4, 9, 2]: </pre>
+          <p>Both methods of iteration are equally valid. At the end of the day, you should iterate in a way
+	  that makes sense to you.</p>
+        </div>
+      </solution>
+    </p>
+  </text>
+</problem>

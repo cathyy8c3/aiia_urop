@@ -1,0 +1,141 @@
+<problem display_name="Exercise 1" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 6 minutes</b>
+    </p>
+    <script type="text/python" system_path="python_lib">
+def ignore_spaces(expect, ans):
+  return expect==ans or expect.replace(' ','') == ans.replace(' ','')
+</script>
+    <ol class="enumerate">
+      <li>
+        <p>What method is called when an object is created? </p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="false" name="1">
+                <span>
+                  <text>
+                    <code>self</code>
+                  </text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text>
+                    <code>obj.self</code>
+                  </text>
+                </span>
+              </choice>
+              <choice correct="false" name="3">
+                <span>
+                  <text>
+                    <code>init</code>
+                  </text>
+                </span>
+              </choice>
+              <choice correct="true" name="4">
+                <span>
+                  <text>
+                    <code>__init__</code>
+                  </text>
+                </span>
+              </choice>
+              <choice correct="false" name="5">
+                <span>
+                  <text>
+                    <code>new</code>
+                  </text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>The <code>__init__</code> method is called whenever an object is created. 
+		For more on object creation, see 
+		<a href="http://www.greenteapress.com/thinkpython/html/thinkpython018.html#toc186" target="_blank">this chapter</a> 
+		of How To Think Like A Computer Scientist. </p>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>If you have an object instance, <code>obj</code>, and you want to call its 
+	  <code>doSomething()</code> method (assuming it has one), how would you do this? (write the line of code you would use) </p>
+        <p>
+          <customresponse cfn="ignore_spaces" expect="obj.doSomething()">
+            <textline size="50" correct_answer="obj.doSomething()"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <p>True or False? An object's attributes must be defined in the object's <code>__init__</code> method.</p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="false" name="1">
+                <span>
+                  <text> True</text>
+                </span>
+              </choice>
+              <choice correct="true" name="2">
+                <span>
+                  <text> False</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>An object's attributes are variables that can be used throughout the entire object, 
+		regardless of the method in which it is first defined. However, it is customary to define 
+		attributes within the <code>__init__</code> method for many reasons. Primarily this is to 
+		ensure all attributes are properly initialized. Because the <code>__init__</code> method is 
+		called when an object is created, if attributes are created in the <code>__init__</code> method 
+		they will be initialized properly (and thus not throw any errors) when they are referenced later on.</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>The following code starts the definition of a class called <code>Address</code>. The class needs to 
+	  have two <i>attributes</i>: <code>number</code> and <code>streetName</code>. Please add in the two lines 
+	  of code that will create these attributes from the appropriate passed in parameters. </p>
+        <pre>class Address(object):
+    def __init__(self, number, streetName):
+        # Line 1: Creating a number attribute
+        # Line 2: Creating a streetName attribute  
+</pre>
+        <ul>
+          <li>
+            <p>What is the correct expression for <code># Line 1</code>? </p>
+            <p>
+              <customresponse cfn="ignore_spaces" expect="self.number = number">
+                <textline size="50" correct_answer="self.number = number"/>
+              </customresponse>
+            </p>
+          </li>
+          <li>
+            <p>What is the correct expression for <code># Line 2</code>? </p>
+            <p>
+              <customresponse cfn="ignore_spaces" expect="self.streetName = streetName">
+                <textline size="50" correct_answer="self.streetName = streetName"/>
+              </customresponse>
+            </p>
+          </li>
+        </ul>
+      </li>
+    </ol>
+  </text>
+</problem>

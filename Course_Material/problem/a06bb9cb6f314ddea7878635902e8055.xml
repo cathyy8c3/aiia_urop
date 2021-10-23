@@ -1,0 +1,12 @@
+<problem display_name="Problem 2-1" markdown="null" max_attempts="1" showanswer="never" weight="1.0">
+  <p>Consider the statement: <code>L = {'1':1, '2':2, '3':3}</code>. Which is correct?</p>
+  <multiplechoiceresponse>
+    <choicegroup label="key order" type="MultipleChoice">
+      <choice correct="false">L is a list</choice>
+      <choice correct="false">L is immutable</choice>
+      <choice correct="false">L contains 6 elements</choice>
+      <choice correct="false">L has integer keys</choice>
+      <choice correct="true">L maps strings to integers</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

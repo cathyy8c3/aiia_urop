@@ -1,0 +1,39 @@
+<problem display_name="Exercise: while exercise 2" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" weight="5.0">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 5 minutes</b>
+    </p>
+    <p>2. Convert the following into code that uses a while loop.</p>
+    <p>prints <code>Hello!</code><br/>
+prints <code>10</code><br/>
+prints <code>8</code><br/>
+prints <code>6</code><br/>
+prints <code>4</code><br/>
+      prints <code>2</code></p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="10" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display/>
+      <answer_display>
+# There are always many ways to solve a programming problem. Here is one:
+print("Hello!")
+num = 10
+while num &gt; 0:
+    print(num)
+    num -= 2
+
+# Here is another:
+num = 11
+print("Hello!")
+while num &gt; 1:
+    num -= 1
+    if num %2 == 0:
+        print(num)
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L3/while2b/grade_while2b.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

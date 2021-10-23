@@ -1,0 +1,43 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 4 minutes
+Suppose we rewrite the FancyDivide function to use a helper function.
+def fancy_divide(list_of_numbers, index):
+   denom = list_of_numbers[index]
+   return [simple_divide(item, denom) for item in list_of_numbers]
+
+
+def simple_divide(item, denom):
+   return item / denom
+    
+ This code raises a ZeroDivisionError exception for the following call:
+      
+fancy_divide([0, 2, 4], 0)
+Your task is to change the definition of 
+simple_divide
+fancy_divide
+
+    
+
+      
+
+#define the simple_divide function here
+      
+
+        
+# still takes same arguments
+def simple_divide(item, denom):
+   # start a try-except block
+   try:
+      return item / denom
+   # catch a division by zero and return 0
+   except ZeroDivisionError:
+      return 0
+
+
+{"grader": "finger_exercises/L8/simple_divide/grade_simple_divide.py"}
+

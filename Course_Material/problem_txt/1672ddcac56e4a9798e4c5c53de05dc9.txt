@@ -1,0 +1,205 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 12 minutes
+Determine the complexity of the following tasks.
+
+      
+
+        
+6.00.1x staff decide to hold an online chess tournament, and 
+n
+n
+
+          
+
+            
+
+              
+
+                
+
+                  
+[mathjaxinline]O(1)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(n)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(n^2)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(\log n)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(n\log n)[/mathjaxinline]
+
+                
+
+                  
+It depends on how the tournament is organized.
+
+          
+
+            
+
+              
+
+                
+Explanation:
+To win, a student will have to play every student on their side and keep winning, eliminating students one at a time, a total of n/2 students.
+
+        
+You are asked to write an 
+n
+n
+
+          
+
+            
+
+              
+
+                
+
+                  
+[mathjaxinline]O(1)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(n)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(n^2)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(\log n)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(n\log n)[/mathjaxinline]
+
+          
+
+            
+
+              
+
+                
+Explanation:
+Each page takes 30 mins to write and there are n pages. The total time is 
+30n
+n
+
+        
+You are asked to write an 
+n
+n
+
+          
+
+            
+
+              
+
+                
+
+                  
+[mathjaxinline]O(1)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(n)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(n^2)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(\log n)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(n\log n)[/mathjaxinline]
+
+          
+
+            
+
+              
+
+                
+Explanation:
+The number of pages you write does not influence how long it takes you to write. The time to write is a constant 2 hours, so order of 1.
+
+        
+You just dropped a box of glass toys and 
+n
+n
+
+          
+
+            
+
+              
+
+                
+
+                  
+[mathjaxinline]O(1)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(n)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(n^2)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(\log n)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(n\log n)[/mathjaxinline]
+
+            
+
+              
+
+                
+
+                  
+Explanation:
+You have to compare every piece with every other piece. If you have 1 toy and it breaks in half, you have 1 comparison to make. If you have 2 toys and they both break in half there are 4 pieces and you have to do 6 comparisons. If you have 3 toys, there are 6 pieces and you have to do 15 comparisons. If you have 
+N/2
+N
+N-1 + N-2 + N-3 + ... + 1 =(N)(N-1)/2
+O(N^2)

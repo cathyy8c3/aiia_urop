@@ -1,0 +1,39 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 3 minutes
+      Note that you will have to answer all questions before you can click the Check button.
+
+Below is a transcript of a session with the Python shell. For each expression being evaluated, provide the type and the value that the 
+last expression in the transcript returns
+
+Assume that the expressions are evaluated in the order shown - that is, each problem part is evaluated directly after the previous problem part(s). 
+
+      
+
+        
+
+          
+
+>>> a = 3
+>>> a == 5.0
+>>> a 
+
+            
+
+            
+
+        
+
+          
+
+>>> b = 10
+>>> c = b > 9
+>>> c 
+
+            
+
+            

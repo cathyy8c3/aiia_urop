@@ -1,0 +1,120 @@
+<vertical display_name="Peer Assessment">
+  <html url_name="8d84d6c9f4a742b084b4af371c33141e"/>
+  <openassessment url_name="a0eedc671f704ad9b1cd24b4259822ef" submission_start="2001-01-01T00:00:00" submission_due="2029-01-01T00:00:00" text_response="required" text_response_editor="text" file_upload_response="optional" file_upload_type="custom" white_listed_file_types="py" allow_multiple_files="True" allow_latex="False" prompts_type="text" teams_enabled="False" selected_teamset_id="" show_rubric_during_response="False">
+    <title>Peer Assessment</title>
+    <assessments>
+      <assessment name="peer-assessment" must_grade="3" must_be_graded_by="3" start="2001-01-01T00:00:00" due="2029-01-01T00:00:00"/>
+      <assessment name="self-assessment" start="2001-01-01T00:00:00" due="2029-01-01T00:00:00"/>
+    </assessments>
+    <prompts>
+      <prompt>
+        <description>Regular Polygons: polysum
+
+A regular polygon has 'n' number of sides. Each side has length 's'.
+
+* The area of regular polygon is: (0.25*n*s^2)/tan(pi/n)
+* The perimeter of a polygon is: length of the boundary of the polygon
+
+Write a function called 'polysum' that takes 2 arguments, 'n' and 's'. This function should sum the area and square of the perimeter of the regular polygon. The function returns the sum, rounded to 4 decimal places.
+
++++ IMPORTANT NOTE +++ 
+You must upload a .py file. Any code you enter in the box will have its spacing removed, so will be unreadable by your peers. In the box type in anything, for example, "attached".</description>
+      </prompt>
+    </prompts>
+    <rubric>
+      <criterion feedback="optional">
+        <name>Ideas</name>
+        <label>Commented Code</label>
+        <prompt>Is the code well documented? Are the comments descriptive?</prompt>
+        <option points="0">
+          <name>Poor</name>
+          <label>Poor</label>
+          <explanation>No comments at all.</explanation>
+        </option>
+        <option points="3">
+          <name>Fair</name>
+          <label>Fair</label>
+          <explanation>There are come comments but they repeat what code lines are doing. 
+For example:
+
+# increment i
+i = 1 + 1</explanation>
+        </option>
+        <option points="5">
+          <name>Good</name>
+          <label>Good</label>
+          <explanation>Comments describe and explain more complicated parts of the code.
+For example:
+
+[... some other code up here...]
+# finished looking through the string 
+i = i + 1</explanation>
+        </option>
+      </criterion>
+      <criterion feedback="optional">
+        <name>Content</name>
+        <label>Variable Names</label>
+        <prompt>Are the variable names descriptive? Are they appropriate?</prompt>
+        <option points="0">
+          <name>Poor</name>
+          <label>Poor</label>
+          <explanation>Names do not help you understand what the variable is for or doing.
+
+For example:
+i = 'hello'</explanation>
+        </option>
+        <option points="3">
+          <name>Fair</name>
+          <label>Fair</label>
+          <explanation>Names are descriptive but not meaningful. 
+
+For example:
+rainbow_unicorn = 'hello'</explanation>
+        </option>
+        <option points="5">
+          <name>Good</name>
+          <label>Good</label>
+          <explanation>Names help you understand the program. They are descriptive and meaningful.
+
+For example:
+greeting = 'hello'</explanation>
+        </option>
+      </criterion>
+      <criterion feedback="optional">
+        <name>0</name>
+        <label>Modularity and Dead Code</label>
+        <prompt>Is the code split up into parts well? Is it easy to read? Are there pieces of code that do not do anything?</prompt>
+        <option points="0">
+          <name>0</name>
+          <label>Poor</label>
+          <explanation>Code has no extra newlines. 
+Code has commented out lines of code (for debugging)
+Code has initiated variables that never get used.</explanation>
+        </option>
+        <option points="3">
+          <name>1</name>
+          <label>Fair</label>
+          <explanation>Code has some extra newlines. 
+Code has redundant parts to it, for example:
+
+# flag = False
+flag = True
+while flag == True:
+[...code...]</explanation>
+        </option>
+        <option points="5">
+          <name>2</name>
+          <label>Good</label>
+          <explanation>Code looks clean, split up into sections, and if necessary, helper functions. 
+Code does not have commented out lines of code (for debugging).
+Code does not have extra variables.</explanation>
+        </option>
+      </criterion>
+      <feedbackprompt>(Optional) What aspects of this response stood out to you? What did it do well? How could it be improved?
+</feedbackprompt>
+      <feedback_default_text>I think that this response...
+</feedback_default_text>
+    </rubric>
+  </openassessment>
+  <discussion url_name="79cd29503d1e449c9e1eec5d50e9be4d" xblock-family="xblock.v1" display_name="polysum Peer Assessment" discussion_category="Week 2" discussion_target="polysum Peer Assessment"/>
+</vertical>

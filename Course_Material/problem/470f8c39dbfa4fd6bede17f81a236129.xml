@@ -1,0 +1,348 @@
+<problem display_name="Exercise 7" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 14 minutes</b>
+    </p>
+    <p>This problem will walk through some applications of complexity analysis.
+      Suppose you're asked to implement an application. One of the things it has 
+      to do is to report whether or not an item, <code>x</code>, is in a list 
+      <code>L</code>. <code>L</code>'s contents do not change over time. Below 
+      are two possible ways to implement this functionality. Assume that 
+      <code>mergeSort</code> is implemented as per the lecture.</p>
+    <p><code>L</code> is a list with <code>n</code> items.</p>
+    <ul>
+      <li>
+        <p>
+          <b>Application A:</b>
+        </p>
+        <p>Every time it's asked to, it performs a linear search through 
+	  list <code>L</code> to find whether it contains <code>x</code>.</p>
+      </li>
+      <li>
+        <p>
+          <b>Application B:</b>
+        </p>
+        <p>Sort list <code>L</code> once before doing anything else (using <code>mergeSort</code>).
+	  Whenever it's asked to find <code>x</code> in <code>L</code>, it performs a binary search 
+	  on <code>L</code>.</p>
+      </li>
+    </ul>
+    <ol>
+      <li>
+        <p>If the application is asked to find <code>x</code> in <code>L</code> <u>exactly</u> one time, 
+    what is the worst case time complexity for Application A?</p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="false" name="1">
+                <span>
+                  <text>[mathjaxinline]O(1)[/mathjaxinline] </text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text>[mathjaxinline]O(\log n)[/mathjaxinline] </text>
+                </span>
+              </choice>
+              <choice correct="true" name="3">
+                <span>
+                  <text>[mathjaxinline]O(n)[/mathjaxinline] </text>
+                </span>
+              </choice>
+              <choice correct="false" name="4">
+                <span>
+                  <text>[mathjaxinline]O(n\log n)[/mathjaxinline] </text>
+                </span>
+              </choice>
+              <choice correct="false" name="5">
+                <span>
+                  <text>[mathjaxinline]O(n^2)[/mathjaxinline] </text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>Application A just performs one linear search through <code>n</code> elements. This is
+	    [mathjaxinline]O(n)[/mathjaxinline] complexity.</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>If the application is asked to find <code>x</code> in <code>L</code> <u>exactly</u> one time, 
+      what is the worst case time complexity for Application B?</p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="false" name="1">
+                <span>
+                  <text>[mathjaxinline]O(1)[/mathjaxinline] </text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text>[mathjaxinline]O(\log n)[/mathjaxinline] </text>
+                </span>
+              </choice>
+              <choice correct="false" name="3">
+                <span>
+                  <text>[mathjaxinline]O(n)[/mathjaxinline] </text>
+                </span>
+              </choice>
+              <choice correct="true" name="4">
+                <span>
+                  <text>[mathjaxinline]O(n\log n)[/mathjaxinline] </text>
+                </span>
+              </choice>
+              <choice correct="false" name="5">
+                <span>
+                  <text>[mathjaxinline]O(n^2)[/mathjaxinline] </text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>The time complexity for Application B is how long it takes to do <code>mergeSort</code> once, plus 
+	    how long it takes to do a binary search. That works out to [mathjaxinline]O(n \log n + \log n)[/mathjaxinline], 
+	    which is just [mathjaxinline]O(n \log n)[/mathjaxinline].</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>If the application is asked to find <code>x</code> in <code>L</code> <i>k</i> times, what is the 
+      worst case time complexity for Application A?</p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="false" name="1">
+                <span>
+                  <text>[mathjaxinline]O(1)[/mathjaxinline] </text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text>[mathjaxinline]O(k + \log n)[/mathjaxinline] </text>
+                </span>
+              </choice>
+              <choice correct="false" name="3">
+                <span>
+                  <text>[mathjaxinline]O(k + n)[/mathjaxinline] </text>
+                </span>
+              </choice>
+              <choice correct="true" name="4">
+                <span>
+                  <text>[mathjaxinline]O(kn)[/mathjaxinline] </text>
+                </span>
+              </choice>
+              <choice correct="false" name="5">
+                <span>
+                  <text>[mathjaxinline]O(n + k\log n)[/mathjaxinline] </text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>We have to do <i>k</i> linear searches so the time complexity is [mathjaxinline]O(kn)[/mathjaxinline].</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>If the application is asked to find <code>x</code> in <code>L</code> <i>k</i> times, what is the 
+      worst case time complexity for Application B?</p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="false" name="1">
+                <span>
+                  <text>[mathjaxinline]O(kn)[/mathjaxinline] </text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text>[mathjaxinline]O(n\log n)[/mathjaxinline] </text>
+                </span>
+              </choice>
+              <choice correct="false" name="3">
+                <span>
+                  <text>[mathjaxinline]O(n + k\log n)[/mathjaxinline] </text>
+                </span>
+              </choice>
+              <choice correct="true" name="4">
+                <span>
+                  <text>[mathjaxinline]O(n\log n + k\log n)[/mathjaxinline] </text>
+                </span>
+              </choice>
+              <choice correct="false" name="5">
+                <span>
+                  <text>[mathjaxinline]O(kn\log n + \log n)[/mathjaxinline] </text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>Doing the search <i>k</i> times means that the time complexity is how long it takes to do <code>mergeSort</code> once,
+	    plus how long it takes to do a binary search <i>k</i> times. That works out to [mathjaxinline]O(n \log n + k\log n)[/mathjaxinline].
+	    Since we don't know what the value of <i>k</i> is, we cannot simplify further.</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>What value(s) of <i>k</i> would make Application A be faster (i.e., asymptotically grow slower than) Application B?</p>
+        <p>
+          <choiceresponse>
+            <checkboxgroup direction="vertical">
+              <choice correct="true" name="1">
+                <span>
+                  <text>[mathjaxinline]k = 1[/mathjaxinline] </text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text>[mathjaxinline]k = n[/mathjaxinline] </text>
+                </span>
+              </choice>
+              <choice correct="false" name="3">
+                <span>
+                  <text>[mathjaxinline]k = \log n[/mathjaxinline] </text>
+                </span>
+              </choice>
+              <choice correct="false" name="4">
+                <span>
+                  <text>[mathjaxinline]k = n^2[/mathjaxinline] </text>
+                </span>
+              </choice>
+              <choice correct="false" name="5">
+                <span>
+                  <text>[mathjaxinline]k= 2^n[/mathjaxinline] </text>
+                </span>
+              </choice>
+            </checkboxgroup>
+          </choiceresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>When [mathjaxinline]k= 1[/mathjaxinline], Application A's complexity is 
+	    [mathjaxinline]O(kn) = O(n)[/mathjaxinline], and Application B's complexity is 
+	    [mathjaxinline]O(n\log n + k\log n) = O(n \log n + \log n)[/mathjaxinline]. </p>
+              <p> Setting <i>k</i> at any value greater than 1 makes [mathjaxinline]O(kn)[/mathjaxinline] asymptotically grow faster than
+	    [mathjaxinline]O(n\log n + k\log n)[/mathjaxinline].</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>What value(s) of <i>k</i> would make Application A grow at the same rate as Application B?</p>
+        <p>
+          <choiceresponse>
+            <checkboxgroup direction="vertical">
+              <choice correct="false" name="1">
+                <span>
+                  <text>[mathjaxinline]k = 1[/mathjaxinline] </text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text>[mathjaxinline]k = n[/mathjaxinline] </text>
+                </span>
+              </choice>
+              <choice correct="true" name="3">
+                <span>
+                  <text>[mathjaxinline]k = \log n[/mathjaxinline] </text>
+                </span>
+              </choice>
+              <choice correct="false" name="4">
+                <span>
+                  <text>[mathjaxinline]k = n^2[/mathjaxinline] </text>
+                </span>
+              </choice>
+              <choice correct="false" name="5">
+                <span>
+                  <text>[mathjaxinline]k= 2^n[/mathjaxinline] </text>
+                </span>
+              </choice>
+            </checkboxgroup>
+          </choiceresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>When [mathjaxinline]k=\log n[/mathjaxinline], Application A's complexity is 
+	    [mathjaxinline]O(kn) = O(n \log n)[/mathjaxinline], and Application B's complexity is 
+	    [mathjaxinline]O(n\log n + k\log n) = O(n \log n + \log n \log n)[/mathjaxinline]. 
+	    [mathjaxinline]\log n \log n[/mathjaxinline] grows slower than [mathjaxinline]n \log n[/mathjaxinline], 
+	    so in this case Application B's time complexity is [mathjaxinline]O(n \log n)[/mathjaxinline]. 
+	    So, when [mathjaxinline]k=\log n[/mathjaxinline], the order of time complexity of Applications A and B are equal.</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>Which application should you choose if you know that there are going to be 
+      [mathjaxinline]n^3[/mathjaxinline] requests to find <code>x</code> in <code>L</code>?</p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="false" name="1">
+                <span>
+                  <text>Application A</text>
+                </span>
+              </choice>
+              <choice correct="true" name="2">
+                <span>
+                  <text>Application B</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>When [mathjaxinline]k = n^3[/mathjaxinline], Application A has time complexity 
+	    [mathjaxinline]O(n^4)[/mathjaxinline] whilst Application B's time complexity is 
+	    [mathjaxinline]O(n^3 log n)[/mathjaxinline]. Generally we can extrapolate that for 
+	    very large <i>k</i>, Application B will be the preferred choice.</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+    </ol>
+  </text>
+</problem>

@@ -1,0 +1,226 @@
+<problem display_name="Exercise 1" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 12 minutes</b>
+    </p>
+    <p>In this problem, we'll examine how 
+  <a href="http://en.wikipedia.org/wiki/Indirection" target="_blank">indirection</a> 
+  works. Consider the following definitions:</p>
+    <pre>a = [1, 2, 3, 4, 0]
+b = [3, 0, 2, 4, 1]
+c = [3, 2, 4, 1, 5]</pre>
+    <ol>
+      <li>
+        <p> What is the value of the following expressions? If you think there will be an error, 
+    please type in 'error' (without quotes) in the input box.</p>
+        <ol>
+          <li>
+            <p>
+              <code>a[0]</code>
+              <stringresponse answer="1">
+                <textline size="20"/>
+              </stringresponse>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>b[1]</code>
+              <stringresponse answer="0">
+                <textline size="20"/>
+              </stringresponse>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>a[a[1]]</code>
+              <stringresponse answer="3">
+                <textline size="20"/>
+              </stringresponse>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>b[b[2]]</code>
+              <stringresponse answer="2">
+                <textline size="20"/>
+              </stringresponse>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>a[b[2]]</code>
+              <stringresponse answer="3">
+                <textline size="20"/>
+              </stringresponse>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>c[a[b[3]]]</code>
+              <stringresponse answer="3">
+                <textline size="20"/>
+              </stringresponse>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>a[c[a[b[0]]]]</code>
+              <stringresponse answer="error">
+                <textline size="20"/>
+              </stringresponse>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>a[c[a[b[3]]]]</code>
+              <stringresponse answer="4">
+                <textline size="20"/>
+              </stringresponse>
+            </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p>Assume we have defined the following function:</p>
+        <pre>def foo(L):
+    val = L[0]
+    while (True):
+        val = L[val]</pre>
+        <p>Which of the following statement(s) will result in an infinite loop?</p>
+        <p>
+          <choiceresponse>
+            <checkboxgroup direction="vertical">
+              <choice correct="true" name="1">
+                <span>
+                  <text>
+                    <code>foo(a)</code>
+                  </text>
+                </span>
+              </choice>
+              <choice correct="true" name="2">
+                <span>
+                  <text>
+                    <code>foo(b)</code>
+                  </text>
+                </span>
+              </choice>
+              <choice correct="false" name="3">
+                <span>
+                  <text>
+                    <code>foo(c)</code>
+                  </text>
+                </span>
+              </choice>
+            </checkboxgroup>
+          </choiceresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>The function <code>foo</code> first binds <code>val</code> to the 0th element of <code>L</code>, <code>L[0]</code>.
+	    Then, <code>val</code> is bound to element <code>L[L[0]]</code>, then <code>L[L[L[0]]]</code>, and so on.</p>
+              <p>Calling <code>foo</code> on lists <code>a</code> and <code>b</code> results in an infinite loop - 
+	    <code>foo(a)</code> traverses indicies 0-&gt;1-&gt;2-&gt;3-&gt;4-&gt;0 and <code>foo(b)</code> 
+	    traverses indicies 0-&gt;3-&gt;4-&gt;1-&gt;0.</p>
+              <p><code>foo(c)</code> results in an error, because <code>L[5]</code> does not exist. </p>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>Consider the following code:</p>
+        <pre>num = ???
+L = [5, 0, 2, 4, 6, 3, 1]
+val = 0
+for i in range(0, num):
+    val = L[L[val]]
+
+print(val)</pre>
+        <ol>
+          <li>
+            <p>What is the smallest value that <code>num</code> can be such 
+	that the number 3 is printed?</p>
+            <p>
+              <choiceresponse>
+                <radiogroup direction="vertical">
+                  <choice correct="false" name="1">
+                    <span>
+                      <text>0 </text>
+                    </span>
+                  </choice>
+                  <choice correct="true" name="2">
+                    <span>
+                      <text>1 </text>
+                    </span>
+                  </choice>
+                  <choice correct="false" name="3">
+                    <span>
+                      <text>3</text>
+                    </span>
+                  </choice>
+                  <choice correct="false" name="4">
+                    <span>
+                      <text>5 </text>
+                    </span>
+                  </choice>
+                  <choice correct="false" name="5">
+                    <span>
+                      <text>Impossible </text>
+                    </span>
+                  </choice>
+                </radiogroup>
+              </choiceresponse>
+            </p>
+          </li>
+          <li>
+            <p>Now, we redefine <code>L</code> to be:</p>
+            <pre>L = [2, 0, 1, 5, 3, 4]</pre>
+            <p>What is the smallest value that <code>num</code> can be such 
+	that the number 3 is printed?</p>
+            <p>
+              <choiceresponse>
+                <radiogroup direction="vertical">
+                  <choice correct="false" name="1">
+                    <span>
+                      <text>0 </text>
+                    </span>
+                  </choice>
+                  <choice correct="false" name="2">
+                    <span>
+                      <text>3</text>
+                    </span>
+                  </choice>
+                  <choice correct="false" name="3">
+                    <span>
+                      <text>5 </text>
+                    </span>
+                  </choice>
+                  <choice correct="true" name="4">
+                    <span>
+                      <text>Impossible </text>
+                    </span>
+                  </choice>
+                </radiogroup>
+              </choiceresponse>
+            </p>
+          </li>
+        </ol>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>When <code>L = [5, 0, 2, 4, 6, 3, 1]</code>, we need to set <code>num = 1</code> to get 3 to print out. </p>
+              <p>When <code>L = [2, 0, 1, 5, 3, 4]</code>, there is no way to get to the number 3 if we start from 
+	    <code>val = 0</code>, because the indirection structure for L is (0-&gt;2-&gt;1-&gt;0, 3-&gt;5-&gt;4-&gt;3).</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+    </ol>
+  </text>
+</problem>

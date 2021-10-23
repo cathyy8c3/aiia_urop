@@ -1,0 +1,211 @@
+<problem display_name="Exercise 6" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 8 minutes</b>
+    </p>
+    <p>Here is another version of a sorting function: </p>
+    <pre>def mySort(L):
+    """ L, list with unique elements """
+    clear = False
+    while not clear:
+        clear = True
+        for j in range(1, len(L)):
+            if L[j-1] &gt; L[j]:
+                clear = False
+                temp = L[j]
+                L[j] = L[j-1]
+                L[j-1] = temp</pre>
+    <p>Compare this to: </p>
+    <pre>def newSort(L):
+    """ L, list with unique elements """
+    for i in range(len(L) - 1):
+        j=i+1
+        while j &lt; len(L):
+            if L[i] &gt; L[j]:
+                temp = L[i]
+                L[i] = L[j]
+                L[j] = temp
+            j += 1</pre>
+    <ol>
+      <li>
+        <p>Do these two functions result in the same sorted lists? </p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="true" name="1">
+                <span>
+                  <text> Yes</text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text> No</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>Yes, both <code>mySort</code> and <code>newSort</code> correctly sort a list.</p>
+              <p><code>mySort</code>:</p>
+              <p>A list is sorted if every pair of successive elements in a list are in the correct order. 
+	    <code>mySort</code> implements this idea more directly than in other sorting algorithms we 
+	    have seen. The basic idea is that every time it finds two successive elements in the wrong order, 
+	    it will swap them. Because all lists can be sorted, it will eventually run out of things that are in 
+	    the wrong order. At this point the list is sorted, and the algorithm terminates.</p>
+              <p>Another way of thinking about <code>mySort</code> is that in each iteration, if an element <code>e</code>
+	    is bigger than the one after it, <code>e</code> moves down one location. Then, <code>e</code> is checked 
+	    against the next element, and so on, until the algorithm finds an element bigger than <code>e</code>. So, 
+	    in the first pass, the biggest element drops to the bottom of the list. Then, in the second pass, the second 
+	    biggest drops to the second to last position in the list, and so on for the remaining iterations. In each pass 
+	    through the list, the next biggest element drops to its proper location, so that after <code>n</code> iterations, 
+	    the list is sorted. This algorithm is typically known as 'bubble sort' as elements bubble (up or down) one 
+	    element at a time.</p>
+              <p><code>newSort</code>:</p>
+              <p><code>newSort</code> is basically a slight variant of Selection Sort (see previous problem). In each iteration, <code>newSort</code> 
+	    tries to find the smallest element in the unsorted part of the list and appends it to the sorted part of the list. 
+	    <code>newSort</code> maintains that the element at the <code>i</code>th position is the smallest 
+	    element between the <code>i</code>th and <code>j</code>th positions. So, when <code>j</code> reaches the end of the list, 
+	    the <code>i</code>th position must have been the smallest element in the unsorted portion (from position <code>i</code> 
+	    to the end) of the list.</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>Do these two functions execute the same number of assignments of values into entries of the lists? </p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="true" name="1">
+                <span>
+                  <text> Yes. They execute the same number of assignments.</text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text> No. <code>newSort</code> may use more - but never fewer - inserts than <code>mySort</code>.</text>
+                </span>
+              </choice>
+              <choice correct="false" name="3">
+                <span>
+                  <text> No. <code>mySort</code> may use more - but never fewer - inserts than <code>newSort</code>.</text>
+                </span>
+              </choice>
+              <choice correct="false" name="4">
+                <span>
+                  <text> No. Either function may use more inserts than the other.</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>This is pretty complicated to prove, so don't worry if this question was hard for you! Here's a sketch of why both
+	    <code>mySort</code> and <code>newSort</code> execute the same number of assignments:</p>
+              <p><code>newSort</code> is, loosely speaking, performing <code>mySort</code> in the opposite direction, moving up 
+	    the next <i>smallest</i> element to the beginning of the list. However, instead of swapping the successive elements, 
+	    it instead swaps with the eventual position the smallest element will have to end up in. The number of swaps it 
+	    needs ends up being the same as that of <code>mySort</code> because moving in either direction will encounter the 
+	    same number of inconsistent pairwise elements.</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>Is the worst-case order of growth of these functions the same? </p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="true" name="1">
+                <span>
+                  <text> Yes. <code>newSort</code> and <code>mySort</code> have the same complexity.</text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text> No. <code>newSort</code> has higher complexity than <code>mySort</code>.</text>
+                </span>
+              </choice>
+              <choice correct="false" name="3">
+                <span>
+                  <text> No. <code>mySort</code> has higher complexity than <code>newSort</code>.</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>Yes. <code>mySort</code> is [mathjaxinline]O(n^2)[/mathjaxinline]. In each iteration, <code>mySort</code> checks 
+	    <code>n-1</code> successive pairwise elements, and also moves the next biggest element to the bottom of the list 
+	    (see explanation of how <code>mySort</code> works under the first question of this problem). So, after at most 
+	    <code>n</code> iterations, it will have moved the <code>n</code> biggest elements to their correct locations, 
+	    in which case it has sorted the list! So, the worst case time complexity for <code>mySort</code> is 
+	    [mathjaxinline]O(n^2)[/mathjaxinline]. </p>
+              <p>In <code>newSort</code>, <code>i</code> iterates over each element of the list, 
+	  and <code>j</code> checks between 1 and up to <code>n-i</code> elements. That's <code>n</code> 
+	  iterations for <code>i</code>, and for each <code>i</code>, we are looking for the smallest 
+	  element by checking about <code>n/2</code> elements on average. That's kind of like <code>n * n/2</code> 
+	  checks, which is a complexity of [mathjaxinline]O(n^2)[/mathjaxinline].</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>Do these two functions examine the same number of entries in the list? </p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="false" name="1">
+                <span>
+                  <text> Yes. <code>newSort</code> and <code>mySort</code> examine the same number of entries.</text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text> No. <code>newSort</code> examines more entries than <code>mySort</code>.</text>
+                </span>
+              </choice>
+              <choice correct="false" name="3">
+                <span>
+                  <text> No. <code>mySort</code> examines more entries than <code>newSort</code>.</text>
+                </span>
+              </choice>
+              <choice correct="true" name="4">
+                <span>
+                  <text> No. <code>mySort</code> and <code>newSort</code> examine different numbers of entries, but one cannot always say which function will examine the most entries.</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>For <code>L = [1, 2, 3]</code> <code>mySort</code> performs 2 comparisons and <code>newSort</code> performs 3 comparisons. For <code>L = [3, 2, 1]</code> <code>mySort</code> performs 6 comparisons and <code>newSort</code> performs 3 comparisons.
+</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+    </ol>
+  </text>
+</problem>

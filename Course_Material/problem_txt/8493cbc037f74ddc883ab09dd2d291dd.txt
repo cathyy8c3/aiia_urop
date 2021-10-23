@@ -1,0 +1,24 @@
+
+  
+
+    
+You change your mind once more. You want to keep the behavior from Part 2, but now you would like:
+>>> pe.say('the sky is blue')
+Prof. eric says: I believe that eric says: the sky is blue 
+
+>>> ae.say('the sky is blue')
+Prof. eric says: It is obvious that I believe that eric says: the sky is blue 
+Change the 
+Professor
+Paste ONLY the one class that you changed in the box below. Do not leave any debugging print statements.
+
+      
+For this question, you will not be able to see the test cases we run. This problem will test your ability to come up with your own test cases.
+
+      
+
+        
+# Paste your class here
+
+{"grader": "ase/arrogant_part3/grade_arrogant_part3.py", "hide_output": true}
+

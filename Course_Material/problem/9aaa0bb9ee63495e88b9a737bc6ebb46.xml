@@ -1,0 +1,153 @@
+<problem display_name="Exercise 4" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 8 minutes</b>
+      <br/>
+      <b>      Note that you will have to answer all questions before you can click the Check button.</b>
+    </p>
+    <script type="text/python" system_path="python_lib">
+def test_str(expect, ans):
+  # Strip away ' ' or " " wrapping string input answer
+  # (check which, if any, are present - don't want to pull valid
+  #  characters out of the center of a string, eg "That's crazy!",
+  #  nor do we wish to accept an input with mismatched modifiers, 
+  #  eg 'abc")
+  if len(expect) == 0 or len(ans) == 0: return expect == ans
+
+  if ans[0] == "'" and ans[-1] == "'": ans = ans.strip("'")
+  elif ans[0] == '"' and ans[-1] == '"': ans = ans.strip('"')
+
+  if expect[0] == "'": expect = expect.strip("'")
+  elif expect[0] == '"': expect = expect.strip('"')
+
+  return expect == ans
+
+def test_list_str(expect, ans):
+  # For a list that can be comprised of strings
+  # Check that expect &amp; ans are lists
+  assert (expect[0] == '[' and expect[-1] == ']')
+  if '[' not in ans or ']' not in ans: return False
+
+  expect = list( expect.replace(' ','')[1:-1].split(',') )
+  ans = list( ans.replace(' ','')[1:-1].split(',') )
+  return len(expect) == len(ans) and not (False in [test_str(e,a) for (e,a) in zip(expect, ans)])
+</script>
+    <p>For the last expression in each question below, specify its type and value.
+      If it generates an error, select type 'NoneType' and put the word 'error' 
+      in the box for the value. </p>
+    <ol class="enumerate">
+      <li>
+        <pre>
+&gt;&gt;&gt; aList = [0, 1, 2, 3, 4, 5]
+&gt;&gt;&gt; bList = aList
+&gt;&gt;&gt; aList[2] = 'hello'
+&gt;&gt;&gt; aList == bList
+</pre>
+        <p>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string','tuple','list')" correct="boolean"/>
+          </optionresponse>
+          <stringresponse answer="True">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+&gt;&gt;&gt; aList is bList
+</pre>
+        <p>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string','tuple','list')" correct="boolean"/>
+          </optionresponse>
+          <stringresponse answer="True">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+&gt;&gt;&gt; aList
+</pre>
+        <p>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string','tuple','list')" correct="list"/>
+          </optionresponse>
+          <customresponse cfn="test_list_str" expect="[0, 1, 'hello', 3, 4, 5]">
+            <textline size="50" correct_answer="[0, 1, 'hello', 3, 4, 5]"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+&gt;&gt;&gt; bList
+</pre>
+        <p>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string','tuple','list')" correct="list"/>
+          </optionresponse>
+          <customresponse cfn="test_list_str" expect="[0, 1, 'hello', 3, 4, 5]">
+            <textline size="50" correct_answer="[0, 1, 'hello', 3, 4, 5]"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+&gt;&gt;&gt; cList = [6, 5, 4, 3, 2]
+&gt;&gt;&gt; dList = []
+&gt;&gt;&gt; for num in cList:
+        dList.append(num)
+&gt;&gt;&gt; cList == dList
+</pre>
+        <p>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string','tuple','list')" correct="boolean"/>
+          </optionresponse>
+          <stringresponse answer="True">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+&gt;&gt;&gt; cList is dList
+</pre>
+        <p>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string','tuple','list')" correct="boolean"/>
+          </optionresponse>
+          <stringresponse answer="False">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+&gt;&gt;&gt; cList[2] = 20
+&gt;&gt;&gt; cList
+</pre>
+        <p>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string','tuple','list')" correct="list"/>
+          </optionresponse>
+          <customresponse cfn="test_list_str" expect="[6, 5, 20, 3, 2]">
+            <textline size="50" correct_answer="[6, 5, 20, 3, 2]"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+&gt;&gt;&gt; dList
+</pre>
+        <p>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string','tuple','list')" correct="list"/>
+          </optionresponse>
+          <customresponse cfn="test_list_str" expect="[6, 5, 4, 3, 2]">
+            <textline size="50" correct_answer="[6, 5, 4, 3, 2]"/>
+          </customresponse>
+        </p>
+      </li>
+    </ol>
+  </text>
+</problem>

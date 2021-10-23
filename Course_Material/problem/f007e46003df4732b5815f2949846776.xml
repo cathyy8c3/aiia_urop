@@ -1,0 +1,213 @@
+<problem display_name="Exercise 1" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 5 minutes</b>
+      <br/>
+      <b>      Note that you will have to answer all questions before you can click the Check button.</b>
+    </p>
+    <script type="text/python" system_path="python_lib">
+def test_str(expect, ans):
+  # Strip away ' ' or " " wrapping string input answer
+  # (check which, if any, are present - don't want to pull valid
+  #  characters out of the center of a string, eg "That's crazy!",
+  #  nor do we wish to accept an input with mismatched modifiers, 
+  #  eg 'abc")
+  if len(expect) == 0 or len(ans) == 0: return expect == ans
+
+  if ans[0] == "'" and ans[-1] == "'": ans = ans.strip("'")
+  elif ans[0] == '"' and ans[-1] == '"': ans = ans.strip('"')
+
+  if expect[0] == "'": expect = expect.strip("'")
+  elif expect[0] == '"': expect = expect.strip('"')
+
+  return expect == ans
+
+def test_tup_str(expect, ans):
+  # For a tuple that can be comprised of strings
+  # Check that expect &amp; ans are tuples
+  assert (expect[0] == '(' and expect[-1] == ')')
+  if '(' not in ans or ')' not in ans: return False
+
+  expect = tuple( expect.replace(' ','')[1:-1].split(',') )
+  ans = tuple( ans.replace(' ','')[1:-1].split(',') )
+  return len(expect) == len(ans) and not (False in [test_str(e,a) for (e,a) in zip(expect, ans)])
+</script>
+    <p>
+For each of the expressions below, specify its type and value. If it generates an error, select type 'NoneType' and put the word 'error' in the box for the value. </p>
+    <p>
+Assume we've made the following assignment: </p>
+    <pre>
+x = (1, 2, (3, 'John', 4), 'Hi')
+</pre>
+    <p>
+      <section class="hints">
+        <div class="collapsible">
+          <header>
+            <a href="#" id="id21">Hints: Single Element Tuples</a>
+          </header>
+          <section id="id21">
+            <p>When a tuple has only one element, you must specify it as follows: <code>(elt,)</code>. Here is an example
+	      shell session that illustrates the difference:</p>
+            <pre>
+&gt;&gt;&gt; tup1 = (5)
+&gt;&gt;&gt; print(tup1)
+5
+&gt;&gt;&gt; type(tup1)
+&lt;type 'int'&gt;
+&gt;&gt;&gt; tup2 = (5,)
+&gt;&gt;&gt; print(tup2)
+(5,)
+&gt;&gt;&gt; type(tup2)
+&lt;type 'tuple'&gt;
+</pre>
+          </section>
+        </div>
+      </section>
+    </p>
+    <ul class="enumerate">
+      <li>
+        <p>
+          <code>x[0]</code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string','tuple','list')" correct="int"/>
+          </optionresponse>
+          <stringresponse answer="1">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>x[2]</code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string','tuple','list')" correct="tuple"/>
+          </optionresponse>
+          <customresponse cfn="test_tup_str" expect="(3, 'John', 4)">
+            <textline size="50" correct_answer="(3, 'John', 4)"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>x[-1]</code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string','tuple','list')" correct="string"/>
+          </optionresponse>
+          <customresponse cfn="test_str" expect="'Hi'">
+            <textline size="50" correct_answer="'Hi'"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>x[2][2]</code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string','tuple','list')" correct="int"/>
+          </optionresponse>
+          <stringresponse answer="4">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>x[2][-1]</code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string','tuple','list')" correct="int"/>
+          </optionresponse>
+          <stringresponse answer="4">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>x[-1][-1]</code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string','tuple','list')" correct="string"/>
+          </optionresponse>
+          <customresponse cfn="test_str" expect="'i'">
+            <textline size="50" correct_answer="'i'"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>x[-1][2]</code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string','tuple','list')" correct="NoneType"/>
+          </optionresponse>
+          <stringresponse answer="error">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>x[0:1]</code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string','tuple','list')" correct="tuple"/>
+          </optionresponse>
+          <customresponse cfn="test_tup_str" expect="(1,)">
+            <textline size="50" correct_answer="(1,)"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>x[0:-1]</code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string','tuple','list')" correct="tuple"/>
+          </optionresponse>
+          <customresponse cfn="test_tup_str" expect="(1, 2, (3, 'John', 4))">
+            <textline size="50" correct_answer="(1, 2, (3, 'John', 4))"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>len(x)</code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string','tuple','list')" correct="int"/>
+          </optionresponse>
+          <stringresponse answer="4">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>2 in x</code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string','tuple','list')" correct="boolean"/>
+          </optionresponse>
+          <stringresponse answer="True">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>3 in x</code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string','tuple','list')" correct="boolean"/>
+          </optionresponse>
+          <stringresponse answer="False">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>x[0] = 8</code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function','string','tuple','list')" correct="NoneType"/>
+          </optionresponse>
+          <stringresponse answer="error">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+    </ul>
+  </text>
+</problem>

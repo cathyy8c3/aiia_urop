@@ -1,0 +1,167 @@
+<problem display_name="Exercise 5" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 8 minutes</b>
+    </p>
+    <p>
+Here is the code for selection sort. For simplicity, assume <code>L</code> is
+a list of integers: </p>
+    <pre>def selSort(L):
+    for i in range(len(L) - 1):
+        minIndx = i
+        minVal = L[i]
+        j = i+1
+        while j &lt; len(L):
+            if minVal &gt; L[j]:
+                minIndx = j
+                minVal = L[j]
+            j += 1
+        if minIndx != i:
+            temp = L[i]
+            L[i] = L[minIndx]
+            L[minIndx] = temp</pre>
+    <p>
+And here is a suggested alternative: </p>
+    <pre>def newSort(L):
+    for i in range(len(L) - 1):
+        j=i+1
+        while j &lt; len(L):
+            if L[i] &gt; L[j]:
+                temp = L[i]
+                L[i] = L[j]
+                L[j] = temp
+            j += 1</pre>
+    <ol>
+      <li>
+        <p>Do these two functions result in the same sorted lists? </p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="true" name="1">
+                <span>
+                  <text> Yes</text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text> No</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>Yes, both <code>selSort</code> and <code>newSort</code> correctly sort a list.</p>
+              <p><code>selSort</code>:</p>
+              <p>You can sort a list by always moving the smallest element from the unsorted list to a new list. 
+	    That procedure would add the elements to the new list in increasing order, and when every element 
+	    from the old list has been moved over, we end up with a new sorted list. This type of sorting 
+	    algorithm is often called Selection Sort.</p>
+              <p><code>selSort</code> implements this without explicitly creating a new list, by maintaining sorted 
+	    (from position <code>0</code> to <code>i-1</code>) and unsorted (from position <code>i</code> to the end) 
+	    parts of the list. All elements in positions before the iterating variable <code>i</code> are sorted, and 
+	    unsorted for those positions at <code>i</code> or below. In each iteration, it selects the smallest element 
+	    in the unsorted part of the list, and swaps it with the element at the <code>i</code>th position. That 
+	    essentially adds the next smallest element from the old list and appends it to the new. It keeps doing 
+	    that until the old list is empty (i.e., <code>i</code> reaches the end of the list).</p>
+              <p><code>newSort</code>:</p>
+              <p><code>newSort</code> is basically a slight variant of Selection Sort. In each iteration, <code>newSort</code> 
+	    also tries to find the smallest element in the unsorted part of the list and appends it to the sorted part of the list. 
+	    The only difference here is that instead of finding the smallest value in the unsorted part of the list with <code>minVal</code> 
+	    and <code>minIndx</code>, <code>newSort</code> maintains that the element at the <code>i</code>th position is the smallest 
+	    element between the <code>i</code>th and <code>j</code>th positions. So, when <code>j</code> reaches the end of the list, 
+	    the <code>i</code>th position must have been the smallest element in the unsorted portion (from position <code>i</code> 
+	    to the end) of the list.</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>Do these two functions execute the same number of assignments of values into entries of the lists? </p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="false" name="1">
+                <span>
+                  <text> Yes. They execute the same number of assignments.</text>
+                </span>
+              </choice>
+              <choice correct="true" name="2">
+                <span>
+                  <text> No. <code>newSort</code> may use more - but never fewer - inserts than <code>selSort</code>.</text>
+                </span>
+              </choice>
+              <choice correct="false" name="3">
+                <span>
+                  <text> No. <code>selSort</code> may use more - but never fewer - inserts than <code>newSort</code>.</text>
+                </span>
+              </choice>
+              <choice correct="false" name="4">
+                <span>
+                  <text> No. Either function may use more inserts than the other.</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p><code>selSort</code> only does one "swap" each iteration of <code>i</code>, but 
+	    <code>newSort</code> may use up to (<code>n-i</code>) "swaps" for each iteration of 
+	    <code>i</code>.</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>Is the worst-case order of growth of these functions the same?</p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="true" name="1">
+                <span>
+                  <text> Yes. <code>newSort</code> and <code>selSort</code> have the same complexity.</text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text> No. <code>newSort</code> has higher complexity than <code>selSort</code>.</text>
+                </span>
+              </choice>
+              <choice correct="false" name="3">
+                <span>
+                  <text> No. <code>selSort</code> has higher complexity than <code>newSort</code>.</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>Explanation:</p>
+              <p>Yes.</p>
+              <p>In <code>selSort</code>, <code>i</code> iterates over each element of the list, and 
+	    <code>j</code> checks between 1 and up to <code>n-i</code> elements. That's <code>n</code> 
+	    iterations for <code>i</code>, and for each <code>i</code>, we are looking for the smallest 
+	    element by checking about <code>n/2</code> elements on average. That's kind of like <code>n * n/2</code> 
+	    checks, which is [mathjaxinline]O(n^2)[/mathjaxinline]. <code>newSort</code> does the same thing as 
+	    <code>selSort</code>, except that <code>selSort</code> just updates temporary variables <code>minIndx</code> 
+	    and <code>minVal</code>, but <code>newSort</code> updates the <code>i</code>th element instead. 
+	    So, it also ends up with [mathjaxinline]O(n^2)[/mathjaxinline] complexity.</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+    </ol>
+  </text>
+</problem>

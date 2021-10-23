@@ -1,0 +1,24 @@
+
+  
+
+    
+
+      Write a function 
+is_triangular
+def is_triangular(k):
+    """
+    k, a positive integer
+    returns True if k is triangular and False if not
+    """
+    #YOUR CODE HERE
+Paste your entire function, including the definition, in the box below. Do not leave any debugging print statements.
+
+    
+
+      
+# Paste your function here
+
+      
+
+        {"grader": "ase/is_triangular/grade_is_triangular.py", "hide_output": true}
+

@@ -1,0 +1,138 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 7 minutes
+
+def test_csv(expect, ans):
+   # Take out all spaces in expected answer
+   expect = [i.strip(' ') for i in str(expect).split(',')]
+   # Take out all spaces in student solution
+   ans = ans.rstrip(' ')
+   ans = ans.rstrip(',')
+   ans = [i.strip(' ') for i in str(ans).split(',')]
+
+   def strip_q(x):
+      # Strip quotes around strings if students have entered them
+      stripped_ans = []
+      for item in x:
+         if item[0] == "'" and item[-1]=="'":
+            item = item.strip("'")
+         elif item[0] == '"' and item[-1] == '"':
+            item = item.strip('"') #" (quote to fix syntax highlighting in emacs)
+         stripped_ans.append(item)
+      return stripped_ans
+
+   return strip_q(expect) == strip_q(ans)
+
+
+Below are some short Python programs. For each program, answer the associated question. 
+
+Try to answer the questions without running the code. Check your answers, then run the code for the ones you get wrong. 
+
+This question is going to ask you what some simple loops print out. If you're asked what code like this prints: 
+num = 5
+if num > 2:
+    print(num)
+    num -= 1
+print(num)
+
+write what it prints out, separating what appears on a new line by a comma and a space. So the answer for the above code would be: 
+
+      
+5, 4
+
+If a given loop will not terminate, write the phrase 'infinite loop' in the box. 
+
+      
+
+        
+
+          
+
+            
+Note: Using the 'range' built-in function
+
+The standard way of using the 
+range
+range
+range(stop)
+>>> range(5)
+range(0,5)
+
+However, we can call 
+range
+optional parameters
+range(start, stop)
+>>> range(2, 5)
+range(2, 5)
+
+To specify a step size, you must specify a start value - the call is 
+range(start, stop, stepSize)
+>>> range(2, 10, 2)
+range(2, 10, 2)
+Note that these parameters - start, stop, stepSize - are the same parameters that you can use when slicing a string:
+>>> s = "Hello, world!"
+>>> s[1:] # s[start:]
+ello, world!
+>>> s[1:10] # s[start:stop]
+ello, wor
+>>> s[1:10:3] # s[start:stop:stepSize]
+eow
+In this problem you'll get more practice on using 
+range
+see more examples of 'range' here
+
+      
+
+        
+num = 10
+for num in range(5):
+    print(num)
+print(num)
+
+          
+
+            
+
+        
+divisor = 2
+for num in range(0, 10, 2):
+    print(num/divisor) 
+
+          
+
+            
+
+        
+for variable in range(20):
+    if variable % 4 == 0:
+        print(variable)
+    if variable % 16 == 0:
+        print('Foo!') 
+
+          
+
+            
+
+        
+for letter in 'hola':
+    print(letter)  
+
+          
+
+            
+
+        
+count = 0
+for letter in 'Snow!':
+    print('Letter # ' + str(count) + ' is ' + str(letter))
+    count += 1
+    break
+print(count)
+
+          
+
+            

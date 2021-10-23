@@ -1,0 +1,68 @@
+<p>Each month, a credit card statement will come with the option for you to pay a minimum amount of your charge, usually 2% of the balance due. However, the credit card company earns money by charging interest on the balance that you don't pay. So even if you pay credit card payments on time, interest is still accruing on the outstanding balance.</p>
+<p>Say you've made a $5,000 purchase on a credit card with an 18% annual interest rate and a 2% minimum monthly payment rate. If you only pay the minimum monthly amount for a year, how much is the remaining balance?</p>
+<p>You can think about this in the following way.</p>
+<p>At the beginning of month 0 (when the credit card statement arrives), assume you owe an amount we will call [mathjaxinline]b_0[/mathjaxinline] (<i>b</i> for <i>balance</i>; subscript <i>0</i> to indicate this is the balance at month 0).</p>
+<p>Any payment you make during that month is deducted from the balance. Let's call the payment you make in month 0, [mathjaxinline]p_0[/mathjaxinline]. Thus, your <b>unpaid balance</b> for month 0, [mathjaxinline]ub_0[/mathjaxinline], is equal to [mathjaxinline]b_0 - p_0[/mathjaxinline].</p>
+<center>[mathjax]ub_0 = b_0 - p_0[/mathjax]</center>
+<p></p>
+<p>At the beginning of month 1, the credit card company will charge you interest on your unpaid balance. So if your annual interest rate is [mathjaxinline]r[/mathjaxinline], then at the beginning of month 1, your new balance is your previous unpaid balance [mathjaxinline]ub_0[/mathjaxinline], <b>plus</b> the interest on this unpaid balance for the month. In algebra, this new balance would be</p>
+<center>[mathjax]b_1 = ub_0 + r/12.0 \cdot ub_0[/mathjax]</center>
+<p></p>
+<p>In month 1, we will make another payment, [mathjaxinline]p_1[/mathjaxinline]. That payment has to cover some of the interest costs, so it does not completely go towards paying off the original charge. The balance at the beginning of month 2, [mathjaxinline]b_2[/mathjaxinline], can be calculated by first calculating the unpaid balance after paying [mathjaxinline]p_1[/mathjaxinline], then by adding the interest accrued:</p>
+<center>[mathjax]ub_1 = b_1 - p_1[/mathjax]</center><center>[mathjax]b_2 = ub_1 + r/12.0 \cdot ub_1[/mathjax]</center>
+<p></p>
+<p>If you choose just to pay off the minimum monthly payment each month, you will see that the compound interest will dramatically reduce your ability to lower your debt.</p>
+<p>Let's look at an example. If you've got a $5,000 balance on a credit card with 18% annual interest rate, and the minimum monthly payment is 2% of the current balance, we would have the following repayment schedule if you only pay the minimum payment each month:</p>
+<style type="text/css"><!--
+table.gridtable {
+  font-family: verdana,arial,sans-serif;
+font-size:11px;
+color:#333333;
+border-width: 1px;
+border-color: #666666;
+border-collapse: collapse;
+}
+table.gridtable th {
+border-width: 1px;
+padding: 8px;
+border-style: solid;
+border-color: #666666;
+background-color: #dedede;
+}
+table.gridtable td {
+border-width: 1px;
+padding: 8px;
+border-style: solid;
+border-color: #666666;
+background-color: #ffffff;
+}
+--></style>
+<table class="gridtable">
+<tbody>
+<tr><th>Month</th><th>Balance</th><th>Minimum Payment</th><th>Unpaid Balance</th><th>Interest</th></tr>
+<tr>
+<td>0</td>
+<td>5000.00</td>
+<td>100 (= 5000 * 0.02)</td>
+<td>4900 (= 5000 - 100)</td>
+<td>73.50 (= 0.18/12.0 * 4900)</td>
+</tr>
+<tr>
+<td>1</td>
+<td>4973.50 (= 4900 + 73.50)</td>
+<td>99.47 (= 4973.50 * 0.02)</td>
+<td>4874.03 (= 4973.50 - 99.47)</td>
+<td>73.11 (= 0.18/12.0 * 4874.03)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>4947.14 (= 4874.03 + 73.11)</td>
+<td>98.94 (= 4947.14 * 0.02)</td>
+<td>4848.20 (= 4947.14 - 98.94)</td>
+<td>72.72 (= 0.18/12.0 * 4848.20)</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p>You can see that a lot of your payment is going to cover interest, and if you work this through month 12, you will see that after a year, you will have paid $1165.63 and yet you will still owe $4691.11 on what was originally a $5000.00 debt. Pretty depressing!</p>
+<p></p>

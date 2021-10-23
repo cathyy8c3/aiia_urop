@@ -1,0 +1,15 @@
+<video youtube="1.00:RJhZ5SD1AvY" url_name="be73e5a3ee7847d98805a257189b9fad" sub="" transcripts="{&quot;en&quot;: &quot;203ecf0a-71bb-4654-9ce1-7db7de287746-en.srt&quot;}" display_name="Video: Program Efficiency" download_track="true" download_video="true" edx_video_id="203ecf0a-71bb-4654-9ce1-7db7de287746" handout="/asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture11.zip" html5_sources="[]" youtube_id_1_0="RJhZ5SD1AvY">
+  <handout src="/asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture11.zip"/>
+  <video_asset client_video_id="L11_S1.mp4" duration="806.55" image="video-images/dc38c0e83bdf499a97ac30d408ca403c.jpeg">
+    <encoded_video profile="hls" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006600/MITX60012016-V006600.m3u8" file_size="0" bitrate="0"/>
+    <encoded_video profile="audio_mp3" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006600_AUD.mp3" file_size="19358752" bitrate="192"/>
+    <encoded_video profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006600_MB2.mp4" file_size="23331674" bitrate="231"/>
+    <encoded_video profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006600_DTH.mp4" file_size="43466757" bitrate="431"/>
+    <encoded_video profile="youtube" url="RJhZ5SD1AvY" file_size="0" bitrate="0"/>
+    <encoded_video profile="mobile_high" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006600_MB1.mp4" file_size="26801679" bitrate="265"/>
+    <transcripts>
+      <transcript language_code="en" file_format="srt" provider="Custom"/>
+    </transcripts>
+  </video_asset>
+  <transcript language="en" src="203ecf0a-71bb-4654-9ce1-7db7de287746-en.srt"/>
+</video>

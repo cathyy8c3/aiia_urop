@@ -1,0 +1,47 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 6 minutes
+Write an iterative function 
+iterPower(base, exp)
+iterPower(base, exp)
+base
+exp
+This function should take in two values - 
+base
+exp
+**
+
+    
+
+      
+
+def iterPower(base, exp):
+    '''
+    base: int or float.
+    exp: int >= 0
+ 
+    returns: int or float, base^exp
+    '''
+    # Your code here
+
+
+def iterPower(base, exp):
+    '''
+    base: int or float.
+    exp: int >= 0
+
+    returns: int or float, base^exp
+    '''
+    result = 1
+    while exp > 0:
+        result *=base
+        exp -= 1
+    return result
+
+
+{"grader": "finger_exercises/L5/iterPower/grade_iterPower.py"}
+

@@ -1,0 +1,26 @@
+
+  
+Consider the code:
+L = [1,2,3]
+d = {'a': 'b'}
+def f(x):
+    return 3
+Which of the following does NOT cause an exception to be thrown?
+
+    
+
+      
+
+        
+print(L[3])
+
+        
+print(d['b'])
+
+        
+for i in range(1000001, -1, -2):
+    print(f)
+
+        
+print(int('abc'))
+None of the above

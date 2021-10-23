@@ -1,0 +1,93 @@
+<problem display_name="Exercise 1" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 5 minutes</b>
+    </p>
+    <p>This problem will ask some questions about the previous problem. You will want to
+      refer to the <code>Hand</code> class from <a href="/static/hand.py">hand.py</a>.</p>
+    <ol>
+      <li>
+        <p>There are two ways to write the <code>Hand.update</code> method: you could write this
+	  method in a way that gets rid of the key letter in the attribute <code>hand</code> dictionary 
+	  when the frequency of the letter falls to 0, or write it in a way that leaves the key letter 
+	  in the attribute <code>hand</code> dictionary even when the frequency of the letter falls to 0. </p>
+        <p>Will the two different implementations of the <code>Hand.update</code> method lead to 
+	  <code>Hand</code> objects having different <code>hand</code> internal attributes?</p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="false" name="1">
+                <span>
+                  <text>Yes, always</text>
+                </span>
+              </choice>
+              <choice correct="true" name="2">
+                <span>
+                  <text>Yes, depending on what happened during the <code>update</code> call</text>
+                </span>
+              </choice>
+              <choice correct="false" name="3">
+                <span>
+                  <text>No</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>The internal representation of the <code>hand</code> attribute will be different once
+		<code>update</code> removes the last of a given letter from the <code>hand</code>.</p>
+              <p>In this case, the hand may go from something like <code>{'a': 2, 'z': 1}</code> to either
+		<code>{'a': 1, 'z': 0}</code> or  <code>{'a': 1}</code>.</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>There are two ways to write the <code>Hand.update</code> method: you could write this
+	  method in a way that gets rid of the key letter in the attribute <code>hand</code> dictionary 
+	  when the frequency of the letter falls to 0, or write it in a way that leaves the key letter 
+	  in the attribute <code>hand</code> dictionary even when the frequency of the letter falls to 0. </p>
+        <p>Does the <code>calculateLen</code> method, as defined, return different values for the two 
+	  different implementations of the <code>update</code> method?</p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="false" name="1">
+                <span>
+                  <text>Yes, always</text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text>Yes, depending on what happened during the <code>update</code> call</text>
+                </span>
+              </choice>
+              <choice correct="true" name="3">
+                <span>
+                  <text>No</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>The internal representation of the <code>hand</code> attribute has no bearing
+	      on the results of <code>calculateLen</code>.</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+    </ol>
+  </text>
+</problem>

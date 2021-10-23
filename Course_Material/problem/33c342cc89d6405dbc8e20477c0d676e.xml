@@ -1,0 +1,29 @@
+<problem display_name="Problem 6-2" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" max_attempts="1" showanswer="never">
+  <p>What is the worst case time complexity of <code>swapSort</code>? Consider different kinds of lists when the length of the list is large.</p>
+  <p>
+    <choiceresponse>
+      <radiogroup direction="vertical">
+        <choice correct="true" name="1">
+          <span>
+            <text> [mathjaxinline]O(n^2)[/mathjaxinline]</text>
+          </span>
+        </choice>
+        <choice correct="false" name="2">
+          <span>
+            <text> [mathjaxinline]O(n)[/mathjaxinline]</text>
+          </span>
+        </choice>
+        <choice correct="false" name="3">
+          <span>
+            <text> [mathjaxinline]O(\log (n))[/mathjaxinline]</text>
+          </span>
+        </choice>
+        <choice correct="false" name="4">
+          <span>
+            <text>[mathjaxinline]O(1)[/mathjaxinline]</text>
+          </span>
+        </choice>
+      </radiogroup>
+    </choiceresponse>
+  </p>
+</problem>

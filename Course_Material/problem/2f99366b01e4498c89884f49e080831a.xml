@@ -1,0 +1,112 @@
+<problem display_name="Exercise 4" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 5 minutes</b>
+    </p>
+    <p>Here is some code for linear search that uses the fact that a set of elements is sorted in increasing order: </p>
+    <pre>def search(L, e):
+    for i in range(len(L)):
+        if L[i] == e:
+            return True
+        if L[i] &gt; e:
+            return False
+    return False</pre>
+    <p>
+Consider the following code, which is an alternative version of <code>search</code>. </p>
+    <pre>def search3(L, e):
+    if L[0] == e:
+        return True
+    elif L[0] &gt; e:
+        return False
+    else:
+        return search3(L[1:], e)</pre>
+    <p>
+Which of the following statements is correct? You may assume that each function is tested with a list <code>L</code> whose elements are sorted in increasing order. 
+For simplicity, assume <code>L</code> is a list of integers.</p>
+    <p>
+      <choiceresponse>
+        <radiogroup direction="vertical">
+          <choice correct="false" name="1">
+            <span>
+              <text><code>search</code> and <code>search3</code> return the same answers.</text>
+            </span>
+          </choice>
+          <choice correct="false" name="2">
+            <span>
+              <text><code>search</code> and <code>search3</code> return the same answers provided <code>L</code> is non-empty.</text>
+            </span>
+          </choice>
+          <choice correct="true" name="3">
+            <span>
+              <text><code>search</code> and <code>search3</code> return the same answers provided <code>L</code> is non-empty and <code>e</code> is in <code>L</code>. </text>
+            </span>
+          </choice>
+          <choice correct="false" name="4">
+            <span>
+              <text><code>search</code> and <code>search3</code> do not return the same answers.</text>
+            </span>
+          </choice>
+          <choice correct="false" name="5">
+            <span>
+              <text><code>search</code> and <code>search3</code> return the same answers for lists of length 0 and 1 only.</text>
+            </span>
+          </choice>
+        </radiogroup>
+      </choiceresponse>
+    </p>
+    <p>
+      <solution>
+        <div class="detailed-solution">
+          <p>
+            <b>Explanation:</b>
+          </p>
+          <p><code>search3</code> is a recursive function. It will return the correct answer... provided that
+	    <code>L</code> is non-empty and <code>e</code> is in <code>L</code>! Why is this? Consider the first 
+	    line of code in the function: </p>
+          <pre> if L[0] == e: </pre>
+          <p>If <code>L</code> is an empty list, this will throw an error, because <code>L[0]</code> does not exist. 
+	    If <code>e</code> is not in <code>L</code>, this same line will also throw an error - because we will 
+	    walk through every element in <code>L</code>, and eventually <code>L</code> will be an empty list! If 
+	    you're having trouble seeing this, try running this version of <code>search3</code>:</p>
+          <pre>def search3(L, e):
+    print("List L: " + str(L))
+    if L[0] == e:
+        return True
+    elif L[0] &gt; e:
+        return False
+    else:
+        return search3(L[1:], e)</pre>
+          <p>Run the following two calls and watch the print out carefully. </p>
+          <pre>search3([], 4)
+search3([1, 2, 3], 4)</pre>
+          <p>
+            <section class="hints">
+              <div class="collapsible">
+                <header>
+                  <a href="#" id="id31">How would you change search3 to avoid this problem?</a>
+                </header>
+                <section id="id31">
+                  <p>
+The easiest way to modify <code>search3</code> to avoid this problem would be like this: </p>
+                  <pre>def search3(L, e):
+    # Test if the list is empty - if it is, e cannot be in it!
+    # Run this test first - so that we don't throw an error trying
+    #  to access L[0].
+    if L == []:
+        return False
+
+    if L[0] == e:
+        return True
+    elif L[0] &gt; e:
+        return False
+    else:
+        return search3(L[1:], e)</pre>
+                </section>
+              </div>
+            </section>
+          </p>
+        </div>
+      </solution>
+    </p>
+  </text>
+</problem>

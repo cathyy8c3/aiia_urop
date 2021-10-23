@@ -1,0 +1,14 @@
+
+  
+The following code will enter an infinite loop for all values of 
+i
+j
+while i >= 0:
+    while j >= 0:
+        print(i, j)
+
+    
+
+      
+True
+False

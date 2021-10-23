@@ -1,0 +1,24 @@
+<problem display_name="Problem 6-3" markdown="null" showanswer="never">
+  <text>
+    <p>You change your mind once more. You want to keep the behavior from Part 2, but now you would like:</p>
+    <pre>&gt;&gt;&gt; pe.say('the sky is blue')
+Prof. eric says: I believe that eric says: the sky is blue 
+
+&gt;&gt;&gt; ae.say('the sky is blue')
+Prof. eric says: It is obvious that I believe that eric says: the sky is blue </pre>
+    <p>Change the <code>Professor</code> class definition in order to achieve this.</p>
+    <p>Paste ONLY the one class that you changed in the box below. Do not leave any debugging print statements.</p>
+    <p>
+      <b>For this question, you will not be able to see the test cases we run. This problem will test your ability to come up with your own test cases.</b>
+    </p>
+    <coderesponse queuename="Watcher-MITx-6.00x">
+      <textbox rows="30" cols="70" mode="python" tabsize="4"/>
+      <codeparam>
+        <initial_display># Paste your class here</initial_display>
+        <grader_payload>
+{"grader": "ase/arrogant_part3/grade_arrogant_part3.py", "hide_output": true}
+</grader_payload>
+      </codeparam>
+    </coderesponse>
+  </text>
+</problem>

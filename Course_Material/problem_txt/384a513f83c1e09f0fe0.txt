@@ -1,0 +1,80 @@
+
+  
+
+    
+Answer the following question without running the code. The procedure 
+isMyNumber
+x
+
+      
+
+        
+-1 if the parameter 
+x
+
+        
+0 if the parameter 
+x
+
+        
+1 if the parameter 
+x
+The following procedure, 
+jumpAndBackPedal
+isMyNumber
+
+def jumpAndBackpedal(isMyNumber):
+    '''
+    isMyNumber: Procedure that hides a secret number. 
+     It takes as a parameter one number and returns:
+     *  -1 if the number is less than the secret number
+     *  0 if the number is equal to the secret number
+     *  1 if the number is greater than the secret number
+ 
+    returns: integer, the secret number
+    ''' 
+    guess = 1
+    if isMyNumber(guess) == 1:
+        return guess
+    foundNumber = False
+    while not foundNumber:
+        sign = isMyNumber(guess)
+        if sign == -1:
+            guess *= 2
+        else:
+            guess -= 1
+    return guess
+
+Unfortunately, the implementation given does not correctly return the secret number. 
+      Please fix the errors in the code such that 
+jumpAndBackpedal
+
+    
+
+      
+
+def jumpAndBackpedal(isMyNumber):
+    '''
+    isMyNumber: Procedure that hides a secret number. 
+     It takes as a parameter one number and returns:
+     *  -1 if the number is less than the secret number
+     *  0 if the number is equal to the secret number
+     *  1 if the number is greater than the secret number
+ 
+    returns: integer, the secret number
+    ''' 
+    guess = 1
+    if isMyNumber(guess) == 1:
+        return guess
+    foundNumber = False
+    while not foundNumber:
+        sign = isMyNumber(guess)
+        if sign == -1:
+            guess *= 2
+        else:
+            guess -= 1
+    return guess
+
+
+  {"grader": "exam1/S2013/jumpAndBackpedal/grade_jumpAndBackpedal.py", "hide_output": true}
+

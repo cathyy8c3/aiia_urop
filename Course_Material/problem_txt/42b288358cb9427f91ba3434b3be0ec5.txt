@@ -1,0 +1,143 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 6 minutes
+
+def ignore_spaces(expect, ans):
+  return expect==ans or expect.replace(' ','') == ans.replace(' ','')
+
+
+      
+
+        
+What method is called when an object is created? 
+
+          
+
+            
+
+              
+
+                
+
+                  
+
+                    
+self
+
+                
+
+                  
+
+                    
+obj.self
+
+                
+
+                  
+
+                    
+init
+
+                
+
+                  
+
+                    
+__init__
+
+                
+
+                  
+
+                    
+new
+
+          
+
+            
+
+              
+
+                
+Explanation:
+The 
+__init__
+this chapter
+
+        
+If you have an object instance, 
+obj
+doSomething()
+
+          
+
+            
+
+        
+True or False? An object's attributes must be defined in the object's 
+__init__
+
+          
+
+            
+
+              
+
+                
+
+                  
+ True
+
+                
+
+                  
+ False
+
+          
+
+            
+
+              
+
+                
+Explanation:
+An object's attributes are variables that can be used throughout the entire object, 
+		regardless of the method in which it is first defined. However, it is customary to define 
+		attributes within the 
+__init__
+__init__
+__init__
+
+        
+The following code starts the definition of a class called 
+Address
+attributes
+number
+streetName
+class Address(object):
+    def __init__(self, number, streetName):
+        # Line 1: Creating a number attribute
+        # Line 2: Creating a streetName attribute  
+
+
+          
+
+            
+What is the correct expression for 
+# Line 1
+
+              
+
+                
+
+            
+What is the correct expression for 
+# Line 2
+
+              
+
+                

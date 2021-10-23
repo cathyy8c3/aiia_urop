@@ -1,0 +1,137 @@
+<problem display_name="Exercise 5" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 7 minutes</b>
+    </p>
+    <script type="text/python" system_path="python_lib">
+def test_csv(expect, ans):
+   # Take out all spaces in expected answer
+   expect = [i.strip(' ') for i in str(expect).split(',')]
+   # Take out all spaces in student solution
+   ans = ans.rstrip(' ')
+   ans = ans.rstrip(',')
+   ans = [i.strip(' ') for i in str(ans).split(',')]
+
+   def strip_q(x):
+      # Strip quotes around strings if students have entered them
+      stripped_ans = []
+      for item in x:
+         if item[0] == "'" and item[-1]=="'":
+            item = item.strip("'")
+         elif item[0] == '"' and item[-1] == '"':
+            item = item.strip('"') #" (quote to fix syntax highlighting in emacs)
+         stripped_ans.append(item)
+      return stripped_ans
+
+   return strip_q(expect) == strip_q(ans)
+</script>
+    <p>
+Below are some short Python programs. For each program, answer the associated question. </p>
+    <p>
+Try to answer the questions without running the code. Check your answers, then run the code for the ones you get wrong. </p>
+    <p>
+This question is going to ask you what some simple loops print out. If you're asked what code like this prints: </p>
+    <pre>num = 5
+if num &gt; 2:
+    print(num)
+    num -= 1
+print(num)</pre>
+    <p>
+write what it prints out, separating what appears on a new line by a comma and a space. So the answer for the above code would be: </p>
+    <p>
+      <pre>5, 4</pre>
+    </p>
+    <p>
+If a given loop will not terminate, write the phrase 'infinite loop' in the box. </p>
+    <p>
+      <section class="hints">
+        <div class="collapsible">
+          <header>
+            <a href="#" id="id31">Note: Using the 'range' built-in function</a>
+          </header>
+          <section id="id31"><p>
+The standard way of using the <code>range</code> function is to give it a number to stop at, and <code>range</code> will give a sequence of values that start at 0 and go through the stop value minus 1. For example, calling <code>range(stop)</code> yields the following: </p><pre>&gt;&gt;&gt; range(5)
+range(0,5)</pre>
+            which is the sequence 0, 1, 2, 3, 4.
+            <p>
+However, we can call <code>range</code> with some additional, <i class="it">optional parameters</i> - a value to start at, and a step size. You can specify a start value by calling <code>range(start, stop)</code>, like this: </p>
+            <pre>&gt;&gt;&gt; range(2, 5)
+range(2, 5)</pre>
+            which is the sequence of values 2, 3, 4
+            <p>
+To specify a step size, you must specify a start value - the call is <code>range(start, stop, stepSize)</code>, like this: </p>
+            <pre>&gt;&gt;&gt; range(2, 10, 2)
+range(2, 10, 2)</pre>
+            which gives the sequence of values 2, 4, 6, 8
+            <p>Note that these parameters - start, stop, stepSize - are the same parameters that you can use when slicing a string:</p>
+            <pre>&gt;&gt;&gt; s = "Hello, world!"
+&gt;&gt;&gt; s[1:] # s[start:]
+ello, world!
+&gt;&gt;&gt; s[1:10] # s[start:stop]
+ello, wor
+&gt;&gt;&gt; s[1:10:3] # s[start:stop:stepSize]
+eow</pre>
+            <p>In this problem you'll get more practice on using <code>range</code>. You can also <a href="https://docs.python.org/3/library/functions.html#func-range" target="_blank">see more examples of 'range' here</a>. </p>
+          </section>
+        </div>
+      </section>
+    </p>
+    <ol>
+      <li>
+        <pre>num = 10
+for num in range(5):
+    print(num)
+print(num)</pre>
+        <p>
+          <customresponse cfn="test_csv" expect="0, 1, 2, 3, 4, 4">
+            <textline size="50" correct_answer="0, 1, 2, 3, 4, 4"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <pre>divisor = 2
+for num in range(0, 10, 2):
+    print(num/divisor) </pre>
+        <p>
+          <customresponse cfn="test_csv" expect="0.0, 1.0, 2.0, 3.0, 4.0">
+            <textline size="50" correct_answer="0.0, 1.0, 2.0, 3.0, 4.0"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <pre>for variable in range(20):
+    if variable % 4 == 0:
+        print(variable)
+    if variable % 16 == 0:
+        print('Foo!') </pre>
+        <p>
+          <customresponse cfn="test_csv" expect="0, 'Foo!', 4, 8, 12, 16, 'Foo!'">
+            <textline size="50" correct_answer="0, 'Foo!', 4, 8, 12, 16, 'Foo!'"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <pre>for letter in 'hola':
+    print(letter)  </pre>
+        <p>
+          <customresponse cfn="test_csv" expect="'h', 'o', 'l', 'a'">
+            <textline size="50" correct_answer="'h', 'o', 'l', 'a'"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <pre>count = 0
+for letter in 'Snow!':
+    print('Letter # ' + str(count) + ' is ' + str(letter))
+    count += 1
+    break
+print(count)</pre>
+        <p>
+          <customresponse cfn="test_csv" expect="'Letter # 0 is S', 1">
+            <textline size="50" correct_answer="'Letter # 0 is S', 1"/>
+          </customresponse>
+        </p>
+      </li>
+    </ol>
+  </text>
+</problem>

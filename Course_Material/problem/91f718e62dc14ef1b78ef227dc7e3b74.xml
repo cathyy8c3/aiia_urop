@@ -1,0 +1,43 @@
+<problem title="Hangman, Part 1b" attempts="30" type="lecture" display_name="Problem 2" markdown="null" max_attempts="30" showanswer="never">
+  <text>
+    <p> Next, implement the function <code>getGuessedWord</code> that takes in two parameters - a string,
+      <code>secretWord</code>, and a list of letters, <code>lettersGuessed</code>. This function returns a 
+      string that is comprised of letters and underscores, based on what letters in <code>lettersGuessed</code>
+      are in <code>secretWord</code>. This shouldn't be too different from <code>isWordGuessed</code>!</p>
+    <p>Example Usage:</p>
+    <pre>&gt;&gt;&gt; secretWord = 'apple' 
+&gt;&gt;&gt; lettersGuessed = ['e', 'i', 'k', 'p', 'r', 's']
+&gt;&gt;&gt; print(getGuessedWord(secretWord, lettersGuessed))
+'_ pp_ e'</pre>
+    <p>When inserting underscores into your string, it's a good idea to add at least a space after each
+  one, so it's clear to the user how many unguessed letters are left in the string (compare
+  the readability of <code>____</code> with <code>_ _ _ _ </code>). This is called
+  <i>usability</i> - it's very important, when programming, to consider the usability of 
+  your program. If users find your program difficult to understand or operate, they won't use it!</p>
+    <p>For this problem, you are free to use spacing in any way you wish - our grader will 
+  only check that the letters and underscores are in the proper order; 
+  it will not look at spacing. We do encourage you to think about usability when
+  designing. 
+</p>
+    <p>For this function, you may assume that all the letters in <code>secretWord</code> and
+  <code>lettersGuessed</code> are lowercase.</p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="70" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def getGuessedWord(secretWord, lettersGuessed):
+    '''
+    secretWord: string, the word the user is guessing
+    lettersGuessed: list, what letters have been guessed so far
+    returns: string, comprised of letters and underscores that represents
+      what letters in secretWord have been guessed so far.
+    '''
+    # FILL IN YOUR CODE HERE...
+</initial_display>
+      <grader_payload>
+{"grader": "ps03/hangman1b/grade_getGuessedWord.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

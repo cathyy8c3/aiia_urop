@@ -1,0 +1,19 @@
+
+  
+Consider the function 
+f
+def f(n):
+    def g(m):
+        m = 0
+        for i in range(m):
+            print(m)
+    for i in range(n):
+        g(n)
+
+    
+
+      
+[mathjaxinline]O(1)[/mathjaxinline]
+[mathjaxinline]O(log(n))[/mathjaxinline]
+[mathjaxinline]O(n)[/mathjaxinline]
+[mathjaxinline]O(n^2)[/mathjaxinline]

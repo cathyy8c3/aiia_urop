@@ -1,0 +1,11 @@
+<problem display_name="Problem 1-3" markdown="null" max_attempts="1" showanswer="never">
+  <p>The complexity of binary search on a sorted list of n items is [mathjaxinline]O(\log n)[/mathjaxinline].
+      
+    </p>
+  <multiplechoiceresponse>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true" name="0">True</choice>
+      <choice correct="false" name="1">False</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

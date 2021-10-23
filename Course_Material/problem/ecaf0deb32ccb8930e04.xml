@@ -1,0 +1,41 @@
+<problem>
+  <text>
+    <p>
+Write a Python function that creates and returns a list of prime numbers
+      between 2 and <code>N</code>, inclusive, sorted in increasing order. A prime number is a number that is divisible only by 1 and itself. This function takes in an integer and returns a list of integers.</p>
+    <pre>def primes_list(N):
+    '''
+    N: an integer
+    Returns a list of prime numbers
+    '''
+    # Your code here
+    </pre>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def primes_list(N):
+    '''
+    N: an integer
+    '''
+    # Your code here
+      </initial_display>
+      <answer_display>
+def primes_list(N):
+    primes_list = [2]
+    for i in range(3, N+1):
+        is_prime = True
+        for j in primes_list:
+            if i % j == 0:
+                is_prime = False
+        if is_prime:
+            primes_list.append(i)
+    return primes_list
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L6/primes_list/grade_primes_list.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

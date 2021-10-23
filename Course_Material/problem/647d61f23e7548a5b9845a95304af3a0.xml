@@ -1,0 +1,27 @@
+<problem display_name="Exercise: apply to each 2" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" weight="5.0">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 4 minutes</b>
+    </p>
+    <pre>
+  &gt;&gt;&gt; print(testList)
+  [2, -3, 9, -8]
+</pre>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="10" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+# Your Code Here
+</initial_display>
+      <answer_display>
+def inc(a):
+    return a+1
+applyToEach(testList, inc)
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L6/applyToEach2/grade_ate2.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

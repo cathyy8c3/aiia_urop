@@ -1,0 +1,35 @@
+<problem display_name="Exercise: fourth power" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" weight="5.0">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 2 minutes</b>
+    </p>
+    <p>
+Write a Python function, <code>fourthPower</code>, that takes in one number and returns that value raised to the fourth power. </p>
+    <p>
+You should use the <code>square</code> procedure that you defined in an earlier exercise (you don't need to redefine <code>square</code> in this box; when you call <code>square</code>, the grader will use our definition). </p>
+    <p>
+This function takes in one number and returns one number. </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def fourthPower(x):
+    '''
+    x: int or float.
+    '''
+    # Your code here
+</initial_display>
+      <answer_display>
+def fourthPower(x):
+   '''
+   x: int or float.
+   '''
+   return square(square(x))
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L4/fourthPower/grade_fourthPower.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

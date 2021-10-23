@@ -1,0 +1,33 @@
+<problem display_name="Exercise: square" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" weight="5.0">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 3 minutes</b>
+    </p>
+    <p>
+Write a Python function, <code>square</code>, that takes in one number and returns the square of that number. </p>
+    <p>
+This function takes in one number and returns one number. </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="10" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def square(x):
+    '''
+    x: int or float.
+    '''
+    # Your code here
+</initial_display>
+      <answer_display>
+def square(x):
+   '''
+   x: int or float.
+   '''
+   return x*x
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L4/square/grade_square.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

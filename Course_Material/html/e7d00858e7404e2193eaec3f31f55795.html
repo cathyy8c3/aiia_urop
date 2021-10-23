@@ -1,0 +1,48 @@
+<p><strong style="line-height: 25.6px;">You do not have to read through these at the start of the course. Come back when you encounter an issue!&nbsp;</strong>Below are some issues you may encounter in this course, along with solutions recommended by the staff.</p>
+<h2>Grader downtime</h2>
+<p>It is possible for the automatic graders to go down, especially when there are many people trying to submit code for grading. We may offer extensions on assignments or exams in the cases of <strong>extreme grader downtime</strong>, but cannot guarantee this. This is why we highly encourage you to start on your assignments early. Even if you just read them over when they are released, that will give you a great advantage.</p>
+<h2>The grader marked your code as INCORRECT</h2>
+<p>If you submit code to the grader (by clicking Check) and find you get an Incorrect from the grader, use the <strong>&ldquo;See Full Output&rdquo; link</strong> to the right of the "Incorrect". This will show you the test cases that ran. It will print what your code outputted and what the correct answer code outputted.</p>
+<p><img src="/static/full_output.png" type="saveimage" target="[object Object]" width="300" height="196" /></p>
+<p></p>
+<p>They must match exactly, so:</p>
+<ul>
+<li><span style="font-size: 1em; line-height: 1.6em;">check spaces</span></li>
+<li>check capitalization</li>
+<li>check general formatting&nbsp;</li>
+<li>re-read the problem specification</li>
+<li>finger exercises may be submitted as many times as you want, so if you get an answer wrong, try again!</li>
+<li>problem sets have a limited number of attempts so make sure your code is correct (in your own development environment, like Anaconda or IDLE) before you submit it.</li>
+</ul>
+<h2>Spinning queue icon</h2>
+<p><img src="/static/queue.png" height="165" width="696" type="saveimage" target="[object Object]" /></p>
+<p style="font-size: 16px; font-family: 'Open Sans', Verdana, Geneva, sans-serif, sans-serif; margin: 20px 0px 0px;">It is possible that when you submit your code to the grader (by hitting Check), you will get the <strong>spinning processing&nbsp;icon</strong>. Usually, this should only last a few seconds and you will get a reply back from the grader within those few seconds.</p>
+<p style="font-size: 16px; font-family: 'Open Sans', Verdana, Geneva, sans-serif, sans-serif; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;">If the spinning queued icon lasts longer than a few seconds:</p>
+<ul style="padding-left: 40px; color: #222222; font-family: 'Open Sans', Verdana, Geneva, sans-serif, sans-serif; line-height: 22.652000427246094px;">
+<li>Go to another problem in the course that uses code submission. For example, L2 Problem 8. Hit Check with any code there to check if the spinning Processing issue is with all problems or just one.</li>
+<ul>
+<ul>
+<ul>
+<li>If&nbsp;<span style="line-height: 22.6520004272461px;">spinning Processing doesn't happen in another problem, then check whether you have pasted the function definition twice (nested inside the same function definition). If so, only use one function definition and click Check again.</span></li>
+<li><span style="line-height: 22.6520004272461px;"><span style="line-height: 22.6520004272461px;">If&nbsp;</span><span style="line-height: 22.6520004272461px;">spinning Processing doesn't happen in another problem, you might have a syntax error. The best way to check this is to paste the code you have from the box in your local IDE and run it -- any syntax error or indentation error will show up.</span></span></li>
+<li>If spinning Processing doesn't happen in another problem, then check your code for any special characters. In the past, the offending character showed up in your pasted code as a one or more '\b' (no quotes) or a non-ASCII character (<span style="color: #3c3c3c; font-family: 'Open Sans', Verdana, Arial, Helvetica, sans-serif; line-height: 25.6000003814697px;">\u200b for example)</span>. If you remove the character, your code should give you a grader reply.</li>
+<li>If spinning Processing doesn't happen in another problem and you have followed the previous three points, try clicking Check again.</li>
+</ul>
+</ul>
+</ul>
+<li>If spinning Processing happens in another problem as well,&nbsp;the graders are probably down. If there is no recent post in the Updates and News page about the grader being down, please email the staff. Someone will update that page and look into the issue.</li>
+</ul>
+<h2>Infinite loops in your programs&nbsp;</h2>
+<p>If you <strong>accidentally created an infinite loop</strong> and your program sits for a few seconds without printing anything out or terminating, restart the console.</p>
+<ul>
+<li><span style="font-size: 1em; line-height: 1.6em;">You can do this in Spyder by hitting Ctrl + c (Ctrl key and the c button on your keyboard) in the console. Or go to the button beside the red square at the top of your console and select Restart Kernel. If this doesn't work, restart Anaconda/Spyder.</span></li>
+<li>You can do this in IDLE by clicking Ctrl + F6 or by going to the menu Shell -&gt; Restart Shell</li>
+</ul>
+<h2>Program timed out (Slow Code or Infinite Loops)</h2>
+<p><img src="/static/L379.png" type="saveimage" target="[object Object]" width="696" height="312" /></p>
+<p>If you see this error, you have an infinite loop in your program (or more rarely, slow code). The <strong>grader uses test cases not shown in the problem</strong>, so check your code with more test cases. Most likely, there is a path through your code that leads to an infinite loop. Good test cases use unique inputs -- try very small or very large values, or uncommon combinations of inputs.</p>
+<h2>Submission cannot be graded</h2>
+<p><img alt="" src="http://i.imgur.com/MwUm6ZJ.png" height="112" width="696" /></p>
+<p>After pasting code from your own working environment and hitting Check, you may see this message (or a similar one inside a yellow box).&nbsp;Those <strong>students who use non-ascii characters are most likely to see this</strong>. After pasting, some special characters (like accented letters) were introduced. To the grader, they are a sequence of characters (\u200b for example). Go through the code in the textbox and check that all your characters are ASCII ( a-z and 0-9 but none with accents). These special characters may appear in bright red font so should be easy to spot.</p>
+<p></p>
+<p></p>

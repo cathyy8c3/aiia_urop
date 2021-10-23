@@ -1,0 +1,9 @@
+
+  
+Performing binary search on an unsorted list will always return the correct answer in [mathjaxinline]O(n)[/mathjaxinline] time where [mathjaxinline]n[/mathjaxinline] is the length of the list.
+
+    
+
+      
+True
+False

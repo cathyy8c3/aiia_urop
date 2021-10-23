@@ -1,0 +1,26 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 4 minutes
+
+  >>> print(testList)
+  [2, -3, 9, -8]
+
+
+    
+
+      
+
+# Your Code Here
+
+
+def inc(a):
+    return a+1
+applyToEach(testList, inc)
+
+
+{"grader": "finger_exercises/L6/applyToEach2/grade_ate2.py"}
+

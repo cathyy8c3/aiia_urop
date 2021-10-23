@@ -1,0 +1,124 @@
+<problem display_name="Exercise 1" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 5 minutes</b>
+      <br/>
+      <b>      Note that you will have to answer all questions before you can click the Check button.</b>
+    </p>
+    <script type="text/python" system_path="python_lib">
+def test_str(expect, ans):
+  # Strip away ' ' or " " wrapping string input answer
+  # (check which, if any, are present - don't want to pull valid
+  #  characters out of the center of a string, eg "That's crazy!",
+  #  nor do we wish to accept an input with mismatched modifiers, 
+  #  eg 'abc")
+
+  if ans[0] == "'" and ans[-1] == "'": ans = ans.strip("'")
+  elif ans[0] == '"' and ans[-1] == '"': ans = ans.strip('"')
+
+  if expect[0] == "'": expect = expect.strip("'")
+  elif expect[0] == '"': expect = expect.strip('"')
+
+  return expect == ans
+</script>
+    <p>
+For each of the following expressions, indicate the value returned, or if the evaluation would lead to an error, write the word 'error' (note this is a word, not a string, no quotes). While you could simply type these expressions into your IDE, we encourage you to answer them directly since this will help reinforce your understanding of basic Python expressions. </p>
+    <p>
+      <section class="hints">
+        <div class="collapsible">
+          <header>
+            <a href="#" id="id72">Note: Advanced String Slicing</a>
+          </header>
+          <section id="id71">
+            <p>You've seen in lecture that you can slice a string with a call such as <code>s[i:j]</code>, which gives you a portion of string <code>s</code> from index <code>i</code>
+	    to index <code>j-1</code>. However this is not the only way to slice a string! If you omit the starting index, Python will assume that you wish to start your slice
+	      at index 0. If you omit the ending index, Python will assume you wish to end your slice at the end of the string. Check out this session with the Python shell:</p>
+            <pre>
+&gt;&gt;&gt; s = 'Python is Fun!'
+&gt;&gt;&gt; s[1:5]
+'ytho'
+&gt;&gt;&gt; s[:5]
+'Pytho'
+&gt;&gt;&gt; s[1:]
+'ython is Fun!'
+&gt;&gt;&gt; s[:]
+'Python is Fun!'
+</pre>
+            <p>That last example is interesting! If you omit both the start and ending index, you see your original string!</p>
+            <p>There's one other cool thing you can do with string slicing. You can add a third parameter, <code>k</code>, like this: <code>s[i:j:k]</code>. This gives a slice
+	    of the string <code>s</code> from index <code>i</code> to index <code>j-1</code>, with step size <code>k</code>. Check out the following examples:</p>
+            <pre>
+&gt;&gt;&gt; s = 'Python is Fun!'
+&gt;&gt;&gt; s[1:12:2]
+'yhni u'
+&gt;&gt;&gt; s[1:12:3]
+'yoiF'
+&gt;&gt;&gt; s[::2]
+'Pto sFn'
+</pre>
+            <p>The last example is similar to the example <code>s[:]</code>. With <code>s[::2]</code>, we're asking for the full string <code>s</code> (from index 0 through 13), 
+	    with a step size of 2 - so we end up with every other character in <code>s</code>. Pretty cool!</p>
+          </section>
+        </div>
+      </section>
+    </p>
+    <ul class="enumerate">
+      <li>
+        <p>
+          <code>"a" + "bc"</code>
+          <customresponse cfn="test_str" expect="'abc'">
+            <textline size="50" correct_answer="'abc'"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>3 * "bc"</code>
+          <customresponse cfn="test_str" expect="'bcbcbc'">
+            <textline size="50" correct_answer="'bcbcbc'"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>"3" * "bc"</code>
+          <stringresponse answer="error">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>"abcd"[2]</code>
+          <customresponse cfn="test_str" expect="'c'">
+            <textline size="50" correct_answer="'c'"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>"abcd"[0:2]</code>
+          <customresponse cfn="test_str" expect="'ab'">
+            <textline size="50" correct_answer="'ab'"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>"abcd"[:2]</code>
+          <customresponse cfn="test_str" expect="'ab'">
+            <textline size="50" correct_answer="'ab'"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>"abcd"[2:]</code>
+          <customresponse cfn="test_str" expect="'cd'">
+            <textline size="50" correct_answer="'cd'"/>
+          </customresponse>
+        </p>
+      </li>
+    </ul>
+  </text>
+</problem>

@@ -1,0 +1,42 @@
+<problem display_name="Problem 4" markdown="null" showanswer="never">
+  <p>
+      You are given the following definitions:</p>
+  <ul>
+    <li>A run of monotonically increasing numbers means that a number at position <code>k+1</code> in the sequence is greater than or equal to the number at position <code>k</code> in the sequence.</li>
+    <li>A run of monotonically decreasing numbers means that a number at position <code>k+1</code> in the sequence is less than or equal to the number at position <code>k</code> in the sequence.</li>
+  </ul>
+  <p>Implement a function that meets the specifications below.  </p>
+  <pre>def longest_run(L):
+    """
+    Assumes L is a list of integers containing at least 2 elements.
+    Finds the longest run of numbers in L, where the longest run can
+    either be monotonically increasing or monotonically decreasing. 
+    In case of a tie for the longest run, choose the longest run 
+    that occurs first.
+    Does not modify the list.
+    Returns the sum of the longest run. 
+    """
+    # Your code here</pre>
+  <p/>
+  <p>For example:</p>
+  <ul>
+    <li>If <code>L = [10, 4, 3, 8, 3, 4, 5, 7, 7, 2]</code> then the longest run of monotonically increasing numbers in <code>L</code> is <code>[3, 4, 5, 7, 7]</code> and the longest run of monotonically decreasing numbers in <code>L</code> is <code>[10, 4, 3]</code>. Your function should return the value <code>26</code> because the longest run of monotonically increasing integers is longer than the longest run of monotonically decreasing numbers. </li>
+    <li>If <code>L = [5, 4, 10]</code> then the longest run of monotonically increasing numbers in <code>L</code> is 
+        <code>[4, 10]</code> and the longest run of monotonically decreasing numbers in <code>L</code> is <code>[5, 4]</code>. Your function should return the value <code>9</code> because the longest run of monotonically decreasing integers occurs before the longest run of monotonically increasing numbers.
+
+      </li>
+  </ul>
+  <p>Paste your entire function, including the definition, in the box below. Do not leave any debugging print statements.</p>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>#paste your code here
+    </initial_display>
+      <answer_display>
+</answer_display>
+      <grader_payload>
+        {"grader": "quiz/60001_s2016/longest_run/grade_longest_run.py", "hide_output": false}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

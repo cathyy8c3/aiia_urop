@@ -1,0 +1,244 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 8 minutes
+Here is another version of a sorting function: 
+def mySort(L):
+    """ L, list with unique elements """
+    clear = False
+    while not clear:
+        clear = True
+        for j in range(1, len(L)):
+            if L[j-1] > L[j]:
+                clear = False
+                temp = L[j]
+                L[j] = L[j-1]
+                L[j-1] = temp
+Compare this to: 
+def newSort(L):
+    """ L, list with unique elements """
+    for i in range(len(L) - 1):
+        j=i+1
+        while j < len(L):
+            if L[i] > L[j]:
+                temp = L[i]
+                L[i] = L[j]
+                L[j] = temp
+            j += 1
+
+      
+
+        
+Do these two functions result in the same sorted lists? 
+
+          
+
+            
+
+              
+
+                
+
+                  
+ Yes
+
+                
+
+                  
+ No
+
+          
+
+            
+
+              
+
+                
+Explanation:
+Yes, both 
+mySort
+newSort
+mySort
+A list is sorted if every pair of successive elements in a list are in the correct order. 
+	    
+mySort
+Another way of thinking about 
+mySort
+e
+e
+e
+e
+n
+newSort
+newSort
+newSort
+newSort
+i
+i
+j
+j
+i
+i
+
+        
+Do these two functions execute the same number of assignments of values into entries of the lists? 
+
+          
+
+            
+
+              
+
+                
+
+                  
+ Yes. They execute the same number of assignments.
+
+                
+
+                  
+ No. 
+newSort
+mySort
+
+                
+
+                  
+ No. 
+mySort
+newSort
+
+                
+
+                  
+ No. Either function may use more inserts than the other.
+
+          
+
+            
+
+              
+
+                
+Explanation:
+This is pretty complicated to prove, so don't worry if this question was hard for you! Here's a sketch of why both
+	    
+mySort
+newSort
+newSort
+mySort
+smallest
+mySort
+
+        
+Is the worst-case order of growth of these functions the same? 
+
+          
+
+            
+
+              
+
+                
+
+                  
+ Yes. 
+newSort
+mySort
+
+                
+
+                  
+ No. 
+newSort
+mySort
+
+                
+
+                  
+ No. 
+mySort
+newSort
+
+          
+
+            
+
+              
+
+                
+Explanation:
+Yes. 
+mySort
+mySort
+n-1
+mySort
+n
+n
+mySort
+In 
+newSort
+i
+j
+n-i
+n
+i
+i
+n/2
+n * n/2
+
+        
+Do these two functions examine the same number of entries in the list? 
+
+          
+
+            
+
+              
+
+                
+
+                  
+ Yes. 
+newSort
+mySort
+
+                
+
+                  
+ No. 
+newSort
+mySort
+
+                
+
+                  
+ No. 
+mySort
+newSort
+
+                
+
+                  
+ No. 
+mySort
+newSort
+
+          
+
+            
+
+              
+
+                
+Explanation:
+For 
+L = [1, 2, 3]
+mySort
+newSort
+L = [3, 2, 1]
+mySort
+newSort

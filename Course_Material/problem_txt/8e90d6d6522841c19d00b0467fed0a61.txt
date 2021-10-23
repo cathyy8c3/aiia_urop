@@ -1,0 +1,9 @@
+
+  
+A bisection search algorithm always returns the correct answer when searching for an element in a sorted list.
+
+    
+
+      
+True
+False

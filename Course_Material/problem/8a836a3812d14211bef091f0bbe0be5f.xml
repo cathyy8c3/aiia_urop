@@ -1,0 +1,63 @@
+<problem display_name="Exercise 5" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 3 minutes</b>
+      <br/>
+      <b>      Note that you will have to answer all questions before you can click the Check button.</b>
+    </p>
+    <p>
+For each of the following expressions, indicate the type of the expression. While you could simply type these expressions into your shell, we encourage you to answer them directly since this will help reinforce your understanding of basic Python expressions. </p>
+    <p>
+      <section class="hints">
+        <div class="collapsible">
+          <header>
+            <a href="#" id="id11">Note: The Python 'None' keyword</a>
+          </header>
+          <section id="id11">In Python, the keyword <code>None</code> is frequently used to represent the absence of a value. <tt class="tt">None</tt> is the only value in Python of type <code>NoneType</code>. </section>
+        </div>
+      </section>
+    </p>
+    <ul class="enumerate">
+      <li>
+        <p>
+          <code>3.14 </code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','bool')" correct="float"/>
+          </optionresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>-34 </code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','bool')" correct="int"/>
+          </optionresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>True </code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','bool')" correct="bool"/>
+          </optionresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>None </code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','bool')" correct="NoneType"/>
+          </optionresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>3.0 </code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','bool')" correct="float"/>
+          </optionresponse>
+        </p>
+      </li>
+    </ul>
+  </text>
+</problem>

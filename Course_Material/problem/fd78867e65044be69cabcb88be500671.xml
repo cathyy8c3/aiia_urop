@@ -1,0 +1,44 @@
+<problem display_name="Problem 6-3" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" max_attempts="1" showanswer="never">
+  <text>
+    <p>If we make a small change to the line <code>for j in range(i+1, len(L)):</code> such that the code becomes:  </p>
+    <pre>def modSwapSort(L): 
+    """ L is a list on integers """
+    print("Original L: ", L)
+    for i in range(len(L)):
+        for j in range(len(L)):
+            if L[j] &lt; L[i]:
+                # the next line is a short 
+                # form for swap L[i] and L[j]
+                L[j], L[i] = L[i], L[j] 
+                print(L)
+    print("Final L: ", L)
+    </pre>
+    <p>What happens to the behavior of <code>swapSort</code> with this new code?</p>
+    <p>
+      <choiceresponse>
+        <radiogroup direction="vertical">
+          <choice correct="false" name="1">
+            <span>
+              <text> No change</text>
+            </span>
+          </choice>
+          <choice correct="true" name="2">
+            <span>
+              <text><code>modSwapSort</code> now orders the list in descending order for all lists.</text>
+            </span>
+          </choice>
+          <choice correct="false" name="2">
+            <span>
+              <text><code>modSwapSort</code> now orders the list in descending order for SOME lists but not all</text>
+            </span>
+          </choice>
+          <choice correct="false" name="2">
+            <span>
+              <text><code>modSwapSort</code> enters an infinite loop.</text>
+            </span>
+          </choice>
+        </radiogroup>
+      </choiceresponse>
+    </p>
+  </text>
+</problem>

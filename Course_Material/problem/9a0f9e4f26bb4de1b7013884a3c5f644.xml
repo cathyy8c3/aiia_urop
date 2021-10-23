@@ -1,0 +1,40 @@
+<problem display_name="Problem 7" markdown="null" showanswer="never">
+  <text>
+    <p>
+      Assume you are given two dictionaries <code>d1</code> and <code>d2</code>, each with integer keys and integer values. You are also given a function <code>f</code>, that takes in two integers, performs an unknown operation on them, and returns a value. </p>
+    <p>Write a function called <code>dict_interdiff</code> that takes in two dictionaries (<code>d1</code> and <code>d2</code>). The function will return a tuple of two dictionaries: a dictionary of the intersect of <code>d1</code> and <code>d2</code> and a dictionary of the difference of <code>d1</code> and <code>d2</code>, calculated as follows:</p>
+    <ul>
+      <li><b>intersect:</b> The keys to the intersect dictionary are keys that are common in both <code>d1</code> and <code>d2</code>. To get the values of the intersect dictionary, look at the common keys in <code>d1</code> and <code>d2</code> and apply the function <code>f</code> to these keys' values -- the value of the common key in <code>d1</code> is the first parameter to the function and the value of the common key in <code>d2</code> is the second parameter to the function. Do not implement <code>f</code> inside your <code>dict_interdiff</code> code -- assume it is defined outside. </li>
+      <li><b>difference:</b> a key-value pair in the difference dictionary is (a) every key-value pair in <code>d1</code> whose key appears only in <code>d1</code> and not in <code>d2</code> or (b) every key-value pair in <code>d2</code> whose key appears only in <code>d2</code> and not in <code>d1</code>.</li>
+    </ul>
+    <p>Here are two examples:</p>
+    <ul>
+      <li>If <code>f(a, b)</code> returns <code>a + b</code><br/>
+          <code>d1 = {1:30, 2:20, 3:30, 5:80}</code><br/>
+          <code>d2 = {1:40, 2:50, 3:60, 4:70, 6:90}</code><br/>
+          then <code>dict_interdiff(d1, d2)</code> returns <code>({1: 70, 2: 70, 3: 90}, {4: 70, 5: 80, 6: 90})</code></li>
+      <li>If <code>f(a, b)</code> returns <code>a &gt; b</code><br/>
+          <code>d1 = {1:30, 2:20, 3:30}</code><br/>
+          <code>d2 = {1:40, 2:50, 3:60}</code><br/>
+          then <code>dict_interdiff(d1, d2)</code> returns <code>({1: False, 2: False, 3: False}, {})</code></li>
+    </ul>
+    <pre>def dict_interdiff(d1, d2):
+    '''
+    d1, d2: dicts whose keys and values are integers
+    Returns a tuple of dictionaries according to the instructions above
+    '''
+    # Your code here</pre>
+    <p>Paste your entire function, including the definition, in the box below. The function <code>f</code> will be automatically added to your code, do not paste it in the box. Do not leave any debugging print statements.  <b>Note that we ask you to write a function only -- you cannot rely on any variables defined outside your function for your code to work correctly.</b></p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display># Paste your function here</initial_display>
+      <answer_display>
+</answer_display>
+      <grader_payload>
+{"grader": "quiz/60001_f2015/dict_interdiff/grade_dict_interdiff.py", "hide_output": false}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

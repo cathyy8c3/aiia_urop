@@ -1,0 +1,45 @@
+<problem display_name="Problem 8" markdown="null" showanswer="never">
+  <text>
+    <p>
+      Implement a function that meets the specifications below. </p>
+    <pre>def applyF_filterG(L, f, g):
+    """
+    Assumes L is a list of integers
+    Assume functions f and g are defined for you. 
+    f takes in an integer, applies a function, returns another integer 
+    g takes in an integer, applies a Boolean function, 
+        returns either True or False
+    Mutates L such that, for each element i originally in L, L contains  
+        i if g(f(i)) returns True, and no other elements
+    Returns the largest element in the mutated L or -1 if the list is empty
+    """
+    # Your code here</pre>
+    <p/>
+    <p>For example, the following functions, <code>f</code>, <code>g</code>, and test code:</p>
+    <pre>def f(i):
+    return i + 2
+def g(i):
+    return i &gt; 5
+
+L = [0, -10, 5, 6, -4]
+print(applyF_filterG(L, f, g))
+print(L)</pre>
+    <p>Should print:</p>
+    <pre>6
+[5, 6]</pre>
+    <p/>
+    <p>
+      For this question, you will <b>not be able to see the test cases we run</b>. This problem will test your ability to come up with your own test cases.     </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display># Paste your function here</initial_display>
+      <answer_display>
+      </answer_display>
+      <grader_payload>
+        {"grader": "quiz/60001_s2016/applyF_filterG/grade_applyF_filterG.py", "hide_output": true}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

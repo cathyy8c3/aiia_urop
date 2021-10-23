@@ -1,0 +1,83 @@
+<problem title="Computer Plays a Hand" attempts="30" type="lecture" display_name="Problem 8 - Computer Plays a Hand" markdown="null" max_attempts="30" showanswer="never" weight="15.0">
+  <text>
+    <p>Now that we have the ability to let the computer choose a word, we need 
+      to set up a function to allow the computer to play a hand - in a manner
+      very similar to Part A's <code>playHand</code> function (get the hint?).</p>
+    <p>Implement the <code>compPlayHand</code> function. This function should allow the computer
+      to play a given hand, using the procedure you just wrote in the previous part.
+      This should be very similar to the earlier version in which a user selected the 
+      word, although deciding when it is done playing a particular hand will be different.</p>
+    <p>Be sure to test your function on some randomly generated hands using <code>dealHand</code>.</p>
+    <section class="hints">
+      <h3>Test Cases</h3>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="ht1l">Test Cases</a>
+        </header>
+        <section id="ht1">
+          <p>Some test cases to look at. Note it is okay if your code finds a
+    different word, as long as the point values are the same.</p>
+          <code>compPlayHand({'a': 1, 'p': 2, 's': 1, 'e': 1, 'l': 1}, wordList, 6)</code>
+          <pre>Current Hand: a p p s e l
+"appels" earned 110 points. Total: 110 points
+Total score: 110 points.</pre>
+          <code>compPlayHand({'a': 2, 'c': 1, 'b': 1, 't': 1}, wordList, 5)</code>
+          <pre>Current Hand: a a c b t
+"acta" earned 24 points. Total: 24 points
+
+Current Hand: b
+Total score: 24 points.</pre>
+          <code>compPlayHand({'a': 2, 'e': 2, 'i': 2, 'm': 2, 'n': 2, 't': 2}, wordList, 12)</code>
+          <pre>Current Hand: a a e e i i m m n n t t
+"immanent" earned 96 points. Total: 96 points
+
+Current Hand: a e t i
+"ait" earned 9 points. Total: 105 points
+
+Current Hand: e
+Total score: 105 points.
+</pre>
+          <p><b>Important:</b> For your code to be graded correctly, you must 
+    surround the computer's word with single or double quotes. So when 
+    displaying what word the computer chooses your line should look like:</p>
+          <pre>"immanent" earned 96 points. Total: 96 points</pre>
+          <p>or</p>
+          <pre>'immanent' earned 96 points. Total: 96 points</pre>
+        </section>
+      </div>
+    </section>
+    <br/>
+    <p>Paste your definition of <code>compChooseWord</code>, in addition to your definition of 
+<code>compPlayHand</code>, in the box below.</p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="70" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def compPlayHand(hand, wordList, n):
+    """
+    Allows the computer to play the given hand, following the same procedure
+    as playHand, except instead of the user choosing a word, the computer 
+    chooses it.
+
+    1) The hand is displayed.
+    2) The computer chooses a word.
+    3) After every valid word: the word and the score for that word is 
+    displayed, the remaining letters in the hand are displayed, and the 
+    computer chooses another word.
+    4)  The sum of the word scores is displayed when the hand finishes.
+    5)  The hand finishes when the computer has exhausted its possible
+    choices (i.e. compChooseWord returns None).
+ 
+    hand: dictionary (string -&gt; int)
+    wordList: list (string)
+    n: integer (HAND_SIZE; i.e., hand size required for additional points)
+    """
+    # TO DO ... 
+</initial_display>
+      <grader_payload>
+{"grader": "ps04/compPlayHand/grade_compPlayHand.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

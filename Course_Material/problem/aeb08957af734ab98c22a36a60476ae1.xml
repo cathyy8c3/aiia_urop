@@ -1,0 +1,12 @@
+<problem display_name="Problem 2-2" markdown="null" max_attempts="1" showanswer="never" weight="1.0">
+  <p>Assume a <code>break</code> statement is executed inside a loop and that the loop is inside a function. Which of the following is correct?</p>
+  <multiplechoiceresponse>
+    <choicegroup label="8" type="MultipleChoice">
+      <choice correct="false">The program might immediately terminate.</choice>
+      <choice correct="false">The function might immediately terminate.</choice>
+      <choice correct="false">The loop will always immediately terminate.</choice>
+      <choice correct="true">All of the above.</choice>
+      <choice correct="false">None of the above.</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

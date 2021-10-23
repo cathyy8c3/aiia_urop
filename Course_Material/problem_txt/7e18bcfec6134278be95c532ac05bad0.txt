@@ -1,0 +1,49 @@
+
+  
+
+    
+
+      For each of the following expressions, select the order of growth class that best describes it from the following list: [mathjaxinline]O(1), O(\log (n)), O(n), O(n\log (n)), O(n^ c)[/mathjaxinline] or [mathjaxinline]O(c^ n)[/mathjaxinline]. Assume [mathjaxinline]c[/mathjaxinline] is some constant.
+Clicking Check will grade ALL the sub-problems. You have 2 attempts for this problem.
+
+      
+
+        
+
+[mathjaxinline]0.0000001n + 1000000[/mathjaxinline] 
+
+        
+
+[mathjaxinline]0.0001n^2 + 20000n - 90000[/mathjaxinline] 
+
+        
+
+[mathjaxinline]20n + 900 \log (n) + 100000[/mathjaxinline] 
+
+        
+
+[mathjaxinline](\log (n))^2 + 5n^7[/mathjaxinline] 
+
+        
+
+[mathjaxinline]n^{200} - 2 n^{30}[/mathjaxinline] 
+
+        
+
+[mathjaxinline]30n^2+n \log (n)[/mathjaxinline] 
+
+        
+
+[mathjaxinline] n\log (n) - 3000n[/mathjaxinline] 
+
+        
+
+[mathjaxinline]3[/mathjaxinline] 
+
+        
+
+[mathjaxinline]5^ n + n^5 + n + 5[/mathjaxinline] 
+
+        
+
+[mathjaxinline] n \log (n) + n^2 + n + \log n + 1 + 2^n[/mathjaxinline] 

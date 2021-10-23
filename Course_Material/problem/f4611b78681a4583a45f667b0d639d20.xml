@@ -1,0 +1,141 @@
+<problem display_name="semordnilap" markdown="null" weight="5.0">
+  <p>
+    <b>ESTIMATED TIME TO COMPLETE: 20 minutes</b>
+  </p>
+  <text>
+    <p>A <b>semordnilap</b> is a word or a phrase that spells a different word 
+      when backwards ("semordnilap" is a semordnilap of "palindromes"). Here are
+      some examples:</p>
+    <ul>
+      <li>nametag / gateman</li>
+      <li>dog / god</li>
+      <li>live / evil</li>
+      <li>desserts / stressed</li>
+    </ul>
+    <p>Write a recursive program, <code>semordnilap</code>, that 
+  takes in two words and says if they are semordnilap.</p>
+    <p>This recursive function is not entirely straightforward. There are
+  a few things that you need to check the first time you look at the inputs
+  that you should not check on subsequent recursive calls: you need to make
+  sure that the strings are not single characters, and also you need to be
+  sure that the strings are not equal. If you do this check every time you
+  call your function, though, this will end up interfering with the recursive
+  base case (which we don't want!). </p>
+    <p>There's a few 
+  different ways you can perform checks on the inputs the first time. The
+  first way would be to use <i>keyword arguments</i>. The second way would be to use a
+  <i>global variable</i>, which you'll see in the next lecture video; however,
+  using global variables is always a bit risky and thus not the best way to do this.</p>
+    <p>  The third way to perform checks on the inputs the first time you see
+  them, but not any subsequent time, is to use a <i>wrapper function</i>.
+  This wrapper function performs some checks, then makes a call to the
+  recursive function.</p>
+    <p>The idea of a wrapper function is really important. You'll see more
+  wrapper functions later. To introduce 
+  you to the idea, we are providing you with the wrapper function;
+  your job is to write the recursive function <code>semordnilap</code>
+  that the wrapper function calls. Here is the wrapper function:</p>
+    <pre>def semordnilapWrapper(str1, str2):
+    # A single-length string cannot be semordnilap
+    if len(str1) == 1 or len(str2) == 1:
+        return False
+
+    # Equal strings cannot be semordnilap
+    if str1 == str2:
+        return False
+
+    return semordnilap(str1, str2)</pre>
+    <p>Fill in the definition for <code>semordnilap</code> in the box below.</p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def semordnilap(str1, str2):
+    '''
+    str1: a string
+    str2: a string
+    
+    returns: True if str1 and str2 are semordnilap;
+             False otherwise.
+    '''
+    # Your code here
+</initial_display>
+      <answer_display>
+def semordnilapWrapper(str1, str2):
+    # A single-length string cannot be semordnilap
+    if len(str1) == 1 or len(str2) == 1:
+        return False
+
+    # Equal strings cannot be semordnilap
+    if str1 == str2:
+        return False
+
+    return semordnilap(str1, str2)
+
+def semordnilap(str1, str2):
+    '''
+    str1: a string
+    str2: a string
+    
+    returns: True if str1 and str2 are semordnilap;
+             False otherwise.
+    '''
+    # If strings aren't the same length, they cannot be semordnilap
+    if len(str1) != len(str2):
+        return False
+
+    # Base case: if the strings are each of length 1, check if they're equal
+    if len(str1) == 1:
+        return str1 == str2
+
+    # Recursive case: check if the first letter of str1 equals the last letter
+    # of str2
+    if str1[0] == str2[-1]:
+        return semordnilap(str1[1:], str2[:-1])
+    else:
+        return False
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L5/semordnilap/grade_semordnilap.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <text>
+    <p>Note: In programming there are many ways to solve a problem. For your code to check correctly 
+  here, though, you must write your recursive function such that you make a recursive call 
+  directly to the function <code>semordnilap</code>. Thank you for understanding.
+</p>
+    <p>
+      <section class="hints">
+        <h3>Hints</h3>
+        <div class="collapsible">
+          <header>
+            <a href="#" id="id71a">Unequal Strings</a>
+          </header>
+          <section id="id71a">
+            <p> What happens when two strings are not of equal length? What can you immediately return? </p>
+          </section>
+        </div>
+        <div class="collapsible">
+          <header>
+            <a href="#" id="id71">What should your base case be?</a>
+          </header>
+          <section id="id71">
+            <p>What happens when the strings are of length 1? </p>
+          </section>
+        </div>
+        <div class="collapsible">
+          <header>
+            <a href="#" id="id72">What should your recursive case be?</a>
+          </header>
+          <section id="id72">
+            <p>Go back to the definition of a semordnilap. What can you say about the first letter of <code>str1</code> and the last letter of <code>str2</code>?</p>
+          </section>
+        </div>
+      </section>
+    </p>
+    <p><b>If you are getting the error stating that "Your code should be recursive" when you already make a call to <code>semordnilap</code></b>: check your indention -- specifically, a common mistake is that your function and docstring do not start at the same indentation level.
+    </p>
+  </text>
+</problem>

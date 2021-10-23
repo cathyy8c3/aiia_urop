@@ -1,0 +1,93 @@
+<problem display_name="Exercise: coordinate" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" weight="5.0">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 7 minutes</b>
+    </p>
+    <p>Consider the following code from the last lecture video:</p>
+    <pre>class Coordinate(object):
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def getX(self):
+        # Getter method for a Coordinate object's x coordinate.
+        # Getter methods are better practice than just accessing an attribute directly
+        return self.x
+
+    def getY(self):
+        # Getter method for a Coordinate object's y coordinate
+        return self.y
+
+    def __str__(self):
+        return '&lt;' + str(self.getX()) + ',' + str(self.getY()) + '&gt;'</pre>
+    <p>Your task is to define the following two methods for the <code>Coordinate</code> class:</p>
+    <ol>
+      <li>
+        <p>Add an <code>__eq__</code> method that returns True if coordinates
+    refer to same point in the plane (i.e., have the same x and y coordinate).</p>
+      </li>
+      <li>
+        <p>Define <code>__repr__</code>, a special method that returns a
+    string that looks like a valid Python expression that could be used
+    to recreate an object with the same value. In other words,
+    <code>eval(repr(c)) == c</code> given the definition of <code>__eq__</code> 
+    from part 1.</p>
+        <p>For more on <code>__repr__</code>, see 
+    <a href="http://stackoverflow.com/questions/452300/python-object-repr-self-should-be-an-expression" target="_blank">this SO post</a>.</p>
+      </li>
+    </ol>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+class Coordinate(object):
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y
+
+    def getX(self):
+        # Getter method for a Coordinate object's x coordinate.
+        # Getter methods are better practice than just accessing an attribute directly
+        return self.x
+
+    def getY(self):
+        # Getter method for a Coordinate object's y coordinate
+        return self.y
+
+    def __str__(self):
+        return '&lt;' + str(self.getX()) + ',' + str(self.getY()) + '&gt;'
+</initial_display>
+      <answer_display>
+class Coordinate(object):
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y
+
+    def getX(self):
+        # Getter method for a Coordinate object's x coordinate.
+        # Getter methods are better practice than just accessing an attribute directly
+        return self.x
+
+    def getY(self):
+        # Getter method for a Coordinate object's y coordinate
+        return self.y
+
+    def __str__(self):
+        return '&lt;' + str(self.getX()) + ',' + str(self.getY()) + '&gt;'
+
+    def __eq__(self, other):
+        # First make sure `other` is of the same type 
+        assert type(other) == type(self)
+        # Since `other` is the same type, test if coordinates are equal
+        return self.getX() == other.getX() and self.getY() == other.getY()
+
+    def __repr__(self):
+        return 'Coordinate(' + str(self.getX()) + ',' + str(self.getY()) + ')'
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L10/coordinate/grade_coordinate.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

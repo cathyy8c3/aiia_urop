@@ -1,0 +1,11 @@
+
+  
+In the statement 
+L = [1,2,3]
+L
+
+    
+
+      
+True
+False

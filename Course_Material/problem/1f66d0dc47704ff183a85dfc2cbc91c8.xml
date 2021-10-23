@@ -1,0 +1,22 @@
+<problem markdown="null">
+  <text>
+    <p>Suppose that the variable <code>myString</code> is assigned a string value. Write a piece of Python code that prints out a new string, containing the odd elements of <code>myString</code>.  For example, if <code>myString</code> had the value <code>abcdefg</code>, then the result would be the string <code>aceg</code>.</p>
+    <p>For problems such as these, do not include <code>input</code> statements or define variables we said you are given. Our graders will provide values for you, so write your code assuming they are already defined.
+    </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="10" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display/>
+      <answer_display>
+s = ""
+for i in range(0,len(myString),2):
+    s += myString[i] 
+print s    
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L3/mystring/grade_mystring.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

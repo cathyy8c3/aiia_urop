@@ -1,0 +1,33 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 2 minutes
+      Note that you will have to answer all questions before you can click the Check button.
+Choose the term described by each of the following definitions.
+Definitions: 
+
+      
+
+        
+Determines whether a string is legal 
+
+          
+
+            
+
+        
+Determines whether a string has meaning 
+
+          
+
+            
+
+        
+Assigns a meaning to a legal sentence 
+
+          
+
+            

@@ -1,0 +1,16 @@
+<problem display_name="Problem 4-1" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" max_attempts="1" showanswer="never">
+  <text>
+    <p>
+Consider the following Python procedure. Specify its order of growth. </p>
+    <pre>
+def modten(n):
+    return n%10
+    
+    </pre>
+    <p>
+      <optionresponse>
+        <optioninput options="('O(1)','O(log(n))','O(n)','O(n log(n))','O(n^2)')" correct="O(1)"/>
+      </optionresponse>
+    </p>
+  </text>
+</problem>

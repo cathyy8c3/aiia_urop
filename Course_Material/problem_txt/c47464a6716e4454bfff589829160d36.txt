@@ -1,0 +1,45 @@
+
+  
+
+    
+ESTIMATED TIME TO COMPLETE: 2 minutes
+This problem aims to walk you through the basics of hashing.
+Let's perform some basic hashing. We'll begin with a very simple 
+      hash function:
+def hash(s):
+    return len(s)
+To get a sense of what a hash function does, sort the following
+      list of words into one of the 5 buckets below.
+
+    
+
+      
+
+        
+
+correct_answer = {
+        '1':      [[70, 150], 121],
+        '14':     [[70, 150], 121],
+        '6':      [[190, 150], 121],
+        '8':      [[190, 150], 121],
+        '19':     [[190, 150], 121],
+        '2':      [[310, 150], 121],
+        '9':      [[310, 150], 121],
+        '11':     [[310, 150], 121],
+        '4':      [[420, 150], 121],
+        '7':      [[420, 150], 121],
+        '13':     [[420, 150], 121],
+        '16':     [[420, 150], 121],
+        '17':     [[420, 150], 121],
+        '20':     [[420, 150], 121],
+        '3':      [[550, 150], 121],
+        '5':      [[550, 150], 121],
+        '10':     [[550, 150], 121],
+        '12':     [[550, 150], 121],
+        '15':     [[550, 150], 121],
+        '18':     [[550, 150], 121]}
+if draganddrop.grade(submission[0], correct_answer):
+    correct = ['correct']
+else:
+    correct = ['incorrect']
+

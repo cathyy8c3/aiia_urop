@@ -1,0 +1,12 @@
+
+  
+In Python, which of the following is a mutable object?
+
+    
+
+      
+a string
+a tuple
+a list
+all of the above
+none of the above

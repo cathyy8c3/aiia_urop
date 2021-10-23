@@ -1,0 +1,15 @@
+<video youtube="1.00:yOHAzZjUbEE" url_name="2cc935e636f449baaf5f65990e47e55c" sub="" transcripts="{&quot;en&quot;: &quot;80fd2918-64e5-489b-9e77-5d16366d41ab-en.srt&quot;}" display_name="Video: Bogo Sort" download_track="true" download_video="true" edx_video_id="80fd2918-64e5-489b-9e77-5d16366d41ab" handout="/asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture12.zip" html5_sources="[]" youtube_id_1_0="yOHAzZjUbEE">
+  <handout src="/asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture12.zip"/>
+  <video_asset client_video_id="L12_S3.mp4" duration="111.00999999999999" image="video-images/ac45ed39619549e3b4c5bca199d7ebd7.jpeg">
+    <encoded_video profile="hls" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V007100/MITX60012016-V007100.m3u8" file_size="0" bitrate="0"/>
+    <encoded_video profile="audio_mp3" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V007100_AUD.mp3" file_size="2665880" bitrate="192"/>
+    <encoded_video profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V007100_MB2.mp4" file_size="3835052" bitrate="276"/>
+    <encoded_video profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V007100_DTH.mp4" file_size="7716308" bitrate="555"/>
+    <encoded_video profile="youtube" url="yOHAzZjUbEE" file_size="0" bitrate="0"/>
+    <encoded_video profile="mobile_high" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V007100_MB1.mp4" file_size="4413639" bitrate="317"/>
+    <transcripts>
+      <transcript language_code="en" file_format="srt" provider="Custom"/>
+    </transcripts>
+  </video_asset>
+  <transcript language="en" src="80fd2918-64e5-489b-9e77-5d16366d41ab-en.srt"/>
+</video>

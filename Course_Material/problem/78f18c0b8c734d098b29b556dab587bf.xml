@@ -1,0 +1,96 @@
+<problem display_name="Exercise 3" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text><p><b>ESTIMATED TIME TO COMPLETE: 6 minutes</b></p><script type="text/python" system_path="python_lib">
+def test_csv(expect, ans):
+   # Take out all spaces in expected answer
+   expect = [i.strip(' ') for i in str(expect).split(',')]
+   # Take out all spaces in student solution
+   ans = [i.strip(' ') for i in str(ans).split(',')]
+
+   def strip_q(x):
+      # Strip quotes around strings if students have entered them
+      stripped_ans = []
+      for item in x:
+         if item[0] == "'" and item[-1]=="'":
+            item = item.strip("'")
+         elif item[0] == '"' and item[-1] == '"':
+            item = item.strip('"') #" (quote to fix syntax highlighting in emacs)
+         stripped_ans.append(item)
+      return stripped_ans 
+
+   return strip_q(expect) == strip_q(ans)
+</script><script type="text/python" system_path="python_lib">
+def any_answer(expect, ans):
+   if ans == "AssertionError: Cannot divide by 0":
+      return True
+   elif ans == "AssertionError" or ans == "AssertionError:":
+      return True
+   elif ans == "Cannot divide by 0":
+      return True
+</script><p>
+      Consider the function <code>normalize</code> that takes as input a list of positive numbers <code>numbers</code> and returns a list of numbers that are a fraction of the maximum element in the list. Try to answer the questions without running the code. Check your answers, then run the code for the ones you get wrong. You'll learn the most this way, by figuring things out, instead of just running the code and reading off the answers. </p><pre>def normalize(numbers):
+    max_number = max(numbers)
+    for i in range(len(numbers)):
+        numbers[i] /= float(max_number)
+    return numbers  </pre><br> </br>
+      
+The code below tries to call <code>normalize</code> with one particular input. Answer the next 5 questions based on the following code.
+  <pre>try:
+      normalize([0, 0, 0])
+except ZeroDivisionError:
+      print('Invalid maximum element')
+</pre>
+        <ol><li>
+            Does the <code>try</code> block throw (also known as raise) an exception? 
+              <multiplechoiceresponse><choicegroup type="MultipleChoice"><choice correct="true">Yes</choice><choice correct="false">No</choice></choicegroup></multiplechoiceresponse>
+            
+          </li><li><p>           
+What is the name of the exception the code is trying to catch? 
+          <customresponse cfn="test_csv" expect="ZeroDivisionError"><textline size="50" correct_answer="ZeroDivisionError"/></customresponse>
+
+            </p></li><li><p>           
+What is the output? 
+          <customresponse cfn="test_csv" expect="Invalid maximum element"><textline size="50" correct_answer="Invalid maximum element"/></customresponse>
+            </p></li><li>
+            Since we are dividing by the maximum element in a list of positive numbers, we know that <code>normalize</code> will return a value between 0 and 1. What type of condition is this? 
+              <multiplechoiceresponse><choicegroup type="MultipleChoice"><choice correct="false">pre condition</choice><choice correct="true">post condition</choice></choicegroup></multiplechoiceresponse>
+            
+          </li><li>
+            We also know the result is not meaningful when the maximum element is 0, so we want to ensure that the numbers in the list do not violate this. What type of condition is this? 
+              <multiplechoiceresponse><choicegroup type="MultipleChoice"><choice correct="true">pre condition</choice><choice correct="false">post condition</choice></choicegroup></multiplechoiceresponse>
+            
+          </li></ol>
+
+    
+    
+   
+    
+    <br> </br>
+    
+    <p>Now assume the definition of the function <code>normalize</code> is rewritten as follows </p>
+      <pre>def normalize(numbers):
+    max_number = max(numbers)
+    assert(max_number != 0), "Cannot divide by 0"
+    for i in range(len(numbers)):
+        numbers[i]  /= float(max_number)
+        assert(0.0 &lt;= numbers[i] &lt;= 1.0), "output not between 0 and 1"
+    return numbers        
+        
+</pre>
+    
+    <p>    Answer the next 3 questions based on this code.</p>
+   <br/>
+        <ol><li>
+            Which condition does the line <code>assert(max_number != 0)</code> correspond to? 
+              <multiplechoiceresponse><choicegroup type="MultipleChoice"><choice correct="true">pre condition</choice><choice correct="false">post condition</choice></choicegroup></multiplechoiceresponse>
+            
+          </li><li>
+            Which condition does the line <code>assert(0.0 &lt;= numbers[i] &lt;= 1.0)</code> correspond to? 
+              <multiplechoiceresponse><choicegroup type="MultipleChoice"><choice correct="false">pre condition</choice><choice correct="true">post condition</choice></choicegroup></multiplechoiceresponse>
+            
+          </li><li><p>           
+              What does the function call <code>normalize([0, 0, 0])</code> print out?  
+          <customresponse cfn="any_answer" expect="AssertionError: Cannot divide by 0"><textline size="50" correct_answer="AssertionError: Cannot divide by 0"/></customresponse>
+
+            </p></li></ol>    
+  </text>
+</problem>

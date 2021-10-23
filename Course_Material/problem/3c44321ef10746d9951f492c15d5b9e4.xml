@@ -1,0 +1,28 @@
+<problem display_name="Problem 7" markdown="null" showanswer="never">
+  <text>
+    <p>
+    
+      Write a function called <code>general_poly</code>, that meets the specifications below.  </p>
+    <p>For example, 
+      <code>general_poly([1, 2, 3, 4])(10)</code>  should evaluate to <code>1234</code> because [mathjaxinline]1*10^3+2*10^2+3*10^1+4*10^0[/mathjaxinline]
+</p>
+    <pre>def general_poly(L):
+    """ L, a list of numbers (n0, n1, n2, ... nk)
+    Returns a function, which when applied to a value x, returns the value 
+    n0 * x^k + n1 * x^(k-1) + ... nk * x^0 """
+    #YOUR CODE HERE 
+    </pre>
+    <p>
+Paste your entire function in the box below. Do not leave any print statements.  </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="70" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display># Paste your code here
+</initial_display>
+      <grader_payload>
+{"grader": "ase/general_poly/grade_general_poly.py", "hide_output": false}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

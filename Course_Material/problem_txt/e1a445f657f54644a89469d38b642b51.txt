@@ -1,0 +1,35 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 5 minutes
+In this problem you'll be given a chance to practice writing some for loops.
+1. Convert the following code into code that uses a for loop.
+prints 
+2
+4
+6
+8
+10
+Goodbye!
+
+    
+
+      
+
+# There are many ways to solve this problem! Here is one:
+for count in range(11):
+    if count != 0 and count % 2 == 0:
+        print(count)
+print("Goodbye!")
+
+# Here is another:
+for count in range(2, 12, 2):
+    print(count)
+print("Goodbye!")
+
+
+{"grader": "finger_exercises/L3/for5a/grade_for5a.py"}
+

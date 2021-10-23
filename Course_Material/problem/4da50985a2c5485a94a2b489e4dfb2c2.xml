@@ -1,0 +1,13 @@
+<problem display_name="Problem 1-1" group_access="{}" markdown="null" max_attempts="1" showanswer="never" weight="1.0">
+  <p>Suppose <code>x = "pi"</code> and <code>y = "pie"</code>. The line of code <code>x, y = y, x</code> will swap the values of <code>x</code> and <code>y</code>, resulting in <code>x = "pie"</code> and <code>y = "pi"</code>.</p>
+  <multiplechoiceresponse>
+    <choicegroup label="2" type="MultipleChoice">
+      <choice correct="true">
+        <code>True</code>
+      </choice>
+      <choice correct="false">
+        <code>False</code>
+      </choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

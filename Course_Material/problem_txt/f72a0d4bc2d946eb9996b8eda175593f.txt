@@ -1,0 +1,64 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 5 minutes
+3. Write a for loop that sums the values 1 through 
+end
+end
+end
+21
+which is 1 + 2 + 3 + 4 + 5 + 6.
+For problems such as these, do not include 
+input
+
+      
+
+        
+
+          
+
+            
+Hint: Don't Use A Variable Called 'sum' 
+
+            
+For reasons related to our grader, you cannot call your variable 
+	      
+sum
+sum
+This is because 
+sum
+Take it as a lesson – overwriting built-in functions is generally bad 
+	      practice anyway (you'd not call a variable 
+print
+while
+elif
+Here is a 
+list 
+		of Python keywords
+Here is a 
+list of Python
+		built-in functions
+You will learn more about functions in the next lecture sequence!
+
+    
+
+      
+
+# Here is one of a few ways to solve this problem:
+total = 0
+for next in range(1, end+1):
+    total += next
+print(total)
+
+# Here is another:
+total = end
+for next in range(end):
+    total += next
+print(total)
+
+
+{"grader": "finger_exercises/L3/for5c/grade_for5c.py"}
+

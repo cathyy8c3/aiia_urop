@@ -1,0 +1,98 @@
+<problem display_name="Exercise 3" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 3 minutes</b>
+    </p>
+    <p>Consider the following function definition: </p>
+    <pre>
+def maxOfThree(a,b,c) :
+    """
+    a, b, and c are numbers
+
+    returns: the maximum of a, b, and c        
+    """
+    if a &gt; b:
+        bigger = a
+
+    else:
+        bigger = b
+
+    if c &gt; bigger:
+        bigger = c
+
+    return bigger
+</pre>
+    <p>Assume that <code>maxOfThree</code> is called with numbers as arguments. </p>
+    <p>Which of the following test suites would make a path-complete glass box test suite for <code>maxOfThree</code>?</p>
+    <section class="hints">
+      <div class="collapsible">
+        <header>
+          <a href="#" id="ht1">Review: Glass Box Test Suites</a>
+        </header>
+        <section id="ht1">
+          <p>Recall from the lecture that a path-complete glass box test suite would find 
+	  test cases that go through every possible path in the code. This is different from 
+	  black-box testing, because in black-box testing you only have the function specification.
+	  For glass-box testing, you actually know how the function you are testing is defined.
+	  Thus you can use this definition to figure out how many different paths through the code
+	  exist, and then pick a test suite based on that knowledge.</p>
+          <p>Undoubtably many - if not all - of the listed tests look like they would be pretty good
+	  for testing the function <code>maxOfThree</code>. However, we want you to think critically about
+	  the way <code>maxOfThree</code> is defined - including possible boundary cases - and pick
+	  a set of tests that adequately and fully tests all paths and boundary conditions. A good first 
+	  step will be to look at the function definition and figure out what paths through the code 
+          exist. Then, look through the suggested test suites one test at a time and see if the suite
+          tests every single path.</p>
+        </section>
+      </div>
+    </section>
+    <p>
+      <choiceresponse>
+        <radiogroup direction="vertical">
+          <choice correct="true" name="1">
+            <span>
+              <text> Test Suite A:
+	      <code>maxOfThree(2, -10, 100)</code>, <code>maxOfThree(7, 9, 10)</code>, <code>maxOfThree(6, 1, 5)</code>, <code>maxOfThree(0, 40, 20)</code>
+	    </text>
+            </span>
+          </choice>
+          <choice correct="false" name="2">
+            <span>
+              <text> Test Suite B:
+	      <code>maxOfThree(10, 100, -20)</code>, <code>maxOfThree(99, 0, 20)</code>, <code>maxOfThree(1, 60, 300)</code>
+	  </text>
+            </span>
+          </choice>
+          <choice correct="false" name="3">
+            <span>
+              <text> Test Suite C:
+	      <code>maxOfThree(0, 0, 0)</code>, <code>maxOfThree(-3, -10, -1)</code>, <code>maxOfThree(10, 30, 100)</code>, <code>maxOfThree(0, -9, 11)</code>, <code>maxOfThree(-10, 0, 30)</code> 
+	  </text>
+            </span>
+          </choice>
+        </radiogroup>
+      </choiceresponse>
+    </p>
+    <p>
+      <solution>
+        <div class="detailed-solution">
+          <p>
+            <b>Explanation:</b>
+          </p>
+          <p> Recall from the lecture that a path-complete glass box test suite would find test cases that go through 
+	    every possible path in the code. In this case, that means finding all possibilities for the conditional tests <code>a &gt; b</code> 
+	    and <code>c &gt; bigger</code>. So, we end up with four possible paths that correspond to Test Suite A:</p>
+          <ul>
+            <li>Case 1: <code>a &gt; b</code> and <code>c &gt; bigger</code>  - this corresponds to test <code>maxOfThree(2, -10, 100)</code>.</li>
+            <li>Case 2: <code>a &gt; b</code> and <code>c &lt;= bigger</code>  - this corresponds to test <code>maxOfThree(6, 1, 5)</code></li>
+            <li>Case 3: <code>a &lt;= b</code> and <code>c &gt; bigger</code>  - this corresponds to test <code>maxOfThree(7, 9, 10)</code>.</li>
+            <li>Case 4: <code>a &lt;= b</code> and <code>c &lt;= bigger</code>  - this corresponds to test <code>maxOfThree(0, 40, 20)</code> </li>
+          </ul>
+          <p>Test Suite B seems to explicitly test each of <code>a</code>, <code>b</code>, and <code>c</code> being the 
+	      max of the three numbers, but this does not go through all possible paths in the code.</p>
+          <p>Test Suite C seems to be a good sampling of the space of input numbers, but it does not go through all possible paths in the code.</p>
+        </div>
+      </solution>
+    </p>
+  </text>
+</problem>

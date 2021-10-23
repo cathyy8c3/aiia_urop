@@ -1,0 +1,15 @@
+<video youtube="1.00:Ra6cPCYdMRw" url_name="275299db06824de88d888fab16140a1a" sub="" transcripts="{&quot;en&quot;: &quot;edef3652-dea7-4592-8482-f40938963105-en.srt&quot;}" display_name="Video: Fibonacci and Dictionaries" download_track="true" download_video="true" edx_video_id="edef3652-dea7-4592-8482-f40938963105" handout="/asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture6.zip" html5_sources="[]" youtube_id_1_0="Ra6cPCYdMRw">
+  <handout src="/asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture6.zip"/>
+  <video_asset client_video_id="L6_S5.mp4" duration="264.17" image="video-images/4c3cfddb1d714b19a88570566d09f88f.jpeg">
+    <encoded_video profile="hls" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V003800/MITX60012016-V003800.m3u8" file_size="0" bitrate="0"/>
+    <encoded_video profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MITX6001/MITX60012016-V003800_DTH.mp4" file_size="11304278" bitrate="342"/>
+    <encoded_video profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MITX6001/MITX60012016-V003800_MB2.mp4" file_size="6655535" bitrate="201"/>
+    <encoded_video profile="youtube" url="Ra6cPCYdMRw" file_size="0" bitrate="0"/>
+    <encoded_video profile="audio_mp3" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V003800_AUD.mp3" file_size="6341622" bitrate="192"/>
+    <encoded_video profile="mobile_high" url="https://d2f1egay8yehza.cloudfront.net/MITX6001/MITX60012016-V003800_MB1.mp4" file_size="7709252" bitrate="233"/>
+    <transcripts>
+      <transcript language_code="en" file_format="srt" provider="Custom"/>
+    </transcripts>
+  </video_asset>
+  <transcript language="en" src="edef3652-dea7-4592-8482-f40938963105-en.srt"/>
+</video>

@@ -1,0 +1,118 @@
+<problem display_name="Exercise 2" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 8 minutes</b>
+    </p>
+    <script type="text/python" system_path="python_lib">
+def ignore_spaces(expect, ans):
+  return expect==ans or expect.replace(' ','') == ans.replace(' ','')
+</script>
+    <ol class="enumerate">
+      <li>
+        <p>Consider the following code:</p>
+        <pre>class Clock(object):
+    def __init__(self, time):
+	self.time = time
+    def print_time(self):
+	time = '6:30'
+	print(self.time)
+
+clock = Clock('5:30')
+clock.print_time()</pre>
+        <p>What does the code print out? If you aren't sure, create a Python file and run it.</p>
+        <p>
+          <customresponse cfn="ignore_spaces" expect="5:30">
+            <textline size="50" correct_answer="5:30"/>
+          </customresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p><code>5:30</code> prints out because we printed out the attribute <code>self.time</code>, 
+	    not the local variable <code>time</code>.</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>Consider the following code:</p>
+        <pre>class Clock(object):
+    def __init__(self, time):
+	self.time = time
+    def print_time(self, time):
+	print(time)
+
+clock = Clock('5:30')
+clock.print_time('10:30')</pre>
+        <p>What does the code print out? If you aren't sure, create a Python file and run it.</p>
+        <p>
+          <customresponse cfn="ignore_spaces" expect="10:30">
+            <textline size="50" correct_answer="10:30"/>
+          </customresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>What does this problem tell us about giving parameters the same name as object attributes?</p>
+              <p>In short, it is needlessly confusing. It is less confusing if you give parameters, local variables, 
+	    and attributes different, distinct names to avoid the confusion that arises in this problem.</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>Consider the following code:</p>
+        <pre>class Clock(object):
+    def __init__(self, time):
+        self.time = time
+    def print_time(self):
+        print(self.time)
+
+boston_clock = Clock('5:30')
+paris_clock = boston_clock
+paris_clock.time = '10:30'
+boston_clock.print_time()</pre>
+        <p>What does the code print out? If you aren't sure, create a Python file and run it.</p>
+        <p>
+          <customresponse cfn="ignore_spaces" expect="10:30">
+            <textline size="50" correct_answer="10:30"/>
+          </customresponse>
+        </p>
+        <p>Are <code>boston_clock</code> and <code>paris_clock</code> different objects?</p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="false" name="2">
+                <span>
+                  <text> Yes</text>
+                </span>
+              </choice>
+              <choice correct="true" name="1">
+                <span>
+                  <text>No</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p><code>boston_clock</code> and <code>paris_clock</code> are two names for the same object. This is called 
+	    <a href="http://www.greenteapress.com/thinkpython/html/thinkpython011.html#toc116">aliasing</a>.</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+    </ol>
+  </text>
+</problem>

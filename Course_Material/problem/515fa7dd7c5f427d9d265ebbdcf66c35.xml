@@ -1,0 +1,117 @@
+<problem display_name="Exercise 7" markdown="null">
+  <p>
+    <b>ESTIMATED TIME TO COMPLETE: 8 minutes</b>
+  </p>
+  <script type="text/python" system_path="python_lib">
+def no_space(exp, act):
+    return exp==act or exp.replace(' ', '') == act.replace(' ', '')
+    </script>
+  <text>
+    <p>Ben Bitdiddle tried to implement <code>fibMetered</code> with global variables,
+      to count the number of recursive calls needed for each Fibonacci number calculated.
+      But he made a mistake in using the global variable! Examine his code below
+      carefully and then answer the questions:</p>
+    <pre>
+def fibMetered(x):
+    global numCalls
+    numCalls += 1
+    if x == 0 or x == 1:
+        return 1
+    else:
+        return fibMetered(x-1) + fibMetered(x-2)
+
+def testFib(n):
+    global numCalls
+    numCalls = 0
+    for i in range(n+1):
+        print('fib of ' + str(i) + ' = ' + str(fibMetered(i)))
+        print ('fib called ' + str(numCalls) + ' times')
+
+testFib(10)
+</pre>
+    <p>What function is the mistake in?</p>
+    <p>
+      <choiceresponse>
+        <radiogroup direction="vertical">
+          <choice correct="false" name="1">
+            <span>
+              <text>
+                <code>fibMetered</code>
+              </text>
+            </span>
+          </choice>
+          <choice correct="true" name="2">
+            <span>
+              <text>
+                <code>testFib</code>
+              </text>
+            </span>
+          </choice>
+        </radiogroup>
+      </choiceresponse>
+    </p>
+    <p>What line should be changed to make this code work? Paste the original line
+    in the following box:</p>
+    <p>
+      <customresponse cfn="no_space" expect="numCalls = 0">
+        <textline size="50" correct_answer="numCalls = 0"/>
+      </customresponse>
+    </p>
+    <p>What do the printed <code>numCall</code> values in this buggy code stand for?</p>
+    <p>
+      <choiceresponse>
+        <radiogroup direction="vertical">
+          <choice correct="false" name="1">
+            <span>
+              <text>Number of recursive function calls that happened for each specific Fibonacci number </text>
+            </span>
+          </choice>
+          <choice correct="true" name="2">
+            <span>
+              <text>Number of recursive function calls to <code>fibMetered</code> that have happened up to that point </text>
+            </span>
+          </choice>
+          <choice correct="false" name="3">
+            <span>
+              <text>Number of total addition operations that happened up to that point in <code>testFib</code></text>
+            </span>
+          </choice>
+        </radiogroup>
+      </choiceresponse>
+    </p>
+    <p>
+      <solution>
+        <div class="detailed-solution">
+          <p>
+            <b>Explanation:</b>
+          </p>
+          <p>Examine Ben's code very carefully to make sure you fully understand what's
+	    going on here. Ben is curious how many recursive calls it takes to calculate
+	    a given Fibonacci number; however, his initialization of the global variable
+	    occurs outside the loop. Thus the value of <code>numCall</code> isn't 
+	    what he expects it to be.</p>
+          <p>Here is the code that Ben intended to write:</p>
+          <pre>
+def fibMetered(x):
+    global numCalls
+    numCalls += 1
+    if x == 0 or x == 1:
+        return 1
+    else:
+        return fibMetered(x-1) + fibMetered(x-2)
+
+def testFib(n):
+    global numCalls
+    for i in range(n+1):
+        numCalls = 0
+        print('fib of ' + str(i) + ' = ' + str(fibMetered(i)))
+        print ('fib called ' + str(numCalls) + ' times')
+
+testFib(10)
+</pre>
+          <p>Make sure you understand this!</p>
+        </div>
+      </solution>
+    </p>
+  </text>
+</problem>

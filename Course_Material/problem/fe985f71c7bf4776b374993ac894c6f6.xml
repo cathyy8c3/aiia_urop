@@ -1,0 +1,12 @@
+<problem display_name="Problem 2-3" markdown="null" max_attempts="1" showanswer="never" weight="1.0">
+  <p>In Python, which of the following is a mutable object?</p>
+  <multiplechoiceresponse>
+    <choicegroup label="defensive" type="MultipleChoice">
+      <choice correct="false">a string</choice>
+      <choice correct="false">a tuple</choice>
+      <choice correct="true">a list</choice>
+      <choice correct="false">all of the above</choice>
+      <choice correct="false">none of the above</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

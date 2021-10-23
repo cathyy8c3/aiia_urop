@@ -1,0 +1,54 @@
+<problem markdown="null">
+  <text>
+    <p>
+      <b>
+        <font color="red">If you are done the exam, <a href="https://docs.google.com/forms/d/1w9mV5nWGb4Wexo2KzBIUumc8n3n-sII3_X2w6MVMrbI/edit?usp=drive_web" target="_blank">click here to checkout</a>. Only checkout once to remove your quiz access. <br/> If you do not checkout you will receive a zero on the exam.</font>
+      </b>
+    </p>
+    <p>Implement the class <code>myDict</code> with the methods below, which will represent a dictionary without using a dictionary object. The methods you implement below should have the same behavior as a <code>dict</code> object, including raising appropriate exceptions. Your code does not have to be efficient. Any code that uses a Python dictionary object will receive 0. </p>
+    <p>For example:</p>
+    <pre>
+With a dict:  |    With a myDict:
+-------------------------------------------------------------------------------
+d = {}             md = myDict()        # initialize a new object using 
+                                          your choice of implementation
+
+d[1] = 2           md.assign(1,2)       # use assign method to add a key,value pair
+
+print(d[1])        print(md.getval(1))  # use getval method to get value stored for key 1
+
+del(d[1])          md.delete(1)         # use delete method to remove 
+                                          key,value pair associated with key 1
+</pre>
+    <p/>
+    <pre>class myDict():
+    """ Implements a dictionary without using a dictionary """
+    def __init__(self):
+        """ initialization of your representation """
+        #FILL THIS IN
+        
+    def assign(self, k, v):
+        """ k (the key) and v (the value), immutable objects  """
+        #FILL THIS IN
+        
+    def getval(self, k):
+        """ k, immutable object  """
+        #FILL THIS IN
+        
+    def delete(self, k):
+        """ k, immutable object """   
+        #FILL THIS IN
+    </pre>
+    <p>Paste your entire class, including the definition, in the box below. Do not leave any print statements.</p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="70" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display># Paste your code here
+</initial_display>
+      <grader_payload>
+        {"grader": "quiz/60001_f2016/myDict/grade_mydict_correct.py", "hide_output": false}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

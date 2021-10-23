@@ -1,0 +1,116 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 3 minutes
+
+Consider the following function definition: 
+
+def f(n):
+   """
+   n: integer, n >= 0.
+   """
+   if n == 0:
+      return n
+   else:
+      return n * f(n-1)
+
+
+When we call 
+f(3)
+
+When we call 
+f(1)
+
+When we call 
+f(0)
+
+Using this information, choose what line of code should be changed from the following choices: 
+
+      
+
+        
+
+          
+
+            
+
+              
+
+                
+if n == 0:
+
+            
+
+              
+
+                
+return n
+
+            
+
+              
+
+                
+else:
+
+            
+
+              
+
+                
+return n * f(n-1)
+
+How should this line be rewritten? 
+
+      
+
+        
+
+      
+
+        
+
+          
+
+            
+Explanation:
+
+This is a function known as 
+factorial
+0! = 1
+0! = 0
+f(3)
+
+            
+
+  [mathjax]
+  \eqalign{f(3) & = & 3 * f(2) \\
+  & = & 3 * ( 2 * f(1) ) \\
+  & = & 3 * ( 2 * (1 * f(0)) ) \\
+  & = & 3 * ( 2 * (1 * (0))) \\
+  & = & 3 * ( 2 * (0)) \\
+  & = & 3 * ( 0 ) \\
+  & = & 0 }
+  [/mathjax]
+
+ The fixed version of the code puts the line 
+return 1
+return n
+n == 0
+f(3)
+
+            
+
+  [mathjax]
+  \eqalign{f(3) & = & 3 * f(2) \\
+  & = & 3 * ( 2 * f(1) ) \\
+  & = & 3 * ( 2 * (1 * f(0)) ) \\
+  & = & 3 * ( 2 * (1 * (1))) \\
+  & = & 3 * ( 2 * (1)) \\
+  & = & 3 * ( 2 ) \\
+  & = & 6 }
+  [/mathjax]
+

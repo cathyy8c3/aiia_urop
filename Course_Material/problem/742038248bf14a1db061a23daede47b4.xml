@@ -1,0 +1,149 @@
+<problem display_name="Exercise" markdown="null">
+  <p>
+    <b>ESTIMATED TIME TO COMPLETE: 3 minutes</b>
+  </p>
+  <p>The previous problem shows the benefits of having a good hash function.
+	Hashing on length of word is very problematic. In English, there
+	are only two words - 'a' and 'I' - that are one letter long. However
+	there are thousands that are 5 letters long - in words.txt (from PS4,
+	which had a very limited set of words) there are 8938 5-letter words.</p>
+  <p>Ideally we'd like to pick a hash function that <b>uniformly distributes</b>
+	values over a set of buckets. The next part of this problem will ask you
+	to determine if a hash function is good or bad.</p>
+  <p>A good hash function will uniformly distribute words in the English language across a set of buckets.
+	A bad one will - like hashing on word length - be skewed (ie some buckets will be
+	MUCH more common than others). Note that for this problem we will be asking about valid words
+	in the English language, not random strings of characters. </p>
+  <p>Read more about the properties of good hash functions <a href="http://en.wikipedia.org/wiki/Hash_function#Properties" target="_blank">over
+	  at Wikipedia</a>.</p>
+  <ol>
+    <li>
+      <p>Hash function: </p>
+      <pre>def hash(s):
+    return string.ascii_lowercase.index(s[0])</pre>
+      <p>Number of buckets: 26</p>
+      <p>
+        <choiceresponse>
+          <radiogroup direction="vertical">
+            <choice correct="false" name="1">
+              <span>
+                <text>Good hash function</text>
+              </span>
+            </choice>
+            <choice correct="true" name="2">
+              <span>
+                <text> Bad hash function</text>
+              </span>
+            </choice>
+          </radiogroup>
+        </choiceresponse>
+      </p>
+    </li>
+    <li>
+      <p>Hash function: </p>
+      <pre>def hash(s):
+    return string.ascii_lowercase.index(s[-1])</pre>
+      <p>Number of buckets: 26</p>
+      <p>
+        <choiceresponse>
+          <radiogroup direction="vertical">
+            <choice correct="false" name="1">
+              <span>
+                <text>Good hash function</text>
+              </span>
+            </choice>
+            <choice correct="true" name="2">
+              <span>
+                <text> Bad hash function</text>
+              </span>
+            </choice>
+          </radiogroup>
+        </choiceresponse>
+      </p>
+    </li>
+    <li>
+      <p>Hash function: </p>
+      <pre>def hash(s):
+    total = 0
+    for char in s:
+        total += string.ascii_lowercase.index(char)
+    return total % 26</pre>
+      <p>Number of buckets: 26</p>
+      <p>
+        <choiceresponse>
+          <radiogroup direction="vertical">
+            <choice correct="true" name="1">
+              <span>
+                <text>Good hash function</text>
+              </span>
+            </choice>
+            <choice correct="false" name="2">
+              <span>
+                <text> Bad hash function</text>
+              </span>
+            </choice>
+          </radiogroup>
+        </choiceresponse>
+      </p>
+    </li>
+  </ol>
+  <p>
+    <solution>
+      <div class="detailed-solution">
+        <p>
+          <b>Explanation:</b>
+        </p>
+        <p>The first two hash functions are not particularly good because the distribution of English
+		words is not even (for example, many more words begin with 'm', 's', or 't' than 'j', 'q' or 'x';
+		similiarly, English words much more commonly end with 'd', 'g' or 's' than 'c', 'q' or 'z'). The
+		third hash function, however, doesn't rely on such a specific property.</p>
+        <p>This function relies on <i>modular arithmetic</i>, which many real-life hash functions actually do use. 
+		The premise here is that we're summing the values of every letter in the word, then modding that number 
+		by 26 to place it in one of the 26 buckets. This method is better than relying on a property 
+		(length, first/last letter) that is likely to be shared by a large batch of words.</p>
+        <p>A student in 6.00x, March 2013 wrote some code to visually show why this third hash function is much
+		better than the first two. He visualized the hash functions to see what's going on, using the word 
+		list provided for Problem Set 4. It has 80,000+ words. There are many more words in the English language, 
+		but this representative word list does suffice to give a fair idea of the situation. For plotting, he used 
+		the matplotlib library, which you will learn in Week 7.</p>
+        <p>These graphs plot the number of words in each hash bucket. The x-axis represents the buckets (0 - 25) and the y-axis
+		represents the number of words in each bucket. Click on each image to see it full-sized.</p>
+        <p>First hash function:</p>
+        <p>
+          <center>
+            <a href="/static/files/finger_exercises/L9P8_firstHashFunction.png" target="_blank">
+              <img src="/static/files/finger_exercises/L9P8_firstHashFunction.png" height="300" width="400"/>
+            </a>
+          </center>
+        </p>
+        <p>Second hash function:</p>
+        <p>
+          <center>
+            <a href="/static/files/finger_exercises/L9P8_secondHashFunction.png" target="_blank">
+              <img src="/static/files/finger_exercises/L9P8_secondHashFunction.png" height="300" width="400"/>
+            </a>
+          </center>
+        </p>
+        <p>Third hash function:</p>
+        <p>
+          <center>
+            <a href="/static/files/finger_exercises/L9P8_thirdHashFunction.png" target="_blank">
+              <img src="/static/files/finger_exercises/L9P8_thirdHashFunction.png" height="300" width="400"/>
+            </a>
+          </center>
+        </p>
+        <p>As you can see, the third hash function clearly gives a much more even distribution of words
+		in each bucket. This is the hallmark of a good hash function!</p>
+        <p><a href="/static/files/finger_exercises/L9P8_generateGraphs.py">Click here</a> to download the code
+		that generated these graphs. Thanks to Asif Mehedi for taking the initiative of making these 
+		graphs and allowing us to use his work in our courseware.</p>
+        <p>For those of you who aren't native English speakers, it would be interesting to run a similar
+		experiment using your native language. You may have to change the number of buckets available depending
+		on the size of your alphabet, and of course you'd need to find a representative word list.
+		The course staff's best guess (for languages that use the Roman alphabet) is that the same results
+		will hold - the first two hash functions won't be good (but will of course have different high/low buckets),
+		while the third proves to be a decent hash function. Let us know in the forums if you run this experiment!</p>
+      </div>
+    </solution>
+  </p>
+</problem>

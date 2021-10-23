@@ -1,0 +1,68 @@
+<problem>
+  <text>
+    <p>Consider the following hierarchy of classes:</p>
+    <pre>class Person(object):     
+    def __init__(self, name):         
+        self.name = name     
+    def say(self, stuff):         
+        return self.name + ' says: ' + stuff     
+    def __str__(self):         
+        return self.name  
+
+class Lecturer(Person):     
+    def lecture(self, stuff):         
+        return 'I believe that ' + Person.say(self, stuff)  
+
+class Professor(Lecturer): 
+    def say(self, stuff): 
+        return self.name + ' says: ' + self.lecture(stuff)
+
+class ArrogantProfessor(Professor): 
+    def say(self, stuff): 
+        return 'It is obvious that ' + self.say(stuff)</pre>
+    <p>As written, this code leads to an infinite loop when using the <code>Arrogant Professor</code> class.</p>
+    <p>Change the definition of <code>ArrogantProfessor</code> so that the following behavior is achieved:</p>
+    <pre>e = Person('eric') 
+le = Lecturer('eric') 
+pe = Professor('eric') 
+ae = ArrogantProfessor('eric')
+
+&gt;&gt;&gt; e.say('the sky is blue')
+eric says: the sky is blue
+
+&gt;&gt;&gt; le.say('the sky is blue')
+eric says: the sky is blue
+
+&gt;&gt;&gt; le.lecture('the sky is blue')
+I believe that eric says: the sky is blue
+
+&gt;&gt;&gt; pe.say('the sky is blue')
+eric says: I believe that eric says: the sky is blue
+
+&gt;&gt;&gt; pe.lecture('the sky is blue')
+I believe that eric says: the sky is blue
+
+&gt;&gt;&gt; ae.say('the sky is blue')
+eric says: It is obvious that eric says: the sky is blue
+
+&gt;&gt;&gt; ae.lecture('the sky is blue')
+It is obvious that eric says: the sky is blue</pre>
+    <p>Paste ONLY your <code>ArrogantProfessor</code> class in the box below. Do not leave any debugging print statements.</p>
+
+    <coderesponse queuename="Watcher-MITx-6.00x">
+      <textbox rows="30" cols="70" mode="python" tabsize="4"/>
+      <codeparam>
+        <initial_display># Paste your class here</initial_display>
+        <grader_payload>
+{"grader": "ase/arrogant_part1/grade_arrogant_part1.py", "hide_output": false}
+</grader_payload>
+      </codeparam>
+    </coderesponse>
+
+
+  
+
+    
+  </text>
+
+</problem>

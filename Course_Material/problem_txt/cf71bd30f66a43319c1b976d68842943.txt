@@ -1,0 +1,33 @@
+
+  
+
+    
+    
+Write a function that meets the following specifications. 
+def is_digit_sum_prime(L):
+    """ 
+    L is a non-empty list of positive integers
+    Returns a list the same length as L. At each index, the new list will either 
+    be the boolean True or False. The element is True if the sum of the 
+    digits of the element at that index in L is a prime number, and False otherwise.
+    Remember that 1 is not a prime number. 
+    """
+    # your code here
+
+For example:
+print(is_digit_sum_prime([1]))       # prints [False]
+print(is_digit_sum_prime([17,3,1,2]))     # prints [False, True, False, True]
+print(is_digit_sum_prime([17,12,10]))     # prints [False, True, False]
+print(is_digit_sum_prime([4,6,1111,202])) # prints [False, False, False, False]
+print(is_digit_sum_prime([4,5,13,98]))    # prints [False, True, False, True]
+You may not use any libraries. Paste your entire function, including the definition, in the box below. Do not leave any debugging print statements.
+
+    
+
+      
+# Paste your function here
+
+        {"grader": "ase/is_digit_sum_prime/grade_is_digit_sum_prime.py", "hide_output": false}
+
+Note: An L379 or L397 error:
+Note on Score Shown:

@@ -1,0 +1,36 @@
+
+  
+
+    
+A regular polygon has 
+n
+s
+
+      
+The area of a regular polygon is: [mathjaxinline]\frac{0.25*n*s^2}{tan(\pi/n)}[/mathjaxinline]
+The perimeter of a polygon is: length of the boundary of the polygon
+Write a function called 
+polysum
+n
+s
+
+      
+
+        
+
+          
+Hint: What to import?
+
+          
+Which library should you be importing at the beginning of your code in order to call the 
+tan
+This is an optional exercise, but great for extra practice! 
+
+    
+
+      
+
+
+
+        {"grader": "finger_exercises/ora/polysum/grade_polysum.py"}
+

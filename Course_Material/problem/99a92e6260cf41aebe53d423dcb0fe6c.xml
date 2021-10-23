@@ -1,0 +1,106 @@
+<problem display_name="Exercise 1" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 10 minutes</b>
+    </p>
+    <p>
+Below are some short Python programs. For each program, answer the associated questions. </p>
+    <p>
+Try to answer the questions without running the code. Check your answers, then run the code for the ones you get wrong. </p>
+    <ol>
+      <li>
+        <pre>iteration = 0
+count = 0
+while iteration &lt; 5:
+    # the variable 'letter' in the loop stands for every 
+    # character, including spaces and commas!
+    for letter in "hello, world": 
+        count += 1
+    print("Iteration " + str(iteration) + "; count is: " + str(count))
+    iteration += 1 </pre>
+        <ol>
+          <li>
+            <p>
+What is the value of the variable <code>count</code> that is printed out (at the <code>print</code> statement) on iteration 0? <stringresponse answer="12"><textline size="50"/></stringresponse> </p>
+          </li>
+          <li>
+            <p>
+What is the value of the variable <code>count</code> that is printed out (at the <code>print</code> statement) on iteration 1? <stringresponse answer="24"><textline size="50"/></stringresponse> </p>
+          </li>
+          <li>
+            <p>
+What is the value of the variable <code>count</code> that is printed out (at the <code>print</code> statement) on iteration 2? <stringresponse answer="36"><textline size="50"/></stringresponse> </p>
+          </li>
+          <li>
+            <p>
+What is the value of the variable <code>count</code> that is printed out (at the <code>print</code> statement) on iteration 3? <stringresponse answer="48"><textline size="50"/></stringresponse> </p>
+          </li>
+          <li>
+            <p>
+What is the value of the variable <code>count</code> that is printed out (at the <code>print</code> statement) on iteration 4? <stringresponse answer="60"><textline size="50"/></stringresponse> </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <pre>iteration = 0
+while iteration &lt; 5:
+    count = 0
+    for letter in "hello, world":
+        count += 1
+    print("Iteration " + str(iteration) + "; count is: " + str(count))
+    iteration += 1 </pre>
+        <ol>
+          <li>
+            <p>
+What is the value of the variable <code>count</code> that is printed out (at the <code>print</code> statement) on iteration 0? <stringresponse answer="12"><textline size="50"/></stringresponse> </p>
+          </li>
+          <li>
+            <p>
+What is the value of the variable <code>count</code> that is printed out (at the <code>print</code> statement) on iteration 1? <stringresponse answer="12"><textline size="50"/></stringresponse> </p>
+          </li>
+          <li>
+            <p>
+What is the value of the variable <code>count</code> that is printed out (at the <code>print</code> statement) on iteration 2? <stringresponse answer="12"><textline size="50"/></stringresponse> </p>
+          </li>
+          <li>
+            <p>
+What is the value of the variable <code>count</code> that is printed out (at the <code>print</code> statement) on iteration 3? <stringresponse answer="12"><textline size="50"/></stringresponse> </p>
+          </li>
+          <li>
+            <p>
+What is the value of the variable <code>count</code> that is printed out (at the <code>print</code> statement) on iteration 4? <stringresponse answer="12"><textline size="50"/></stringresponse> </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <pre>iteration = 0
+while iteration &lt; 5:
+    count = 0
+    for letter in "hello, world":
+        count += 1
+        if iteration % 2 == 0:
+            break
+    print("Iteration " + str(iteration) + "; count is: " + str(count))
+    iteration += 1 </pre>
+        <ol>
+          <li>
+            <p>
+How many times will the <code>print</code> statement be executed? <stringresponse answer="5"><textline size="50"/></stringresponse> </p>
+          </li>
+          <li>
+            <p>
+What is the largest value of the variable <code>iteration</code> that will be printed out (at the <code>print</code> statement)? <stringresponse answer="4"><textline size="50"/></stringresponse> </p>
+          </li>
+          <li>
+            <p>
+What is the largest value of the variable <code>count</code> that will be printed out (at the <code>print</code> statement)? <stringresponse answer="12"><textline size="50"/></stringresponse> </p>
+          </li>
+          <li>
+            <p>
+What is the smallest value of the variable <code>count</code> that will be printed out (at the <code>print</code> statement)? <stringresponse answer="1"><textline size="50"/></stringresponse> </p>
+          </li>
+        </ol>
+      </li>
+    </ol>
+  </text>
+</problem>

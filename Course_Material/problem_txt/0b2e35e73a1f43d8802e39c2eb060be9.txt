@@ -1,0 +1,26 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 4 minutes
+
+  >>> print testList
+  [1, 16, 64, 81]
+
+
+    
+
+      
+
+# Your Code Here
+
+
+def square(a):
+    return a * a
+applyToEach(testList, square)
+
+
+{"grader": "finger_exercises/L6/applyToEach3/grade_ate3.py"}
+

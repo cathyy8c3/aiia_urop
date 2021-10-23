@@ -1,0 +1,46 @@
+<problem title="Valid Words" attempts="30" type="lecture" display_name="Problem 3" markdown="null" max_attempts="30" showanswer="never">
+  <style media="all" type="text/css"/>
+  <text>
+    <p>At this point, we have written code to generate a random
+  hand and display that hand to the user. We can also ask the
+  user for a word (Python's <code>input</code>) and
+  score the word (using your <code>getWordScore</code>).
+  However, at this point we have not written any code to
+  verify that a word given by a player obeys the rules of the
+  game. A <em>valid</em> word is in the word list;
+  <strong>and</strong> it is composed entirely of letters
+  from the current hand. Implement the <code>isValidWord</code>
+  function.</p>
+    <p><strong>Testing:</strong> Make sure the
+  <code>test_isValidWord</code> tests pass. In addition, you
+  will want to test your implementation by calling it multiple
+  times on the same hand - what should the correct behavior
+  be? Additionally, the empty string (<code>''</code>) 
+  is not a valid word - if you code this function correctly,
+  you shouldn't need an additional check for this condition.</p>
+    <p>Fill in the code for <code>isValidWord</code> in <code>ps4a.py</code> and be sure you've 
+      passed the appropriate tests in <code>test_ps4a.py</code> before pasting your function definition here.</p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="70" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def isValidWord(word, hand, wordList):
+    """
+    Returns True if word is in the wordList and is entirely
+    composed of letters in the hand. Otherwise, returns False.
+
+    Does not mutate hand or wordList.
+   
+    word: string
+    hand: dictionary (string -&gt; int)
+    wordList: list of lowercase strings
+    """
+    # TO DO ... &lt;-- Remove this comment when you code this function
+</initial_display>
+      <grader_payload>
+{"grader": "ps04/isValidWord/grade_isValidWord.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

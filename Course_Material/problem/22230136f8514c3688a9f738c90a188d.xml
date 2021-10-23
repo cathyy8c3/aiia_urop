@@ -1,0 +1,19 @@
+<problem display_name="Problem 2-1" markdown="null" max_attempts="1" showanswer="never">
+  <p>You have the following class hierarchy:<br/>
+        <pre>class A(object):
+    def foo(self):
+        print('hi')
+class B(A):
+    def foo(self):
+        print('bye')
+          </pre><br/>
+ Which of the following is correct?</p>
+  <multiplechoiceresponse>
+    <choicegroup label="7" type="MultipleChoice">
+      <choice correct="true">When <code>a = A()</code> we say that <code>a</code> is an instance of <code>A</code> </choice>
+      <choice correct="false">When <code>b = B()</code> we say that <code>b</code> is a subclass of <code>A</code> </choice>
+      <choice correct="false">Both of the above</choice>
+      <choice correct="false">Neither of the above</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

@@ -1,0 +1,157 @@
+<problem display_name="Exercise 7" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 10 minutes</b>
+    </p>
+    <p>Here is some code:</p>
+    <p>
+      <b>Code Sample</b>
+    </p>
+    <pre>iteration = 0
+count = 0
+while iteration &lt; 5:
+    for letter in "hello, world":
+        count += 1
+    print("Iteration " + str(iteration) + "; count is: " + str(count))
+    iteration += 1 </pre>
+    <p>We wish to re-write the above code, but instead of nesting a 
+      <code>for</code> loop inside a <code>while</code> loop, we want
+      to nest a <code>while</code> loop inside a <code>for</code> loop.
+      Which of the following loops gives the same output as the <b>Code
+	Sample</b>?</p>
+    <p>Try to answer the following questions by just reading the code.
+      Reading code is a very good skill to have (and will help you both
+      in your programming career and on your exams!). It is okay to
+      check your answers that you obtain from just reading the code, then 
+      in your interpreter run the code for the ones you got wrong on your
+      first attempt. </p>
+    <p>
+      <b>Test 1</b>
+    </p>
+    <pre>for iteration in range(5):
+    count = 0
+    while True:
+        for letter in "hello, world":
+            count += 1
+        print("Iteration " + str(iteration) + "; count is: " + str(count))</pre>
+    <p>
+      <choiceresponse>
+        <radiogroup direction="vertical">
+          <choice correct="false" name="1">
+            <span>
+              <text>Yes, Test 1 gives the same output as the Code Sample</text>
+            </span>
+          </choice>
+          <choice correct="true" name="2">
+            <span>
+              <text>No, Test 1 does not give the same output as the Code Sample</text>
+            </span>
+          </choice>
+        </radiogroup>
+      </choiceresponse>
+    </p>
+    <p>
+      <b>Test 2</b>
+    </p>
+    <pre>for iteration in range(5):
+    count = 0
+    while True:
+        for letter in "hello, world":
+            count += 1
+        print("Iteration " + str(iteration) + "; count is: " + str(count))
+        break</pre>
+    <p>
+      <choiceresponse>
+        <radiogroup direction="vertical">
+          <choice correct="false" name="1">
+            <span>
+              <text>Yes, Test 2 gives the same output as the Code Sample</text>
+            </span>
+          </choice>
+          <choice correct="true" name="2">
+            <span>
+              <text>No, Test 2 does not give the same output as the Code Sample</text>
+            </span>
+          </choice>
+        </radiogroup>
+      </choiceresponse>
+    </p>
+    <p>
+      <b>Test 3</b>
+    </p>
+    <pre>count = 0
+phrase = "hello, world"
+for iteration in range(5):
+    index = 0
+    while index &lt; len(phrase):
+        count += 1
+        index += 1
+    print("Iteration " + str(iteration) + "; count is: " + str(count))</pre>
+    <p>
+      <choiceresponse>
+        <radiogroup direction="vertical">
+          <choice correct="true" name="1">
+            <span>
+              <text>Yes, Test 3 gives the same output as the Code Sample</text>
+            </span>
+          </choice>
+          <choice correct="false" name="2">
+            <span>
+              <text>No, Test 3 does not give the same output as the Code Sample</text>
+            </span>
+          </choice>
+        </radiogroup>
+      </choiceresponse>
+    </p>
+    <p>
+      <b>Test 4</b>
+    </p>
+    <pre>count = 0
+phrase = "hello, world"
+for iteration in range(5):
+    while True:
+        count += len(phrase)
+        break
+    print("Iteration " + str(iteration) + "; count is: " + str(count))</pre>
+    <p>
+      <choiceresponse>
+        <radiogroup direction="vertical">
+          <choice correct="true" name="1">
+            <span>
+              <text>Yes, Test 4 gives the same output as the Code Sample</text>
+            </span>
+          </choice>
+          <choice correct="false" name="2">
+            <span>
+              <text>No, Test 4 does not give the same output as the Code Sample</text>
+            </span>
+          </choice>
+        </radiogroup>
+      </choiceresponse>
+    </p>
+    <p>
+      <b>Test 5</b>
+    </p>
+    <pre>count = 0
+phrase = "hello, world"
+for iteration in range(5):
+    count += len(phrase)
+    print("Iteration " + str(iteration) + "; count is: " + str(count))</pre>
+    <p>
+      <choiceresponse>
+        <radiogroup direction="vertical">
+          <choice correct="true" name="1">
+            <span>
+              <text>Yes, Test 5 gives the same output as the Code Sample</text>
+            </span>
+          </choice>
+          <choice correct="false" name="2">
+            <span>
+              <text>No, Test 5 does not give the same output as the Code Sample</text>
+            </span>
+          </choice>
+        </radiogroup>
+      </choiceresponse>
+    </p>
+  </text>
+</problem>

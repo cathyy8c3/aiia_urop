@@ -1,0 +1,56 @@
+<problem attempts="5" markdown="null" weight="0.0">
+  <text>
+    <p>Write a recursive procedure, called <code>laceStringsRecur(s1, s2)</code>, 
+      which also laces together two strings. Your procedure should not use any 
+      explicit loop mechanism, such as a <code>for</code> or <code>while</code> loop. 
+      We have provided a template of the code; your job is to insert a single line of code 
+      in each of the indicated places.</p>
+    <p>For this problem, you must add exactly one line of code in each of the three places
+      where we specify to write a line of code. If you add more lines, your code will not 
+      count as correct.</p>
+    <p>Here is the template you will fill in, for reference:</p>
+    <pre>def laceStringsRecur(s1, s2):
+    """
+    s1 and s2 are strings.
+
+    Returns a new str with elements of s1 and s2 interlaced,
+    beginning with s1. If strings are not of same length, 
+    then the extra elements should appear at the end.
+    """
+    def helpLaceStrings(s1, s2, out):
+        if s1 == '':
+            #PLACE A LINE OF CODE HERE
+        if s2 == '':
+            #PLACE A LINE OF CODE HERE
+        else:
+            #PLACE A LINE OF CODE HERE
+    return helpLaceStrings(s1, s2, '')</pre>
+  </text>
+  <p><font color="red">This questions seems to give the error "Only change the three lines shown, no more or less than that is allowed." even with correct code. Please try your best on this question -- staff will not count this question towards your midterm points if the issue cannot be resolved by the time the midterm ends. Apologies for this issue!</font></p>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="70" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def laceStringsRecur(s1, s2):
+    """
+    s1 and s2 are strings.
+
+    Returns a new str with elements of s1 and s2 interlaced,
+    beginning with s1. If strings are not of same length, 
+    then the extra elements should appear at the end.
+    """
+    def helpLaceStrings(s1, s2, out):
+        if s1 == '':
+            #PLACE A LINE OF CODE HERE
+        if s2 == '':
+            #PLACE A LINE OF CODE HERE
+        else:
+            #PLACE A LINE OF CODE HERE
+    return helpLaceStrings(s1, s2, '')
+</initial_display>
+      <grader_payload>
+        {"grader": "exam1/F2012/laceStringsRec/grade_laceStringsRec.py", "hide_output": true}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

@@ -1,0 +1,34 @@
+<problem display_name="Problem 4" markdown="null" showanswer="never">
+  <text>
+    <p>
+      Implement a function called <code>closest_power</code> that meets the specifications below. </p>
+    <pre>def closest_power(base, num):
+    '''
+    base: base of the exponential, integer &gt; 1
+    num: number you want to be closest to, integer &gt; 0
+    Find the integer exponent such that base**exponent is closest to num.
+    Note that the base**exponent may be either greater or smaller than num.
+    In case of a tie, return the smaller value.
+    Returns the exponent.
+    '''
+    # Your code here</pre>
+    <p>For example,</p>
+    <ul>
+      <li><code>closest_power(3,12)</code> returns <code>2</code></li>
+      <li><code>closest_power(4,12)</code> returns <code>2</code></li>
+      <li><code>closest_power(4,1)</code> returns <code>0</code></li>
+    </ul>
+    <p>Paste your entire function, including the definition, in the box below. Do not leave any debugging print statements.</p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display># Paste your function here</initial_display>
+      <answer_display>
+      </answer_display>
+      <grader_payload>
+        {"grader": "quiz/60001_s2016/closest_power/grade_closest_power.py", "hide_output": false}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

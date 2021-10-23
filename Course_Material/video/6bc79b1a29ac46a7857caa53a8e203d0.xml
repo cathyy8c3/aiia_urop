@@ -1,0 +1,15 @@
+<video youtube="1.00:Y4sR0fUq6bY" url_name="6bc79b1a29ac46a7857caa53a8e203d0" sub="" transcripts="{&quot;en&quot;: &quot;5ed25da2-0e4d-40ef-b363-f1fae416b254-en.srt&quot;}" display_name="Video: Building a Class" download_track="true" download_video="true" edx_video_id="5ed25da2-0e4d-40ef-b363-f1fae416b254" handout="/asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture10.zip" html5_sources="[]" youtube_id_1_0="Y4sR0fUq6bY">
+  <handout src="/asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture10.zip"/>
+  <video_asset client_video_id="L10_S1.mp4" duration="423.11" image="video-images/8fb2f48e5c1146a6ae02bf30ee17cd50.jpeg">
+    <encoded_video profile="hls" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006200/MITX60012016-V006200.m3u8" file_size="0" bitrate="0"/>
+    <encoded_video profile="audio_mp3" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006200_AUD.mp3" file_size="10156545" bitrate="192"/>
+    <encoded_video profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006200_DTH.mp4" file_size="20377606" bitrate="385"/>
+    <encoded_video profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006200_MB2.mp4" file_size="11341266" bitrate="214"/>
+    <encoded_video profile="youtube" url="Y4sR0fUq6bY" file_size="0" bitrate="0"/>
+    <encoded_video profile="mobile_high" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006200_MB1.mp4" file_size="13248438" bitrate="250"/>
+    <transcripts>
+      <transcript language_code="en" file_format="srt" provider="Custom"/>
+    </transcripts>
+  </video_asset>
+  <transcript language="en" src="5ed25da2-0e4d-40ef-b363-f1fae416b254-en.srt"/>
+</video>

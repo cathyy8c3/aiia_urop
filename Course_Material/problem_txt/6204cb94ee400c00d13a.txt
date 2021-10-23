@@ -1,0 +1,37 @@
+
+  
+Write a function called 
+getSublists
+L
+n
+
+    
+assume 
+L
+assume 
+0 < n <= len(L)
+    This function returns a list of all possible sublists in 
+L
+n
+L
+L
+Example 1, if 
+L = [10, 4, 6, 8, 3, 4, 5, 7, 7, 2]
+n = 4
+[[10, 4, 6, 8], [4, 6, 8, 3], [6, 8, 3, 4], [8, 3, 4, 5], [3, 4, 5, 7], [4, 5, 7, 7], [5, 7, 7, 2]]
+Example 2, if 
+L = [1, 1, 1, 1, 4]
+n = 2
+[[1, 1], [1, 1], [1, 1], [1, 4]]
+Your function does not have to be recursive. Do not leave any debugging print statements when you paste your code in the box.
+
+    
+
+      
+def getSublists(L, n):
+    
+
+
+
+        {"grader": "final/F2014_60001r/get_sublists/grade_get_sublists.py", "hide_output": false}
+

@@ -1,0 +1,63 @@
+<problem display_name="Problem 2" markdown="null" showanswer="never">
+  <p>Assume <code>s</code> is a string of lower case characters.</p>
+  <p>Write a program that prints the number of times the string <code>'bob'</code> occurs in <code>s</code>. For example, if <code>s = 'azcbobobegghakl'</code>, then your program should print</p>
+  <p>
+    <pre>Number of times bob occurs is: 2</pre>
+  </p>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display># Paste your code into this box </initial_display>
+      <grader_payload>
+{"grader": "chips1/countbobs/grade_countbobs.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <text>
+    <text>
+      <section class="hints">
+        <h3>Important</h3>
+        <div class="collapsible">
+          <header>
+            <a href="#" id="imp1">Only hit "Check" once per submission. You only get 30 checks per problem.</a>
+          </header>
+          <section id="imp1">
+            <p>** Our automatic grader may take a few minutes to respond with feedback. If you hit "Check" 
+	multiple times, you will lose a check for every press of the button.</p>
+            <p>** If you're unfamiliar with how our autograder works, first try out one of the infinite check problems in the lecture sequences.</p>
+            <p>** Please be judicious with your checks, as we are unable to give you more than 30 checks. However 
+	this should be more than sufficient: if you do your code development in your local environment, and ensure you
+	can pass our test cases, you should not require more than a few checks once you paste your working,
+	tested code into our code box.</p>
+          </section>
+        </div>
+        <div class="collapsible">
+          <header>
+            <a href="#" id="ht1">If you believe you have correct code but it is marked incorrect after clicking "Check"...</a>
+          </header>
+          <section id="ht1">
+            <p>** After you submit your code, you can see every test case the graders runs on your code. They compare what your code outputs with what our answer code is supposed to output. Click the small link titled "See Full Output" below the Test Results header.</p>
+          </section>
+        </div>
+        <div class="collapsible">
+          <header>
+            <a href="#" id="ht1">"Staff Debug: L397 Error" means your code has an infinite loop...</a>
+          </header>
+          <section id="ht1">
+            <p>** Clicking Check may give you the error:<br/>
+            <code>There was a problem running your solution (Staff debug: L379).</code> <code>We couldn't run your solution (Staff debug: L397).</code>. <br/>This means your code is taking too long or has an infinite loop. Test your code with more unique test cases, such as very large or very small values.
+</p>
+          </section>
+        </div>
+        <div class="collapsible">
+          <header>
+            <a href="#" id="ht1">Do not define your own values</a>
+          </header>
+          <section id="ht1">
+            <p>** For problems such as these, do not include <code>input</code> statements or define variables we told you would be given. Our automated testing will provide values for you - so write your code in the following box assuming those variables are already defined.</p>
+          </section>
+        </div>
+      </section>
+    </text>
+  </text>
+</problem>

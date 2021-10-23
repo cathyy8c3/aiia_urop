@@ -1,0 +1,33 @@
+<problem display_name="Problem 6" markdown="null" showanswer="never">
+  <text>
+    <p>
+      Implement a function that meets the specifications below. </p>
+    <pre>def deep_reverse(L):
+    """ assumes L is a list of lists whose elements are ints
+    Mutates L such that it reverses its elements and also 
+    reverses the order of the int elements in every element of L. 
+    It does not return anything.
+    """
+    # Your code here</pre>
+    <p/>
+    <p>For example, if <code>L = [[1, 2], [3, 4], [5, 6, 7]]</code> then <code>deep_reverse(L)</code> mutates <code>L</code> to be <code>[[7, 6, 5], [4, 3], [2, 1]]</code></p>
+    <p>Paste your entire function, including the definition, in the box below. Do not leave any debugging print statements.</p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display># Paste your function here</initial_display>
+      <answer_display>
+      </answer_display>
+      <grader_payload>
+        {"grader": "quiz/60001_s2016/deep_reverse/grade_deep_reverse.py", "hide_output": false}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <p><b>BEFORE EMAILING THE STAFF:</b> Please read carefully. The question states that you need to mutate <code>L</code>. Your code must work when you do this: 
+    <pre>L = [[0, 1, 2], [1, 2, 3], [3, 2, 1], [10, -10, 100]]
+deep_reverse(L) 
+print(L)
+    </pre>
+  </p>
+</problem>

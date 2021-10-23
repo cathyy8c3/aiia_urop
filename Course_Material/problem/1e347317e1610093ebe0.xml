@@ -1,0 +1,44 @@
+<problem>
+  <text>
+    <p>
+      Write a Python function, <code>twoQuadratics</code>, that takes in two sets of coefficients
+and x-values and prints the sum of the results of evaluating two quadratic
+equations. It does not do anything else. That is, you should evaluate and print the result of the following equation:
+      [mathjaxinline]a_1*x_1^2 + b_1*x_1 + c_1 + a_2*x_2^2 + b_2*x_2 + c_2[/mathjaxinline]</p>
+    <p>You are given the following function, <code>evalQuadratic</code></p>
+    <pre>def evalQuadratic(a, b, c, x):
+   '''
+   a, b, c: numerical values for the coefficients of a quadratic equation
+   x: numerical value at which to evaluate the quadratic.
+   '''
+   return a*x*x + b*x + c
+    </pre>
+    <p>Use the given function (you don't need to redefine <code>evalQuadratic</code> in this box; when you call <code>evalQuadratic</code>, our definition will be used).</p>
+    
+    <pre>def twoQuadratics(a1, b1, c1, x1, a2, b2, c2, x2):
+    '''
+    a1, b1, c1: one set of coefficients of a quadratic equation
+    a2, b2, c2: another set of coefficients of a quadratic equation
+    x1, x2: values at which to evaluate the quadratics
+    '''
+  # Your code here  </pre>
+    <p><b>If you are getting this problem incorrect, re-read the problem statement carefully.</b></p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def twoQuadratics(a1, b1, c1, x1, a2, b2, c2, x2):
+    '''
+    a1, b1, c1: one set of coefficients of a quadratic equation
+    a2, b2, c2: another set of coefficients of a quadratic equation
+    x1, x2: values at which to evaluate the quadratics
+    '''
+    # Your code here 
+           </initial_display>
+      <grader_payload>
+{"grader": "finger_exercises/L4/two_quadratics/grade_two_quadratics.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

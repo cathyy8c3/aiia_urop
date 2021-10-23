@@ -1,0 +1,165 @@
+<problem title="Playing a Game" attempts="30" type="lecture" display_name="Problem 6" markdown="null" max_attempts="30" showanswer="never">
+  <text>
+    <p>A game consists of playing multiple hands. We need to
+        implement one final function to complete our word-game
+        program. Write the code that implements the
+        <code>playGame</code> function. You should remove the code
+        that is currently uncommented in the <code>playGame</code>
+        body. Read through the specification and make sure you
+        understand what this function accomplishes. For the game,
+        you should use the <code>HAND_SIZE</code> constant to determine
+        the number of cards in a hand.</p>
+    <p><strong>Testing:</strong> Try out this implementation as
+      if you were playing the game. Try out different values for
+      <code>HAND_SIZE</code> with your program, and be sure that you
+      can play the wordgame with different hand sizes by
+      modifying <i>only</i> the variable
+      <code>HAND_SIZE</code>.</p>
+    <section class="hints">
+      <h3>Sample Output</h3>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="ht1l">Here is how the game output should look...</a>
+        </header>
+        <section id="ht1">
+          <pre>
+            <code>
+Loading word list from file...
+   83667 words loaded.
+Enter n to deal a new hand, r to replay the last hand, or e to end game: r
+You have not played a hand yet. Please play a new hand first!
+
+Enter n to deal a new hand, r to replay the last hand, or e to end game: n
+Current Hand: p z u t t t o
+Enter word, or a "." to indicate that you are finished: tot
+"tot" earned 9 points. Total: 9 points
+
+Current Hand: p z u t
+Enter word, or a "." to indicate that you are finished: .
+Goodbye! Total score: 9 points.
+
+Enter n to deal a new hand, r to replay the last hand, or e to end game: r
+Current Hand: p z u t t t o
+Enter word, or a "." to indicate that you are finished: top
+"top" earned 15 points. Total: 15 points
+
+Current Hand: z u t t
+Enter word, or a "." to indicate that you are finished: tu
+Invalid word, please try again.
+
+Current Hand: z u t t
+Enter word, or a "." to indicate that you are finished: .
+Goodbye! Total score: 15 points.
+
+Enter n to deal a new hand, r to replay the last hand, or e to end game: n
+Current Hand: a q w f f i p
+Enter word, or a "." to indicate that you are finished: paw
+"paw" earned 24 points. Total: 24 points
+
+Current Hand: q f f i
+Enter word, or a "." to indicate that you are finished: qi
+"qi" earned 22 points. Total: 46 points
+
+Current Hand: f f
+Enter word, or a "." to indicate that you are finished: .
+Goodbye! Total score: 46 points.
+
+Enter n to deal a new hand, r to replay the last hand, or e to end game: n
+Current Hand: a r e t i i n
+Enter word, or a "." to indicate that you are finished: inertia
+"inertia" earned 99 points. Total: 99 points.
+
+Run out of letters. Total score: 99 points.
+
+Enter n to deal a new hand, r to replay the last hand, or e to end game: x
+Invalid command.
+Enter n to deal a new hand, r to replay the last hand, or e to end game: e
+    </code>
+          </pre>
+        </section>
+      </div>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="ht2l">Hints about the output</a>
+        </header>
+        <section id="ht2">
+          <p>Be sure to inspect the above sample output carefully - very little is actually printed out 
+	in this function specifically. Most of the printed output actually comes from the code you wrote
+	in <code>playHand</code> - be sure that your code is modular and uses function calls to the
+	<code>playHand</code> helper function! </p>
+          <p>You should also make calls to the <code>dealHand</code> helper function. You shouldn't make calls
+	to any other helper function that we've written so far - in fact, this function can be written in
+	about 15-20 lines of code.</p>
+          <p>Here is the above output, with the output from <code>playHand</code> obscured:</p>
+          <pre>
+            <code>
+Loading word list from file...
+   83667 words loaded.
+Enter n to deal a new hand, r to replay the last hand, or e to end game: r
+You have not played a hand yet. Please play a new hand first!
+
+Enter n to deal a new hand, r to replay the last hand, or e to end game: n
+&lt;call to playHand&gt; 
+
+Enter n to deal a new hand, r to replay the last hand, or e to end game: n
+&lt;call to playHand&gt; 
+
+Enter n to deal a new hand, r to replay the last hand, or e to end game: n
+&lt;call to playHand&gt; 
+
+Enter n to deal a new hand, r to replay the last hand, or e to end game: x
+Invalid command.
+Enter n to deal a new hand, r to replay the last hand, or e to end game: e
+</code>
+          </pre>
+          <p>Hopefully this hint makes the problem seem a bit more approachable.</p>
+        </section>
+      </div>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="ht3l">Entering Your Code</a>
+        </header>
+        <section id="ht3">
+          <p>Be sure to only paste your definition for <code>playGame</code> in the following
+	box. Do not include any other function definitions.</p>
+        </section>
+      </div>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="ht4">A Cool Trick about 'print'</a>
+        </header>
+        <section id="ht4">
+          <p>A cool trick about <code>print</code>: you can make two or more print statements print 
+	to the same line! Try out the following code. It will separate the first and second line with a space, and the second and third line with a "?" rather than putting each on a new line.</p>
+          <pre>print('Hello', end = " ")
+print('world', end="?")
+print('!')</pre>
+        </section>
+      </div>
+    </section>
+    <br/>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="70" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def playGame(wordList):
+    """
+    Allow the user to play an arbitrary number of hands.
+ 
+    1) Asks the user to input 'n' or 'r' or 'e'.
+      * If the user inputs 'n', let the user play a new (random) hand.
+      * If the user inputs 'r', let the user play the last hand again.
+      * If the user inputs 'e', exit the game.
+      * If the user inputs anything else, tell them their input was invalid.
+ 
+    2) When done playing the hand, repeat from step 1
+    """
+    # TO DO ... &lt;-- Remove this comment when you code this function
+</initial_display>
+      <grader_payload>
+{"grader": "ps04/playGame/grade_playGame.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

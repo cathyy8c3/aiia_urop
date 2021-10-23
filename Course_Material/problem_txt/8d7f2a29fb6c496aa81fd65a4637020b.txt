@@ -1,0 +1,16 @@
+
+  
+A program that keeps running and does not stop is an example of a syntax error.  
+    
+
+    
+
+      
+
+        
+
+          
+True 
+
+          
+False 

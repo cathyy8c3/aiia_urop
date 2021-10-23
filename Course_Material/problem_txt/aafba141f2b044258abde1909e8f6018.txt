@@ -1,0 +1,143 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 4 minutes
+
+Consider the following function definition: 
+
+def union(set1, set2):
+   """
+   set1 and set2 are collections of objects, each of which might be empty.
+   Each set has no duplicates within itself, but there may be objects that
+   are in both sets. Objects are assumed to be of the same type.
+
+   This function returns one set containing all elements from
+   both input sets, but with no duplicates.
+   """
+   if len(set1) == 0:
+      return set2
+   elif set1[0] in set2:
+      return union(set1[1:], set2)
+   else:
+      return set1[0] + union(set1[1:], set2)
+
+
+Assume that 
+union
+
+      Please select the best glass box test suite for the function 
+union
+
+      
+
+        
+
+          
+
+            
+
+              
+ Test Suite A:
+	      
+ union('','')
+union('','a')
+union('','ab')
+union('a','')
+union('a','b')
+union('c','ab')
+union('de','')
+union('ab','c')
+union('cd','ab')
+
+            
+
+              
+ Test Suite B:
+	      
+ union('abc','')
+union('abc','a')
+union('abc','ab')
+union('abc','d')
+union('abc', 'abcd')
+
+            
+
+              
+ Test Suite C:
+	      
+ union('','abc')
+union('a','abc')
+union('ab','abc')
+union('abc','abc')
+
+            
+
+              
+ Test Suite D:
+	      
+ union('','abc')
+union('a','abc')
+union('ab','abc')
+union('d','abc')
+
+      
+
+        
+
+          
+
+            
+Explanation:
+A good glass box test suite would try to test a good sample of all 
+	    the possible paths through the code. So, it should contain tests that 
+	    test when 
+set1
+set1[0]
+set2
+set1[0]
+set2
+ Remember that glass box testing is a method of software testing that tests 
+	    the internal structures and workings of a piece of code. When we look at the 
+	    code for 
+union
+set1
+
+            
+len(set1) == 0
+union('', 'abc')
+set1[0] in set2
+union('a', 'abc')
+set1[0] not in set2
+else:
+union('d', 'abc')
+In addition, because 
+union
+
+            
+Recursion depth = 0 - matched by the test 
+union('', 'abc')
+Recursion depth = 1 - matched by the tests 
+union('a', 'abc')
+union('d', 'abc')
+Recursion depth > 1 - matched by the test 
+union('ab', 'abc')
+Note that this test suite is NOT path complete because it would take essentially 
+	    infinite time to test all possible recursive depths. 
+Let's examine now why the other test suites weren't as good as Test Suite D:
+
+            
+Test Suite A looks at a good sampling of set sizes for 
+set1
+set2
+set1
+set2
+Test Suite B does not explore the paths in the code because it never varies 
+	      the contents of 
+set1
+Test Suite C does not contain a test that explores the path when 
+	      
+set1
+set2

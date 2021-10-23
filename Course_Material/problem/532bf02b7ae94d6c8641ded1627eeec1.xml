@@ -1,0 +1,98 @@
+<problem display_name="Exercise 3" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 5 minutes</b>
+    </p>
+    <ol>
+      <li>True or False? The internal computer representation of any number is always an approximation. </li>
+      <p>
+        <choiceresponse>
+          <radiogroup direction="vertical">
+            <choice correct="false" name="1">
+              <span>
+                <text>True </text>
+              </span>
+            </choice>
+            <choice correct="true" name="2">
+              <span>
+                <text>False</text>
+              </span>
+            </choice>
+          </radiogroup>
+        </choiceresponse>
+      </p>
+      <li>The decimal 11 is what binary?:</li>
+      <p>
+        <choiceresponse>
+          <radiogroup direction="vertical">
+            <choice correct="false" name="1">
+              <span>
+                <text>11</text>
+              </span>
+            </choice>
+            <choice correct="true" name="2">
+              <span>
+                <text>1011</text>
+              </span>
+            </choice>
+            <choice correct="false" name="3">
+              <span>
+                <text>1101</text>
+              </span>
+            </choice>
+            <choice correct="false" name="4">
+              <span>
+                <text>cannot be converted</text>
+              </span>
+            </choice>
+          </radiogroup>
+        </choiceresponse>
+      </p>
+      <li>True or False? The internal representation of the decimal number 1/10 = 0.1 requires an infinite number of digits.</li>
+      <p>
+        <choiceresponse>
+          <radiogroup direction="vertical">
+            <choice correct="true" name="1">
+              <span>
+                <text>True</text>
+              </span>
+            </choice>
+            <choice correct="false" name="2">
+              <span>
+                <text>False</text>
+              </span>
+            </choice>
+          </radiogroup>
+        </choiceresponse>
+      </p>
+      <li>After many computations, you get two floating numbers stored in variables <code>a</code> and <code>b</code>. Your code compares the numbers with <code>a == b</code>. </li>
+      <p>
+        <choiceresponse>
+          <radiogroup direction="vertical">
+            <choice correct="false" name="1">
+              <span>
+                <text>Doing the comparison will always lead to a correct program.</text>
+              </span>
+            </choice>
+            <choice correct="true" name="2">
+              <span>
+                <text>Doing the comparison will sometimes lead to a correct program.</text>
+              </span>
+            </choice>
+            <choice correct="false" name="3">
+              <span>
+                <text>Doing the comparison will never lead to a correct program.</text>
+              </span>
+            </choice>
+          </radiogroup>
+        </choiceresponse>
+      </p>
+    </ol>
+  </text>
+  <solution>
+    <p>1. Some numbers, like integers, can be represented exactly.</p>
+    <p>3. Look back at the last slide in the video. "If there is no integer p such that a power of 2
+multiplied by x gives me a whole number, then the best I'm going to get is an internal representation that's close." That is the case for this example. </p>
+    <p>4. When you do many computations on floats, you accumulate floating point errors. The errors accumulated for <code>a</code> and <code>b</code> may not match up, so doing may (or may not) comparison will lead to an inequality.</p>
+  </solution>
+</problem>

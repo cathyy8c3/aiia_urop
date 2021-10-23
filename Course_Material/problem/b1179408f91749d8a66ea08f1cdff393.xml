@@ -1,0 +1,16 @@
+<problem display_name="Problem 1-10" group_access="{}" markdown="null" max_attempts="1" showanswer="never" weight="1.0">
+  <p> A tuple can contain a list as an element.
+    </p>
+  <p>
+    <choiceresponse>
+      <radiogroup direction="vertical">
+        <choice correct="true" name="1">
+          <span>True </span>
+        </choice>
+        <choice correct="false" name="2">
+          <span>False </span>
+        </choice>
+      </radiogroup>
+    </choiceresponse>
+  </p>
+</problem>

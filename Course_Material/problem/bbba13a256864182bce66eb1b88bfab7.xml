@@ -1,0 +1,9 @@
+<problem display_name="Problem 1-2" markdown="null" max_attempts="1" showanswer="never">
+  <p>The orders of growth of [mathjaxinline]O(n^2+1)[/mathjaxinline] and [mathjaxinline]O(n^5+1)[/mathjaxinline] are both polynomial.</p>
+  <multiplechoiceresponse>
+    <choicegroup label="complexity problem" type="MultipleChoice">
+      <choice correct="true">True</choice>
+      <choice correct="false">False</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

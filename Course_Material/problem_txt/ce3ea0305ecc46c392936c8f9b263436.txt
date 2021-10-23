@@ -1,0 +1,195 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 8 minutes
+
+Here is the code for selection sort. For simplicity, assume 
+L
+def selSort(L):
+    for i in range(len(L) - 1):
+        minIndx = i
+        minVal = L[i]
+        j = i+1
+        while j < len(L):
+            if minVal > L[j]:
+                minIndx = j
+                minVal = L[j]
+            j += 1
+        if minIndx != i:
+            temp = L[i]
+            L[i] = L[minIndx]
+            L[minIndx] = temp
+
+And here is a suggested alternative: 
+def newSort(L):
+    for i in range(len(L) - 1):
+        j=i+1
+        while j < len(L):
+            if L[i] > L[j]:
+                temp = L[i]
+                L[i] = L[j]
+                L[j] = temp
+            j += 1
+
+      
+
+        
+Do these two functions result in the same sorted lists? 
+
+          
+
+            
+
+              
+
+                
+
+                  
+ Yes
+
+                
+
+                  
+ No
+
+          
+
+            
+
+              
+
+                
+Explanation:
+Yes, both 
+selSort
+newSort
+selSort
+You can sort a list by always moving the smallest element from the unsorted list to a new list. 
+	    That procedure would add the elements to the new list in increasing order, and when every element 
+	    from the old list has been moved over, we end up with a new sorted list. This type of sorting 
+	    algorithm is often called Selection Sort.
+selSort
+0
+i-1
+i
+i
+i
+i
+i
+newSort
+newSort
+newSort
+minVal
+minIndx
+newSort
+i
+i
+j
+j
+i
+i
+
+        
+Do these two functions execute the same number of assignments of values into entries of the lists? 
+
+          
+
+            
+
+              
+
+                
+
+                  
+ Yes. They execute the same number of assignments.
+
+                
+
+                  
+ No. 
+newSort
+selSort
+
+                
+
+                  
+ No. 
+selSort
+newSort
+
+                
+
+                  
+ No. Either function may use more inserts than the other.
+
+          
+
+            
+
+              
+
+                
+Explanation:
+selSort
+i
+newSort
+n-i
+i
+
+        
+Is the worst-case order of growth of these functions the same?
+
+          
+
+            
+
+              
+
+                
+
+                  
+ Yes. 
+newSort
+selSort
+
+                
+
+                  
+ No. 
+newSort
+selSort
+
+                
+
+                  
+ No. 
+selSort
+newSort
+
+          
+
+            
+
+              
+Explanation:
+Yes.
+In 
+selSort
+i
+j
+n-i
+n
+i
+i
+n/2
+n * n/2
+newSort
+selSort
+selSort
+minIndx
+minVal
+newSort
+i

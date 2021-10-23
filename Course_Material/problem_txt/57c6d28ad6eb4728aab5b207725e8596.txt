@@ -1,0 +1,21 @@
+
+  
+For this problem, the graders will use our implementation of the 
+Message
+PlaintextMessage
+CiphertextMessage
+Now that you have all the pieces to the puzzle, please use them to decode the file story.txt. The file ps6.py contains a helper function 
+get_story_string()
+CiphertextMessage
+decrypt_message
+Paste your function 
+decrypt_story()
+
+    
+
+      
+
+
+
+{"grader": "ps06/caesar4/grade_decrypt_story.py"}
+

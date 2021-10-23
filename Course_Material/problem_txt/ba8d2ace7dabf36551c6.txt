@@ -1,0 +1,28 @@
+
+  
+
+    
+
+      Write a Python function that returns 
+True
+aString
+False
+reverse
+aString[::-1]
+This function takes in a string and returns a boolean.
+def isPalindrome(aString):
+    '''
+    aString: a string
+    '''
+    # Your code here
+    
+
+    
+
+      
+# Paste your function here
+
+
+
+{"grader": "finger_exercises/L6/is_palindrome/grade_is_palindrome.py", "hide_output":true}
+

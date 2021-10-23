@@ -1,0 +1,170 @@
+<problem display_name="Exercise: guess my number" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" weight="10.0">
+  <p>
+    <b>ESTIMATED TIME TO COMPLETE: 15 minutes</b>
+  </p>
+  <text>
+    <p>In this problem, you'll create a program that guesses a secret number!</p>
+    <p>The program works as follows: you (the user) thinks of an integer between 0 (inclusive) and 100 (not inclusive). The 
+      computer makes guesses, and you give it 
+      input - is its guess too high or too low? Using bisection search, the computer will guess 
+      the user's secret number!</p>
+    <p>Here is a transcript of an example session:</p>
+    <pre>Please think of a number between 0 and 100!
+Is your secret number 50?
+Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. l
+Is your secret number 75?
+Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. l
+Is your secret number 87?
+Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. h
+Is your secret number 81?
+Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. l
+Is your secret number 84?
+Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. h
+Is your secret number 82?
+Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. l
+Is your secret number 83?
+Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. c
+Game over. Your secret number was: 83
+</pre>
+    <p/>
+    <section class="hints">
+      <h3>Important</h3>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="id71">Hint: Endpoints</a>
+        </header>
+        <section id="id71">
+          <p>** Your program should use bisection search. So think carefully what that means.
+              What will the first guess always be? How should you calculate subsequent guesses? </p>
+          <p>** Your initial endpoints should be 0 and 100. Do not optimize your subsequent endpoints by making them be the halfway point plus or minus 1. Rather, just make them be the halfway point. </p>
+        </section>
+      </div>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="id71">Python Trick: Printing on the same line</a>
+        </header>
+        <section id="id71">
+          <p>Try the following in your console: 
+              <pre>
+# Notice how if we have two print statements                
+print("Hi")
+print("there")
+
+# The output will have each string on a separate line:                
+Hi
+there
+                
+# Now try adding the following:
+print("Hi",end='')
+print("there")
+print("Hi",end='*')
+print("there")   
+                
+# The output will place the subsequent string on the same line
+# and will connect the two prints with the character given by end
+Hithere
+Hi*there                
+              </pre></p>
+        </section>
+      </div>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="ht3">Click to See Test Cases </a>
+        </header>
+        <section id="ht3">
+          <p>Test Cases to Test Your Code With. Be sure to test these on your own machine - 
+            and that you get the same output! - before running your code on this webpage!</p>
+          <p>Test case 1. Secret guess = 42</p>
+          <pre>Please think of a number between 0 and 100!
+Is your secret number 50?
+Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. h
+Is your secret number 25?
+Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. l
+Is your secret number 37?
+Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. l
+Is your secret number 43?
+Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. h
+Is your secret number 40?
+Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. l
+Is your secret number 41?
+Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. l
+Is your secret number 42?
+Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. c
+Game over. Your secret number was: 42</pre>
+          <p>Test case 2. Secret guess = 91</p>
+          <pre>Please think of a number between 0 and 100!
+Is your secret number 50?
+Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. l
+Is your secret number 75?
+Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. l
+Is your secret number 87?
+Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. l
+Is your secret number 93?
+Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. h
+Is your secret number 90?
+Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. l
+Is your secret number 91?
+Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. y
+Sorry, I did not understand your input.
+Is your secret number 91?
+Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. c
+Game over. Your secret number was: 91</pre>
+        </section>
+      </div>
+    </section>
+    <br/>
+    <p><b>Note:</b> your program should use <code>input</code> to obtain
+    the user's input! Be sure to handle the case when the user's input is not
+    one of <code>h</code>, <code>l</code>, or <code>c</code>.</p>
+    <p>When the user enters something invalid, you should print out a message to the user explaining you 
+    did not understand their input. Then, you should re-ask the question, and prompt again for input. For example:</p>
+    <pre>Is your secret number 91?
+Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. y
+Sorry, I did not understand your input.
+Is your secret number 91?
+Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. c</pre>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="70" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+# Paste your code into this box
+</initial_display>
+      <answer_display>print("Please think of a number between 0 and 100!")
+
+# At the start the highest the number could be is 100 and the lowest is 0.
+hi = 100
+lo = 0
+guessed = False
+
+# Loop until we guess it correctly
+while not guessed:
+    # Bisection search: guess the midpoint between our current high and low guesses
+    guess = (hi + lo)//2
+    print("Is your secret number " + str(guess)+ "?")
+    user_inp = input("Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. ")
+
+    if user_inp == 'c':
+        # We got it right!
+        guessed = True
+    elif user_inp == 'h':
+        # Guess was too high. So make the current guess the highest possible guess.
+        hi = guess
+    elif user_inp == 'l':
+        # Guess was too low. So make the current guess the lowest possible guess.
+        lo = guess
+    else:
+        print("Sorry, I did not understand your input.")
+
+print('Game over. Your secret number was: ' + str(guess))
+      </answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L3/numberGuessing/grade_numberGuessing.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <p>
+    <strong>If you believe you have correct code but it is marked incorrect after clicking "Check"...</strong>
+  </p>
+  <p>After you submit your code, you can see every test case the graders runs on your code. They compare what your code outputs with what our answer code is supposed to output. Click the small link titled "See Full Output" below the Test Results header.</p>
+</problem>

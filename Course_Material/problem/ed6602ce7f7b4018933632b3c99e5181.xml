@@ -1,0 +1,195 @@
+<problem display_name="Exercise 1" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 7 minutes</b>
+      <br/>
+      <b>      Note that you will have to answer all questions before you can click the Check button.</b>
+    </p>
+    <script type="text/python" system_path="python_lib">
+def test_str(expect, ans):
+  # Strip away ' ' or " " wrapping string input answer
+  # (check which, if any, are present - don't want to pull valid
+  #  characters out of the center of a string, eg "That's crazy!",
+  #  nor do we wish to accept an input with mismatched modifiers, 
+  #  eg 'abc")
+  if len(expect) == 0 or len(ans) == 0: return expect == ans
+
+  if ans[0] == "'" and ans[-1] == "'": ans = ans.strip("'")
+  elif ans[0] == '"' and ans[-1] == '"': ans = ans.strip('"')
+
+  if expect[0] == "'": expect = expect.strip("'")
+  elif expect[0] == '"': expect = expect.strip('"')
+
+  return expect == ans
+
+def test_dict_keys(expect, ans):
+  # For a list that can be comprised of strings
+  # Check that expect &amp; ans are lists
+  expect = expect.replace('dict_keys(', '')
+  expect = expect.replace(')', '')
+  ans = ans.replace('dict_values(', '')
+  expect = expect.replace('dict_values(', '')
+  ans = ans.replace('dict_keys(', '')
+  ans = ans.replace(')', '')
+  expect = list( expect.replace(' ','')[1:-1].split(',') )
+  ans = list( ans.replace(' ','')[1:-1].split(',') )
+  # Ordering doesn't matter here b/c working with dictionaries...
+  expect.sort()
+  ans.sort()
+  return len(expect) == len(ans) and not (False in [test_str(e,a) for (e,a) in zip(expect, ans)])
+
+def test_list_str(expect, ans):
+  # For a list that can be comprised of strings
+  # Check that expect &amp; ans are lists
+  assert (expect[0] == '[' and expect[-1] == ']')
+  if '[' not in ans or ']' not in ans: return False
+
+  expect = list( expect.replace(' ','')[1:-1].split(',') )
+  ans = list( ans.replace(' ','')[1:-1].split(',') )
+  # Ordering doesn't matter here b/c working with dictionaries...
+  expect.sort()
+  ans.sort()
+  return len(expect) == len(ans) and not (False in [test_str(e,a) for (e,a) in zip(expect, ans)])
+
+def test_dict_str(expect, ans):
+  import ast
+  try:
+      return ast.literal_eval(expect) == ast.literal_eval(ans)
+  except:
+      return False
+</script>
+    <p>
+Suppose we evaluate the following expressions: </p>
+    <pre>
+animals = {'a': 'aardvark', 'b': 'baboon', 'c': 'coati'}
+
+animals['d'] = 'donkey'
+</pre>
+    <p>
+We are now going to evaluate a set of expressions, resulting in the following sequence of interactions. Fill in each blank to show what the Python interpreter would print at that point. If an expression below would generate an error, enter 'error'. </p>
+    <ol class="enumerate">
+      <li>
+        <pre>
+&gt;&gt;&gt; animals
+ </pre>
+        <p>
+          <customresponse cfn="test_dict_str" expect="{'a': 'aardvark', 'b': 'baboon', 'c': 'coati', 'd': 'donkey'}">
+            <textline size="50" correct_answer="'a': 'aardvark', 'b': 'baboon', 'c': 'coati', 'd': 'donkey'"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+&gt;&gt;&gt; animals['c']
+ </pre>
+        <p>
+          <customresponse cfn="test_str" expect="'coati'">
+            <textline size="50" correct_answer="'coati'"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+&gt;&gt;&gt; animals['donkey']
+ </pre>
+        <p>
+          <stringresponse answer="error">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+&gt;&gt;&gt; len(animals)
+ </pre>
+        <p>
+          <stringresponse answer="4">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+&gt;&gt;&gt; animals['a'] = 'anteater'
+&gt;&gt;&gt; animals['a']
+ </pre>
+        <p>
+          <customresponse cfn="test_str" expect="'anteater'">
+            <textline size="50" correct_answer="'anteater'"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+&gt;&gt;&gt; len(animals['a'])
+ </pre>
+        <p>
+          <stringresponse answer="8">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+&gt;&gt;&gt; 'baboon' in animals
+ </pre>
+        <p>
+          <stringresponse answer="False">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+&gt;&gt;&gt; 'donkey' in animals.values()
+ </pre>
+        <p>
+          <stringresponse answer="True">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+&gt;&gt;&gt; 'b' in animals
+ </pre>
+        <p>
+          <stringresponse answer="True">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+&gt;&gt;&gt; animals.keys()
+ </pre>
+        <p>
+          <customresponse cfn="test_dict_keys" expect="dict_keys(['a', 'b', 'c', 'd'])">
+            <textline size="50" correct_answer="dict_keys(['a', 'b', 'c', 'd'])"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+&gt;&gt;&gt; del animals['b']
+&gt;&gt;&gt; len(animals)
+ </pre>
+        <p>
+          <stringresponse answer="3">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+&gt;&gt;&gt; animals.values()
+ </pre>
+        <p>
+          <customresponse cfn="test_dict_keys" expect="dict_values(['anteater', 'coati', 'donkey'])">
+            <textline size="50" correct_answer="dict_values['anteater', 'coati', 'donkey'])"/>
+          </customresponse>
+        </p>
+      </li>
+    </ol>
+  </text>
+</problem>

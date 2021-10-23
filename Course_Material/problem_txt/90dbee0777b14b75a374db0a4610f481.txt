@@ -1,0 +1,113 @@
+
+  
+
+    
+ESTIMATED TIME TO COMPLETE: 7 minutes
+
+    
+In Problem 1, we computed an exponential by iteratively executing successive multiplications. 
+      We can use the same idea, but in a recursive function. 
+Write a function 
+recurPower(base, exp)
+base
+This function should take in two values - 
+base
+exp
+**
+
+    
+
+      
+
+def recurPower(base, exp):
+    '''
+    base: int or float.
+    exp: int >= 0
+ 
+    returns: int or float, base^exp
+    '''
+    # Your code here
+
+
+def recurPower(base, exp):
+    '''
+    base: int or float.
+    exp: int >= 0
+
+    returns: int or float, base^exp
+    '''
+    # Base case is when exp = 0
+    if exp <= 0:
+        return 1
+
+    # Otherwise, exp must be > 0, so return 
+    #  base* base^(exp-1). This is the recursive case.
+    return base * recurPower(base, exp - 1)
+
+
+{"grader": "finger_exercises/L5/recurPower/grade_recurPower.py"}
+
+
+    
+Note: In programming there are many ways to solve a problem. For your code to check correctly 
+  here, though, you must write your recursive function such that you make a recursive call 
+  directly to the function 
+recurPower
+
+      
+
+        
+Hints
+
+          
+
+            
+What should your base case be?
+
+            
+  To figure out what 
+base case
+exp
+
+              
+
+                
+
+                  
+
+                    
+Smallest value of exp?
+
+                    
+Recall that 
+exp
+exp
+exp
+base
+
+          
+
+            
+Thinking about recursion
+
+            
+A good way to think about recursion is that recursion is the process of solving a given problem with a smaller instance of the same problem. 
+So, how could we express [mathjaxinline]\mathrm{base}^{\mathrm{exp}}[/mathjaxinline] as a smaller instance of an exponential equation? 
+
+              
+
+                
+
+                  
+
+                    
+How to break down the equation
+
+                    
+ [mathjaxinline]\mathrm{base}^{\mathrm{exp}} = \mathrm{base} \cdot \mathrm{base}^{\mathrm{exp-1}}[/mathjaxinline] 
+		    
+ To convince yourself this is true, put in real numbers for 
+base
+exp
+If you are getting the error stating that "Your code should be recursive" when you already make a call to 
+recurPower

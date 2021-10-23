@@ -1,0 +1,82 @@
+<problem display_name="Problem 3" markdown="null" max_attempts="10" showanswer="never" weight="10.0">
+  <p>A catering company has hired you to help with organizing and preparing 
+customer's orders. You are given a list of each customer's desired 
+items, and must write a program that will count the number of each 
+items needed for the chefs to prepare. The items that a customer can 
+    order are: salad, hamburger, and water.</p>
+  <p>Write a function called <code>item_order</code> that takes as input a string named <code>order</code>. The string contains only words for the items the customer can order separated by one space. The function returns a string that counts the number of each item and consolidates them in the following order: <code>salad:[# salad] hamburger:[# hambruger] water:[# water]</code> </p>
+  <p>If an order does not contain an item, then the count for that item is 0. Notice that each item is formatted as <code>[name of the item][a colon symbol][count of the item]</code> and all item groups are separated by a space.</p>
+  <p>For example:</p>
+  <ul>
+    <li>If <code>order = "salad water hamburger salad hamburger"</code> then the function returns <code>"salad:2 hamburger:2 water:1"</code></li>
+    <li>If <code>order = "hamburger water hamburger"</code> then the function returns <code>"salad:0 hamburger:2 water:1"</code></li>
+  </ul>
+  <text>
+    <section class="hints">
+      <div class="collapsible">
+        <header>
+          <a href="#" id="imp1">Why is my code printing None?</a>
+        </header>
+        <section id="imp1">
+          <p>This question asks you to return a value, not print it. Review the lectures on functions and <a href="/static/3_print_vs_return_none.pdf" target="_blank">this additional explanatory document</a> to understand the difference.</p>
+        </section>
+      </div>
+    </section>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display># Paste your code into this box </initial_display>
+      <grader_payload>
+{"grader": "chips1/itemorder/grade_itemorder.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <text>
+    <section class="hints">
+      <h3>Important</h3>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="imp1">Only hit "Check" once per submission. You only get 30 checks per problem.</a>
+        </header>
+        <section id="imp1">
+          <p>** Our automatic grader may take a few minutes to respond with feedback. If you hit "Check" 
+	multiple times, you will lose a check for every press of the button.</p>
+          <p>** If you're unfamiliar with how our autograder works, first try out one of the infinite check problems
+	in the Functions lecture sequence.</p>
+          <p>** Please be judicious with your checks, as we are unable to give you more than 30 checks. However 
+	this should be more than sufficient: if you do your code development in your local environment, and ensure you
+	can pass our test cases, you should not require more than a few checks once you paste your working,
+	tested code into our code box.</p>
+        </section>
+      </div>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="ht1">If you believe you have correct code but it is marked incorrect after clicking "Check"...</a>
+        </header>
+        <section id="ht1">
+          <p>** After you submit your code, you can see every test case the graders runs on your code. They compare what your code outputs with what our answer code is supposed to output. Click the small link titled "See Full Output" below the Test Results header.</p>
+        </section>
+      </div>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="ht1">"Staff Debug: L397 Error" means your code has an infinite loop...</a>
+        </header>
+        <section id="ht1">
+          <p>** Clicking Check may give you the error:<br/>
+            <code>There was a problem running your solution (Staff debug: L379).</code> <code>We couldn't run your solution (Staff debug: L397).</code>. <br/>This means your code is taking too long or has an infinite loop. Test your code with more unique test cases, such as very large or very small values.
+</p>
+        </section>
+      </div>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="ht1">Do not define your own values</a>
+        </header>
+        <section id="ht1">
+          <p>** For problems such as these, do not include <code>raw_input</code> statements or define the variable <code>happy</code> in any way. Our automated testing
+will provide a value of <code>happy</code> for you - so write your code in the following box assuming <code>happy</code> is already defined.</p>
+        </section>
+      </div>
+    </section>
+  </text>
+</problem>

@@ -1,0 +1,38 @@
+
+  
+
+    
+ Next, implement the function 
+getAvailableLetters
+lettersGuessed
+not
+lettersGuessed
+Example Usage:
+>>> lettersGuessed = ['e', 'i', 'k', 'p', 'r', 's']
+>>> print(getAvailableLetters(lettersGuessed))
+abcdfghjlmnoqtuvwxyz
+Note that this function should return the letters in alphabetical order, as in the example above.
+For this function, you may assume that all the letters in
+  
+lettersGuessed
+Hint:
+string.ascii_lowercase
+>>> import string
+>>> print(string.ascii_lowercase)
+abcdefghijklmnopqrstuvwxyz
+
+    
+
+      
+
+def getAvailableLetters(lettersGuessed):
+    '''
+    lettersGuessed: list, what letters have been guessed so far
+    returns: string, comprised of letters that represents what letters have not
+      yet been guessed.
+    '''
+    # FILL IN YOUR CODE HERE...
+
+
+{"grader": "ps03/hangman1c/grade_getAvailableLetters.py"}
+

@@ -1,0 +1,79 @@
+<problem attempts="5">
+  <text>
+    <p>Answer the following question without running the code. The procedure <code>isMyNumber</code> is used to
+      hide a secret number (integer).  It takes an integer <code>x</code>
+      as a parameter and compares it to the secret number.
+      It returns:</p>
+    <ul>
+      <li>
+        <p>-1 if the parameter <code>x</code> is less than the secret number</p>
+      </li>
+      <li>
+        <p>0 if the parameter <code>x</code> is correct</p>
+      </li>
+      <li>
+        <p>1 if the parameter <code>x</code> is greater than the secret number</p>
+      </li>
+    </ul>
+    <p>The following procedure, <code>jumpAndBackPedal</code>, attempts to guess a secret number. The 
+      only way it can interact with the secret number is through the <code>isMyNumber</code> procedure
+      explained above.</p>
+    <pre>
+def jumpAndBackpedal(isMyNumber):
+    '''
+    isMyNumber: Procedure that hides a secret number. 
+     It takes as a parameter one number and returns:
+     *  -1 if the number is less than the secret number
+     *  0 if the number is equal to the secret number
+     *  1 if the number is greater than the secret number
+ 
+    returns: integer, the secret number
+    ''' 
+    guess = 1
+    if isMyNumber(guess) == 1:
+        return guess
+    foundNumber = False
+    while not foundNumber:
+        sign = isMyNumber(guess)
+        if sign == -1:
+            guess *= 2
+        else:
+            guess -= 1
+    return guess
+</pre>
+    <p>Unfortunately, the implementation given does not correctly return the secret number. 
+      Please fix the errors in the code such that <code>jumpAndBackpedal</code> correctly
+      returns the secret number.</p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="70" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def jumpAndBackpedal(isMyNumber):
+    '''
+    isMyNumber: Procedure that hides a secret number. 
+     It takes as a parameter one number and returns:
+     *  -1 if the number is less than the secret number
+     *  0 if the number is equal to the secret number
+     *  1 if the number is greater than the secret number
+ 
+    returns: integer, the secret number
+    ''' 
+    guess = 1
+    if isMyNumber(guess) == 1:
+        return guess
+    foundNumber = False
+    while not foundNumber:
+        sign = isMyNumber(guess)
+        if sign == -1:
+            guess *= 2
+        else:
+            guess -= 1
+    return guess
+</initial_display>
+      <grader_payload>
+  {"grader": "exam1/S2013/jumpAndBackpedal/grade_jumpAndBackpedal.py", "hide_output": true}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

@@ -1,0 +1,22 @@
+<problem display_name="Problem 4-2" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" max_attempts="1" showanswer="never">
+  <text>
+    <p>
+Consider the following Python procedure. Specify its order of growth. </p>
+    <pre>def multlist(m, n):
+    '''
+    m is the multiplication factor
+    n is a list.
+    '''
+    result = []
+    for i in range(len(n)):
+        result.append(m*n[i])
+    return result   
+ 
+    </pre>
+    <p>
+      <optionresponse>
+        <optioninput options="('O(1)','O(log(len(n)))','O(len(n))','O(len(n) log(len(n)))','O(len(n)^2)')" correct="O(len(n))"/>
+      </optionresponse>
+    </p>
+  </text>
+</problem>

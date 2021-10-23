@@ -1,0 +1,370 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 14 minutes
+This problem will walk through some applications of complexity analysis.
+      Suppose you're asked to implement an application. One of the things it has 
+      to do is to report whether or not an item, 
+x
+L
+L
+mergeSort
+L
+n
+
+      
+
+        
+
+          
+Application A:
+Every time it's asked to, it performs a linear search through 
+	  list 
+L
+x
+
+        
+
+          
+Application B:
+Sort list 
+L
+mergeSort
+x
+L
+L
+
+      
+
+        
+If the application is asked to find 
+x
+L
+exactly
+
+          
+
+            
+
+              
+
+                
+
+                  
+[mathjaxinline]O(1)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(\log n)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(n)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(n\log n)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(n^2)[/mathjaxinline] 
+
+          
+
+            
+
+              
+
+                
+Explanation:
+Application A just performs one linear search through 
+n
+
+        
+If the application is asked to find 
+x
+L
+exactly
+
+          
+
+            
+
+              
+
+                
+
+                  
+[mathjaxinline]O(1)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(\log n)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(n)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(n\log n)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(n^2)[/mathjaxinline] 
+
+          
+
+            
+
+              
+
+                
+Explanation:
+The time complexity for Application B is how long it takes to do 
+mergeSort
+
+        
+If the application is asked to find 
+x
+L
+k
+
+          
+
+            
+
+              
+
+                
+
+                  
+[mathjaxinline]O(1)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(k + \log n)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(k + n)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(kn)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(n + k\log n)[/mathjaxinline] 
+
+          
+
+            
+
+              
+
+                
+Explanation:
+We have to do 
+k
+
+        
+If the application is asked to find 
+x
+L
+k
+
+          
+
+            
+
+              
+
+                
+
+                  
+[mathjaxinline]O(kn)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(n\log n)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(n + k\log n)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(n\log n + k\log n)[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]O(kn\log n + \log n)[/mathjaxinline] 
+
+          
+
+            
+
+              
+
+                
+Explanation:
+Doing the search 
+k
+mergeSort
+k
+k
+
+        
+What value(s) of 
+k
+
+          
+
+            
+
+              
+
+                
+
+                  
+[mathjaxinline]k = 1[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]k = n[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]k = \log n[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]k = n^2[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]k= 2^n[/mathjaxinline] 
+
+          
+
+            
+
+              
+
+                
+Explanation:
+When [mathjaxinline]k= 1[/mathjaxinline], Application A's complexity is 
+	    [mathjaxinline]O(kn) = O(n)[/mathjaxinline], and Application B's complexity is 
+	    [mathjaxinline]O(n\log n + k\log n) = O(n \log n + \log n)[/mathjaxinline]. 
+ Setting 
+k
+
+        
+What value(s) of 
+k
+
+          
+
+            
+
+              
+
+                
+
+                  
+[mathjaxinline]k = 1[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]k = n[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]k = \log n[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]k = n^2[/mathjaxinline] 
+
+                
+
+                  
+[mathjaxinline]k= 2^n[/mathjaxinline] 
+
+          
+
+            
+
+              
+
+                
+Explanation:
+When [mathjaxinline]k=\log n[/mathjaxinline], Application A's complexity is 
+	    [mathjaxinline]O(kn) = O(n \log n)[/mathjaxinline], and Application B's complexity is 
+	    [mathjaxinline]O(n\log n + k\log n) = O(n \log n + \log n \log n)[/mathjaxinline]. 
+	    [mathjaxinline]\log n \log n[/mathjaxinline] grows slower than [mathjaxinline]n \log n[/mathjaxinline], 
+	    so in this case Application B's time complexity is [mathjaxinline]O(n \log n)[/mathjaxinline]. 
+	    So, when [mathjaxinline]k=\log n[/mathjaxinline], the order of time complexity of Applications A and B are equal.
+
+        
+Which application should you choose if you know that there are going to be 
+      [mathjaxinline]n^3[/mathjaxinline] requests to find 
+x
+L
+
+          
+
+            
+
+              
+
+                
+
+                  
+Application A
+
+                
+
+                  
+Application B
+
+          
+
+            
+
+              
+
+                
+Explanation:
+When [mathjaxinline]k = n^3[/mathjaxinline], Application A has time complexity 
+	    [mathjaxinline]O(n^4)[/mathjaxinline] whilst Application B's time complexity is 
+	    [mathjaxinline]O(n^3 log n)[/mathjaxinline]. Generally we can extrapolate that for 
+	    very large 
+k

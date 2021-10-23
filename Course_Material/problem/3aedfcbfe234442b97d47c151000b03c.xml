@@ -1,0 +1,77 @@
+<problem display_name="Exercise: gcd recur" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" weight="5.0">
+  <p>
+    <b>ESTIMATED TIME TO COMPLETE: 6 minutes</b>
+  </p>
+  <text>
+    <p>The greatest common divisor of two positive integers is the largest integer that divides 
+      each of them without remainder. For example, </p>
+    <ul class="itemize">
+      <li>
+        <p>gcd(2, 12) = 2 </p>
+      </li>
+      <li>
+        <p>gcd(6, 12) = 6 </p>
+      </li>
+      <li>
+        <p>gcd(9, 12) = 3 </p>
+      </li>
+      <li>
+        <p>gcd(17, 12) = 1 </p>
+      </li>
+    </ul>
+    <p>A clever mathematical trick (due to Euclid) makes it easy to find greatest common divisors. 
+      Suppose that <code>a</code> and <code>b</code> are two positive integers: </p>
+    <ul class="itemize">
+      <li>
+        <p>If b = 0, then the answer is a </p>
+      </li>
+      <li>
+        <p>Otherwise, gcd(a, b) is the same as gcd(b, a % b) </p>
+      </li>
+    </ul>
+    <p>
+      <a href="https://en.wikipedia.org/wiki/Euclidean_algorithm#Worked_example" target="_blank">See this website for an example of Euclid's algorithm being used to find the gcd.</a>
+    </p>
+    <p>Write a function <code>gcdRecur(a, b)</code> that implements this idea recursively. 
+      This function takes in two positive integers and returns one integer. </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def gcdRecur(a, b):
+    '''
+    a, b: positive integers
+    
+    returns: a positive integer, the greatest common divisor of a &amp; b.
+    '''
+    # Your code here
+</initial_display>
+      <answer_display>
+def gcdRecur(a, b):
+    '''
+    a, b: positive integers
+    
+    returns: a positive integer, the greatest common divisor of a &amp; b.
+    '''
+    # Base case is when b = 0
+    if b == 0:
+        return a
+
+    # Recursive case
+    return gcdRecur(b, a % b)
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L5/gcdRecur/grade_gcdRecur.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <text>
+    <p>Note: In programming there are many ways to solve a problem. For your code to check correctly 
+  here, though, you must write your recursive function such that you make a recursive call 
+  directly to the function <code>gcdRecur</code>. Thank you for understanding.
+</p>
+    <p><b>If you are getting the error stating that "Your code should be recursive" when you already make a call to <code>gcdRecur</code></b>: check your indention -- specifically, a common mistake is that your function and docstring do not start at the same indentation level.
+    </p>
+  </text>
+</problem>

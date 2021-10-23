@@ -1,0 +1,46 @@
+<problem>
+  <text>
+    <p>
+      Write a recursive Python function, given a non-negative integer <code>N</code>, to count and
+      return the number of occurrences of the digit 7 in <code>N</code>.</p>
+    <p>
+  For example:<br/>
+  <code>count7(717)</code> -&gt; 2<br/>
+  <code>count7(1237123)</code> -&gt; 1<br/>
+  <code>count7(8989)</code> -&gt; 0<br/>
+    </p>
+    <p>Hint: Mod (%) by 10 gives you the rightmost digit (<code>126 % 10</code> is 6), while doing
+      integer division by 10 removes the rightmost digit (<code>126 // 10</code> is 12).</p>
+    <p>This function has to be recursive; you may not use loops! This function takes in one integer and returns one integer.</p>
+    <pre>def count7(N):
+    '''
+    N: a non-negative integer
+    '''
+    # Your code here
+    </pre>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def count7(N):
+    '''
+    N: a non-negative integer
+    '''
+    # Your code here
+      </initial_display>
+      <answer_display>
+def count7(N):
+    if N == 0:
+        return 0
+    if N % 10 == 7:
+        return 1 + count7(N/10)
+    else:
+        return count7(N/10)
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L5/count7/grade_count7.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

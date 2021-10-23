@@ -1,0 +1,15 @@
+<video youtube="1.00:2SRXg8Or-Pc" url_name="9c21ff021d4142aeae0ed11b744c9f82" sub="" transcripts="{&quot;en&quot;: &quot;426f0e93-2ed8-44ad-bcee-c0d2baf3ba59-en.srt&quot;}" display_name="Video: Mutation, Aliasing, Cloning" download_track="true" download_video="true" edx_video_id="426f0e93-2ed8-44ad-bcee-c0d2baf3ba59" handout="/asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture5.zip" html5_sources="[]" youtube_id_1_0="2SRXg8Or-Pc">
+  <handout src="/asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture5.zip"/>
+  <video_asset client_video_id="L5_S4.mp4" duration="973.19" image="video-images/c4444d4f2b1346a29280ec308186a97c.jpeg">
+    <encoded_video profile="hls" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V003500/MITX60012016-V003500.m3u8" file_size="0" bitrate="0"/>
+    <encoded_video profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V003500_MB2.mp4" file_size="27233570" bitrate="223"/>
+    <encoded_video profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V003500_DTH.mp4" file_size="48961751" bitrate="402"/>
+    <encoded_video profile="audio_mp3" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V003500_AUD.mp3" file_size="23358622" bitrate="192"/>
+    <encoded_video profile="youtube" url="2SRXg8Or-Pc" file_size="0" bitrate="0"/>
+    <encoded_video profile="mobile_high" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V003500_MB1.mp4" file_size="32377114" bitrate="266"/>
+    <transcripts>
+      <transcript language_code="en" file_format="srt" provider="Custom"/>
+    </transcripts>
+  </video_asset>
+  <transcript language="en" src="426f0e93-2ed8-44ad-bcee-c0d2baf3ba59-en.srt"/>
+</video>

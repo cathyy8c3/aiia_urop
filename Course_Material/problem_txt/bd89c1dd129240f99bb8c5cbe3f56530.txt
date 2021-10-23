@@ -1,0 +1,69 @@
+
+  
+Assume 
+s
+Write a program that counts up the number of vowels contained in the string 
+s
+a
+e
+i
+o
+u
+s = 'azcbobobegghakl'
+
+    
+Number of vowels: 5
+
+    
+
+      
+# Paste your code into this box 
+
+{"grader": "chips1/countvowels/grade_countvowels.py"}
+
+
+    
+
+      
+Important
+
+        
+
+          
+Only hit "Submit" once per submission. You only get 30 checks per problem.
+
+          
+** Our automatic grader may take a few minutes to respond with feedback. If you hit "Check" 
+	multiple times, you will lose a check for every press of the button.
+** If you're unfamiliar with how our autograder works, first try out one of the infinite check problems in the lecture sequences.
+** Please be judicious with your checks, as we are unable to give you more than 30 checks. However 
+	this should be more than sufficient: if you do your code development in your local environment, and ensure you
+	can pass our test cases, you should not require more than a few checks once you paste your working,
+	tested code into our code box.
+
+        
+
+          
+If you believe you have correct code but it is marked incorrect after clicking "Check"...
+
+          
+** After you submit your code, you can see every test case the graders runs on your code. They compare what your code outputs with what our answer code is supposed to output. Click the small link titled "See Full Output" below the Test Results header.
+
+        
+
+          
+"Staff Debug: L397 Error" means your code has an infinite loop...
+
+          
+** Clicking Check may give you the error:
+There was a problem running your solution (Staff debug: L379).
+We couldn't run your solution (Staff debug: L397).
+
+        
+
+          
+Do not define your own values
+
+          
+** For problems such as these, do not include 
+input

@@ -1,0 +1,91 @@
+<problem display_name="Exercise 7" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 10 minutes</b>
+    </p>
+    <p>
+Consider the following Python procedures. For each one, specify its order of growth. </p>
+    <ol class="enumerate">
+      <li>
+        <pre>
+def lenRecur(s):
+   if s == '':
+      return 0
+   else:
+      return 1 + lenRecur(s[1:])
+ </pre>
+        <p>
+          <optionresponse>
+            <optioninput options="('O(1)','O(log(s))','O(log(len(s)))','O(s)','O(len(s))','O(s log(s))','O(len(s)^2)')" correct="O(len(s))"/>
+          </optionresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+def isIn(a, s):
+   '''
+   a is a character, or, singleton string.
+   s is a string, sorted in alphabetical order.
+   '''
+   if len(s) == 0:
+      return False
+   elif len(s) == 1:
+      return a == s
+   else:
+      test = s[len(s)//2]
+      if test == a:
+         return True
+      elif a &lt; test:
+         return isIn(a, s[:len(s)//2])
+      else:
+         return isIn(a, s[len(s)//2+1:])
+ </pre>
+        <p>
+          <optionresponse>
+            <optioninput options="('O(1)','O(log(s))','O(log(len(s)))','O(s)','O(len(s))','O(s log(s))','O(len(s)^2)')" correct="O(log(len(s)))"/>
+          </optionresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+def union(L1, L2):
+   '''
+   L1 &amp; L2 are lists of the same length, n
+   '''
+   temp = L1[:]
+   for e2 in L2:
+      flag = False
+      for check in temp:
+         if e2 == check:
+            flag = True
+            break
+      if not flag:
+         temp.append(e2)
+   return temp
+ </pre>
+        <p>
+ For this problem, assume [mathjaxinline]n[/mathjaxinline] = len(L1) = len(L2) <optionresponse><optioninput options="('O(1)','O(log(n))','O(n)','O(n log(n))','O(n^2)','O(n^3)','O(2^n)')" correct="O(n^2)"/></optionresponse> </p>
+      </li>
+      <li>
+        <pre>
+def unionNew(L1, L2):
+   '''
+   L1 &amp; L2 are lists of the same length, n
+   '''
+   temp = []
+   for e1 in L1:
+      flag = False
+      for e2 in L2:
+         if e1 == e2:
+            flag = True
+            break
+      if not flag:
+         temp.append(e1)
+   return temp + L2
+ </pre>
+        <p>
+ For this problem, assume [mathjaxinline]n[/mathjaxinline] = len(L1) = len(L2) <optionresponse><optioninput options="('O(1)','O(log(n))','O(n)','O(n log(n))','O(n^2)','O(n^3)','O(2^n)')" correct="O(n^2)"/></optionresponse> </p>
+      </li>
+    </ol>
+  </text>
+</problem>

@@ -1,0 +1,138 @@
+<problem display_name="Exercise 7" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <ol>
+    <li>Assume the two files below are in the same folder. You run inventory.py. What happens?</li>
+    <section class="hints">
+      <h3>TWO FILES</h3>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="id41">FILE: batteries.py</a>
+        </header>
+        <section id="id41">
+          <pre>aa = "AA"
+aaa = "AAA"
+c = "C"
+d = "D" </pre>
+        </section>
+      </div>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="id41">FILE: inventory.py</a>
+        </header>
+        <section id="id41">
+          <pre>aa = "aa"
+tripleA = "aaa"
+print(aa)
+            </pre>
+        </section>
+      </div>
+    </section>
+    <multiplechoiceresponse>
+      <choicegroup label="Which of the following countries has the largest population?" type="MultipleChoice">
+        <choice correct="true">prints <code>aa</code></choice>
+        <choice correct="false">prints <code>AA</code></choice>
+        <choice correct="false">There is an error.</choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+    <li>Assume the two files below are in the same folder. You run inventory.py. What happens?</li>
+    <section class="hints">
+      <h3>TWO FILES</h3>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="id41">FILE: batteries.py</a>
+        </header>
+        <section id="id41">
+          <pre>aa = "AA"
+aaa = "AAA"
+c = "C"
+d = "D" </pre>
+        </section>
+      </div>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="id41">FILE: inventory.py</a>
+        </header>
+        <section id="id41">
+          <pre>aa = "aa"
+tripleA = "aaa"
+print(batteries.aa)
+            </pre>
+        </section>
+      </div>
+    </section>
+    <multiplechoiceresponse>
+      <choicegroup label="Which of the following countries has the largest population?" type="MultipleChoice">
+        <choice correct="false">prints <code>aa</code></choice>
+        <choice correct="false">prints <code>AA</code></choice>
+        <choice correct="true">There is an error.</choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+    <li>Assume the two files below are in the same folder. You run inventory.py. What happens?</li>
+    <section class="hints">
+      <h3>TWO FILES</h3>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="id41">FILE: batteries.py</a>
+        </header>
+        <section id="id41">
+          <pre>aa = "AA"
+aaa = "AAA"
+c = "C"
+d = "D" </pre>
+        </section>
+      </div>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="id41">FILE: inventory.py</a>
+        </header>
+        <section id="id41">
+          <pre>import batteries
+aa = "aa"
+tripleA = "aaa"
+print(batteries.aa)
+            </pre>
+        </section>
+      </div>
+    </section>
+    <multiplechoiceresponse>
+      <choicegroup label="Which of the following countries has the largest population?" type="MultipleChoice">
+        <choice correct="false">prints <code>aa</code></choice>
+        <choice correct="true">prints <code>AA</code></choice>
+        <choice correct="false">There is an error.</choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+    <li>Assume the two files below are in the same folder. You run inventory.py. What happens?</li>
+    <section class="hints">
+      <h3>TWO FILES</h3>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="id41">FILE: batteries.py</a>
+        </header>
+        <section id="id41">
+          <pre>aa = "AA"
+aaa = "AAA"
+c = "C"
+d = "D" </pre>
+        </section>
+      </div>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="id41">FILE: inventory.py</a>
+        </header>
+        <section id="id41">
+          <pre>from batteries import *
+aa = "aa"
+print(aa, aaa, c, d)
+            </pre>
+        </section>
+      </div>
+    </section>
+    <multiplechoiceresponse>
+      <choicegroup label="Which of the following countries has the largest population?" type="MultipleChoice">
+        <choice correct="false">prints <code>AA AAA C D</code></choice>
+        <choice correct="false">prints <code>aa aaa c d</code></choice>
+        <choice correct="true">prints <code>aa AAA C D</code></choice>
+        <choice correct="false">There is an error.</choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </ol>
+</problem>

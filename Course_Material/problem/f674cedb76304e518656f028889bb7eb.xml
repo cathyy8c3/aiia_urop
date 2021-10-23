@@ -1,0 +1,49 @@
+<problem display_name="Exercise: genPrimes" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" weight="5.0">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 10 minutes</b>
+    </p>
+    <p>Write a generator, <code>genPrimes</code>, that returns the sequence of 
+      <a href="http://en.wikipedia.org/wiki/Prime_number" target="_blank">prime numbers</a> on successive
+      calls to its <code>next()</code> method: 2, 3, 5, 7, 11, ...</p>
+    <section class="hints">
+      <h3>Hints</h3>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="ht1">Ideas about the problem</a>
+        </header>
+        <section id="ht1">
+          <p>Have the generator keep a list of the primes it's generated.  A
+	    candidate number <code>x</code> is prime if <code>(x % p) != 0</code> 
+	    for all earlier primes <code>p</code>.</p>
+        </section>
+      </div>
+    </section>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display/>
+      <answer_display>
+# Note that our solution makes use of the for/else clause, which 
+# you can read more about here:
+# http://docs.python.org/release/1.5/tut/node23.html 
+
+def genPrimes():
+    primes = []   # primes generated so far
+    last = 1      # last number tried
+    while True:
+        last += 1
+        for p in primes:
+            if last % p == 0:
+                break
+        else:
+            primes.append(last)
+            yield last
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L11/genPrimes/grade_genPrimes.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

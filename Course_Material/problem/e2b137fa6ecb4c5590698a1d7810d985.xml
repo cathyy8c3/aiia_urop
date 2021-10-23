@@ -1,0 +1,35 @@
+<problem display_name="Exercise: eval quadratic" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" weight="5.0">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 5 minutes</b>
+    </p>
+    <p>
+Write a Python function, <code>evalQuadratic(a, b, c, x)</code>, that returns the value of the quadratic [mathjaxinline]a\cdot x^2 + b\cdot x + c[/mathjaxinline]. </p>
+    <p>
+This function takes in four numbers and returns a single number. </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def evalQuadratic(a, b, c, x):
+    '''
+    a, b, c: numerical values for the coefficients of a quadratic equation
+    x: numerical value at which to evaluate the quadratic.
+    '''
+    # Your code here
+</initial_display>
+      <answer_display>
+def evalQuadratic(a, b, c, x):
+   '''
+   a, b, c: numerical values for the coefficients of a quadratic equation
+   x: numerical value at which to evaluate the quadratic.
+   '''
+   return a*x*x + b*x + c
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L4/quadratic/grade_quadratic.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

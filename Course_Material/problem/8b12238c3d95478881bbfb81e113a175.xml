@@ -1,0 +1,130 @@
+<problem title="Hand" attempts="30" type="lecture" display_name="Problem 5" markdown="null" max_attempts="30" showanswer="never">
+  <style media="all" type="text/css"/>
+  <text>
+    <p> In <code>ps4a.py</code>, note that in the function <code>playHand</code>, there
+    is a bunch of <i>pseudocode</i>. This pseudocode is provided to help
+    guide you in writing your function. Check out the <a href="/static/WhyPseudocode.pdf" target="_blank">Why Pseudocode?</a>
+    resource to learn more about the What
+    and Why of Pseudocode before you start coding your solution.</p>
+    <p><strong>Note:</strong> Do <strong>not</strong> assume
+    that there will always be 7 letters in a hand! The parameter 
+    <code>n</code> represents the size of the hand. </p>
+    <p><strong>Testing:</strong> Before testing your code in the answer box,
+    try out your implementation as
+    if you were playing the game. Here is
+    some example output of <code>playHand</code>:</p>
+    <section class="hints">
+      <h3>Test Cases</h3>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="ht1l">Case #1</a>
+        </header>
+        <section id="ht1">
+Function Call:
+<pre>wordList = loadWords()
+playHand({'h':1, 'i':1, 'c':1, 'z':1, 'm':2, 'a':1}, wordList, 7)</pre>
+
+Output:
+<pre>  Current Hand:  a c i h m m z
+  Enter word, or a "." to indicate that you are finished: him
+  "him" earned 24 points. Total: 24 points
+ 
+  Current Hand:  a c m z
+  Enter word, or a "." to indicate that you are finished: cam
+  "cam" earned 21 points. Total: 45 points
+ 
+  Current Hand:  z
+  Enter word, or a "." to indicate that you are finished: .
+  Goodbye! Total score: 45 points.    </pre>
+      </section>
+      </div>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="ht2l">Case #2</a>
+        </header>
+        <section id="ht2">
+Function Call:
+<pre>wordList = loadWords()
+playHand({'w':1, 's':1, 't':2, 'a':1, 'o':1, 'f':1}, wordList, 7)</pre>
+
+Output:
+<pre>  Current Hand:  a s t t w f o
+  Enter word, or a "." to indicate that you are finished: tow
+  "tow" earned 18 points. Total: 18 points
+ 
+  Current Hand:  a s t f
+  Enter word, or a "." to indicate that you are finished: tasf
+  Invalid word, please try again.
+ 
+  Current Hand:  a s t f
+  Enter word, or a "." to indicate that you are finished: fast
+  "fast" earned 28 points. Total: 46 points 
+ 
+  Run out of letters. Total score: 46 points.    </pre>
+      </section>
+      </div>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="ht3l">Case #3</a>
+        </header>
+        <section id="ht3">
+Function Call:
+<pre>wordList = loadWords()
+playHand({'n':1, 'e':1, 't':1, 'a':1, 'r':1, 'i':2}, wordList, 7)</pre>
+
+Output:
+<pre>  Current Hand: a r e t i i n
+  Enter word, or a "." to indicate that you are finished: inertia
+  "inertia" earned 99 points. Total: 99 points
+
+  Run out of letters. Total score: 99 points.</pre>
+      </section>
+      </div>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="ht4l">Additional Testing</a>
+        </header>
+        <section id="ht4">
+	Be sure that, in addition to the listed tests, you test
+	the same basic test conditions with varying values of <code>n</code>.
+	<code>n</code> will never be smaller than the number of letters in the hand.
+      </section>
+      </div>
+    </section>
+    <br/>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="70" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def playHand(hand, wordList, n):
+    """
+    Allows the user to play the given hand, as follows:
+
+    * The hand is displayed.
+    * The user may input a word or a single period (the string ".") 
+      to indicate they're done playing
+    * Invalid words are rejected, and a message is displayed asking
+      the user to choose another word until they enter a valid word or "."
+    * When a valid word is entered, it uses up letters from the hand.
+    * After every valid word: the score for that word is displayed,
+      the remaining letters in the hand are displayed, and the user
+      is asked to input another word.
+    * The sum of the word scores is displayed when the hand finishes.
+    * The hand finishes when there are no more unused letters or the user
+      inputs a "."
+
+      hand: dictionary (string -&gt; int)
+      wordList: list of lowercase strings
+      n: integer (HAND_SIZE; i.e., hand size required for additional points)
+      
+    """
+    # BEGIN PSEUDOCODE (download ps4a.py to see)
+
+</initial_display>
+      <grader_payload>
+{"grader": "ps04/playHand/grade_playHand.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

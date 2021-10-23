@@ -1,0 +1,85 @@
+
+  
+The next video and exercise introduce your first algorithm. It forces you to think in a different way, and we'd like students to answer the following questions proir to watching the video and doing the finger exercises. This is not for points, just a personal checkpoint. You will be asked these same questions after the material, to see if you understood the concepts.
+You only get to submit once, so please choose carefully.
+
+  
+ [mathjaxinline]\sqrt(100)-\sqrt[3]{27}+\sqrt[5]{-32}[/mathjaxinline] 
+
+    
+0
+5
+9
+15
+Can't be found because of -32.
+
+  
+ How confident are you in the answer above?
+
+    
+Very
+A bit.
+Neutral
+A bit uncertain.
+Not at all.
+
+
+Fill in the blank. To solve the equation f(x) = 0, where f is a continuous function, we define an interval [a, b] where f(a) and f(b) have opposite signs. We say that f must have at least one _______ in the interval (a, b) by the intermediate value theorem. ?  
+
+    
+value
+variable
+root
+integer
+constant
+
+  
+ How confident are you in the answer above?
+
+    
+Very
+A bit.
+Neutral
+A bit uncertain.
+Not at all.
+Answer the next questions using this image:
+
+
+Fill in the blank. The process described steps for finding a root by using ______?  
+
+    
+operations
+guessing
+interval widths
+bisection search
+dividing randomly
+
+  
+ How confident are you in the answer above?
+
+    
+Very
+A bit.
+Neutral
+A bit uncertain.
+Not at all.
+
+
+Fill in the blank. The image stopped at Step 6 because ______.
+
+    
+we are close enough to the answer.
+of a programming error.
+we found the exact result.
+we selected the correct interval.
+of an algorithm error.
+
+  
+ How confident are you in the answer above?
+
+    
+Very
+A bit.
+Neutral
+A bit uncertain.
+Not at all.

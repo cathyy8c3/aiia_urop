@@ -1,0 +1,165 @@
+<problem display_name="Exercise 8" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 6 minutes</b>
+      <br/>
+      <b>      Note that you will have to answer all questions before you can click the Check button.</b>
+    </p>
+    <p>For each of the following expressions, indicate the value returned, 
+      or if the evaluation would lead to an error, write the word 'error' 
+      (note this is a word, not a string, no quotes). While you could simply type 
+      these expressions into your IDE, we encourage you to answer 
+      them directly since this will help reinforce your understanding of 
+      basic Python expressions. </p>
+    <p>
+      <section class="hints">
+        <div class="collapsible">
+          <header>
+            <a href="#" id="id21">Hint: Python boolean types</a>
+          </header>
+          <section id="id21">Remember that in Python words are case-sensitive. The word <code>True</code> is a Python keyword (it is the value of the Boolean type) and is not the same as the word <code>true</code>. Refer to the <a href="http://docs.python.org/library/stdtypes.html#boolean-values" target="_blank">Python documentation on Boolean values</a>. </section>
+        </div>
+        <div class="collapsible">
+          <header>
+            <a href="#" id="id31">Hint: Priority order of Boolean operations</a>
+          </header>
+          <section id="id31">
+            <p>For these problems, it's important to understand the priority of 
+	      Boolean operations. The order of operations is as follows: </p>
+            <ol class="enumerate">
+              <li>
+                <p>Parentheses. Before operating on anything else, 
+		  Python must evaluate all parentheticals starting at the innermost level. </p>
+              </li>
+              <li>
+                <p><code>not</code> statements. </p>
+              </li>
+              <li>
+                <p><code>and</code> statements. </p>
+              </li>
+              <li>
+                <p><code>or</code> statements. </p>
+              </li>
+            </ol>
+            <p>What this means is that an expression like </p>
+            <pre>
+not True and False
+</pre>
+            <p>evaluates to <code>False</code>, because the <code>not</code> is evaluated first 
+	      (<code>not True</code> is <code>False</code>), then the <code>and</code> is evaluated, 
+	      yielding <code>False and False</code> which is <code>False</code>. </p>
+            <p>However the expression </p>
+            <pre>
+not (True and False)
+</pre>
+            <p>evaluates to <code>True</code>, because the expression inside the parentheses must 
+	      be evaluated first - <code>True and False</code> is <code>False</code>. Next the 
+	      <code>not</code> can be evaluated, yielding <code>not False</code> which is <code>True</code>. </p>
+            <p>Overall, you should always use parenthesis when writing expressions to make it clear what order 
+	      you wish to have Python evaluate your expression. As we've seen here, <code>not (True and False)</code> 
+	      is different from <code>(not True) and False</code> - but it's easy to see how Python will evaluate it
+	      when you use parentheses. A statement like <code>not True and False</code> can bring confusion! </p>
+          </section>
+        </div>
+      </section>
+    </p>
+    <ul class="enumerate">
+      <li>
+        <p>
+          <code>3 &gt; 4</code>
+          <stringresponse answer="False">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>4.0 &gt; 3.999</code>
+          <stringresponse answer="True">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>4 &gt; 4</code>
+          <stringresponse answer="False">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>4 &gt; + 4</code>
+          <stringresponse answer="False">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>2 + 2 == 4</code>
+          <stringresponse answer="True">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>True or False</code>
+          <stringresponse answer="True">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>False or False</code>
+          <stringresponse answer="False">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>not False</code>
+          <stringresponse answer="True">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>3.0 - 1.0 != 5.0 - 3.0</code>
+          <stringresponse answer="False">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>3 &gt; 4 or (2 &lt; 3 and 9 &gt; 10)</code>
+          <stringresponse answer="False">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>4 &gt; 5 or 3 &lt; 4 and 9 &gt; 8</code>
+          <stringresponse answer="True">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>not(4 &gt; 3 and 100 &gt; 6)</code>
+          <stringresponse answer="False">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+    </ul>
+  </text>
+</problem>

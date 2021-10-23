@@ -1,0 +1,16 @@
+
+  
+ A tuple can contain a list as an element.
+    
+
+    
+
+      
+
+        
+
+          
+True 
+
+          
+False 

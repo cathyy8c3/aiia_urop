@@ -1,0 +1,66 @@
+<problem display_name="Exercise: for exercise 3" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" weight="5.0">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 5 minutes</b>
+    </p>
+    <p>3. Write a for loop that sums the values 1 through <code>end</code>, inclusive.
+      <code>end</code> is a variable that we define for you. So, for example, if 
+      we define <code>end</code> to be 6, your code should print out the result:</p>
+    <pre>21</pre>
+    <p>which is 1 + 2 + 3 + 4 + 5 + 6.</p>
+    <p>For problems such as these, do not include <code>input</code> statements or define variables we will provide for you. Our automating testing
+  will provide values so write your code in the following box assuming these variables are already defined.</p>
+    <p>
+      <section class="hints">
+        <div class="collapsible">
+          <header>
+            <a href="#" id="ht3">Hint: Don't Use A Variable Called 'sum' </a>
+          </header>
+          <section id="ht3">
+            <p>For reasons related to our grader, you cannot call your variable 
+	      <code>sum</code>. Call it anything else, but not <code>sum</code>. 
+	      If you do, you will be marked incorrectly.</p>
+            <p>This is because <code>sum</code> is a Python built-in function for 
+	      summing a list of numbers – we prevent you from using it because if 
+	      you did it'd defeat the point of the exercise.</p>
+            <p>Take it as a lesson – overwriting built-in functions is generally bad 
+	      practice anyway (you'd not call a variable <code>print</code>, or 
+	      <code>while</code> or <code>elif</code> - because if you did, how would
+	      you use those built-in functions/keywords?). A general rule of thumb
+	      is: when writing code in Idle, if a word turns orange or purple, then
+	      it is special in Python - it is either a keyword or a built in function.
+	      Don't give your variables the same name as any of the Python keywords or 
+	      built in functions.</p>
+            <p>Here is a <a href="https://docs.python.org/3/reference/lexical_analysis.html#keywords" target="_blank">list 
+		of Python keywords</a>.</p>
+            <p>Here is a <a href="https://docs.python.org/3.5/library/functions.html" target="_blank">list of Python
+		built-in functions</a>.</p>
+            <p>You will learn more about functions in the next lecture sequence!</p>
+          </section>
+        </div>
+      </section>
+    </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="10" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display/>
+      <answer_display>
+# Here is one of a few ways to solve this problem:
+total = 0
+for next in range(1, end+1):
+    total += next
+print(total)
+
+# Here is another:
+total = end
+for next in range(end):
+    total += next
+print(total)
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L3/for5c/grade_for5c.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

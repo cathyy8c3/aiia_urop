@@ -1,0 +1,37 @@
+{
+    "GRADER": [
+        {
+            "drop_count": 1,
+            "min_count": 6,
+            "short_label": "pset",
+            "type": "Problem Set",
+            "weight": 0.4
+        },
+        {
+            "drop_count": 0,
+            "min_count": 12,
+            "short_label": "fex",
+            "type": "Finger Exercises",
+            "weight": 0.1
+        },
+        {
+            "drop_count": 0,
+            "min_count": 1,
+            "short_label": "midterm",
+            "type": "Midterm",
+            "weight": 0.25
+        },
+        {
+            "drop_count": 0,
+            "min_count": 1,
+            "short_label": "final",
+            "type": "Final Exam",
+            "weight": 0.25
+        }
+    ],
+    "GRADE_CUTOFFS": {
+        "A": 0.8,
+        "B": 0.65,
+        "C": 0.55
+    }
+}

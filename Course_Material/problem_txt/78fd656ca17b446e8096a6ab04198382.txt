@@ -1,0 +1,40 @@
+
+  
+
+    
+At this point, we have written code to generate a random
+  hand and display that hand to the user. We can also ask the
+  user for a word (Python's 
+input
+getWordScore
+valid
+and
+isValidWord
+Testing:
+test_isValidWord
+''
+Fill in the code for 
+isValidWord
+ps4a.py
+test_ps4a.py
+
+    
+
+      
+
+def isValidWord(word, hand, wordList):
+    """
+    Returns True if word is in the wordList and is entirely
+    composed of letters in the hand. Otherwise, returns False.
+
+    Does not mutate hand or wordList.
+   
+    word: string
+    hand: dictionary (string -> int)
+    wordList: list of lowercase strings
+    """
+    # TO DO ... <-- Remove this comment when you code this function
+
+
+{"grader": "ps04/isValidWord/grade_isValidWord.py"}
+

@@ -1,0 +1,29 @@
+<problem display_name="Problem 3" markdown="null" max_attempts="10" showanswer="never" weight="10.0">
+  <text>
+    <p>Write a function called <code>dict_invert</code> that takes in a dictionary with immutable values and returns the inverse of the dictionary. The inverse of a dictionary <code>d</code> is another dictionary whose keys are the unique dictionary values in <code>d</code>. The value for a key in the inverse dictionary is a <b>sorted</b> list of all keys in <code>d</code> that have the same value in <code>d</code>.</p>
+    <p>Here are some examples:</p>
+    <ul>
+      <li>If <code>d = {1:10, 2:20, 3:30}</code> then <code>dict_invert(d)</code> returns <code>{10: [1], 20: [2], 30: [3]}</code></li>
+      <li>If <code>d = {1:10, 2:20, 3:30, 4:30}</code> then <code>dict_invert(d)</code> returns <code>{10: [1], 20: [2], 30: [3, 4]}</code></li>
+      <li>If <code>d = {4:True, 2:True, 0:True}</code> then <code>dict_invert(d)</code> returns <code>{True: [0, 2, 4]}</code></li>
+    </ul>
+    <pre>def dict_invert(d):
+    '''
+    d: dict
+    Returns an inverted dictionary according to the instructions above
+    '''
+    # Your code here</pre>
+    <p>Paste your entire function, including the definition, in the box below. Do not leave any debugging print statements.</p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display># Paste your function here</initial_display>
+      <answer_display>
+</answer_display>
+      <grader_payload>
+{"grader": "quiz/60001_f2015/dict_invert/grade_dict_invert.py", "hide_output": false}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

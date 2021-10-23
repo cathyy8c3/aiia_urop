@@ -1,0 +1,34 @@
+
+  
+
+    
+
+      Write a Python function that returns the sublist of strings in 
+aList
+aList = ["apple", "cat",
+      "dog", "banana"]
+["cat", "dog"]
+This function takes in a list of strings and returns a list of strings. Your function should not modify 
+aList
+def lessThan4(aList):
+    '''
+    aList: a list of strings
+    '''
+    # Your code here
+    
+
+    
+
+      
+# Paste your function here
+
+def lessThan4(aList):
+    shortStrings = []
+    for i in aList:
+        if len(i) < 4:
+            shortStrings.append(i)
+    return shortStrings
+
+
+{"grader": "finger_exercises/L6/less_than_4/grade_less_than_4.py"}
+

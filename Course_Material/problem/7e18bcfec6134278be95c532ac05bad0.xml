@@ -1,0 +1,49 @@
+<problem display_name="Problem 3" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" max_attempts="2" showanswer="never">
+  <text>
+    <p>
+      For each of the following expressions, select the order of growth class that best describes it from the following list: [mathjaxinline]O(1), O(\log (n)), O(n), O(n\log (n)), O(n^ c)[/mathjaxinline] or [mathjaxinline]O(c^ n)[/mathjaxinline]. Assume [mathjaxinline]c[/mathjaxinline] is some constant.</p>
+    <p>Clicking Check will grade ALL the sub-problems. You have 2 attempts for this problem.</p>
+    <ol class="enumerate">
+      <li>
+        <p>
+[mathjaxinline]0.0000001n + 1000000[/mathjaxinline] <optionresponse><optioninput options="('O(1)','O(log(n))','O(n)','O(n log(n))','O(n^c)','O(c^n)')" correct="O(n)"/></optionresponse> </p>
+      </li>
+      <li>
+        <p>
+[mathjaxinline]0.0001n^2 + 20000n - 90000[/mathjaxinline] <optionresponse><optioninput options="('O(1)','O(log(n))','O(n)','O(n log(n))','O(n^c)','O(c^n)')" correct="O(n^c)"/></optionresponse> </p>
+      </li>
+      <li>
+        <p>
+[mathjaxinline]20n + 900 \log (n) + 100000[/mathjaxinline] <optionresponse><optioninput options="('O(1)','O(log(n))','O(n)','O(n log(n))','O(n^c)','O(c^n)')" correct="O(n)"/></optionresponse> </p>
+      </li>
+      <li>
+        <p>
+[mathjaxinline](\log (n))^2 + 5n^7[/mathjaxinline] <optionresponse><optioninput options="('O(1)','O(log(n))','O(n)','O(n log(n))','O(n^c)','O(c^n)')" correct="O(n^c)"/></optionresponse> </p>
+      </li>
+      <li>
+        <p>
+[mathjaxinline]n^{200} - 2 n^{30}[/mathjaxinline] <optionresponse><optioninput options="('O(1)','O(log(n))','O(n)','O(n log(n))','O(n^c)','O(c^n)')" correct="O(n^c)"/></optionresponse> </p>
+      </li>
+      <li>
+        <p>
+[mathjaxinline]30n^2+n \log (n)[/mathjaxinline] <optionresponse><optioninput options="('O(1)','O(log(n))','O(n)','O(n log(n))','O(n^c)','O(c^n)')" correct="O(n^c)"/></optionresponse> </p>
+      </li>
+      <li>
+        <p>
+[mathjaxinline] n\log (n) - 3000n[/mathjaxinline] <optionresponse><optioninput options="('O(1)','O(log(n))','O(n)','O(n log(n))','O(n^c)','O(c^n)')" correct="O(n log(n))"/></optionresponse> </p>
+      </li>
+      <li>
+        <p>
+[mathjaxinline]3[/mathjaxinline] <optionresponse><optioninput options="('O(1)','O(log(n))','O(n)','O(n log(n))','O(n^c)','O(c^n)')" correct="O(1)"/></optionresponse> </p>
+      </li>
+      <li>
+        <p>
+[mathjaxinline]5^ n + n^5 + n + 5[/mathjaxinline] <optionresponse><optioninput options="('O(1)','O(log(n))','O(n)','O(n log(n))','O(n^c)','O(c^n)')" correct="O(c^n)"/></optionresponse> </p>
+      </li>
+      <li>
+        <p>
+[mathjaxinline] n \log (n) + n^2 + n + \log n + 1 + 2^n[/mathjaxinline] <optionresponse><optioninput options="('O(1)','O(log(n))','O(n)','O(n log(n))','O(n^c)','O(c^n)')" correct="O(c^n)"/></optionresponse> </p>
+      </li>
+    </ol>
+  </text>
+</problem>

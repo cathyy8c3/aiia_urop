@@ -1,0 +1,15 @@
+
+  
+
+    
+
+Consider the following Python procedure. Specify its order of growth. 
+
+def modten(n):
+    return n%10
+    
+    
+
+      
+
+        

@@ -1,0 +1,98 @@
+<problem display_name="Bisection Search Post-Assessment" markdown="null" max_attempts="1" showanswer="never" weight="0.0">
+  <p>These are the same question asked of you before the bisection search material. Again, this is not for points, just a personal checkpoint, so see whether you understood the concepts.</p>
+
+  <p>You only get to submit once, so please choose carefully.</p>
+  <multiplechoiceresponse>
+  <label> [mathjaxinline]\sqrt(100)-\sqrt[3]{27}+\sqrt[5]{-32}[/mathjaxinline] </label>
+<choicegroup type="MultipleChoice">
+    <choice correct="false">0</choice>
+  <choice correct="true">5</choice>
+  <choice correct="false">9</choice>
+  <choice correct="false">15</choice>
+  <choice correct="false">Can't be found because of -32.</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+
+  <multiplechoiceresponse>
+  <label> How confident are you in the answer above?</label>
+<choicegroup type="MultipleChoice">
+    <choice correct="true">Very</choice>
+  <choice correct="true">A bit.</choice>
+  <choice correct="true">Neutral</choice>
+  <choice correct="true">A bit uncertain.</choice>
+  <choice correct="true">Not at all.</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+
+  <multiplechoiceresponse>
+<label>Fill in the blank. To solve the equation f(x) = 0, where f is a continuous function, we define an interval [a, b] where f(a) and f(b) have opposite signs. We say that f must have at least one _______ in the interval (a, b) by the intermediate value theorem. ?  </label>
+<choicegroup type="MultipleChoice">
+    <choice correct="false">value</choice>
+    <choice correct="false">variable</choice>
+    <choice correct="true">root</choice>
+    <choice correct="false">integer</choice>
+    <choice correct="false">constant</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+  
+    <multiplechoiceresponse>
+  <label> How confident are you in the answer above?</label>
+<choicegroup type="MultipleChoice">
+    <choice correct="true">Very</choice>
+  <choice correct="true">A bit.</choice>
+  <choice correct="true">Neutral</choice>
+  <choice correct="true">A bit uncertain.</choice>
+  <choice correct="true">Not at all.</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+  
+  <p>Answer the next questions using this image:</p>
+  <img width="700" src="/static/bisection_prepost.png"/>
+<multiplechoiceresponse>
+<label>Fill in the blank. The process described steps for finding a root by using ______?  </label>
+<choicegroup type="MultipleChoice">
+    <choice correct="false">operations</choice>
+    <choice correct="false">guessing</choice>
+    <choice correct="false">interval widths</choice>
+    <choice correct="true">bisection search</choice>
+    <choice correct="false">dividing randomly</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+  
+  <multiplechoiceresponse>
+  <label> How confident are you in the answer above?</label>
+<choicegroup type="MultipleChoice">
+    <choice correct="true">Very</choice>
+  <choice correct="true">A bit.</choice>
+  <choice correct="true">Neutral</choice>
+  <choice correct="true">A bit uncertain.</choice>
+  <choice correct="true">Not at all.</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+  
+  
+  
+  <multiplechoiceresponse>
+<label>Fill in the blank. The image stopped at Step 6 because ______.</label>
+<choicegroup type="MultipleChoice">
+    <choice correct="true">we are close enough to the answer.</choice>
+    <choice correct="false">of a programming error.</choice>
+    <choice correct="false">we found the exact result.</choice>
+    <choice correct="false">we selected the correct interval.</choice>
+    <choice correct="false">of an algorithm error.</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+
+  <multiplechoiceresponse>
+  <label> How confident are you in the answer above?</label>
+<choicegroup type="MultipleChoice">
+    <choice correct="true">Very</choice>
+  <choice correct="true">A bit.</choice>
+  <choice correct="true">Neutral</choice>
+  <choice correct="true">A bit uncertain.</choice>
+  <choice correct="true">Not at all.</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+
+  
+</problem>

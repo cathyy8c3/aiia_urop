@@ -1,0 +1,216 @@
+<problem display_name="Exercise: spell" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 12 minutes</b>
+    </p>
+    <script type="text/python" system_path="python_lib">
+def ignore_spaces(expect, ans):
+  return expect==ans or expect.replace(' ','') == ans.replace(' ','')
+</script>
+    <p>Consider the following code:</p>
+    <pre>class Spell(object):
+    def __init__(self, incantation, name):
+        self.name = name
+        self.incantation = incantation
+
+    def __str__(self):
+        return self.name + ' ' + self.incantation + '\n' + self.getDescription()
+              
+    def getDescription(self):
+        return 'No description'
+    
+    def execute(self):
+        print(self.incantation)
+
+
+class Accio(Spell):
+    def __init__(self):
+        Spell.__init__(self, 'Accio', 'Summoning Charm')
+
+class Confundo(Spell):
+    def __init__(self):
+        Spell.__init__(self, 'Confundo', 'Confundus Charm')
+
+    def getDescription(self):
+        return 'Causes the victim to become confused and befuddled.'
+
+def studySpell(spell):
+    print(spell)
+
+spell = Accio()
+spell.execute()
+studySpell(spell)
+studySpell(Confundo())</pre>
+    <ol class="enumerate">
+      <li>
+        <p>What are the parent class(es)? Note that the term "parent class" is interchangable
+	  with the term "superclass".</p>
+        <p>
+          <choiceresponse>
+            <checkboxgroup direction="vertical">
+              <choice correct="true" name="1">
+                <span>
+                  <text>
+                    <code>Spell</code>
+                  </text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text>
+                    <code>Accio</code>
+                  </text>
+                </span>
+              </choice>
+              <choice correct="false" name="3">
+                <span>
+                  <text>
+                    <code>Confundo</code>
+                  </text>
+                </span>
+              </choice>
+            </checkboxgroup>
+          </choiceresponse>
+        </p>
+      </li>
+      <li>
+        <p>What are the child class(es)? Note that the term "child class" is interchangable
+	  with the term "subclass".</p>
+        <p>
+          <choiceresponse>
+            <checkboxgroup direction="vertical">
+              <choice correct="false" name="1">
+                <span>
+                  <text>
+                    <code>Spell</code>
+                  </text>
+                </span>
+              </choice>
+              <choice correct="true" name="2">
+                <span>
+                  <text>
+                    <code>Accio</code>
+                  </text>
+                </span>
+              </choice>
+              <choice correct="true" name="3">
+                <span>
+                  <text>
+                    <code>Confundo</code>
+                  </text>
+                </span>
+              </choice>
+            </checkboxgroup>
+          </choiceresponse>
+        </p>
+      </li>
+      <li>
+        <p>What does the code print out? Try figuring it out in your head before
+	  you try running it in Python. </p>
+        <p>Hint: This code prints out 5 lines. Enter each line that is 
+	  printed out in its own box, in sequential order.</p>
+        <ol>
+          <li>
+            <p>
+              <stringresponse answer="Accio">
+                <textline size="50"/>
+              </stringresponse>
+            </p>
+          </li>
+          <li>
+            <p>
+              <stringresponse answer="Summoning Charm Accio">
+                <textline size="50"/>
+              </stringresponse>
+            </p>
+          </li>
+          <li>
+            <p>
+              <stringresponse answer="No description">
+                <textline size="50"/>
+              </stringresponse>
+            </p>
+          </li>
+          <li>
+            <p>
+              <stringresponse answer="Confundus Charm Confundo">
+                <textline size="50"/>
+              </stringresponse>
+            </p>
+          </li>
+          <li>
+            <p>
+              <stringresponse answer="Causes the victim to become confused and befuddled.">
+                <textline size="50"/>
+              </stringresponse>
+            </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p>Which <code>getDescription</code> method is called 
+	when <code>studySpell(Confundo())</code> is executed?</p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="false" name="1">
+                <span>
+                  <text>The <code>getDescription</code> method defined within the <code>Spell</code> class</text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text>The <code>getDescription</code> method defined within the <code>Accio</code> class</text>
+                </span>
+              </choice>
+              <choice correct="true" name="3">
+                <span>
+                  <text>The <code>getDescription</code> method defined within the <code>Confundo</code> class</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>The one inside the <code>Confundo</code> class is called. 
+	    Why? Because methods in the child class override those in the 
+	    parent class if they exist in both classes.</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>How do we need to modify <code>Accio</code> so that 
+	  <code>print(Accio())</code> will print the following description?</p>
+        <pre>Summoning Charm Accio
+This charm summons an object to the caster, potentially over a significant distance.</pre>
+      </li>
+    </ol>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+class Accio(Spell):
+    def __init__(self):
+        Spell.__init__(self, 'Accio', 'Summoning Charm')
+</initial_display>
+      <answer_display>
+class Accio(Spell):
+    def __init__(self):
+        Spell.__init__(self, 'Accio', 'Summoning Charm')
+
+    def getDescription(self):
+        return 'This charm summons an object to the caster, potentially over a significant distance.'
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L10/spell/grade_spell.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

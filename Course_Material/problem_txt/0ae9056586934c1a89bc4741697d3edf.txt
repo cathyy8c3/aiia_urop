@@ -1,0 +1,9 @@
+
+  
+When determining asymptotic complexity, we discard all terms except for the one with the largest growth rate. 
+
+    
+
+      
+True
+False

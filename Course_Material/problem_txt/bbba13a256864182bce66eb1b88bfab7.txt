@@ -1,0 +1,9 @@
+
+  
+The orders of growth of [mathjaxinline]O(n^2+1)[/mathjaxinline] and [mathjaxinline]O(n^5+1)[/mathjaxinline] are both polynomial.
+
+    
+
+      
+True
+False

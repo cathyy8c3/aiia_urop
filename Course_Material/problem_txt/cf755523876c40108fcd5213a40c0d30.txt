@@ -1,0 +1,169 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 7 minutes
+      Note that you will have to answer all questions before you can click the Check button.
+
+def test_str(expect, ans):
+  # Strip away ' ' or " " wrapping string input answer
+  # (check which, if any, are present - don't want to pull valid
+  #  characters out of the center of a string, eg "That's crazy!",
+  #  nor do we wish to accept an input with mismatched modifiers, 
+  #  eg 'abc")
+
+  if ans[0] == "'" and ans[-1] == "'": ans = ans.strip("'")
+  elif ans[0] == '"' and ans[-1] == '"': ans = ans.strip('"')
+
+  if expect[0] == "'": expect = expect.strip("'")
+  elif expect[0] == '"': expect = expect.strip('"')
+
+  return expect == ans
+
+
+For each of the expressions below, specify its type and value. If it generates an error, select type 'NoneType' and write the word 'error' (note this is a word, not a string, no quotes) in the box for the value. While you could simply type these expressions into your IDE, we encourage you to answer them directly since this will help reinforce your understand of basic Python expressions. 
+
+Assume we've made the following assignments: 
+
+> str1 = 'hello'
+> str2 = ','
+> str3 = 'world'
+
+
+      
+
+        
+
+          
+
+            
+Note: Advanced String Slicing
+
+            
+You've seen in lecture that you can slice a string with a call such as 
+s[i:j]
+s
+i
+j-1
+
+>>> s = 'Python is Fun!'
+>>> s[1:5]
+'ytho'
+>>> s[:5]
+'Pytho'
+>>> s[1:]
+'ython is Fun!'
+>>> s[:]
+'Python is Fun!'
+
+That last example is interesting! If you omit both the start and ending index, you get your original string!
+There's one other cool thing you can do with string slicing. You can add a third parameter, 
+k
+s[i:j:k]
+s
+i
+j-1
+k
+
+>>> s = 'Python is Fun!'
+>>> s[1:12:2]
+'yhni u'
+>>> s[1:12:3]
+'yoiF'
+>>> s[::2]
+'Pto sFn'
+
+The last example is similar to the example 
+s[:]
+s[::2]
+s
+s
+
+      
+
+        
+
+          
+
+            
+Note: The Python 'in' operator
+
+            
+The operators 
+in
+not in
+
+element in coll
+
+
+ evaluates to 
+True
+element
+coll
+False
+
+The expression 
+
+element not in coll
+
+
+ evaluates to 
+True
+element
+not
+coll
+False
+
+Note this returns the negation of 
+element in coll
+element not in coll
+not (element in coll)
+
+      
+
+        
+
+          
+str1[len(str1)]
+
+            
+
+            
+
+        
+
+          
+str1 + str2 + str3
+
+            
+
+            
+
+        
+
+          
+str1 + str2 + ' ' + str3
+
+            
+
+            
+
+        
+
+          
+str3 * 3
+
+            
+
+            
+
+        
+
+          
+'hello' == str1
+
+            
+
+            

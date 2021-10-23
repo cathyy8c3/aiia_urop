@@ -1,0 +1,9 @@
+<problem display_name="Problem 1-1" markdown="null" max_attempts="1" showanswer="never">
+  <p>In the statement <code>L = [1,2,3]</code>, <code>L</code> is a class.</p>
+  <multiplechoiceresponse>
+    <choicegroup label="classes" type="MultipleChoice">
+      <choice correct="false">True</choice>
+      <choice correct="true">False</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

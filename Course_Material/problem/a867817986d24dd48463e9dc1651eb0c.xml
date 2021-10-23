@@ -1,0 +1,248 @@
+<problem display_name="Exercise 3" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <script type="text/python" system_path="python_lib">
+def no_space(exp, act):
+    return exp==act or exp.replace(' ', '') == act.replace(' ', '')
+ </script>
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 12 minutes</b>
+    </p>
+    <p>For the following programs, fill in the best-case and the worst-case
+      number of steps it will take to run each program.</p>
+    <p>For these questions, you'll be asked to write a mathematical expression.
+      Use +, -, / signs to indicate addition, subtraction, and division. Explicitly
+      indicate multiplication with a * (ie say "6*n" rather than "6n").
+      Indicate exponentiation with a caret (^) (ie "n^4" for [mathjaxinline]n^4[/mathjaxinline]).
+      Indicate base-2 logarithms with the word log2 followed by parenthesis (ie "log2(n)").</p>
+    <ol>
+      <li>
+        <p>Program 1:</p>
+        <pre>def program1(L):
+    multiples = []
+    for x in L:
+        for y in L:
+            multiples.append(x*y)
+    return multiples</pre>
+        <p>What is the number of steps it will take to run Program 1
+	in the best case? Express your answer in terms of <i>n</i>, the
+	number of elements in the list <code>L</code>. You can assume list
+	appending takes 1 step.</p>
+        <p>
+          <formularesponse type="cs" samples="n@1:5#10" answer="2">
+            <responseparam type="tolerance" default="0.00001"/>
+            <formulaequationinput size="40"/>
+          </formularesponse>
+        </p>
+        <p>What is the number of steps it will take to run Program 1
+	in the worst case? Express your answer in terms of <i>n</i>, the
+	number of elements in the list <code>L</code>. You can assume list
+	appending takes 1 step.</p>
+        <p>
+          <formularesponse type="cs" samples="n@1:5#10" answer="3*n^2 + n + 2">
+            <responseparam type="tolerance" default="0.00001"/>
+            <formulaequationinput size="40"/>
+          </formularesponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>In the best case scenario, <code>L</code> is an empty list. So
+		we execute only the first assignment statement, then the return
+		statement. Thus in the best case we execute 2 steps. Note that since the
+		list is empty, no assignments are performed in the <code>for x in L</code> line.</p>
+              <p>In the worst case scenario, <code>L</code> is a long list. In this case we
+		go through the loop <code>for x in L</code> <i>n</i> times. Every time through this loop,
+		we execute an assignment of a value to <code>x</code>, and then the inner loop 
+		<code>for y in L</code>. The assignment takes 1 step on each iteration; how many steps
+		does the inner loop take on each iteration?</p>
+              <p>The inner loop has three operations (assignment of a value to y, x*y, and list appending). 
+		So the inner loop executes 3*n times on <i>each iteration</i> of the outer loop. Thus the nested
+		loop structure is executed n * (3*n + 1) = 3*n**2 + n times!</p>
+              <p>Adding in two steps (for the first assignment statement, and the return statement)
+		we see that in the worst case, this program executes 3*n**2 + n + 2 steps.</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>Program 2:</p>
+        <pre>def program2(L):
+    squares = []
+    for x in L:
+        for y in L:
+            if x == y:
+                squares.append(x*y)
+    return squares</pre>
+        <p>What is the number of steps it will take to run Program 2
+	in the best case? Express your answer in terms of <i>n</i>, the
+	number of elements in the list <code>L</code>.</p>
+        <p>
+          <formularesponse type="cs" samples="n@1:5#10" answer="2">
+            <responseparam type="tolerance" default="0.00001"/>
+            <formulaequationinput size="40"/>
+          </formularesponse>
+        </p>
+        <p>What is the number of steps it will take to run Program 2
+	in the worst case? Express your answer in terms of <i>n</i>, the
+	number of elements in the list <code>L</code>. </p>
+        <p>
+          <formularesponse type="cs" samples="n@1:5#10" answer="4*n^2 + n + 2">
+            <responseparam type="tolerance" default="0.00001"/>
+            <formulaequationinput size="40"/>
+          </formularesponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>In the best case scenario, <code>L</code> is an empty list. So
+		we execute only the first assignment statement, then the return
+		statement. Thus in the best case we execute 2 steps. Note that since the
+		list is empty, no assignments are performed in the <code>for x in L</code> line.</p>
+              <p>In the worst case scenario, <code>L</code> is a long list of one repeated number 
+		(ie [2, 2, 2, 2, ...]. In this case we 
+		go through the loop <code>for x in L</code> n times. Every time through this loop,
+		we perform one assigment of a value to the variable <code>x</code>, then
+		we execute the inner loop <code>for y in L</code> n times.</p>
+              <p>The inner loop performs one assigment of a value to the variable <code>y</code>.
+		It then has one operation that is checked every time (<code>if x == y</code>). 
+		Since the WORST case is when the list is composed of identical elements, 
+		this check is always true - so the third and fourth operations (x*y, and list appending)
+		are always performed. So the inner loop
+		executes 4*n times on <i>each iteration</i> of the outer loop. Thus the nested
+		loop structure is executed n * (4*n + 1) = 4*n**2 + n times!</p>
+              <p>Adding in two steps (for the first assignment statement, and the return statement)
+		we see that in the worst case, this program executes 4*n**2 + n + 2 steps.</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>Program 3:</p>
+        <pre>def program3(L1, L2):
+    intersection = []
+    for elt in L1:
+        if elt in L2:
+            intersection.append(elt)
+    return intersection
+</pre>
+        <p>What is the number of steps it will take to run Program 3
+	in the best case? Express your answer in terms of <i>n</i>, the
+	number of elements in the list <code>L1</code> (assume <code>len(L1) == len(L2)</code>).</p>
+        <p>
+          <formularesponse type="cs" samples="n@1:5#10" answer="2">
+            <responseparam type="tolerance" default="0.00001"/>
+            <formulaequationinput size="40"/>
+          </formularesponse>
+        </p>
+        <p>What is the number of steps it will take to run Program 3
+	in the worst case? Express your answer in terms of <i>n</i>, the
+	number of elements in the list <code>L1</code>  (assume <code>len(L1) == len(L2)</code>). </p>
+        <p>
+          <formularesponse type="cs" samples="n@1:5#10" answer="n^2 + 2*n + 2">
+            <responseparam type="tolerance" default="0.00001"/>
+            <formulaequationinput size="40"/>
+          </formularesponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>In the best case scenario, <code>L1</code> is an empty list. So
+		we execute only the first assignment statement, then the return
+		statement. Thus in the best case we execute 2 steps.</p>
+              <p>In the worst case scenario, every element of <code>L1</code> is the same as the very
+		last element of <code>L2</code>. In this case we
+		go through the loop <code>for elt in L1</code> n times. Every time through this loop,
+		we perform one assigment of a value to the variable <code>elt</code>, then		
+		we execute the check <code>if elt in L2</code>.</p>
+              <p>How long does it take to execute this check? Well in the <i>worst case</i>,
+		<code>elt</code> is the very LAST element of <code>L2</code>. In order to check 
+		<code>if elt in L2</code>, Python iterates over the elements of <code>L2</code>
+		until it either finds the one you're looking for, or <code>L2</code> runs out
+		of elements. Thus in the worst case, the check <code>if elt in L2</code>
+		takes n steps. After this, we perform one append operation.
+		So the conditional plus the append takes n + 1 steps on <i>each iteration</i> of 
+		the loop. Thus the <code>for</code> loop takes n * (n + 2) = n**2 + 2*n steps!</p>
+              <p>Adding in two steps (for the first assignment statement, and the return statement)
+		we see that in the worst case, this program executes n**2 + 2*n + 2 steps.</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>In the last video, Professor Grimson introduced the idea of "asymptotic complexity", which
+	  means we describe running time in terms of number of basic steps. We've described the best- and
+	  worst-case running times in terms number of basic steps for the three programs above. Now,
+	  we'd like you to give the complexity order (ie, "Big O" running time) of each of the above programs.</p>
+        <p>Recall that "Big O" notation gives an upper bound on asymptotic growth of a function. So, should
+	  you use the best-case or the worst-case running times for each program? Review the video again 
+	  if you're unsure of what to put for the following boxes.</p>
+        <p>Note: Your answer should be expressed with a capital letter O, then a mathematical term similar to
+	  one described in the introduction to this problem - for example, O(n^5).</p>
+        <ol>
+          <li>
+            <p>What is the complexity order of Program 1? </p>
+            <p>
+              <customresponse cfn="no_space" expect="O(n^2)">
+                <textline size="50" correct_answer="O(n^2)"/>
+              </customresponse>
+            </p>
+          </li>
+          <li>
+            <p>What is the complexity order of Program 2? </p>
+            <p>
+              <customresponse cfn="no_space" expect="O(n^2)">
+                <textline size="50" correct_answer="O(n^2)"/>
+              </customresponse>
+            </p>
+          </li>
+          <li>
+            <p>What is the complexity order of Program 3? </p>
+            <p>
+              <customresponse cfn="no_space" expect="O(n^2)">
+                <textline size="50" correct_answer="O(n^2)"/>
+              </customresponse>
+            </p>
+          </li>
+        </ol>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Explanation:</b>
+              </p>
+              <p>Remember the following rules when determining the complexity order of a function:</p>
+              <ol>
+                <li>
+                  <p>If running time is a sum of multiple terms, keep one with the largest growth rate (so n**3 
+		    + 100n**2 + 500,000 is O(n**3)).</p>
+                </li>
+                <li>
+                  <p>If the remaining term is a product (eg 3n**2), drop any multiplicative constants (so 3n**2 is O(n**2)).</p>
+                </li>
+              </ol>
+              <p> It's also good to note that if you have a function that takes a constant number of steps - regardless 
+		of the size of the input - the function is O(1), even if it takes 3,000,000 steps every time! This is
+		because the function does not take any additional time as the input grows large.</p>
+              <p>Finally, pay attention to the fact that Programs 1, 2, and 3 were all O(n**2). This is important!
+		Generally, a nested loop structure has O(n**2) complexity. This is not the best, as we'll discover
+		in the next lectures in this sequence.</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+    </ol>
+    <p>Reminder: You do not lose points for trying a problem multiple times, nor 
+      do you lose points if you hit "Show Answer". If this problem has you stumped after 
+      you've tried it a few times, feel free to reveal the solution.</p>
+    <p>Click the "Reset" button to clear your answers.</p>
+  </text>
+</problem>

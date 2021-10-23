@@ -1,0 +1,36 @@
+
+  
+
+    
+
+      Write a Python function that returns a list of keys in 
+aDict
+target
+aDict
+aDict
+target
+This function takes in a dictionary and an integer and returns a
+  list.
+def keysWithValue(aDict, target):
+    '''
+    aDict: a dictionary
+    target: an integer
+    '''
+    # Your code here  
+
+    
+
+      
+# Paste your function here
+
+def keysWithValue(aDict, target):
+    targetKeys = []
+    for i in aDict.keys():
+        if aDict[i] == target:
+            targetKeys.append(i)
+    targetKeys.sort()
+    return targetKeys
+
+
+        {"grader": "finger_exercises/L6/keys_with_value/grade_keys_with_value.py"}
+

@@ -1,0 +1,105 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 5 minutes
+This problem will ask some questions about the previous problem. You will want to
+      refer to the 
+Hand
+hand.py
+
+      
+
+        
+There are two ways to write the 
+Hand.update
+hand
+hand
+Will the two different implementations of the 
+Hand.update
+Hand
+hand
+
+          
+
+            
+
+              
+
+                
+
+                  
+Yes, always
+
+                
+
+                  
+Yes, depending on what happened during the 
+update
+
+                
+
+                  
+No
+
+          
+
+            
+
+              
+
+                
+Explanation:
+The internal representation of the 
+hand
+update
+hand
+In this case, the hand may go from something like 
+{'a': 2, 'z': 1}
+{'a': 1, 'z': 0}
+{'a': 1}
+
+        
+There are two ways to write the 
+Hand.update
+hand
+hand
+Does the 
+calculateLen
+update
+
+          
+
+            
+
+              
+
+                
+
+                  
+Yes, always
+
+                
+
+                  
+Yes, depending on what happened during the 
+update
+
+                
+
+                  
+No
+
+          
+
+            
+
+              
+
+                
+Explanation:
+The internal representation of the 
+hand
+calculateLen

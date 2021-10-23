@@ -1,0 +1,65 @@
+<problem display_name="Exercise" markdown="null" weight="5.0">
+  <p>
+    <b>ESTIMATED TIME TO COMPLETE: 2 minutes</b>
+  </p>
+  <p>This problem aims to walk you through the basics of hashing.</p>
+  <p>Let's perform some basic hashing. We'll begin with a very simple 
+      hash function:</p>
+  <pre>def hash(s):
+    return len(s)</pre>
+  <p>To get a sense of what a hash function does, sort the following
+      list of words into one of the 5 buckets below.</p>
+  <customresponse>
+    <fieldset>
+      <drag_and_drop_input img="/static/L10_buckets.png">
+        <draggable id="1" label="a"/>
+        <draggable id="2" label="cat"/>
+        <draggable id="3" label="there"/>
+        <draggable id="4" label="pear"/>
+        <draggable id="5" label="kitty"/>
+        <draggable id="6" label="in"/>
+        <draggable id="7" label="them"/>
+        <draggable id="8" label="za"/>
+        <draggable id="9" label="dog"/>
+        <draggable id="10" label="slate"/>
+        <draggable id="11" label="few"/>
+        <draggable id="12" label="puppy"/>
+        <draggable id="13" label="some"/>
+        <draggable id="14" label="i"/>
+        <draggable id="15" label="apple"/>
+        <draggable id="16" label="rain"/>
+        <draggable id="17" label="fork"/>
+        <draggable id="18" label="spork"/>
+        <draggable id="19" label="qi"/>
+        <draggable id="20" label="kiwi"/>
+      </drag_and_drop_input>
+    </fieldset>
+    <answer type="loncapa/python">
+correct_answer = {
+        '1':      [[70, 150], 121],
+        '14':     [[70, 150], 121],
+        '6':      [[190, 150], 121],
+        '8':      [[190, 150], 121],
+        '19':     [[190, 150], 121],
+        '2':      [[310, 150], 121],
+        '9':      [[310, 150], 121],
+        '11':     [[310, 150], 121],
+        '4':      [[420, 150], 121],
+        '7':      [[420, 150], 121],
+        '13':     [[420, 150], 121],
+        '16':     [[420, 150], 121],
+        '17':     [[420, 150], 121],
+        '20':     [[420, 150], 121],
+        '3':      [[550, 150], 121],
+        '5':      [[550, 150], 121],
+        '10':     [[550, 150], 121],
+        '12':     [[550, 150], 121],
+        '15':     [[550, 150], 121],
+        '18':     [[550, 150], 121]}
+if draganddrop.grade(submission[0], correct_answer):
+    correct = ['correct']
+else:
+    correct = ['incorrect']
+</answer>
+  </customresponse>
+</problem>

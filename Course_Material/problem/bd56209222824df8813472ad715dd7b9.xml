@@ -1,0 +1,26 @@
+<problem display_name="Problem 2-4" markdown="null" max_attempts="1" showanswer="never">
+  <p>Consider the following two functions and select the correct choice below: </p>
+  <pre>def foo_one(n):
+    """ Assume n is an int &gt;= 0 """
+    answer = 1.0
+    while n &gt; 1:
+        answer *= n
+        n -= 1
+    return answer
+
+def foo_two(n):
+    """ Assume n is an int &gt;= 0 """
+    if n &lt;= 1: 
+        return 1.0
+    else: 
+        return n*foo_two(n-1)</pre>
+  <br/>
+  <multiplechoiceresponse>
+    <choicegroup label="7" type="MultipleChoice">
+      <choice correct="false">The worst case Big Oh time complexity of <code>foo_one</code> is worse than the worst case Big Oh time complexity of <code>foo_two</code>. </choice>
+      <choice correct="false">The worst case Big Oh time complexity of <code>foo_two</code> is worse than the worst case Big Oh time complexity of <code>foo_one</code>. </choice>
+      <choice correct="true">The worst case Big Oh time complexity of <code>foo_one</code> and <code>foo_two</code> are the same. </choice>
+      <choice correct="false">Impossible to compare the worst case Big Oh time complexities of the two functions.</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

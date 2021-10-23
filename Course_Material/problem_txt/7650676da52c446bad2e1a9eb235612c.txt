@@ -1,0 +1,76 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 10 minutes
+The function 
+recurPower(base, exp)
+
+      
+
+	[mathjax] \eqalign{\mathrm{base}^{\mathrm{exp}} & =& \mathrm{base} \cdot \mathrm{base}^{\mathrm{exp}-1}\; & \mathrm{if}\;  \mathrm{exp} > 0\\
+	\mathrm{base}^{\mathrm{exp}} & =& 1\;  & \mathrm{if}\;  \mathrm{exp} = 0}
+	[/mathjax]
+      
+Another way to solve this problem just using multiplication (and remainder) is to note that 
+
+      
+
+	[mathjax]
+	\eqalign{
+	\mathrm{base}^{\mathrm{exp}} & = & (\mathrm{base}^2)^{\frac{\mathrm{exp}}{2}}\;  & \mathrm{if}\;  \mathrm{exp} > 0\;  \mathrm{and}\;  \mathrm{exp}\;  \mathrm{is}\;  \mathrm{even} \\
+
+	\mathrm{base}^{\mathrm{exp}} & =&  \mathrm{base} \cdot \mathrm{base}^{\mathrm{exp}-1}\; &  \mathrm{if}\;  \mathrm{exp} > 0\;  \mathrm{and}\;  \mathrm{exp}\;  \mathrm{is}\;  \mathrm{odd} \\
+	
+	\mathrm{base}^{\mathrm{exp}} & = & 1\; &  \mathrm{if}\;  \mathrm{exp} = 0}
+	[/mathjax]
+    
+Write a procedure 
+recurPowerNew
+
+    
+
+      
+
+def recurPowerNew(base, exp):
+    '''
+    base: int or float.
+    exp: int >= 0
+
+    returns: int or float; base^exp
+    '''
+    # Your code here
+
+
+def recurPowerNew(base, exp):
+    '''
+    base: int or float.
+    exp: int >= 0
+
+    returns: int or float; base^exp
+    '''
+    # Base case is when exp = 0
+    if exp <= 0:
+        return 1
+
+    # Recursive case 1: exp > 0 and even
+    elif exp % 2 == 0:
+        return recurPowerNew(base*base, exp/2)
+
+    # Otherwise, exp must be > 0 and odd, so use the second
+    #  recursive case.
+    return base * recurPowerNew(base, exp - 1)
+
+
+{"grader": "finger_exercises/L5/recurPowerNew/grade_recurPowerNew.py"}
+
+
+    
+Note: In programming there are many ways to solve a problem. For your code to check correctly 
+  here, though, you must write your recursive function such that you make a recursive call 
+  directly to the function 
+recurPowerNew
+If you are getting the error stating that "Your code should be recursive" when you already make a call to 
+recurPowerNew

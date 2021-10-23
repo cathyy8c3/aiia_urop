@@ -1,0 +1,24 @@
+
+  
+You have the following class hierarchy:
+class A(object):
+    def foo(self):
+        print('hi')
+class B(A):
+    def foo(self):
+        print('bye')
+          
+
+    
+
+      
+When 
+a = A()
+a
+A
+When 
+b = B()
+b
+A
+Both of the above
+Neither of the above

@@ -1,0 +1,101 @@
+
+  
+
+    
+The first step is to implement some code that allows us
+        to calculate the score for a single word. The function
+        
+getWordScore
+word
+
+      
+
+        
+
+          
+A Reminder of the Scoring Rules
+
+          
+
+            
+Scoring
+
+            
+
+              
+
+                
+The score for the hand is the sum of the scores
+            for each word formed.
+
+                
+The score for a word is the sum of the points
+            for letters in the word, multiplied by the length
+            of the word, plus 50 points if all 
+n
+
+                
+Letters are scored as in Scrabble; A is worth 1,
+            B is worth 3, C is worth 3, D is worth 2, E is
+            worth 1, and so on. We have defined the dictionary
+            
+SCRABBLE_LETTER_VALUES
+
+                
+For example, 'weed' would be worth
+            32 points ((4+1+1+2) for the four letters, then multiply by 
+len('weed')
+
+                
+As another example, if 
+n
+n
+Hints
+
+      
+You may assume that the input 
+word
+""
+You will want to use the
+	
+SCRABBLE_LETTER_VALUES
+ps4a.py
+ Do 
+not
+n
+n=10
+n=4
+HAND_SIZE
+Testing:
+test_ps4a.py
+test_getWordScore()
+getWordScore
+Fill in the code for 
+getWordScore
+ps4a.py
+test_ps4a.py
+
+    
+
+      
+
+def getWordScore(word, n):
+    """
+    Returns the score for a word. Assumes the word is a valid word.
+
+    The score for a word is the sum of the points for letters in the
+    word, multiplied by the length of the word, PLUS 50 points if all n
+    letters are used on the first turn.
+
+    Letters are scored as in Scrabble; A is worth 1, B is worth 3, C is
+    worth 3, D is worth 2, E is worth 1, and so on (see SCRABBLE_LETTER_VALUES)
+
+    word: string (lowercase letters)
+    n: integer (HAND_SIZE; i.e., hand size required for additional points)
+    returns: int >= 0
+    """
+    # TO DO ... <-- Remove this comment when you code this function
+
+
+{"grader": "ps04/wordScore/grade_wordScore.py"}
+

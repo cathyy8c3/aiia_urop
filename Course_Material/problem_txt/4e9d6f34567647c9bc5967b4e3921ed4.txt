@@ -1,0 +1,87 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 5 minutes
+
+Assume that two variables, 
+varA
+varB
+
+      Write a piece of Python code that evaluates 
+varA
+varB
+
+      
+
+        
+"string involved"
+varA
+varB
+
+        
+"bigger"
+varA
+varB
+
+        
+"equal"
+varA
+varB
+
+        
+"smaller"
+varA
+varB
+
+      
+
+        
+
+          
+Do not ask for user input
+
+          
+Assume that variables are defined for you by our grader code. Simply write code assuming you know the values of the variables.
+
+    
+
+      
+if type(varA) == str or type(varB) == str:
+    print('string involved')
+elif varA > varB:
+    print('bigger')
+elif varA == varB:
+    print('equal')
+else:
+    # If none of the above conditions are true,
+    # it must be the case that varA < varB
+    print('smaller')
+
+
+{"grader": "finger_exercises/L2/two_vars/grade_two_vars.py"}
+
+
+    
+
+      
+Explanation
+Is 
+type(varA) == str or type(varB) == str
+type(varA) or type(varB) == str
+Python precedence
+==
+or
+type(varA) or type(varB) == str
+type(varA) or ( type(varB) == str )
+True or ( type(varB) == str )
+( True )
+type(varA) == str or type(varB) == str
+( type(varA) == str ) or ( type(varB) == str )
+
+    
+Hint:
+type
+Hint:

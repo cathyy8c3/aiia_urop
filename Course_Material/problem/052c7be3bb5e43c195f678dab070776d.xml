@@ -1,0 +1,108 @@
+<problem display_name="Exercise 3" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 5 minutes</b>
+    </p>
+    <script type="text/python" system_path="python_lib">
+def test_str(expect, ans):
+  # Strip away ' ' or " " wrapping string input answer
+  # (check which, if any, are present - don't want to pull valid
+  #  characters out of the center of a string, eg "That's crazy!",
+  #  nor do we wish to accept an input with mismatched modifiers, 
+  #  eg 'abc")
+
+  if ans[0] == "'" and ans[-1] == "'": ans = ans.strip("'")
+  elif ans[0] == '"' and ans[-1] == '"': ans = ans.strip('"')
+
+  if expect[0] == "'": expect = expect.strip("'")
+  elif expect[0] == '"': expect = expect.strip('"')
+
+  return expect == ans
+</script>
+    <p>
+For each of the following expressions, indicate the value that prints out when the expression is evaluated. If the evaluation would lead to an error, write the word 'error'; if nothing would print out, write the word 'blank'. </p>
+    <p>
+While you could simply type these expressions into your IDE, we encourage you to answer them directly since this will help reinforce your understanding of basic Python expressions. </p>
+    <p>If the temperatures seem weird to you, like most of the world, you probably use the Celsius system. We Americans still use the crazy 
+  <a href="http://www.fahrenheittocelsius.com/" target="_blank">Fahrenheit system...</a>
+</p>
+    <ol class="enumerate">
+      <li>
+        <pre>
+if 6 &gt; 7:
+   print("Yep")
+ </pre>
+        <p>
+          <stringresponse answer="blank">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+if 6 &gt; 7:
+   print("Yep")
+else:
+   print("Nope")
+ </pre>
+        <p>
+          <customresponse cfn="test_str" expect="'Nope'">
+            <textline size="50" correct_answer="'Nope'"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+var = 'Panda'
+if var == "panda":
+   print("Cute!")
+elif var == "Panda":
+   print("Regal!")
+else:
+   print("Ugly...")
+ </pre>
+        <p>
+          <customresponse cfn="test_str" expect="'Regal!'">
+            <textline size="50" correct_answer="'Regal!'"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+temp = 120
+if temp &gt; 85:
+   print("Hot")
+elif temp &gt; 100:
+   print("REALLY HOT!")
+elif temp &gt; 60:
+   print("Comfortable") 
+else:
+   print("Cold")
+ </pre>
+        <p>
+          <customresponse cfn="test_str" expect="'Hot'">
+            <textline size="50" correct_answer="'Hot'"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+temp = 50
+if temp &gt; 85:
+   print("Hot")
+elif temp &gt; 100:
+   print("REALLY HOT!")
+elif temp &gt; 60:
+   print("Comfortable")
+else:
+   print("Cold")
+ </pre>
+        <p>
+          <customresponse cfn="test_str" expect="'Cold'">
+            <textline size="50" correct_answer="'Cold'"/>
+          </customresponse>
+        </p>
+      </li>
+    </ol>
+  </text>
+</problem>

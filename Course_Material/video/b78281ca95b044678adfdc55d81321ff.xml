@@ -1,0 +1,15 @@
+<video youtube="1.00:KI_Wa8DA4_Y" url_name="b78281ca95b044678adfdc55d81321ff" sub="" transcripts="{&quot;en&quot;: &quot;8982c70b-4619-4adc-be11-eb05d88f6e46-en.srt&quot;}" display_name="Video: More Analyzing Complexity" download_track="true" download_video="true" edx_video_id="8982c70b-4619-4adc-be11-eb05d88f6e46" handout="/asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture11.zip" html5_sources="[]" youtube_id_1_0="KI_Wa8DA4_Y">
+  <handout src="/asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture11.zip"/>
+  <video_asset client_video_id="L11_S5.mp4" duration="451.02" image="video-images/0cf22bcd203144ee935c57106a2f03d4.jpeg">
+    <encoded_video profile="hls" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006800/MITX60012016-V006800.m3u8" file_size="0" bitrate="0"/>
+    <encoded_video profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006800_DTH.mp4" file_size="20518023" bitrate="363"/>
+    <encoded_video profile="audio_mp3" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006800_AUD.mp3" file_size="10826115" bitrate="192"/>
+    <encoded_video profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006800_MB2.mp4" file_size="11747735" bitrate="208"/>
+    <encoded_video profile="youtube" url="KI_Wa8DA4_Y" file_size="0" bitrate="0"/>
+    <encoded_video profile="mobile_high" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006800_MB1.mp4" file_size="13425341" bitrate="238"/>
+    <transcripts>
+      <transcript language_code="en" file_format="srt" provider="Custom"/>
+    </transcripts>
+  </video_asset>
+  <transcript language="en" src="8982c70b-4619-4adc-be11-eb05d88f6e46-en.srt"/>
+</video>

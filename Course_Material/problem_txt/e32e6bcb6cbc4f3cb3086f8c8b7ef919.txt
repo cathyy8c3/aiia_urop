@@ -1,0 +1,194 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 20 minutes
+
+def test_str(expect, ans):
+  # Strip away ' ' or " " wrapping string input answer
+  # (check which, if any, are present - don't want to pull valid
+  #  characters out of the center of a string, eg "That's crazy!",
+  #  nor do we wish to accept an input with mismatched modifiers, 
+  #  eg 'abc")
+
+  if ans[0] == "'" and ans[-1] == "'": ans = ans.strip("'")
+  elif ans[0] == '"' and ans[-1] == '"': ans = ans.strip('"')
+
+  if expect[0] == "'": expect = expect.strip("'")
+  elif expect[0] == '"': expect = expect.strip('"')
+
+  return expect == ans
+
+
+As we'll see in subsequent lectures, everything in Python is an 
+object
+object methods
+
+A complete description of the methods available to string objects can be found in the 
+Python library reference on string methods
+
+In this exercise, we want you to get some experience in using methods as functions. The convention for object methods is to use the "dot" notation, so that if 
+s
+s.upper
+s.upper()
+
+>>> s = 'abc'
+>>> s.capitalize
+<built-in method capitalize of str object at 0x104c35878>
+>>> s.capitalize()
+'Abc'
+
+
+For each of the expressions in this problem, specify its type and value. If it generates an error, select type 'NoneType' and put the word 'error' in the box for the value. If it would be a function, select type 'function' and put the word 'function' in the box for the value. 
+
+Assume we've made the following assignments: 
+
+> str1 = 'exterminate!' 
+> str2 = 'number one - the larch'
+
+
+Assume that the expressions are evaluated in the order shown - that is, each problem part is evaluated directly after the previous problem part(s). 
+
+      
+
+        
+
+          
+str1.upper
+
+            
+
+            
+
+        
+
+          
+str1.upper()
+
+            
+
+            
+
+        
+
+          
+str1
+
+            
+
+            
+
+        
+
+          
+str1.isupper()
+
+            
+
+            
+
+        
+
+          
+str1.islower()
+
+            
+
+            
+
+        
+
+          
+str2 = str2.capitalize()
+str2
+
+            
+
+            
+
+        
+
+          
+str2.swapcase()
+
+            
+
+            
+
+        
+
+          
+str1.index('e')
+
+            
+
+            
+
+        
+
+          
+str2.index('n')
+
+            
+
+            
+
+        
+
+          
+str2.find('n')
+
+            
+
+            
+
+        
+
+          
+str2.index('!')
+
+            
+
+            
+
+        
+
+          
+str2.find('!')
+
+            
+
+            
+Note:
+find
+index
+
+        
+
+          
+str1.count('e')
+
+            
+
+            
+
+        
+
+          
+str1 = str1.replace('e', '*')
+str1
+
+            
+
+            
+
+        
+
+          
+str2.replace('one', 'seven')
+
+            
+
+            

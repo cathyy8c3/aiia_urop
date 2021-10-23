@@ -1,0 +1,111 @@
+<problem display_name="Exercise: power recur" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" weight="5.0">
+  <p>
+    <b>ESTIMATED TIME TO COMPLETE: 7 minutes</b>
+  </p>
+  <text>
+    <p>In Problem 1, we computed an exponential by iteratively executing successive multiplications. 
+      We can use the same idea, but in a recursive function. </p>
+    <p>Write a function <code>recurPower(base, exp)</code> which computes 
+      [mathjaxinline]\mathrm{base}^{\mathrm{exp}}[/mathjaxinline] by recursively calling 
+      itself to solve a smaller version of the same problem, and then multiplying the result 
+      by <code>base</code> to solve the initial problem. </p>
+    <p>This function should take in two values - <code>base</code> can be a float or an 
+      integer; <code>exp</code> will be an integer [mathjaxinline]\geq 0[/mathjaxinline]. 
+      It should return one numerical value. Your code must be recursive - use of the 
+      <code>**</code> operator or looping constructs is not allowed. </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def recurPower(base, exp):
+    '''
+    base: int or float.
+    exp: int &gt;= 0
+ 
+    returns: int or float, base^exp
+    '''
+    # Your code here
+</initial_display>
+      <answer_display>
+def recurPower(base, exp):
+    '''
+    base: int or float.
+    exp: int &gt;= 0
+
+    returns: int or float, base^exp
+    '''
+    # Base case is when exp = 0
+    if exp &lt;= 0:
+        return 1
+
+    # Otherwise, exp must be &gt; 0, so return 
+    #  base* base^(exp-1). This is the recursive case.
+    return base * recurPower(base, exp - 1)
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L5/recurPower/grade_recurPower.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <text>
+    <p>Note: In programming there are many ways to solve a problem. For your code to check correctly 
+  here, though, you must write your recursive function such that you make a recursive call 
+  directly to the function <code>recurPower</code>. Thank you for understanding.
+</p>
+    <p>
+      <section class="hints">
+        <h3>Hints</h3>
+        <div class="collapsible">
+          <header>
+            <a href="#" id="id21">What should your base case be?</a>
+          </header>
+          <section id="id21">
+            <p>  To figure out what <b class="bf">base case</b> to use, think about what the smallest value of <code>exp</code> can be. </p>
+            <p>
+              <section class="hints">
+                <div class="collapsible">
+                  <header>
+                    <a href="#" id="id211">Smallest value of exp?</a>
+                  </header>
+                  <section id="id211">
+                    <p>Recall that <code>exp</code> will be an integer greater than or equal to zero - so, the smallest value of 
+		      <code>exp</code> is zero. What is the value of [mathjaxinline]\mathrm{base}^{\mathrm{exp}}[/mathjaxinline] 
+		      when <code>exp</code> equals zero, for any value of <code>base</code>? </p>
+                  </section>
+                </div>
+              </section>
+            </p>
+          </section>
+        </div>
+        <div class="collapsible">
+          <header>
+            <a href="#" id="id22">Thinking about recursion</a>
+          </header>
+          <section id="id22">
+            <p>A good way to think about recursion is that recursion is the process of solving a given problem with a smaller instance of the same problem. </p>
+            <p>So, how could we express [mathjaxinline]\mathrm{base}^{\mathrm{exp}}[/mathjaxinline] as a smaller instance of an exponential equation? </p>
+            <p>
+              <section class="hints">
+                <div class="collapsible">
+                  <header>
+                    <a href="#" id="id221">How to break down the equation</a>
+                  </header>
+                  <section id="id221">
+                    <p> [mathjaxinline]\mathrm{base}^{\mathrm{exp}} = \mathrm{base} \cdot \mathrm{base}^{\mathrm{exp-1}}[/mathjaxinline] 
+		    </p>
+                    <p> To convince yourself this is true, put in real numbers for <code>base</code> and <code>exp</code>; then, work through 
+		      the recursion over and over until you reach your base case. 
+		    </p>
+                  </section>
+                </div>
+              </section>
+            </p>
+          </section>
+        </div>
+      </section>
+    </p>
+    <p><b>If you are getting the error stating that "Your code should be recursive" when you already make a call to <code>recurPower</code></b>: check your indention -- specifically, a common mistake is that your function and docstring do not start at the same indentation level.
+    </p>
+  </text>
+</problem>

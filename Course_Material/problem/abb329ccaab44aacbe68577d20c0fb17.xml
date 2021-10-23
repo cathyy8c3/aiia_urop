@@ -1,0 +1,11 @@
+<problem display_name="Problem 2-4" markdown="null" max_attempts="1" showanswer="never" weight="1.0">
+  <p>Assume the statement <code>s[1024] = 3</code> does not produce an error message. This implies:</p>
+  <multiplechoiceresponse>
+    <choicegroup label="4" type="MultipleChoice">
+      <choice correct="false"><code>type(s)</code> can be <code>str</code></choice>
+      <choice correct="false"><code>type(s)</code> can be <code>tuple</code></choice>
+      <choice correct="true"><code>type(s)</code> can be <code>list</code></choice>
+      <choice correct="false">All of the above</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

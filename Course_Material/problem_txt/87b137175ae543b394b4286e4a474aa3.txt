@@ -1,0 +1,143 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 12 minutes
+Note that you will have to answer all questions before you can click the Check button.
+
+      
+Part 1: Function Types
+
+For each of the following functions, specify the type of its 
+return
+
+If the output can be either an int or a float, select num, which isn't a real Python type, but which we'll use to indicate that either basic numeric type is legal. 
+
+In fact, in Python, booleans True and False can be operated on as if they were the integers 1 and 0; but it is ugly and confusing to take advantage of this fact, and we will resolutely pretend that it isn't true. 
+
+      
+
+        
+
+          
+
+            
+What are those lines under the function definitions?
+
+            
+
+In this and future problems, you'll see function definitions that look like this: 
+
+def a(x):
+   '''
+   x: int or float.
+   '''
+   return x + 1
+
+
+What are those three lines between 
+def a(x):
+return x + 1
+docstring
+
+In Python, docstrings appear immediately after the 
+def
+
+def my_function(argument):
+   """
+   Docstring goes here. Explain what type argument(s) should have, and what your function
+   is going to return.
+   """
+   < Code for your function (the body of the function) goes here >
+
+
+As you begin coding your own functions, we strongly encourage you to document all your functions by using properly-formatted docstrings! 
+
+      
+
+        
+
+def a(x):
+   '''
+   x: int or float.
+   '''
+   return x + 1
+ 
+
+ Indicate the type of the output that the function 
+a
+
+        
+
+def b(x):
+   '''
+   x: int or float.
+   '''
+   return x + 1.0
+ 
+
+ Indicate the type of the output that the function 
+b
+
+        
+
+def c(x, y):
+   '''
+   x: int or float. 
+   y: int or float.
+   '''
+   return x + y
+ 
+
+ Indicate the type of the output that the function 
+c
+
+        
+
+def d(x, y):
+   '''
+   x: Can be int or float.
+   y: Can be int or float.
+   '''
+   return x > y
+ 
+
+ Indicate the type of the output that the function 
+d
+
+        
+
+def e(x, y, z):
+   '''
+   x: Can be int or float.
+   y: Can be int or float.
+   z: Can be int or float.
+   '''
+   return x >= y and x <= z
+ 
+
+ Indicate the type of the output that the function 
+e
+
+        
+
+def f(x, y):
+   '''
+   x: int or float.
+   y: int or float
+   '''
+   x + y - 2
+ 
+
+ Indicate the type of the output that the function 
+f
+Explanation:
+x+y-2
+None
+NoneType
+def f(x, y):
+   x + y - 2
+   return None
+      

@@ -1,0 +1,101 @@
+<p><strong>If you are just starting out, the staff recommends that you download Anaconda and use its Integrated Development Environment. But you are welcome to use any other IDE!</strong></p>
+<p><strong>NOTE: Latest installation instruction can also be found from the <a href="https://docs.continuum.io/anaconda/install#" target="_blank">official Anaconda website</a>. We will try to keep this as up-to-date as possible but the instructions here may differ from what you actually experience. The grader uses Python version 3.5. Newer versions are ok to use for the purposes of this course.</strong></p>
+<p>This will cover how to set up Python and introduce you to Spyder, the Python development environment we will be using throughout this course. It will also show you how to check that the Python library packages matplotlib and numpy were successfully installed. They will be used later in this class to work with plots.</p>
+<h2>Downloading the Python Installer</h2>
+<p>To download the free “Anaconda” Python distribution created by Continuum Analytics:</p>
+<ol>
+<li><span style="font-size: 1em; line-height: 1.6em;">Visit the <a href="https://www.anaconda.com/download/" target="_blank">download page for Continuum Analytics</a>. <br />NOTE: the installer we’ll be downloading and installing is larger than the average file, because it contains Python, associated packages, a code editor, and some other toys. It may take 15-20 minutes in total to download and install when executing the commands. </span></li>
+<li>You will be downloading the <strong>Python 3 version (any version 3.5 or later is good)</strong>. If you download Python 2.7, your code may be incorrect to our graders. Click the Download link for the “Individual Edition”, which shows the following options for download.<br /><img height="200" src="/static/installers.PNG" alt="installers" /></li>
+<li><span style="font-size: 1em; line-height: 1.6em;"><strong>Windows Operating System:</strong> Scroll to the "Anaconda for Windows" section. Look in the column with new newest version of Python. There are two versions of the installer, one for 32-bit Windows, and one for 64-bit Windows. Microsoft provides instructions <a href="https://support.microsoft.com/en-us/help/15056/windows-7-32-64-bit-faq" target="_blank">here </a>to determine (relatively easily) if you have a 32 or 64-bit setup. If you are running 32-bit Windows, be sure that you select the 32-bit version, and if you are running 64-bit Windows, you can download either version.  <br /></span></li>
+<li><span style="font-size: 1em; line-height: 1.6em;"><strong>Macintosh Operating System:</strong> <span style="line-height: 25.6px;">Scroll to the "Anaconda for OS X" section. Look in the column with the latest version of Python. </span>There is only one version of the installer: the 64-bit version. Continuum does not offer a 32-bit installer for Macintosh, since Macs post-2011 are <a href="https://apple.stackexchange.com/questions/99640/how-old-are-macs-that-cannot-run-64-bit-applications" target="_blank">64-bit only</a> (and post-2007 are 64-bit compatible). <br /></span></li>
+<li><span style="font-size: 1em; line-height: 1.6em;"><strong>Linux Operating Systems:</strong> <span style="line-height: 25.6px;">Scroll to the "Anaconda for Linux" section. Look in the column with Python 3.5. </span><br /></span></li>
+</ol>
+<h2>Installing Python and Spyder</h2>
+<ol>
+<li><span style="font-size: 1em; line-height: 1.6em;">To install Python after downloading the graphical installer, double click the .exe (Windows) or .pkg (Mac) file and follow the instructions on the screen. There are some additional notes and comments on installing/uninstalling Python on Continuum’s website <a href="https://docs.continuum.io/anaconda/install" target="_blank">here</a>.</span></li>
+<li><span style="font-size: 1em; line-height: 1.6em;">Note that Continuum’s Python distribution should (per their <a href="https://docs.anaconda.com/anaconda/user-guide/getting-started/" target="_blank">quick start guide</a>) install cleanly into a single directory, should not require Administrator or root privileges, and should not affect other Python installs on your system (if you have any), or interfere with OSX Frameworks. Let us know in the forum if you’re having any issues, so that others can learn along with you.</span></li>
+<li><span style="font-size: 1em; line-height: 1.6em;">When installing Anaconda, a pop-up menu may ask whether or not to “Add Anaconda to my PATH environment variable”, and “Register Anaconda as my default Python 3.5.” We suggest accepting both options for the purposes of this class.<br /><img src="/static/04.PNG" width="400" type="saveimage" target="[object Object]" /><br /></span></li>
+<li><span style="font-size: 1em; line-height: 1.6em;">The installation will take about 15 minutes. Click Finish to close the window when done.</span></li>
+</ol>
+<h2>Starting Spyder, a code editor</h2>
+<p>When you download and install the Anaconda distribution of Python, you are getting several tools related to Python development. One of the tools is Spyder (Scientific Python Development Environment), an <a href="https://en.wikipedia.org/wiki/Integrated_development_environment" target="_blank">integrated development environment</a> useful for writing, running, and debugging code. There are two primary ways to access the tools and open Spyder:</p>
+<ol>
+<li><span style="font-size: 1em; line-height: 1.6em;"><strong>Windows Only:</strong> The Anaconda folder from the Start menu.<br /><img src="/static/05.PNG" width="200" type="saveimage" target="[object Object]" /><br /></span></li>
+<li><span style="font-size: 1em; line-height: 1.6em;">The Anaconda Navigator shortcut icon. <br /><img src="/static/06.PNG" alt="" width="100" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}" /><br />Both should open the Anaconda Navigator. Click <a href="https://docs.continuum.io/anaconda/navigator" target="_blank">here</a> to read more about its features. We will only be using one app from Anaconda in this class: Spyder. Click the blue “Launch” button by “spyder” to launch Spyder. It should take a moment to load and may appear to pause for a minute or two.<br /><img src="/static/07.PNG" alt="" width="600" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}" /><br /></span></li>
+</ol>
+<h2>Configuring Spyder</h2>
+<p>Before using Spyder, we recommend configuring Spyder to use the “Clear variables before execution” option. This will help prevent future debugging issues due to old variables being kept between executions of your code. This feature can be found in the preferences (accessed by Python -&gt; preferences on Mac, Tools -&gt; preferences on Windows and Linux):</p>
+<p><img height="450" width="750" src="/static/getstarted1.png" alt="clear var" /></p>
+<p>Once in preferences, choose the “run” category, and check the “Clear variables before execution” setting under “General Settings”:</p>
+<p><img height="450" width="774" src="/static/getstarted2.png" alt="clear var" /></p>
+<h2>Spyder Application Overview</h2>
+<p>Opening the Spyder application should present you with the following window (screenshot is from Mac OS X, but are similar in Windows and Linux). This window contains two commonly used parts, among others:</p>
+<ul>
+<li><span style="font-size: 1em; line-height: 1.6em;">Code Editor that lets you create and edit existing Python source files [YELLOW CIRCLE 1]</span></li>
+<li><span style="font-size: 1em; line-height: 1.6em;">IPython interpreter pane, which gives you access to the Python interactive mode [YELLOW CIRCLE 2]<br /><br /></span>During the following discussion of Spyder’s features, you should start Spyder and try to replicate the screenshots.</li>
+</ul>
+<p><img src="/static/install_spyder.png" alt="" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}" width="806" height="503" /> </p>
+<p><strong>Using the IPython prompt:</strong></p>
+<ol>
+<li><span style="font-size: 1em; line-height: 1.6em;">The IPython prompt looks something like this: “In [1]:”, and can be used to run Python code. You can type Python code directly into this prompt, and pressing enter executes the code fragment. The result of the computation is preceded by the words "Out []".</span></li>
+<li><span style="font-size: 1em; line-height: 1.6em;">Try typing the following after the prompt and pressing the enter key:</span></li>
+</ol>
+<pre><span style="line-height: 1.6;">3*5<br /><br /><img src="/static/install_3x5.PNG" type="saveimage" target="[object Object]" width="666" height="272" /><br /></span></pre>
+<p><strong>Using the IPython prompt – examples and exercises:</strong></p>
+<p>Addition (+), subtraction (-), multiplication (*), division (/), modulo (%) and power (**) operators are built into the Python language. This means you can use them right away. If you want to use a square root in your calculation, you can either raise something to the power of 0.5 or you can import the math module. Do not worry about what it means right now, we will cover this later during the course. Below are two examples of square root calculation:</p>
+<pre>In [1]: 16**0.5</pre>
+<pre>Out [1]: 4.0</pre>
+<pre>In [2]: import math</pre>
+<pre>In [3]: math.sqrt(16)</pre>
+<pre>Out[3]: 4.0</pre>
+<p>The math module allows you to do a number of useful operations:</p>
+<pre>In [1]: math.log(16, 2)</pre>
+<pre>Out [1]: 4.0</pre>
+<pre>In [2]: math.cos( 0 )</pre>
+<pre>Out [2]: 1.0</pre>
+<p><strong>Exercises: Use the IPython prompt to calculate: <br /></strong>(these are just for practice, solutions will not be graded or collected)</p>
+<ul>
+<li><span style="font-size: 1em; line-height: 1.6em;">6+4*10</span></li>
+<li><span style="font-size: 1em; line-height: 1.6em;">(6+4)*10 <br /></span>(Compare this to the previous one, and note that Python uses parentheses just like you would in normal math to determine order of operations!)</li>
+<li><span style="font-size: 1em; line-height: 1.6em;">23.0 to the 5th power</span></li>
+<li><span style="font-size: 1em; line-height: 1.6em;">Positive root of the following equation: </span>34*x^2 + 68*x - 510 = 0<br />Recall: given a*x^2 + b*x + c = 0, <br />then x = (-b +sqrt(b*b - 4*a*c))/(2*a)</li>
+<li><span style="font-size: 1em; line-height: 1.6em;">import math<br /></span>math.cos(3.4)**2+math.sin(3.4)**2</li>
+</ul>
+<h2>To create, save, and run a file</h2>
+<p><strong>Creating the file</strong></p>
+<ol>
+<li><span style="font-size: 1em; line-height: 1.6em;">In Spyder’s File menu, select "New file". </span></li>
+<li><span style="font-size: 1em; line-height: 1.6em;">In the new file, type the following: </span></li>
+</ol>
+<pre><span style="font-size: 1em; line-height: 1.6em;">print('hello world')</span></pre>
+<p><span style="font-size: 1em; line-height: 1.6em;"><img src="/static/install_hello.PNG" alt="" width="400" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}" /></span></p>
+<p><strong>Saving the file</strong></p>
+<ol>
+<li><span style="font-size: 1em; line-height: 1.6em;">Saving your files in a location specific for this course can aid in organization. To do that, first create a directory (or folder) for your 6.00.1x material, with an appropriate name.</span></li>
+<li><span style="font-size: 1em; line-height: 1.6em;">Now you can save your "hello world" file in the new folder that you just created.</span></li>
+<li><span style="font-size: 1em; line-height: 1.6em;">From the Spyder File menu, click “Save As” and then navigate to your course folder before typing a name for this file, e.g., "hello". Make sure that you’re saving the file as type Python (see below for images on Mac and PC).<br /><img src="/static/install_save.png" alt="" width="700" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}" /><br /></span></li>
+<li><span style="font-size: 1em; line-height: 1.6em;">Click the Save button</span></li>
+</ol>
+<p><strong>Running the file</strong></p>
+<ol>
+<li><span style="font-size: 1em; line-height: 1.6em;">From within Spyder, go to the “Run” menu, click on "Run".</span></li>
+<li><span style="font-size: 1em; line-height: 1.6em;">You should see two parts to the output in the IPython console. First, The runfile(…) line shows you the filepath on your computer for the file you just ran. Second, the output of the file, “Hello world”, should appear. </span><strong>If you get an invalid alias error, do the following:</strong></li>
+<ol><ol>
+<li style="box-sizing: border-box; margin: 0px; padding: 0px;"><em>Open Spyder</em></li>
+<li style="box-sizing: border-box; margin: 0px; padding: 0px;"><em>Type the following command into the IPython console: <span style="box-sizing: border-box; font-weight: bolder;">!conda install -y ipython=7.7.0</span></em></li>
+<li style="box-sizing: border-box; margin: 0px; padding: 0px;"><em>After a couple of minutes, the installation should complete</em></li>
+<li style="box-sizing: border-box; margin: 0px; padding: 0px;"><em>Close Spyder and reopen it</em></li>
+</ol></ol>
+<li><span style="font-size: 1em; line-height: 1.6em;">Go back to the Code Editor and add the following line: print('I like 6.00.1x!')</span></li>
+<li><span style="font-size: 1em; line-height: 1.6em;">Select “Run File” again (you can also use the green triangular Run button on the toolbar or the shortcut F5), and observe the change in result.</span></li>
+<li><span style="font-size: 1em; line-height: 1.6em;">Close your test file by clicking the X in its filename tab.</span></li>
+<li><span style="font-size: 1em; line-height: 1.6em;">Now reopen your test file by double-clicking its name in the File menu’s "Open recent" option.</span></li>
+<li><span style="font-size: 1em; line-height: 1.6em;">Congratulations - your Python environment has been installed, and you now know how to enter expressions in Python and how to save, run, and open files!</span></li>
+<li><span style="font-size: 1em; line-height: 1.6em;">For additional help on Spyder, go the Help menu within Spyder, and select the “Spyder tutorial” option.</span></li>
+</ol>
+<h2>Installing and Testing Matplotlib and Numpy</h2>
+<p>To work with plots, you will need these Python library packages: matplotlib and numpy. You will not need these packages until the end of the course but we encourage you to download them early. </p>
+<p>If you’re using Anaconda Python, your system should already have numpy and matplotlib installed. Start Spyder and type “import numpy” and “import matplotlib” into the prompts.</p>
+<p><img src="/static/install_pylab.png" alt="" type="saveimage" target="[object Object]" preventdefault="function (){r.isDefaultPrevented=n}" stoppropagation="function (){r.isPropagationStopped=n}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" isdefaultprevented="function t(){return!1}" ispropagationstopped="function t(){return!1}" isimmediatepropagationstopped="function t(){return!1}" width="662" height="290" /></p>
+<p></p>
+<p>If no errors show up, you already have them installed. If errors show up, reach out via the forum!</p>

@@ -1,0 +1,78 @@
+<problem display_name="Exercise: queue" markdown="null" weight="5.0">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 20 minutes</b>
+    </p>
+    <p>For this exercise, you will be coding your very first class, a 
+      <code>Queue</code> class. Queues are a fundamental computer 
+      science data structure. A queue is basically like a line at 
+      Disneyland - you can add elements to a queue, and they maintain 
+      a specific order. When you want to get something off the end of a 
+      queue, you get the item that has been in there the longest (this 
+      is known as 'first-in-first-out', or FIFO). You can read up on queues 
+      at Wikipedia if you'd like to learn more.</p>
+    <p>In your <code>Queue</code> class, you will need three methods:</p>
+    <ol>
+      <li><code>__init__</code>: initialize your <code>Queue</code> (think: how will
+	you store the queue's elements? You'll need to initialize an
+	appropriate <i>object attribute</i> in this method)</li>
+      <li><code>insert</code>: inserts one element in your <code>Queue</code></li>
+      <li><code>remove</code>: removes (or 'pops') one element from your <code>Queue</code> and returns
+	it. If the queue is empty, raises a ValueError.</li>
+    </ol>
+    <p>When you're done, you should test your implementation. Your results
+      should look something like this:</p>
+    <pre>&gt;&gt;&gt; queue = Queue()
+&gt;&gt;&gt; queue.insert(5)
+&gt;&gt;&gt; queue.insert(6)
+&gt;&gt;&gt; queue.remove()
+5
+&gt;&gt;&gt; queue.insert(7)
+&gt;&gt;&gt; queue.remove()
+6
+&gt;&gt;&gt; queue.remove()
+7
+&gt;&gt;&gt; queue.remove()
+Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 26, in &lt;module&gt;
+  File "queue.py", line 15, in remove
+    raise ValueError()
+ValueError</pre>
+    <p>Be sure to handle that last case correctly - when popping from an
+  empty <code>Queue</code>, throw the appropriate error.</p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display/>
+      <answer_display>
+class Queue(object):
+
+    def __init__(self):
+        "Initializes 1 attribute: a list to keep track of the queue's elements"
+        self.qlist = []
+
+    def insert(self, element):
+        "Adds an element to the attribute list using append"
+        self.qlist.append(element)
+
+    def remove(self):
+        "Removes an element from the attribute list"
+        # Check if the list is empty; if so then raise a ValueError
+        if self.qlist == []:
+            raise ValueError()
+        else:
+            # Otherwise we want to remove the first element from the list
+            # and return that to the user.
+            element = self.qlist[0]
+            self.qlist.remove(element)
+            return element
+            # Could also do this in 1 line:
+            # return self.qlist.pop(0)
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L10/queue/grade_queue.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

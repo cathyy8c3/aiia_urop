@@ -1,0 +1,175 @@
+<problem display_name="Exercise 3" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 20 minutes</b>
+    </p>
+    <p>Below is a transcript of a session with the Python shell. Provide the 
+      type and value of the expressions being evaluated inside the <code>print</code>. If evaluating an 
+      expression would cause an error, select NoneType and write <code>error</code> in 
+      the box. If the result is a function, select function and write <code>function</code> 
+      in the box. As always, try to do this problem by hand before turning to your interpreter
+      for help.</p>
+    <p>Assume the following definitions have been made:</p>
+    <pre>class Weird(object):
+    def __init__(self, x, y): 
+        self.y = y
+        self.x = x
+    def getX(self):
+        return x 
+    def getY(self):
+        return y
+
+class Wild(object):
+    def __init__(self, x, y): 
+        self.y = y
+        self.x = x
+    def getX(self):
+        return self.x 
+    def getY(self):
+        return self.y
+
+X = 7
+Y = 8</pre>
+    <ol>
+      <li>
+        <p>
+          <pre>w1 = Weird(X, Y)
+print(w1.getX())</pre>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function')" correct="NoneType"/>
+          </optionresponse>
+          <stringresponse answer="error">
+            <textline size="20"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <pre>print(w1.getY())</pre>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function')" correct="NoneType"/>
+          </optionresponse>
+          <stringresponse answer="error">
+            <textline size="20"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <pre>w2 = Wild(X, Y)
+print(w2.getX())</pre>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function')" correct="int"/>
+          </optionresponse>
+          <stringresponse answer="7">
+            <textline size="20"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <pre>print(w2.getY())</pre>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function')" correct="int"/>
+          </optionresponse>
+          <stringresponse answer="8">
+            <textline size="20"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <pre>w3 = Wild(17, 18)
+print(w3.getX())</pre>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function')" correct="int"/>
+          </optionresponse>
+          <stringresponse answer="17">
+            <textline size="20"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <pre>print(w3.getY())</pre>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function')" correct="int"/>
+          </optionresponse>
+          <stringresponse answer="18">
+            <textline size="20"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <pre>w4 = Wild(X, 18)
+print(w4.getX())</pre>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function')" correct="int"/>
+          </optionresponse>
+          <stringresponse answer="7">
+            <textline size="20"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <pre>print(w4.getY())</pre>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function')" correct="int"/>
+          </optionresponse>
+          <stringresponse answer="18">
+            <textline size="20"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <pre>X = w4.getX() + w3.getX() + w2.getX()
+print(X)</pre>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function')" correct="int"/>
+          </optionresponse>
+          <stringresponse answer="31">
+            <textline size="20"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <pre>print(w4.getX())</pre>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function')" correct="int"/>
+          </optionresponse>
+          <stringresponse answer="7">
+            <textline size="20"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <pre>Y = w4.getY() + w3.getY()
+Y = Y + w2.getY()
+print(Y)</pre>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function')" correct="int"/>
+          </optionresponse>
+          <stringresponse answer="44">
+            <textline size="20"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <pre>print(w2.getY())</pre>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','boolean','function')" correct="int"/>
+          </optionresponse>
+          <stringresponse answer="8">
+            <textline size="20"/>
+          </stringresponse>
+        </p>
+      </li>
+    </ol>
+  </text>
+</problem>

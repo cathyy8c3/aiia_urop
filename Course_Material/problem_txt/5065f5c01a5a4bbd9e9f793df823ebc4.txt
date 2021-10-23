@@ -1,0 +1,12 @@
+
+  
+The complexity of [mathjaxinline]1^n + n^4 + 4n + 4[/mathjaxinline] is
+
+    
+
+      
+constant
+logarithmic
+linear
+polynomial
+exponential

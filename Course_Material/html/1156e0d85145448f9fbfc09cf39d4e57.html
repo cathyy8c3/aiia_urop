@@ -1,0 +1,35 @@
+<p></p>
+<h3><span style="color: red;">**Part B is dependent on your functions from <code>ps4a.py</code>, so be sure to complete <code>ps4a.py</code> before working on <code>ps4b.py</code>**</span></h3>
+<p>Now that you have completed your word game code, you decide that you would like to enable your computer (SkyNet) to play the game (your hidden agenda is to prove once and for all that computers are inferior to human intellect!)&nbsp;In this part, you will be able to compare how you as a user succeed in the game compared to the computer's performance.</p>
+<p>You should look at the following two functions: <span style="font-family: 'courier new', courier;">compChooseWord</span> and <span style="font-family: 'courier new', courier;">compPlayHand</span>, before moving on to Problem 7 on the next page.</p>
+<h3><span style="font-family: 'Open Sans', Verdana, Arial, Helvetica, sans-serif; line-height: 25.6px;">compChooseWord</span></h3>
+<p>If you follow the pseudocode for <span style="font-family: 'courier new', courier;">compChooseWord</span>, you'll see that the code creates a computer player that is legal, but not always the best.&nbsp;Try to walk through and understand our implementation.</p>
+<p><strong><span style="font-family: 'Open Sans', Verdana, Arial, Helvetica, sans-serif;">A Note On Runtime:&nbsp;</span></strong>You may notice that things run a bit slowly when the computer plays. This is to be expected - the <code>wordList</code> has 83667 words, after all!&nbsp;</p>
+<div class="collapsible"><header><strong>Test Cases to Understand the Code:&nbsp;</strong></header>
+<pre>&gt;&gt;&gt; compChooseWord({'a': 1, 'p': 2, 's': 1, 'e': 1, 'l': 1}, wordList, 6) 
+appels 
+&gt;&gt;&gt; compChooseWord({'a': 2, 'c': 1, 'b': 1, 't': 1}, wordList, 5) 
+acta 
+&gt;&gt;&gt; compChooseWord({'a': 2, 'e': 2, 'i': 2, 'm': 2, 'n': 2, 't': 2}, wordList, 12) 
+immanent 
+&gt;&gt;&gt; compChooseWord({'x': 2, 'z': 2, 'q': 2, 'n': 2, 't': 2}, wordList, 12) 
+None</pre>
+<h3><span style="font-family: 'Open Sans', Verdana, Arial, Helvetica, sans-serif; line-height: 25.6px;">compPlayHand</span></h3>
+<p style="font-size: 16px; line-height: 25.6px;">Now that we have the ability to let the computer choose a word, we need to set up a function to allow the computer to play a hand - in a manner very similar to Part A's <code>playHand</code> function.&nbsp;This function allows the computer to play a given hand and is&nbsp;very similar to the earlier version in which a user selected the word, although deciding when it is done playing a particular hand is different.</p>
+<p><strong>Test Cases to Understand the Code:</strong>&nbsp;</p>
+<p><code>compPlayHand({'a': 1, 'p': 2, 's': 1, 'e': 1, 'l': 1}, wordList, 6)</code></p>
+<pre>Current Hand: a p p s e l
+"appels" earned 110 points. Total: 110 points
+Total score: 110 points.</pre>
+<p><code>compPlayHand({'a': 2, 'c': 1, 'b': 1, 't': 1}, wordList, 5)</code> Current Hand: a a c b t "acta" earned 24 points. Total: 24 points Current Hand: b Total score: 24 points. <code>compPlayHand({'a': 2, 'e': 2, 'i': 2, 'm': 2, 'n': 2, 't': 2}, wordList, 12)</code></p>
+<pre>Current Hand: a a e e i i m m n n t t
+"immanent" earned 96 points. Total: 96 points
+
+Current Hand: a e t i
+"ait" earned 9 points. Total: 105 points
+
+Current Hand: e
+Total score: 105 points.
+</pre>
+</div>
+<p></p>

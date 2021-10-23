@@ -1,0 +1,35 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 5 minutes
+
+Write a Python function, 
+evalQuadratic(a, b, c, x)
+
+This function takes in four numbers and returns a single number. 
+
+    
+
+      
+
+def evalQuadratic(a, b, c, x):
+    '''
+    a, b, c: numerical values for the coefficients of a quadratic equation
+    x: numerical value at which to evaluate the quadratic.
+    '''
+    # Your code here
+
+
+def evalQuadratic(a, b, c, x):
+   '''
+   a, b, c: numerical values for the coefficients of a quadratic equation
+   x: numerical value at which to evaluate the quadratic.
+   '''
+   return a*x*x + b*x + c
+
+
+{"grader": "finger_exercises/L4/quadratic/grade_quadratic.py"}
+

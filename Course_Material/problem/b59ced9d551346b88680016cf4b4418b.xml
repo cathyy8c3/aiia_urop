@@ -1,0 +1,16 @@
+<problem display_name="Honor Pledge" group_access="{&quot;51&quot;: [2]}" markdown="null" max_attempts="1" showanswer="never" weight="1.0">
+<multiplechoiceresponse>
+  <p>By clicking the box below, I pledge that:</p>
+<ul>
+  <li>The work submitted in this exam is my own</li>
+<li>I will not look up answers to the exam questions</li>
+<li>I will not post anything related to the exam questions on the edX discussion forum or anywhere else</li>
+  </ul>
+  <p>If the staff finds that you have violated this pledge, your progress in this exam and/or certificate earned may be revoked.</p>
+<choicegroup type="MultipleChoice">
+    <choice correct="true">Sign Pledge</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+  <p><font color="red">After you click Submit, it may take a few minutes for the exam section to show up. Alternatively, you can also refresh the page.</font>
+  </p>
+</problem>

@@ -1,0 +1,15 @@
+<video youtube="1.00:RT_L2UN5Xis" url_name="ac9f552090944c51bef08ef6bd9f7683" sub="" transcripts="{&quot;en&quot;: &quot;aac4111d-19e5-4153-b3b9-2d820c93689e-en.srt&quot;}" display_name="Video: Inductive Reasoning" download_track="true" download_video="true" edx_video_id="aac4111d-19e5-4153-b3b9-2d820c93689e" handout="/asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture4.zip" html5_sources="[]" youtube_id_1_0="RT_L2UN5Xis">
+  <handout src="/asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture4.zip"/>
+  <video_asset client_video_id="L4_S7.mov" duration="288.32" image="video-images/f3dcae5012ac4454881398c8edd6b98a.jpeg">
+    <encoded_video profile="hls" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V002800/MITX60012016-V002800.m3u8" file_size="0" bitrate="0"/>
+    <encoded_video profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MITX6001/MITX60012016-V002800_MB2.mp4" file_size="8206264" bitrate="227"/>
+    <encoded_video profile="audio_mp3" url="https://d2f1egay8yehza.cloudfront.net/MITX6001/MITX60012016-V002800_AUD.mp3" file_size="6922510" bitrate="192"/>
+    <encoded_video profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MITX6001/MITX60012016-V002800_DTH.mp4" file_size="13740375" bitrate="381"/>
+    <encoded_video profile="youtube" url="RT_L2UN5Xis" file_size="0" bitrate="0"/>
+    <encoded_video profile="mobile_high" url="https://d2f1egay8yehza.cloudfront.net/MITX6001/MITX60012016-V002800_MB1.mp4" file_size="9190506" bitrate="254"/>
+    <transcripts>
+      <transcript language_code="en" file_format="srt" provider="Custom"/>
+    </transcripts>
+  </video_asset>
+  <transcript language="en" src="aac4111d-19e5-4153-b3b9-2d820c93689e-en.srt"/>
+</video>

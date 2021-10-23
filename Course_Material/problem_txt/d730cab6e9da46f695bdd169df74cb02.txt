@@ -1,0 +1,9 @@
+
+  
+The base case for the recursive version of merge sort from lecture is checking ONLY for the list being empty.
+
+    
+
+      
+True
+False

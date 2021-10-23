@@ -1,0 +1,18 @@
+<course advanced_modules="[&quot;word_cloud&quot;, &quot;poll&quot;, &quot;recommender&quot;, &quot;library_content&quot;, &quot;lti_consumer&quot;, &quot;split_test&quot;]" advertised_start="null" allow_anonymous="false" allow_anonymous_to_peers="true" allow_unsupported_xblocks="true" cert_html_view_enabled="true" cert_name_long="Certificate" cert_name_short="Certificate" certificates="{&quot;certificates&quot;: [{&quot;name&quot;: &quot;Name of the certificate&quot;, &quot;is_active&quot;: true, &quot;id&quot;: 1648446687, &quot;version&quot;: 1, &quot;signatories&quot;: [{&quot;name&quot;: &quot;W. Eric L. Grimson&quot;, &quot;organization&quot;: &quot;Massachusetts Institute of Technology&quot;, &quot;signature_image_path&quot;: &quot;/asset-v1:MITx+6.00.1x+2T2016+type@asset+block@grimson_transparent.png&quot;, &quot;id&quot;: 242360236, &quot;title&quot;: &quot;Bernard Gordon Professor of Medical Engineering\nChancellor for Academic Advancement&quot;, &quot;certificate&quot;: 1648446687}, {&quot;name&quot;: &quot;John Guttag&quot;, &quot;organization&quot;: &quot;Massachusetts Institute of Technology&quot;, &quot;signature_image_path&quot;: &quot;/asset-v1:MITx+6.00.1x+2T2016+type@asset+block@guttag_transparent.png&quot;, &quot;id&quot;: 972611790, &quot;title&quot;: &quot;Dugald C. Jackson Professor of \nComputer Science and Electrical Engineering&quot;, &quot;certificate&quot;: 1648446687}, {&quot;name&quot;: &quot;Krishna Rajagopal&quot;, &quot;organization&quot;: &quot;Massachusetts Institute of Technology&quot;, &quot;signature_image_path&quot;: &quot;/asset-v1:MITx+6.00.1x+2T2018+type@asset+block@krishna-signature-transparent__5_.png&quot;, &quot;id&quot;: 10316411, &quot;title&quot;: &quot;Dean for Digital Learning&quot;, &quot;certificate&quot;: 1648446687}], &quot;description&quot;: &quot;Description of the certificate&quot;}]}" certificates_display_behavior="end" course_image="course_image.jpg" days_early_for_beta="300.0" display_coursenumber="6.00.1x" display_name="Introduction to Computer Science and Programming Using Python" edxnotes="true" enable_subsection_gating="true" enable_timed_exams="true" end="2021-08-04T23:30:00+00:00" enrollment_end="2021-07-21T23:59:00+00:00" enrollment_start="null" graceperiod="2700 seconds" highlights_enabled_for_messaging="true" info_sidebar_name="Course Links" instructor_info="{&quot;instructors&quot;: []}" language="en" learning_info="[]" lti_passports="[]" minimum_grade_credit="0.65" mobile_available="true" self_paced="false" show_reset_button="true" showanswer="attempted" start="2021-06-02T15:00:00+00:00" user_partitions="[]" video_upload_pipeline="{}">
+  <chapter url_name="47d859de1f9e45c5a7587d0009057aa9"/>
+  <chapter url_name="585765eb28824772b3220f3e15064eb5"/>
+  <chapter url_name="c77f2cc9fb2a42589f0d723e8fefbd35"/>
+  <chapter url_name="fc8f42302c644118adfcfa720f9f403e"/>
+  <chapter url_name="0de4fecc5a9a4749923133fcf4de181f"/>
+  <chapter url_name="530b7f9a82784d0cb57de334828e3050"/>
+  <chapter url_name="ae4319bb721e4b00a5713797b0283809"/>
+  <chapter url_name="f0a19f0a8c2d49f3aa78ef3823845271"/>
+  <chapter url_name="ccbeba1bc4464a0c9e3b2146aef7d4f3"/>
+  <chapter url_name="c3b8ed5a5c8b4b589002370ad9d49a94"/>
+  <chapter url_name="43b1bf673bad44958f796154595a688e"/>
+  <chapter url_name="3759c3c31c044d53be3dae6ef2316fc7"/>
+  <chapter url_name="8f0f1f7142d043afbb1a9c0a0f900d59"/>
+  <chapter url_name="63199c498bd7403a9f2aa18fd2e91d74"/>
+  <chapter url_name="c8a277c47f9c4d809c2f07cb73fe6374"/>
+  <wiki slug="MITx.6.00.1x.2T2017_2"/>
+</course>

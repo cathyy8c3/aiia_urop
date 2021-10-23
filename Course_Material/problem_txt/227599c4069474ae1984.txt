@@ -1,0 +1,46 @@
+
+  
+
+    
+
+      Write a recursive Python function, given a non-negative integer 
+N
+N
+
+  For example:
+count7(717)
+count7(1237123)
+count7(8989)
+Hint: Mod (%) by 10 gives you the rightmost digit (
+126 % 10
+126 // 10
+This function has to be recursive; you may not use loops! This function takes in one integer and returns one integer.
+def count7(N):
+    '''
+    N: a non-negative integer
+    '''
+    # Your code here
+    
+
+    
+
+      
+
+def count7(N):
+    '''
+    N: a non-negative integer
+    '''
+    # Your code here
+      
+
+def count7(N):
+    if N == 0:
+        return 0
+    if N % 10 == 7:
+        return 1 + count7(N/10)
+    else:
+        return count7(N/10)
+
+
+{"grader": "finger_exercises/L5/count7/grade_count7.py"}
+

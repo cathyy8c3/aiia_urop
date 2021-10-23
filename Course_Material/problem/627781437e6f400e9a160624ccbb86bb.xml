@@ -1,0 +1,56 @@
+<problem display_name="Problem 5" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" max_attempts="2" showanswer="never">
+  <text>
+    <p> You have 2 attempts for this problem. </p>
+    <p>Here is code for linear search that uses the fact that a set of elements is sorted in increasing order: </p>
+    <pre>def search(L, e):
+    for i in range(len(L)):
+        if L[i] == e:
+            return True
+        if L[i] &gt; e:
+            return False
+    return False
+ 
+    </pre>
+    <p>
+Consider the following code, which is an alternative version of <code>search</code>. </p>
+    <pre>def newsearch(L, e):
+    size = len(L)
+    for i in range(size):
+        if L[size-i-1] == e:
+            return True
+        if L[i] &lt; e:
+            return False
+    return False
+
+    </pre>
+    <p>
+Which of the following statements is correct? You may assume that each function is tested with a list <code>L</code> whose elements are sorted in increasing order; 
+for simplicity, assume <code>L</code> is a list of positive integers.</p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup type="MultipleChoice">
+          <choice correct="false">
+            <text><code>search</code> and <code>newsearch</code> return the same answers for all <code>L</code> and <code>e</code>.</text>
+          </choice>
+          <choice correct="false">
+            <text><code>search</code> and <code>newsearch</code> return the same answers provided <code>L</code> is non-empty.</text>
+          </choice>
+          <choice correct="false">
+            <text><code>search</code> and <code>newsearch</code> return the same answers provided <code>L</code> is non-empty and <code>e</code> is in <code>L</code>.</text>
+          </choice>
+          <choice correct="false">
+            <text><code>search</code> and <code>newsearch</code> never return the same answers.</text>
+          </choice>
+          <choice correct="true">
+            <text><code>search</code> and <code>newsearch</code> return the same answers for lists <code>L</code> of length 0, 1, or 2.</text>
+          </choice>
+          <choice correct="true">
+            <text><code>search</code> and <code>newsearch</code> return the same answers for lists <code>L</code> of length 0 or 1.</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+    </p>
+  </text>
+</problem>

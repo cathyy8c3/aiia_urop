@@ -1,0 +1,103 @@
+<problem display_name="Exercise 10" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 5 minutes</b>
+      <br/>
+      <b>      Note that you will have to answer all questions before you can click the Check button.</b>
+    </p>
+    <p>
+For each of the following expressions, indicate the type of the expression and the value returned, or, if the evaluation would lead to an error, choose the type 'NoneType' and write the word 'error' (note this is a word, not a string, no quotes) as the value returned. </p>
+    <p>
+While you could simply type these expressions into your IDE, we encourage you to answer them directly since this will help reinforce your understanding of basic Python expressions. </p>
+    <ul>
+      <li>
+        <p>
+          <code>3 + 5.0</code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','bool')" correct="float"/>
+          </optionresponse>
+          <stringresponse answer="8.0">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>5/2</code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','bool')" correct="float"/>
+          </optionresponse>
+          <stringresponse answer="2.5">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>5/2 == 5/2.0</code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','bool')" correct="bool"/>
+          </optionresponse>
+          <stringresponse answer="True">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>5/2.0</code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','bool')" correct="float"/>
+          </optionresponse>
+          <stringresponse answer="2.5">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>round(2.6)</code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','bool')" correct="int"/>
+          </optionresponse>
+          <stringresponse answer="3">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>int(2.6)</code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','bool')" correct="int"/>
+          </optionresponse>
+          <stringresponse answer="2">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>2.0 + 5.0</code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','bool')" correct="float"/>
+          </optionresponse>
+          <stringresponse answer="7.0">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>5*2 == 5.0 * 2.0</code>
+          <optionresponse>
+            <optioninput options="('NoneType','int','float','bool')" correct="bool"/>
+          </optionresponse>
+          <stringresponse answer="True">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+    </ul>
+  </text>
+</problem>

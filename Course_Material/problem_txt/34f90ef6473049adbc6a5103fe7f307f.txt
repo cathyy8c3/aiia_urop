@@ -1,0 +1,55 @@
+
+  
+
+    
+
+      
+
+        
+If you are done the exam, 
+click here to checkout
+Implement the class 
+myDict
+dict
+For example:
+
+With a dict:  |    With a myDict:
+-------------------------------------------------------------------------------
+d = {}             md = myDict()        # initialize a new object using 
+                                          your choice of implementation
+
+d[1] = 2           md.assign(1,2)       # use assign method to add a key,value pair
+
+print(d[1])        print(md.getval(1))  # use getval method to get value stored for key 1
+
+del(d[1])          md.delete(1)         # use delete method to remove 
+                                          key,value pair associated with key 1
+
+class myDict():
+    """ Implements a dictionary without using a dictionary """
+    def __init__(self):
+        """ initialization of your representation """
+        #FILL THIS IN
+        
+    def assign(self, k, v):
+        """ k (the key) and v (the value), immutable objects  """
+        #FILL THIS IN
+        
+    def getval(self, k):
+        """ k, immutable object  """
+        #FILL THIS IN
+        
+    def delete(self, k):
+        """ k, immutable object """   
+        #FILL THIS IN
+    
+Paste your entire class, including the definition, in the box below. Do not leave any print statements.
+
+    
+
+      
+# Paste your code here
+
+
+        {"grader": "quiz/60001_f2016/myDict/grade_mydict_correct.py", "hide_output": false}
+

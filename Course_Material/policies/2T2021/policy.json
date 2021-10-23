@@ -1,0 +1,149 @@
+{
+    "course/2T2021": {
+        "advanced_modules": [
+            "word_cloud",
+            "poll",
+            "recommender",
+            "library_content",
+            "lti_consumer",
+            "split_test"
+        ],
+        "advertised_start": null,
+        "allow_anonymous": false,
+        "allow_anonymous_to_peers": true,
+        "allow_unsupported_xblocks": true,
+        "cert_html_view_enabled": true,
+        "cert_name_long": "Certificate",
+        "cert_name_short": "Certificate",
+        "certificates": {
+            "certificates": [
+                {
+                    "description": "Description of the certificate",
+                    "id": 1648446687,
+                    "is_active": true,
+                    "name": "Name of the certificate",
+                    "signatories": [
+                        {
+                            "certificate": 1648446687,
+                            "id": 242360236,
+                            "name": "W. Eric L. Grimson",
+                            "organization": "Massachusetts Institute of Technology",
+                            "signature_image_path": "/asset-v1:MITx+6.00.1x+2T2016+type@asset+block@grimson_transparent.png",
+                            "title": "Bernard Gordon Professor of Medical Engineering\nChancellor for Academic Advancement"
+                        },
+                        {
+                            "certificate": 1648446687,
+                            "id": 972611790,
+                            "name": "John Guttag",
+                            "organization": "Massachusetts Institute of Technology",
+                            "signature_image_path": "/asset-v1:MITx+6.00.1x+2T2016+type@asset+block@guttag_transparent.png",
+                            "title": "Dugald C. Jackson Professor of \nComputer Science and Electrical Engineering"
+                        },
+                        {
+                            "certificate": 1648446687,
+                            "id": 10316411,
+                            "name": "Krishna Rajagopal",
+                            "organization": "Massachusetts Institute of Technology",
+                            "signature_image_path": "/asset-v1:MITx+6.00.1x+2T2018+type@asset+block@krishna-signature-transparent__5_.png",
+                            "title": "Dean for Digital Learning"
+                        }
+                    ],
+                    "version": 1
+                }
+            ]
+        },
+        "certificates_display_behavior": "end",
+        "course_image": "course_image.jpg",
+        "days_early_for_beta": 300.0,
+        "discussion_blackouts": [
+            [
+                "2021-07-02T14:00",
+                "2021-07-06T23:30"
+            ],
+            [
+                "2021-07-30T14:00",
+                "2021-08-03T23:30"
+            ]
+        ],
+        "discussion_topics": {
+            "General": {
+                "id": "course"
+            }
+        },
+        "display_coursenumber": "6.00.1x",
+        "display_name": "Introduction to Computer Science and Programming Using Python",
+        "edxnotes": true,
+        "enable_subsection_gating": true,
+        "enable_timed_exams": true,
+        "end": "2021-08-04T23:30:00Z",
+        "enrollment_end": "2021-07-21T23:59:00Z",
+        "enrollment_start": null,
+        "graceperiod": "2700 seconds",
+        "highlights_enabled_for_messaging": true,
+        "info_sidebar_name": "Course Links",
+        "instructor_info": {
+            "instructors": []
+        },
+        "language": "en",
+        "learning_info": [],
+        "lti_passports": [],
+        "minimum_grade_credit": 0.65,
+        "mobile_available": true,
+        "self_paced": false,
+        "show_reset_button": true,
+        "showanswer": "attempted",
+        "start": "2021-06-02T15:00:00Z",
+        "tabs": [
+            {
+                "course_staff_only": false,
+                "name": "Home",
+                "type": "course_info"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Course",
+                "type": "courseware"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Textbooks",
+                "type": "textbooks"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Discussion",
+                "type": "discussion"
+            },
+            {
+                "course_staff_only": false,
+                "is_hidden": true,
+                "name": "Wiki",
+                "type": "wiki"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Progress",
+                "type": "progress"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Notes",
+                "type": "edxnotes"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Calendar",
+                "type": "static_tab",
+                "url_slug": "e9b01dbc537a47aea8f77bed14675329"
+            }
+        ],
+        "user_partitions": [],
+        "video_upload_pipeline": {},
+        "xml_attributes": {
+            "filename": [
+                "course/course.xml",
+                "course/course.xml"
+            ]
+        }
+    }
+}

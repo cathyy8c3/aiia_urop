@@ -1,0 +1,121 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 3 minutes
+Consider the following function definition: 
+
+def maxOfThree(a,b,c) :
+    """
+    a, b, and c are numbers
+
+    returns: the maximum of a, b, and c        
+    """
+    if a > b:
+        bigger = a
+
+    else:
+        bigger = b
+
+    if c > bigger:
+        bigger = c
+
+    return bigger
+
+Assume that 
+maxOfThree
+Which of the following test suites would make a path-complete glass box test suite for 
+maxOfThree
+
+      
+
+        
+
+          
+Review: Glass Box Test Suites
+
+          
+Recall from the lecture that a path-complete glass box test suite would find 
+	  test cases that go through every possible path in the code. This is different from 
+	  black-box testing, because in black-box testing you only have the function specification.
+	  For glass-box testing, you actually know how the function you are testing is defined.
+	  Thus you can use this definition to figure out how many different paths through the code
+	  exist, and then pick a test suite based on that knowledge.
+Undoubtably many - if not all - of the listed tests look like they would be pretty good
+	  for testing the function 
+maxOfThree
+maxOfThree
+
+      
+
+        
+
+          
+
+            
+
+              
+ Test Suite A:
+	      
+maxOfThree(2, -10, 100)
+maxOfThree(7, 9, 10)
+maxOfThree(6, 1, 5)
+maxOfThree(0, 40, 20)
+
+            
+
+              
+ Test Suite B:
+	      
+maxOfThree(10, 100, -20)
+maxOfThree(99, 0, 20)
+maxOfThree(1, 60, 300)
+
+            
+
+              
+ Test Suite C:
+	      
+maxOfThree(0, 0, 0)
+maxOfThree(-3, -10, -1)
+maxOfThree(10, 30, 100)
+maxOfThree(0, -9, 11)
+maxOfThree(-10, 0, 30)
+
+      
+
+        
+
+          
+
+            
+Explanation:
+ Recall from the lecture that a path-complete glass box test suite would find test cases that go through 
+	    every possible path in the code. In this case, that means finding all possibilities for the conditional tests 
+a > b
+c > bigger
+
+            
+Case 1: 
+a > b
+c > bigger
+maxOfThree(2, -10, 100)
+Case 2: 
+a > b
+c <= bigger
+maxOfThree(6, 1, 5)
+Case 3: 
+a <= b
+c > bigger
+maxOfThree(7, 9, 10)
+Case 4: 
+a <= b
+c <= bigger
+maxOfThree(0, 40, 20)
+Test Suite B seems to explicitly test each of 
+a
+b
+c
+Test Suite C seems to be a good sampling of the space of input numbers, but it does not go through all possible paths in the code.

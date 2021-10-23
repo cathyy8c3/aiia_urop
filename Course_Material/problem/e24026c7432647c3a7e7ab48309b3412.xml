@@ -1,0 +1,77 @@
+<problem display_name="Exercise: hand" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" weight="5.0">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 14 minutes</b>
+    </p>
+    <p>In this problem, you'll be asked to read through an object-oriented implementation
+      of the hand from the word game problem of Problem Set 4. You'll then be asked to implement one of
+      its methods. Note that the implementation of the object-oriented version of the hand is a bit
+      different than how we did things with the functional implementation; pay close attention to 
+      doc strings and read through the implementation carefully.</p>
+    <p>To begin: Download <a href="/static/hand.py">hand.py</a> 
+      and read through the file. Be sure to understand what's going on in the file. Make a few instances of 
+      the <code>Hand</code> class, and play around with the existing methods.</p>
+    <p>When you have completed reading through the file, implement the <code>update</code> method.</p>
+    <p>Paste the entire <code>Hand</code> class in the box below.</p>
+    <p> The <code>__str__</code> method is this:</p>
+    <pre>    def __str__(self):
+        '''
+        Display a string representation of the hand.
+        '''
+        output = ''        
+        hand_keys = sorted(self.hand.keys())
+        for letter in hand_keys:
+            for j in range(self.hand[letter]):
+                output += letter
+        return output</pre>
+
+    <p>Use this <code>__str__</code> method to ensure the grading of 
+  the hand's display is consistent.</p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+# Paste the entire Hand class in this box
+</initial_display>
+      <answer_display>
+# This is the solution for the update method only. 
+
+    def update(self, word):
+        """
+        Does not assume that self.hand has all the letters in word.
+
+        Updates the hand: if self.hand does have all the letters to make
+        the word, modifies self.hand by using up the letters in the given word.
+
+        Returns True if the word was able to be made with the letter in
+        the hand; False otherwise.
+        
+        word: string
+        returns: Boolean (if the word was or was not made)
+        """
+        # Make a copy of the hand, and try to update it
+        new_hand = self.hand.copy()
+        for letter in word:
+            try:
+                new_hand[letter] -= 1
+            except KeyError:
+                # if 'letter' isn't in the hand, we can't make the word from this hand.
+                return False
+        for letter in new_hand.keys():
+            # If any of the letter counts of the new hand are less than zero after the
+            # update, then we can't make the word from this hand.
+            if new_hand[letter] &lt; 0:
+                return False
+        # If we've gotten to here, we must be able to make the word from this hand.
+        # Set self.hand to the new, updated hand and return True.
+        self.hand = new_hand
+        return True
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L11/handClass/grade_handClass.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <p><b>Note:</b> Strings in the test cases in "See full output" are actually srings. When you test your code, they should be myHand.update('shoe') not myHand.update(shoe).</p>
+</problem>

@@ -1,0 +1,29 @@
+
+  
+For this problem, the graders will use our implementation of the 
+Message
+PlaintextMessage
+Message
+Implement the methods in the class 
+PlaintextMessage
+
+    
+__init__(self, text, shift)
+The getter method 
+get_shift(self)
+The getter method 
+get_encrypting_dict(self)
+The getter method 
+get_message_text_encrypted(self)
+change_shift(self, shift)
+Paste your implementation of the entire 
+PlaintextMessage
+
+    
+
+      
+
+
+
+{"grader": "ps06/caesar2/grade_plaintextmessage.py"}
+

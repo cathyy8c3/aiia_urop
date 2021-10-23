@@ -1,0 +1,36 @@
+<problem>
+  <text>
+    <p>Write a function called <code>gcd</code> that calculates the greatest common divisor of two positive integers. The gcd of two or more integers, when at least one of them is not zero, is the largest positive integer that divides the numbers without a remainder.</p>
+
+<p>One way is recursively, where the greatest common denominator of <code>a</code> and <code>b</code> can be calculated as 
+  <code>gcd(a, b) = gcd(b, a mod b)</code>. Hint: remember the mod symbol is % in Python. Do not import anything. 
+    </p>
+    <p>
+      For example, the greatest common divisor (gcd) between <code>a = 20</code> and <code>b = 12</code> is:<br/>
+<code>gcd(20,12)</code> is the same as 	<code>gcd(12, 20 mod 12)	= gcd(12,8)</code><br/>
+<code>gcd(12,8)</code> 	is the same as 	<code>gcd(8, 12 mod 8)		= gcd(8,4)</code><br/>
+<code>gcd(8,4)</code>	is the same as 	<code>gcd(4, 8 mod 4) 		= gcd(4,0)</code><br/>
+The gcd is found (and the gcd is equal to <code>a</code>) when we reach 0 for <code>b</code>. 
+ </p>
+    <pre>def gcd(a, b):
+    """
+    a, b: two positive integers
+    Returns the greatest common divisor of a and b
+    """
+    #YOUR CODE HERE
+
+</pre>
+    <p>Paste your entire function, including the definition, in the box below. Do not leave any print statements.</p>
+
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="70" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display># Paste your code here
+</initial_display>
+      <grader_payload>
+        {"grader": "quiz/60001_f2016/gcd/grade_gcd.py", "hide_output": true}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+      </text>
+</problem>

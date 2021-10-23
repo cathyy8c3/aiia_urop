@@ -1,0 +1,9 @@
+<problem display_name="Problem 2-4" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" max_attempts="1" showanswer="never">
+  <p>The base case for the recursive version of merge sort from lecture is checking ONLY for the list being empty.</p>
+  <multiplechoiceresponse>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">True</choice>
+      <choice correct="true">False</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

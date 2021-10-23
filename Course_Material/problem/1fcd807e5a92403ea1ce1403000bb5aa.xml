@@ -1,0 +1,72 @@
+<problem display_name="Exercise 5" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 3 minutes</b>
+    </p>
+    <p>
+Consider the following function definition: </p>
+    <pre>
+def foo(x, a):
+   """
+   x: a positive integer argument
+   a: a positive integer argument
+
+   returns an integer
+   """
+   count = 0
+   while x &gt;= a:
+      count += 1
+      x = x - a
+   return count
+</pre>
+    <p>
+      Please select the best glass box test suite for the function <code>foo</code> 
+      from the following options. </p>
+    <p>
+      <choiceresponse>
+        <radiogroup direction="vertical">
+          <choice correct="false" name="1">
+            <span>
+              <text> Test Suite A:
+	      <code>foo(2, 5)</code>, <code>foo(5, 6)</code>, <code>foo(9, 7)</code> 
+	  </text>
+            </span>
+          </choice>
+          <choice correct="true" name="2">
+            <span>
+              <text> Test Suite B:
+	      <code>foo(10, 3)</code>, <code>foo(1, 4)</code>, <code>foo(10, 6)</code> 
+	  </text>
+            </span>
+          </choice>
+          <choice correct="false" name="3">
+            <span>
+              <text> Test Suite C:
+	      <code>foo(100, 5)</code>, <code>foo(96, 5)</code>, <code>foo(22, 5)</code> 
+	  </text>
+            </span>
+          </choice>
+        </radiogroup>
+      </choiceresponse>
+    </p>
+    <p>
+      <solution>
+        <div class="detailed-solution">
+          <p>
+            <b>Explanation:</b>
+          </p>
+          <p>In glass box testing, we try to sample as many paths through the code as we can. 
+	    In the case of loops, we want to sample three general cases:</p>
+          <ol>
+            <li>Not executing the loop at all. </li>
+            <li>Executing the loop exactly once. </li>
+            <li>Executing the loop multiple times.</li>
+          </ol>
+          <p>Test Suite B has cases that explores all three loop cases.</p>
+          <p>Test Suite A only explores paths that execute the loop 0 or 1 times.</p>
+          <p>Test Suite C only explores paths that execute the loop more than 1 time.</p>
+        </div>
+      </solution>
+    </p>
+  </text>
+</problem>

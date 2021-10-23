@@ -1,0 +1,60 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 3 minutes
+      Note that you will have to answer all questions before you can click the Check button.
+
+For each of the following expressions, indicate the type of the expression. While you could simply type these expressions into your shell, we encourage you to answer them directly since this will help reinforce your understanding of basic Python expressions. 
+
+      
+
+        
+
+          
+
+            
+Note: The Python 'None' keyword
+In Python, the keyword 
+None
+None
+NoneType
+
+      
+
+        
+
+          
+3.14 
+
+            
+
+        
+
+          
+-34 
+
+            
+
+        
+
+          
+True 
+
+            
+
+        
+
+          
+None 
+
+            
+
+        
+
+          
+3.0 
+
+            

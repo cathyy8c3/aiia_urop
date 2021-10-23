@@ -1,0 +1,116 @@
+<problem display_name="Exercise 6" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 10 minutes</b>
+    </p>
+    <p>
+Below are some short Python programs. For each program, answer the associated questions. </p>
+    <p>
+Try to answer the questions without running the code. Check your answers, then run the code for the ones you get wrong. You'll learn the most this way, by figuring things out, instead of just running the code and reading off the answers. </p>
+    <ol>
+      <li>
+        <pre>myStr = '6.00x'
+
+for char in myStr:
+    print(char)
+
+print('done')</pre>
+        <ol>
+          <li>
+            <p>           
+How many times does <code>6</code> print out? <stringresponse answer="1"><textline size="50"/></stringresponse> </p>
+          </li>
+          <li>
+            <p>            
+How many times does <code>.</code> print out? <stringresponse answer="1"><textline size="50"/></stringresponse> </p>
+          </li>
+          <li>
+            <p>            
+How many times does <code>0</code> print out? <stringresponse answer="2"><textline size="50"/></stringresponse> </p>
+          </li>
+          <li>
+            <p>            
+How many times does <code>x</code> print out? <stringresponse answer="1"><textline size="50"/></stringresponse> </p>
+          </li>
+          <li>
+            <p>           
+How many times does <code>done</code> print out? <stringresponse answer="1"><textline size="50"/></stringresponse> </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <pre>greeting = 'Hello!'
+count = 0
+
+for letter in greeting:
+    count += 1
+    if count % 2 == 0:
+        print(letter)
+    print(letter)
+
+print('done')</pre>
+        <ol>
+          <li>
+            <p>
+How many times does <code>H</code> print out? <stringresponse answer="1"><textline size="50"/></stringresponse> </p>
+          </li>
+          <li>
+            <p>            
+How many times does <code>e</code> print out? Disregard the letters in the word done.<stringresponse answer="2"><textline size="50"/></stringresponse> </p>
+          </li>
+          <li>
+            <p>            
+How many times does <code>l</code> print out? <stringresponse answer="3"><textline size="50"/></stringresponse> </p>
+          </li>
+          <li>
+            <p>            
+How many times does <code>o</code> print out? Disregard the letters in the word done.<stringresponse answer="1"><textline size="50"/></stringresponse> </p>
+          </li>
+          <li>
+            <p>
+How many times does <code>!</code> print out? <stringresponse answer="2"><textline size="50"/></stringresponse> </p>
+          </li>
+          <li>
+            <p>
+How many times does <code>done</code> print out? <stringresponse answer="1"><textline size="50"/></stringresponse> </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <pre>school = 'Massachusetts Institute of Technology'
+numVowels = 0
+numCons = 0
+
+for char in school:
+    if char == 'a' or char == 'e' or char == 'i' \
+       or char == 'o' or char == 'u':
+        numVowels += 1
+    elif char == 'o' or char == 'M':
+        print(char)
+    else:
+        numCons -= 1
+
+print('numVowels is: ' + str(numVowels))
+print('numCons is: ' + str(numCons)) </pre>
+        <ol>
+          <li>
+            <p>      
+              How many times does <code>o</code> print out? Disregard the <code>o</code>'s in last two print statements.<stringresponse answer="0"><textline size="50"/></stringresponse> </p>
+          </li>
+          <li>
+            <p>      
+How many times does <code>M</code> print out? <stringresponse answer="1"><textline size="50"/></stringresponse> </p>
+          </li>
+          <li>
+            <p>
+What will the value of the variable <code>numVowels</code> be? <stringresponse answer="11"><textline size="50"/></stringresponse> </p>
+          </li>
+          <li>
+            <p>
+What will the value of the variable <code>numCons</code> be? <stringresponse answer="-25"><textline size="50"/></stringresponse> </p>
+          </li>
+        </ol>
+      </li>
+    </ol>
+  </text>
+</problem>

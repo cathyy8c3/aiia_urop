@@ -1,0 +1,78 @@
+<problem display_name="Exercise: power recur new" markdown="null" weight="5.0">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 10 minutes</b>
+    </p>
+    <p>The function <code>recurPower(base, exp)</code> from Problem 2 computed 
+      [mathjaxinline]\mathrm{base}^{\mathrm{exp}}[/mathjaxinline] by decomposing the 
+      problem into one recursive case and one base case: </p>
+    <p>
+      <html>
+	[mathjax] \eqalign{\mathrm{base}^{\mathrm{exp}} &amp; =&amp; \mathrm{base} \cdot \mathrm{base}^{\mathrm{exp}-1}\; &amp; \mathrm{if}\;  \mathrm{exp} &gt; 0\\
+	\mathrm{base}^{\mathrm{exp}} &amp; =&amp; 1\;  &amp; \mathrm{if}\;  \mathrm{exp} = 0}
+	[/mathjax]
+      </html>
+    </p>
+    <p>Another way to solve this problem just using multiplication (and remainder) is to note that </p>
+    <p>
+      <html>
+	[mathjax]
+	\eqalign{
+	\mathrm{base}^{\mathrm{exp}} &amp; = &amp; (\mathrm{base}^2)^{\frac{\mathrm{exp}}{2}}\;  &amp; \mathrm{if}\;  \mathrm{exp} &gt; 0\;  \mathrm{and}\;  \mathrm{exp}\;  \mathrm{is}\;  \mathrm{even} \\
+
+	\mathrm{base}^{\mathrm{exp}} &amp; =&amp;  \mathrm{base} \cdot \mathrm{base}^{\mathrm{exp}-1}\; &amp;  \mathrm{if}\;  \mathrm{exp} &gt; 0\;  \mathrm{and}\;  \mathrm{exp}\;  \mathrm{is}\;  \mathrm{odd} \\
+	
+	\mathrm{base}^{\mathrm{exp}} &amp; = &amp; 1\; &amp;  \mathrm{if}\;  \mathrm{exp} = 0}
+	[/mathjax]
+    </html>
+    </p>
+    <p>Write a procedure <code>recurPowerNew</code> which recursively computes exponentials 
+      using this idea. </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def recurPowerNew(base, exp):
+    '''
+    base: int or float.
+    exp: int &gt;= 0
+
+    returns: int or float; base^exp
+    '''
+    # Your code here
+</initial_display>
+      <answer_display>
+def recurPowerNew(base, exp):
+    '''
+    base: int or float.
+    exp: int &gt;= 0
+
+    returns: int or float; base^exp
+    '''
+    # Base case is when exp = 0
+    if exp &lt;= 0:
+        return 1
+
+    # Recursive case 1: exp &gt; 0 and even
+    elif exp % 2 == 0:
+        return recurPowerNew(base*base, exp/2)
+
+    # Otherwise, exp must be &gt; 0 and odd, so use the second
+    #  recursive case.
+    return base * recurPowerNew(base, exp - 1)
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L5/recurPowerNew/grade_recurPowerNew.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <text>
+    <p>Note: In programming there are many ways to solve a problem. For your code to check correctly 
+  here, though, you must write your recursive function such that you make a recursive call 
+  directly to the function <code>recurPowerNew</code>. Thank you for understanding.
+</p>
+    <p><b>If you are getting the error stating that "Your code should be recursive" when you already make a call to <code>recurPowerNew</code></b>: check your indention -- specifically, a common mistake is that your function and docstring do not start at the same indentation level.
+    </p>
+  </text>
+</problem>

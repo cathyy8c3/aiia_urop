@@ -1,0 +1,133 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 10 minutes
+
+Below are some short Python programs. For each program, answer the associated questions. 
+
+Try to answer the questions without running the code. Check your answers, then run the code for the ones you get wrong. 
+
+      
+
+        
+iteration = 0
+count = 0
+while iteration < 5:
+    # the variable 'letter' in the loop stands for every 
+    # character, including spaces and commas!
+    for letter in "hello, world": 
+        count += 1
+    print("Iteration " + str(iteration) + "; count is: " + str(count))
+    iteration += 1 
+
+          
+
+            
+
+What is the value of the variable 
+count
+print
+
+            
+
+What is the value of the variable 
+count
+print
+
+            
+
+What is the value of the variable 
+count
+print
+
+            
+
+What is the value of the variable 
+count
+print
+
+            
+
+What is the value of the variable 
+count
+print
+
+        
+iteration = 0
+while iteration < 5:
+    count = 0
+    for letter in "hello, world":
+        count += 1
+    print("Iteration " + str(iteration) + "; count is: " + str(count))
+    iteration += 1 
+
+          
+
+            
+
+What is the value of the variable 
+count
+print
+
+            
+
+What is the value of the variable 
+count
+print
+
+            
+
+What is the value of the variable 
+count
+print
+
+            
+
+What is the value of the variable 
+count
+print
+
+            
+
+What is the value of the variable 
+count
+print
+
+        
+iteration = 0
+while iteration < 5:
+    count = 0
+    for letter in "hello, world":
+        count += 1
+        if iteration % 2 == 0:
+            break
+    print("Iteration " + str(iteration) + "; count is: " + str(count))
+    iteration += 1 
+
+          
+
+            
+
+How many times will the 
+print
+
+            
+
+What is the largest value of the variable 
+iteration
+print
+
+            
+
+What is the largest value of the variable 
+count
+print
+
+            
+
+What is the smallest value of the variable 
+count
+print

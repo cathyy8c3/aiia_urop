@@ -1,0 +1,12 @@
+
+  
+For large values of 
+n
+20000n^2
+0.001n^5
+
+    
+
+      
+True
+False

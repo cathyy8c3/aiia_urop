@@ -1,0 +1,144 @@
+<problem display_name="Exercise 2" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 10 minutes</b>
+    </p>
+    <p>
+Consider the following code: </p>
+    <pre>x = 25
+epsilon = 0.01
+step = 0.1
+guess = 0.0
+
+while guess &lt;= x:
+    if abs(guess**2 -x) &lt; epsilon:
+        break
+    else:
+        guess += step
+
+if abs(guess**2 - x) &gt;= epsilon:
+    print('failed')
+else:
+    print('succeeded: ' + str(guess))</pre>
+    <p>
+If this code is executed, it will print <code>succeeded: 4.9999999999998</code> (or <code>succeeded: 5.0</code>). Remember floating point errors?</p>
+    <p>
+Now suppose we try the following: </p>
+    <pre>x = 25
+epsilon = 0.01
+step = 0.1
+guess = 0.0
+
+while guess &lt;= x:
+    if abs(guess**2 -x) &gt;= epsilon:
+        guess += step
+
+if abs(guess**2 - x) &gt;= epsilon:
+    print('failed')
+else:
+    print('succeeded: ' + str(guess))</pre>
+    <p>Select the answer that best describes what occurs when the above code is executed: </p>
+    <p>
+      <choiceresponse>
+        <radiogroup direction="vertical">
+          <choice correct="false" name="1">
+            <span>
+              <text>Script successfully completes, and prints out <code>succeeded: 4.9999999999998</code> (or <code>succeeded: 5.0</code>)</text>
+            </span>
+          </choice>
+          <choice correct="false" name="2">
+            <span>
+              <text>Script successfully completes, but prints out <code>failed</code> </text>
+            </span>
+          </choice>
+          <choice correct="false" name="3">
+            <span>
+              <text>Script successfully completes, but prints out <code>succeeded: </code> followed by some number not really close to 5.0 </text>
+            </span>
+          </choice>
+          <choice correct="true" name="4">
+            <span>
+              <text>Script enters an infinite loop and never terminates </text>
+            </span>
+          </choice>
+        </radiogroup>
+      </choiceresponse>
+    </p>
+    <p>Now suppose we try </p>
+    <pre>x = 25
+epsilon = 0.01
+step = 0.1
+guess = 0.0
+
+while abs(guess**2-x) &gt;= epsilon:
+    if guess &lt;= x:
+        guess += step
+    else:
+        break
+
+if abs(guess**2 - x) &gt;= epsilon:
+    print('failed')
+else:
+    print('succeeded: ' + str(guess))</pre>
+    <p>Select the answer that best describes what occurs when the above code is executed: </p>
+    <p>
+      <choiceresponse>
+        <radiogroup direction="vertical">
+          <choice correct="true" name="1">
+            <span>
+              <text>Script successfully completes, and prints out <code>succeeded: 4.9999999999998</code> (or <code>succeeded: 5.0</code>) </text>
+            </span>
+          </choice>
+          <choice correct="false" name="2">
+            <span>
+              <text>Script successfully completes, but prints out <code>failed</code> </text>
+            </span>
+          </choice>
+          <choice correct="false" name="3">
+            <span>
+              <text>Script successfully completes, but prints out <code>succeeded: </code> followed by some number not really close to 5.0 </text>
+            </span>
+          </choice>
+          <choice correct="false" name="4">
+            <span>
+              <text>Script enters an infinite loop and never terminates </text>
+            </span>
+          </choice>
+        </radiogroup>
+      </choiceresponse>
+    </p>
+    <p>Finally, let's use the same code as immediately above, but change the first line to <code>x = 23</code>. Note that the square root of 23 is roughly 4.7958. </p>
+    <p>Select the answer that best describes what occurs when the modified code is executed: </p>
+    <p>
+      <choiceresponse>
+        <radiogroup direction="vertical">
+          <choice correct="false" name="1">
+            <span>
+              <text>Script successfully completes, and prints out <code>succeeded: 4.9999999999998</code> (or <code>succeeded: 5.0</code>) </text>
+            </span>
+          </choice>
+          <choice correct="true" name="2">
+            <span>
+              <text>Script successfully completes, but prints out <code>failed</code> </text>
+            </span>
+          </choice>
+          <choice correct="false" name="3">
+            <span>
+              <text>Script successfully completes, but prints out <code>succeeded: </code> followed by some number not really close to 5.0 </text>
+            </span>
+          </choice>
+          <choice correct="false" name="4">
+            <span>
+              <text>Script enters an infinite loop and never terminates </text>
+            </span>
+          </choice>
+        </radiogroup>
+      </choiceresponse>
+    </p>
+    <p><b class="bfseries">Hint:</b> If any of the above answers confuse you, 
+      try running the code on your own machine and inserting print statements 
+      to print out intermediate values of variables so you can examine what 
+      happens to certain variables - for example, <code>guess</code> - as the 
+      program is executed. </p>
+  </text>
+</problem>

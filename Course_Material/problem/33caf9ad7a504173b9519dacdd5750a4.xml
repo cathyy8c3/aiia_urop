@@ -1,0 +1,153 @@
+<problem display_name="Exercise 4" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 8 minutes</b>
+    </p>
+    <script type="text/python" system_path="python_lib">
+def test_csv(expect, ans):
+   # Take out all spaces in expected answer
+   expect = [i.strip(' ') for i in str(expect).split(',')]
+   # Take out all spaces in student solution
+   ans = ans.rstrip(' ')
+   ans = ans.rstrip(',')
+   ans = [i.strip(' ') for i in str(ans).split(',')]
+   
+
+   def strip_q(x):
+      # Strip quotes around strings if students have entered them
+      stripped_ans = []
+      for item in x:
+         if item[0] == "'" and item[-1]=="'":
+            item = item.strip("'")
+         elif item[0] == '"' and item[-1] == '"':
+            item = item.strip('"') #" (quote to fix syntax highlighting in emacs)
+         stripped_ans.append(item)
+      return stripped_ans 
+
+   return strip_q(expect) == strip_q(ans)
+</script>
+    <p>
+Below are some short Python programs. For each program, answer the associated question. </p>
+    <p>
+Try to answer the questions without running the code. Check your answers, then run the code for the ones you get wrong. </p>
+    <p>
+This question is going to ask you what some simple loops print out. If you're asked what code like this prints: </p>
+    <pre>num = 5
+if num &gt; 2:
+    print(num)
+    num -= 1
+print(num)</pre>
+    <p>
+write what it prints out, separating what appears on a new line by a comma and a space. So the answer for the above code would be: </p>
+    <pre>5, 4</pre>
+    <p>
+If a given loop will not terminate, write the phrase 'infinite loop' (no quotes) in the box. Recall that you can stop an infinite loop in your program by typing CTRL+c in the console.</p>
+    <section class="hints">
+      <div class="collapsible">
+        <header>
+          <a href="#" id="id71">Note: What does <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code> stand for? </a>
+        </header>
+        <section id="id71">
+          <p><code>a += b  </code> is equivalent to <code> a = a + b</code>
+      </p>
+          <p><code>a -= b </code> is equivalent to  <code>a = a - b</code>
+      </p>
+          <p><code>a *= b  </code> is equivalent to  <code>a = a * b</code>
+      </p>
+          <p><code>a /= b </code> is equivalent to  <code>a = a / b</code>
+      </p>
+        </section>
+      </div>
+    </section>
+    <p>
+    </p>
+    <ol class="enumerate">
+      <li>
+        <pre>num = 0
+while num &lt;= 5:
+    print(num)
+    num += 1
+
+print("Outside of loop")
+print(num) </pre>
+        <p>
+          <fieldset>
+            <customresponse cfn="test_csv" expect="0, 1, 2, 3, 4, 5, 'Outside of loop', 6">
+              <textline size="50" correct_answer="0, 1, 2, 3, 4, 5, 'Outside of loop', 6"/>
+            </customresponse>
+          </fieldset>
+        </p>
+      </li>
+      <li>
+        <pre>numberOfLoops = 0
+numberOfApples = 2
+while numberOfLoops &lt; 10:
+    numberOfApples *= 2
+    numberOfApples += numberOfLoops
+    numberOfLoops -= 1
+print("Number of apples: " + str(numberOfApples))</pre>
+        <p>
+          <fieldset>
+            <stringresponse answer="infinite loop">
+              <textline size="50"/>
+            </stringresponse>
+          </fieldset>
+        </p>
+      </li>
+      <li>
+        <pre>num = 10
+while num &gt; 3:
+    num -= 1
+    print(num) </pre>
+        <p>
+          <fieldset>
+            <customresponse cfn="test_csv" expect="9, 8, 7, 6, 5, 4, 3">
+              <textline size="50" correct_answer="9, 8, 7, 6, 5, 4, 3"/>
+            </customresponse>
+          </fieldset>
+        </p>
+      </li>
+      <li>
+        <pre>num = 10
+while True:
+    if num &lt; 7:
+        print('Breaking out of loop')
+        break
+    print(num)
+    num -= 1
+print('Outside of loop')</pre>
+        <p><b class="bfseries">Note:</b> If the command <code>break</code> is executed 
+  within a loop, it halts evaluation of the loop at that point and passes control 
+  to the next expression. Test some <code>break</code> statements inside different
+  loops if you don't understand this concept!</p>
+        <p>
+          <fieldset>
+            <customresponse cfn="test_csv" expect="10, 9, 8, 7, 'Breaking out of loop', 'Outside of loop'">
+              <textline size="50" correct_answer="10, 9, 8, 7, 'Breaking out of loop', 'Outside of loop'"/>
+            </customresponse>
+          </fieldset>
+        </p>
+      </li>
+      <li>
+        <pre>num = 100
+while not False:
+    if num &lt; 0:
+        break
+print('num is: ' + str(num)) </pre>
+        <p>
+          <fieldset>
+            <stringresponse answer="infinite loop">
+              <textline size="50"/>
+            </stringresponse>
+          </fieldset>
+        </p>
+      </li>
+    </ol>
+    <solution>
+      <p>
+        <b>Explanation:</b>
+      </p>
+      <p>For the last exercise, the code never breaks. You enter the loop with <code>num</code> value of 100 and since the value of <code>num</code> never changes, <code>num &lt; 0</code> is never <code>True</code> so <code>break</code> is never executed. Therefore you are stuck in an infinite loop.</p>
+    </solution>
+  </text>
+</problem>

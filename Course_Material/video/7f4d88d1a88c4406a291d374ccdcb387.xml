@@ -1,0 +1,15 @@
+<video youtube="1.00:K05AI_VEiqI" url_name="7f4d88d1a88c4406a291d374ccdcb387" sub="" transcripts="{&quot;en&quot;: &quot;519a847c-aa15-485e-9ee2-21dedbd8947e-en.srt&quot;}" display_name="Video: Exceptions as Control Flow" download_track="true" download_video="true" edx_video_id="519a847c-aa15-485e-9ee2-21dedbd8947e" handout="/asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture8.zip" html5_sources="[]" youtube_id_1_0="K05AI_VEiqI">
+  <handout src="/asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture8.zip"/>
+  <video_asset client_video_id="L8_S3.mp4" duration="704.52" image="video-images/acba6ac721e1478d9351965118688b4c.jpeg">
+    <encoded_video profile="hls" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V004700/MITX60012016-V004700.m3u8" file_size="0" bitrate="0"/>
+    <encoded_video profile="audio_mp3" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V004700_AUD.mp3" file_size="16909929" bitrate="192"/>
+    <encoded_video profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V004700_DTH.mp4" file_size="28946695" bitrate="328"/>
+    <encoded_video profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V004700_MB2.mp4" file_size="18025574" bitrate="204"/>
+    <encoded_video profile="youtube" url="K05AI_VEiqI" file_size="0" bitrate="0"/>
+    <encoded_video profile="mobile_high" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V004700_MB1.mp4" file_size="20688130" bitrate="234"/>
+    <transcripts>
+      <transcript language_code="en" file_format="srt" provider="Custom"/>
+    </transcripts>
+  </video_asset>
+  <transcript language="en" src="519a847c-aa15-485e-9ee2-21dedbd8947e-en.srt"/>
+</video>

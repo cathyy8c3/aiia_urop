@@ -1,0 +1,103 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 5 minutes
+Here is some code for linear search that uses the fact that a set of elements is sorted in increasing order: 
+
+def search(L, e):
+    for i in range(len(L)):
+        if L[i] == e:
+            return True
+        if L[i] > e:
+            return False
+    return False
+
+
+Consider the following code, which is an alternative version of 
+search
+
+def search1(L, e):
+    for i in L:
+        if i == e:
+            return True
+        if i > e:
+            return False
+    return False
+
+
+Which of the following statements is correct? You may assume that each function is tested with a list 
+L
+L
+
+      
+
+        
+
+          
+
+            
+
+              
+search
+search1
+
+            
+
+              
+search
+search1
+L
+
+            
+
+              
+search
+search1
+L
+e
+L
+
+            
+
+              
+search
+search1
+
+            
+
+              
+search
+search1
+
+      
+
+        
+
+          
+
+            
+Explanation:
+
+	    It is equally valid to iterate over the indicies of a list (as in 
+search
+search1
+for
+L = [4, 9, 2]
+for i in range(len(L)):
+is 
+actually
+for i in range(3): 
+which is 
+actually
+for i in [0, 1, 2]: 
+So iterating over the indicies of a list (as in 
+search
+for i in L: 
+is 
+actually
+for i in [4, 9, 2]: 
+Both methods of iteration are equally valid. At the end of the day, you should iterate in a way
+	  that makes sense to you.

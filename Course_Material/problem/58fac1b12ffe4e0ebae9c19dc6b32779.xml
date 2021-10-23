@@ -1,0 +1,29 @@
+<problem title="Hand Length" attempts="30" type="lecture" display_name="Problem 4" markdown="null" max_attempts="30" showanswer="never">
+  <style media="all" type="text/css"/>
+  <text>
+    <p>We are now ready to begin writing the code that
+  interacts with the player. We'll be implementing the 
+  <code>playHand</code>  function. This function allows the 
+  user to play out a single hand. First, though, you'll need 
+  to implement the helper <code>calculateHandlen</code> function, 
+  which can be done in under five lines of code.</p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="70" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def calculateHandlen(hand):
+    """ 
+    Returns the length (number of letters) in the current hand.
+    
+    hand: dictionary (string int)
+    returns: integer
+    """
+    # TO DO... &lt;-- Remove this comment when you code this function
+</initial_display>
+      <grader_payload>
+{"grader": "ps04/calHand/grade_calHandLen.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

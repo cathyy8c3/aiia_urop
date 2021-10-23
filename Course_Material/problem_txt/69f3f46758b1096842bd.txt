@@ -1,0 +1,30 @@
+
+  
+
+    
+Write a Python function that takes in a string and prints out a version of this string that does not contain any vowels, according to the specification below. Vowels are uppercase and lowercase 'a', 'e', 'i', 'o', 'u'.
+For example, if 
+s = "This is great!"
+print_without_vowels
+Ths s grt!
+s = "a"
+print_without_vowels
+def print_without_vowels(s):
+    '''
+    s: the string to convert
+    Finds a version of s without vowels and whose characters appear in the 
+    same order they appear in s. Prints this version of s.
+    Does not return anything
+    '''
+    # Your code here
+
+    
+
+      
+# Paste your function here
+
+
+
+{"grader": "quiz/60001_f2015/print_without_vowels/grade_print_without_vowels.py", "hide_output":true}
+
+The "None" in each test case comes from the function call being printed. Your function does not return anything, only prints a string as described above.

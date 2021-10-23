@@ -1,0 +1,117 @@
+
+  
+
+    
+ESTIMATED TIME TO COMPLETE: 8 minutes
+
+def no_space(exp, act):
+    return exp==act or exp.replace(' ', '') == act.replace(' ', '')
+    
+
+    
+Ben Bitdiddle tried to implement 
+fibMetered
+
+def fibMetered(x):
+    global numCalls
+    numCalls += 1
+    if x == 0 or x == 1:
+        return 1
+    else:
+        return fibMetered(x-1) + fibMetered(x-2)
+
+def testFib(n):
+    global numCalls
+    numCalls = 0
+    for i in range(n+1):
+        print('fib of ' + str(i) + ' = ' + str(fibMetered(i)))
+        print ('fib called ' + str(numCalls) + ' times')
+
+testFib(10)
+
+What function is the mistake in?
+
+      
+
+        
+
+          
+
+            
+
+              
+
+                
+fibMetered
+
+            
+
+              
+
+                
+testFib
+What line should be changed to make this code work? Paste the original line
+    in the following box:
+
+      
+
+        
+What do the printed 
+numCall
+
+      
+
+        
+
+          
+
+            
+
+              
+Number of recursive function calls that happened for each specific Fibonacci number 
+
+            
+
+              
+Number of recursive function calls to 
+fibMetered
+
+            
+
+              
+Number of total addition operations that happened up to that point in 
+testFib
+
+      
+
+        
+
+          
+
+            
+Explanation:
+Examine Ben's code very carefully to make sure you fully understand what's
+	    going on here. Ben is curious how many recursive calls it takes to calculate
+	    a given Fibonacci number; however, his initialization of the global variable
+	    occurs outside the loop. Thus the value of 
+numCall
+Here is the code that Ben intended to write:
+
+def fibMetered(x):
+    global numCalls
+    numCalls += 1
+    if x == 0 or x == 1:
+        return 1
+    else:
+        return fibMetered(x-1) + fibMetered(x-2)
+
+def testFib(n):
+    global numCalls
+    for i in range(n+1):
+        numCalls = 0
+        print('fib of ' + str(i) + ' = ' + str(fibMetered(i)))
+        print ('fib called ' + str(numCalls) + ' times')
+
+testFib(10)
+
+Make sure you understand this!

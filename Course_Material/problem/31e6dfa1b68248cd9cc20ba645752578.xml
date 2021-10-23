@@ -1,0 +1,13 @@
+<problem display_name="Problem 1-2" group_access="{}" markdown="null" max_attempts="1" showanswer="never" weight="1.0">
+  <p>Suppose <code>x</code> is an integer in the following code:<br/>
+              <pre>def f(x):
+    while x &gt; 3:
+        f(x+1)</pre><br/>
+              For any value of <code>x</code>, all calls to <code>f</code> are guaranteed to never terminate.</p>
+  <multiplechoiceresponse>
+    <choicegroup label="5" type="MultipleChoice">
+      <choice correct="false">True</choice>
+      <choice correct="true">False</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

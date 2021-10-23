@@ -1,0 +1,25 @@
+
+  
+What happens to the time complexity of this 
+modSwapSort
+
+    
+
+      
+
+        
+
+          
+
+            
+ Best and worst cases stay the same.
+
+          
+
+            
+ Worst case stays the same but best case changes.
+
+          
+
+            
+ Best and worst cases change.

@@ -1,0 +1,33 @@
+
+  
+
+    
+
+      Write a recursive Python function, given a non-negative integer 
+N
+Hint: Mod (%) by 10 gives you the rightmost digit (
+126 % 10
+126 // 10
+This function has to be recursive; you may not use loops!
+This function takes in one integer and returns one integer.
+def sumDigits(N):
+    '''
+    N: a non-negative integer
+    '''
+    # Your code here
+    
+
+    
+
+      
+# Paste your function here
+
+def sumDigits(N):
+    if N == 0:
+        return 0
+    mySum = N % 10
+    return sumDigits(N/10) + mySum
+
+
+{"grader": "finger_exercises/L5/sum_digits/grade_sum_digits.py", "hide_output": true}
+

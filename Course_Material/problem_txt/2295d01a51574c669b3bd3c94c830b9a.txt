@@ -1,0 +1,9 @@
+
+  
+A Python program always executes every line of code written at least once.
+
+    
+
+      
+True
+False

@@ -1,0 +1,15 @@
+<problem display_name="Problem 1-9" group_access="{}" markdown="null" max_attempts="1" showanswer="never" weight="1.0">
+  <p>Consider the following function.<br/>
+<pre>def f(x):
+    a = []
+    while x &gt; 0:
+        a.append(x)
+        f(x-1)</pre><br/>
+                    A new object of type list is created for each recursive invocation of <code>f</code>.</p>
+  <multiplechoiceresponse>
+    <choicegroup label="10" type="MultipleChoice">
+      <choice correct="true">True</choice>
+      <choice correct="false">False</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

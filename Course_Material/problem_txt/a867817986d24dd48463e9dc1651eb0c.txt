@@ -1,0 +1,237 @@
+
+  
+
+def no_space(exp, act):
+    return exp==act or exp.replace(' ', '') == act.replace(' ', '')
+ 
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 12 minutes
+For the following programs, fill in the best-case and the worst-case
+      number of steps it will take to run each program.
+For these questions, you'll be asked to write a mathematical expression.
+      Use +, -, / signs to indicate addition, subtraction, and division. Explicitly
+      indicate multiplication with a * (ie say "6*n" rather than "6n").
+      Indicate exponentiation with a caret (^) (ie "n^4" for [mathjaxinline]n^4[/mathjaxinline]).
+      Indicate base-2 logarithms with the word log2 followed by parenthesis (ie "log2(n)").
+
+      
+
+        
+Program 1:
+def program1(L):
+    multiples = []
+    for x in L:
+        for y in L:
+            multiples.append(x*y)
+    return multiples
+What is the number of steps it will take to run Program 1
+	in the best case? Express your answer in terms of 
+n
+L
+
+          
+
+            
+What is the number of steps it will take to run Program 1
+	in the worst case? Express your answer in terms of 
+n
+L
+
+          
+
+            
+
+          
+
+            
+
+              
+
+                
+Explanation:
+In the best case scenario, 
+L
+for x in L
+In the worst case scenario, 
+L
+for x in L
+n
+x
+for y in L
+The inner loop has three operations (assignment of a value to y, x*y, and list appending). 
+		So the inner loop executes 3*n times on 
+each iteration
+Adding in two steps (for the first assignment statement, and the return statement)
+		we see that in the worst case, this program executes 3*n**2 + n + 2 steps.
+
+        
+Program 2:
+def program2(L):
+    squares = []
+    for x in L:
+        for y in L:
+            if x == y:
+                squares.append(x*y)
+    return squares
+What is the number of steps it will take to run Program 2
+	in the best case? Express your answer in terms of 
+n
+L
+
+          
+
+            
+What is the number of steps it will take to run Program 2
+	in the worst case? Express your answer in terms of 
+n
+L
+
+          
+
+            
+
+          
+
+            
+
+              
+
+                
+Explanation:
+In the best case scenario, 
+L
+for x in L
+In the worst case scenario, 
+L
+for x in L
+x
+for y in L
+The inner loop performs one assigment of a value to the variable 
+y
+if x == y
+each iteration
+Adding in two steps (for the first assignment statement, and the return statement)
+		we see that in the worst case, this program executes 4*n**2 + n + 2 steps.
+
+        
+Program 3:
+def program3(L1, L2):
+    intersection = []
+    for elt in L1:
+        if elt in L2:
+            intersection.append(elt)
+    return intersection
+
+What is the number of steps it will take to run Program 3
+	in the best case? Express your answer in terms of 
+n
+L1
+len(L1) == len(L2)
+
+          
+
+            
+What is the number of steps it will take to run Program 3
+	in the worst case? Express your answer in terms of 
+n
+L1
+len(L1) == len(L2)
+
+          
+
+            
+
+          
+
+            
+
+              
+
+                
+Explanation:
+In the best case scenario, 
+L1
+In the worst case scenario, every element of 
+L1
+L2
+for elt in L1
+elt
+if elt in L2
+How long does it take to execute this check? Well in the 
+worst case
+elt
+L2
+if elt in L2
+L2
+L2
+if elt in L2
+each iteration
+for
+Adding in two steps (for the first assignment statement, and the return statement)
+		we see that in the worst case, this program executes n**2 + 2*n + 2 steps.
+
+        
+In the last video, Professor Grimson introduced the idea of "asymptotic complexity", which
+	  means we describe running time in terms of number of basic steps. We've described the best- and
+	  worst-case running times in terms number of basic steps for the three programs above. Now,
+	  we'd like you to give the complexity order (ie, "Big O" running time) of each of the above programs.
+Recall that "Big O" notation gives an upper bound on asymptotic growth of a function. So, should
+	  you use the best-case or the worst-case running times for each program? Review the video again 
+	  if you're unsure of what to put for the following boxes.
+Note: Your answer should be expressed with a capital letter O, then a mathematical term similar to
+	  one described in the introduction to this problem - for example, O(n^5).
+
+          
+
+            
+What is the complexity order of Program 1? 
+
+              
+
+                
+
+            
+What is the complexity order of Program 2? 
+
+              
+
+                
+
+            
+What is the complexity order of Program 3? 
+
+              
+
+                
+
+          
+
+            
+
+              
+
+                
+Explanation:
+Remember the following rules when determining the complexity order of a function:
+
+                
+
+                  
+If running time is a sum of multiple terms, keep one with the largest growth rate (so n**3 
+		    + 100n**2 + 500,000 is O(n**3)).
+
+                  
+If the remaining term is a product (eg 3n**2), drop any multiplicative constants (so 3n**2 is O(n**2)).
+ It's also good to note that if you have a function that takes a constant number of steps - regardless 
+		of the size of the input - the function is O(1), even if it takes 3,000,000 steps every time! This is
+		because the function does not take any additional time as the input grows large.
+Finally, pay attention to the fact that Programs 1, 2, and 3 were all O(n**2). This is important!
+		Generally, a nested loop structure has O(n**2) complexity. This is not the best, as we'll discover
+		in the next lectures in this sequence.
+Reminder: You do not lose points for trying a problem multiple times, nor 
+      do you lose points if you hit "Show Answer". If this problem has you stumped after 
+      you've tried it a few times, feel free to reveal the solution.
+Click the "Reset" button to clear your answers.

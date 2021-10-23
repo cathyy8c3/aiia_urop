@@ -1,0 +1,60 @@
+<problem display_name="Exercise: apply to each 1" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" weight="5.0">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 2 minutes</b>
+    </p>
+    <p>
+Here is the code for a function <code>applyToEach</code>: </p>
+    <pre>
+def applyToEach(L, f):
+    for i in range(len(L)):
+        L[i] = f(L[i])
+</pre>
+    <p>
+Assume that </p>
+    <pre>
+testList = [1, -4, 8, -9]
+</pre>
+    <p>
+For each of the following questions (which you may assume is evaluated independently of the previous questions, so that testList has the value indicated above), provide an expression using <code>applyToEach</code>, so that after evaluation <code>testList</code> has the indicated value. You may need to write a simple procedure in each question to help with this process. </p>
+    <p>
+Example Question: </p>
+    <pre>
+&gt;&gt;&gt; print(testList)
+[5, -20, 40, -45]
+</pre>
+    <p>
+      <section class="hints">
+        <div class="collapsible">
+          <header>
+            <a href="#" id="id61">Solution to Example Question</a>
+          </header>
+          <section id="id61">
+            <pre>
+def timesFive(a):
+    return a * 5
+
+applyToEach(testList, timesFive)
+</pre>
+          </section>
+        </div>
+      </section>
+    </p>
+    <pre>
+  &gt;&gt;&gt; print(testList)
+  [1, 4, 8, 9]
+</pre>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="10" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+# Your Code Here
+</initial_display>
+      <answer_display>applyToEach(testList, abs)</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L6/applyToEach1/grade_ate1.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

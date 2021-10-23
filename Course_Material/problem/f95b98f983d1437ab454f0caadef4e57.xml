@@ -1,0 +1,43 @@
+<problem display_name="clip" markdown="null" weight="5.0">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 8 minutes</b>
+    </p>
+    <p>
+Write a Python function, <code>clip(lo, x, hi)</code> that returns <code>lo</code> if <code>x</code> is less than <code>lo</code>; <code>hi</code> if <code>x</code> is greater than <code>hi</code>; and <code>x</code> otherwise. For this problem, you can assume that <code>lo &lt; hi</code>. </p>
+    <p>
+Don't use any conditional statements for this problem. Instead, use the built in Python functions <code>min</code> and <code>max</code>. You may wish to read the <a href="http://docs.python.org/library/functions.html#min" target="_blank">documentation on min</a> and the <a href="http://docs.python.org/library/functions.html#max" target="_blank">documentation on max</a>, and play around with these functions a bit in your interpreter, before beginning this problem. </p>
+    <p>
+This function takes in three numbers and returns a single number. </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def clip(lo, x, hi):
+    '''
+    Takes in three numbers and returns a value based on the value of x.
+    Returns:
+     - lo, when x &lt; lo
+     - hi, when x &gt; hi
+     - x, otherwise
+    '''
+    # Your code here
+</initial_display>
+      <answer_display>
+def clip(lo, x, hi):
+   '''
+   Takes in three numbers and returns a value based on the value of x.
+   Returns:
+    - lo, when x &lt; lo
+    - hi, when x &gt; hi
+    - x, otherwise
+   '''
+   return min(max(x, lo), hi)
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L4/clip/grade_clip.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

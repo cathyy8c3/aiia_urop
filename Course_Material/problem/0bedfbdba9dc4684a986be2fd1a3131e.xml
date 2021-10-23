@@ -1,0 +1,47 @@
+<problem attempts="1" display_name="Problem 2-7" markdown="null" max_attempts="1" showanswer="never" weight="2.0">
+  <text>
+    <p>The following Python code is supposed to compute the square
+    of an integer by using successive additions.</p>
+    <pre>
+def Square(x):
+    return SquareHelper(abs(x), abs(x))
+
+def SquareHelper(n, x):
+    if n == 0:
+        return 0
+    return SquareHelper(n-1, x) + x
+</pre>
+    <p>Not considering recursion depth limitations, what is wrong with this implementation of procedure <code>Square</code>? Check all
+    that apply.</p>
+    <p>
+      <choiceresponse>
+        <checkboxgroup direction="vertical">
+          <choice correct="false" name="1">
+            <span>It is going to return a wrong value.</span>
+          </choice>
+          <choice correct="false" name="2">
+            <span>The term <code>Square</code> is a reserved Python keyword.</span>
+          </choice>
+          <choice correct="false" name="3">
+            <span>Function names cannot start with a capital letter.</span>
+          </choice>
+          <choice correct="false" name="4">
+            <span>The function is never going to return anything.</span>
+          </choice>
+          <choice correct="false" name="5">
+            <span>Python has arbitrary precision arithmetic.</span>
+          </choice>
+          <choice correct="false" name="6">
+            <span>This function will not work for negative numbers.</span>
+          </choice>
+          <choice correct="false" name="7">
+            <span>The call <code>SquareHelper(abs(x), abs(x))</code> won't work because you can't have <code>abs(x)</code> as both parameters.</span>
+          </choice>
+          <choice correct="true" name="8">
+            <span>Nothing is wrong; the code is fine as-is.</span>
+          </choice>
+        </checkboxgroup>
+      </choiceresponse>
+    </p>
+  </text>
+</problem>

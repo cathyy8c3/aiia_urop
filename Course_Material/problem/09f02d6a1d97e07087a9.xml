@@ -1,0 +1,44 @@
+<problem>
+  <text>
+    <p>
+      Write a Python function that returns a list of keys in <code>aDict</code> that map to integer values
+that are unique (i.e. values appear exactly once in <code>aDict</code>). The list of keys you
+return should be sorted in increasing order. (If <code>aDict</code> does not contain any unique values, you
+      should return an empty list.)</p>
+    <p>This function takes in a dictionary and returns a list.</p>
+    <pre>def uniqueValues(aDict):
+    '''
+    aDict: a dictionary
+    '''
+    # Your code here
+    </pre>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def uniqueValues(aDict):
+    '''
+    aDict: a dictionary
+    '''
+    # Your code here
+          </initial_display>
+      <answer_display>
+def uniqueValues(aDict):
+    counts = {}
+    unique = []
+    for i in aDict.values():
+        counts[i] = 0  
+    for i in aDict.keys():
+        counts[aDict[i]] += 1
+    for i in aDict.keys():
+        if counts[aDict[i]] == 1:
+            unique.append(i)
+    unique.sort()
+    return unique</answer_display>
+      <grader_payload>
+        {"grader": "finger_exercises/L6/unique_values/grade_unique_values.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

@@ -1,0 +1,11 @@
+
+  
+The complexity of binary search on a sorted list of n items is [mathjaxinline]O(\log n)[/mathjaxinline].
+      
+    
+
+    
+
+      
+True
+False

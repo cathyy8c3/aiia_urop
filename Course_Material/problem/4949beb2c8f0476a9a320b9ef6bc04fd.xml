@@ -1,0 +1,60 @@
+<problem display_name="Exercise: while exercise 1" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" weight="5.0">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 5 minutes</b>
+    </p>
+    <p>In this problem you'll be given a chance to practice writing some while loops.</p>
+    <p>1. Convert the following into code that uses a while loop.</p>
+    <p>prints <code>2</code><br/>
+prints <code>4</code><br/>
+prints <code>6</code><br/>
+prints <code>8</code><br/>
+prints <code>10</code><br/>
+      prints <code>Goodbye!</code></p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="10" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display/>
+      <answer_display>
+# There are many ways to solve this problem! Here is one:
+num = 2
+while num &lt; 11:
+    print(num)
+    num += 2
+print("Goodbye!")
+
+# Here is another:
+num = 2
+while num &lt;= 10:
+    print(num)
+    num += 2
+print("Goodbye!")
+
+# And another:
+num = 0
+while True:
+    num += 2
+    print(num)
+    if num &gt;= 10:
+        print("Goodbye!")
+        break
+
+# And one more:
+num = 1
+while num &lt;= 10:
+    if num % 2 == 0:
+        print(num)
+    num += 1
+print("Goodbye!")
+
+# There are always many, many different ways to solve a programming
+# problem. Here are just four examples and surely there are quite
+# a few more.
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L3/while2a/grade_while2a.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

@@ -1,0 +1,114 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 3 minutes
+
+def test_str(expect, ans):
+  e = expect[expect.find('return')+7:].replace(' ', '')
+  a = ans[ans.find('return')+7:].replace(' ', '')
+  return (expect == ans or e == a)
+
+
+Consider the following function definition: 
+
+def rem(x, a):
+    """
+    x: a non-negative integer argument
+    a: a positive integer argument
+
+    returns: integer, the remainder when x is divided by a.
+    """
+    if x == a:
+        return 0
+    elif x < a:
+        return x
+    else:
+        rem(x-a, a)
+
+
+When we call 
+
+rem(2, 5)
+
+
+the shell returns 2. When we call 
+
+rem(5, 5)
+
+
+the shell returns 0. But when we call 
+
+rem(7, 5)
+
+
+the shell does not return anything! Using this information, choose what line of code should be changed from the following choices: 
+
+      
+
+        
+
+          
+
+            
+
+              
+
+                
+if x == a:
+
+            
+
+              
+
+                
+return 0
+
+            
+
+              
+
+                
+elif x < a:
+
+            
+
+              
+
+                
+return x
+
+            
+
+              
+
+                
+else:
+
+            
+
+              
+
+                
+rem(x-a, a)
+
+How should this line be rewritten? 
+
+      
+
+        
+
+      
+
+        
+
+          
+
+            
+Explanation:
+
+In the conditional, the final clause contains a recursive call that we never return the results of! Thus the final line - 
+rem(x-a, a)
+ return rem(x-a, a) 

@@ -1,0 +1,203 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 13 minutes
+      Note that you will have to answer all questions before you can click the Check button.
+
+def test_str(expect, ans):
+  # Strip away ' ' or " " wrapping string input answer
+  # (check which, if any, are present - don't want to pull valid
+  #  characters out of the center of a string, eg "That's crazy!",
+  #  nor do we wish to accept an input with mismatched modifiers, 
+  #  eg 'abc")
+  if len(expect) == 0 or len(ans) == 0: return expect == ans
+
+  if ans[0] == "'" and ans[-1] == "'": ans = ans.strip("'")
+  elif ans[0] == '"' and ans[-1] == '"': ans = ans.strip('"')
+
+  if expect[0] == "'": expect = expect.strip("'")
+  elif expect[0] == '"': expect = expect.strip('"')
+
+  return expect == ans
+
+def test_list_str(expect, ans):
+  # For a list that can be comprised of strings
+  # Check that expect & ans are lists
+  assert (expect[0] == '[' and expect[-1] == ']')
+  if '[' not in ans or ']' not in ans: return False
+
+  expect = list( expect.replace(' ','')[1:-1].split(',') )
+  ans = list( ans.replace(' ','')[1:-1].split(',') )
+  return len(expect) == len(ans) and not (False in [test_str(e,a) for (e,a) in zip(expect, ans)])
+
+For each of the expressions below, specify its type and value. If it generates an error, 
+      select type 'NoneType' and put the word 'error' in the box for the value. If it would be a function, 
+      select type 'function' and put the word 'function' in the box for the value. 
+If the method returns 
+None
+Assume we've made the following assignments: 
+
+> listA = [1, 4, 3, 0]
+> listB = ['x', 'z', 't', 'q']
+
+ You may want to refer to the 
+Python Library Reference
+
+      
+
+        
+
+          
+listA.sort
+
+            
+
+            
+
+        
+
+          
+listA.sort()
+
+            
+
+            
+
+        
+
+          
+listA
+
+            
+
+            
+
+        
+
+          
+listA.insert(0, 100)
+
+            
+
+            
+
+        
+
+          
+listA.remove(3)
+
+            
+
+            
+
+        
+
+          
+listA.append(7)
+
+            
+
+            
+
+        
+
+          
+listA
+
+            
+
+            
+
+        
+
+          
+listA + listB
+
+            
+
+            
+
+        
+
+          
+listB.sort()
+listB.pop()
+
+            
+
+            
+
+        
+
+          
+listB.count('a')
+
+            
+
+            
+
+        
+
+          
+listB.remove('a')
+
+            
+
+            
+
+        
+
+          
+listA.extend([4, 1, 6, 3, 4])
+
+            
+
+            
+
+        
+
+          
+listA.count(4)
+
+            
+
+            
+
+        
+
+          
+listA.index(1)
+
+            
+
+            
+
+        
+
+          
+listA.pop(4)
+
+            
+
+            
+
+        
+
+          
+listA.reverse()
+
+            
+
+            
+
+        
+
+          
+listA
+
+            
+
+            

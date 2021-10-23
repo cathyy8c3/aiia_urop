@@ -1,0 +1,9 @@
+<problem display_name="Problem 1-5" markdown="null" max_attempts="1" showanswer="never">
+  <p>Performing binary search on an unsorted list will always return the correct answer in [mathjaxinline]O(n)[/mathjaxinline] time where [mathjaxinline]n[/mathjaxinline] is the length of the list.</p>
+  <multiplechoiceresponse>
+    <choicegroup label="defensive" type="MultipleChoice">
+      <choice correct="false">True</choice>
+      <choice correct="true">False</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

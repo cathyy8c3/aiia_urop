@@ -1,0 +1,12 @@
+
+  
+Assume 
+f()
+a = f()
+a
+
+    
+
+      
+True
+False

@@ -1,0 +1,18 @@
+<problem attempts="1" display_name="Problem 2-6" markdown="null" max_attempts="1" showanswer="never" weight="3.0">
+  <text>
+    <p>Examine the following code snippet:</p>
+    <pre>
+  stuff  = _____
+  for thing in stuff:
+        if thing == 'iQ':
+           print("Found it")</pre>
+    <p>Select all the values of the variable "stuff" that 
+      will make the code print "Found it".</p>
+    <p>
+      <choiceresponse>
+        <checkboxgroup direction="vertical"><choice correct="true" name="1"><span><code>["iBoy", "iGirl", "iQ", "iC","iPaid","iPad"]</code></span></choice>n
+	  <choice correct="true" name="2"><span><code>("iBoy", "iGirl", "iQ", "iC","iPaid","iPad")</code></span></choice><choice correct="false" name="3"><span><code>[ ( "iBoy", "iGirl", "iQ", "iC","iPaid","iPad") ]</code></span></choice><choice correct="false" name="4"><span><code>( [ "iBoy", "iGirl", "iQ", "iC","iPaid","iPad" ], )</code></span></choice><choice correct="true" name="5"><span><code>["iQ"]</code></span></choice><choice correct="false" name="6"><span><code>"iQ"</code></span></choice></checkboxgroup>
+      </choiceresponse>
+    </p>
+  </text>
+</problem>

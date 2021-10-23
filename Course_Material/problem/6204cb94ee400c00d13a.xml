@@ -1,0 +1,24 @@
+<problem>
+  <p>Write a function called <code>getSublists</code>, which takes as parameters a list of integers named <code>L</code> and an integer named <code>n</code>.   </p>
+  <ul>
+    <li>assume <code>L</code> is not empty</li>
+    <li>assume <code>0 &lt; n &lt;= len(L)</code></li>
+  </ul>
+  <p>    This function returns a list of all possible sublists in <code>L</code> of length <code>n</code> without skipping elements in <code>L</code>. The sublists in the returned list should be ordered in the way they appear in <code>L</code>, with those sublists starting from a smaller index being at the front of the list.</p>
+  <p>Example 1, if <code>L = [10, 4, 6, 8, 3, 4, 5, 7, 7, 2]</code> and <code>n = 4</code> then your function should return the list <code>[[10, 4, 6, 8], [4, 6, 8, 3], [6, 8, 3, 4], [8, 3, 4, 5], [3, 4, 5, 7], [4, 5, 7, 7], [5, 7, 7, 2]]</code></p>
+  <p>Example 2, if <code>L = [1, 1, 1, 1, 4]</code> and <code>n = 2</code> then your function should return the list <code>[[1, 1], [1, 1], [1, 1], [1, 4]]</code></p>
+  <br/>
+  <p>Your function does not have to be recursive. Do not leave any debugging print statements when you paste your code in the box.</p>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>def getSublists(L, n):
+    </initial_display>
+      <answer_display>
+</answer_display>
+      <grader_payload>
+        {"grader": "final/F2014_60001r/get_sublists/grade_get_sublists.py", "hide_output": false}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

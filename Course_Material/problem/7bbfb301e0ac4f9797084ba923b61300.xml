@@ -1,0 +1,40 @@
+<problem display_name="Problem 3" markdown="null" showanswer="never">
+  <text>
+    <p>Numbers in Mandarin follow 3 simple rules.  </p>
+    <ul>
+      <li>There are words for each of the digits from 0 to 10.</li>
+      <li>For numbers 11-19, the number is pronounced as "ten digit", so for example, 16 would be pronounced (using Mandarin) as "ten six".</li>
+      <li>For numbers between 20 and 99, the number is pronounced as “digit ten digit”, so for example, 37 would be pronounced (using Mandarin) as "three ten seven".  If the digit is a zero, it is not included. </li>
+    </ul>
+    <p>Here is a simple Python dictionary that captures the numbers between 0 and 10.</p>
+    <pre>trans = {'0':'ling', '1':'yi', '2':'er', '3':'san', '4': 'si',
+          '5':'wu', '6':'liu', '7':'qi', '8':'ba', '9':'jiu', '10': 'shi'}</pre>
+    <p>We want to write a procedure that converts an American number (between 0 and 99), written as a string, into the equivalent Mandarin.</p>
+    <pre>def convert_to_mandarin(us_num):
+    '''
+    us_num, a string representing a US number 0 to 99
+    returns the string mandarin representation of us_num
+    '''
+    # FILL IN YOUR CODE HERE</pre>
+    <hr/>
+    <p>
+      <b>Example Usage</b>
+    </p>
+    <ul>
+      <li><code>convert_to_mandarin('36')</code> will return <code>san shi liu</code></li>
+      <li><code>convert_to_mandarin('20')</code> will return <code>er shi</code></li>
+      <li><code>convert_to_mandarin('16')</code> will return <code>shi liu</code></li>
+    </ul>
+    <p>Paste your entire function, including the definition, in the box below. Assume that we provide <code>trans</code> for you. Do not leave any debugging print statements.</p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display># Paste your function here</initial_display>
+      <answer_display/>
+      <grader_payload>
+        {"grader": "ase/convert_to_mandarin/grade_convert_to_mandarin.py", "hide_output": false}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

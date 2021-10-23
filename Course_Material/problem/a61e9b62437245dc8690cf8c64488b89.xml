@@ -1,0 +1,59 @@
+<problem display_name="Exercise: gcd iter" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" weight="5.0">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 5 minutes</b>
+    </p>
+    <p>The greatest common divisor of two positive integers is the largest integer that divides 
+      each of them without remainder. For example, </p>
+    <ul class="itemize">
+      <li>
+        <p>gcd(2, 12) = 2 </p>
+      </li>
+      <li>
+        <p>gcd(6, 12) = 6 </p>
+      </li>
+      <li>
+        <p>gcd(9, 12) = 3 </p>
+      </li>
+      <li>
+        <p>gcd(17, 12) = 1 </p>
+      </li>
+    </ul>
+    <p>Write an iterative function, <code>gcdIter(a, b)</code>, that implements this idea. 
+      One easy way to do this is to begin with a test value equal to the smaller of the two input 
+      arguments, and iteratively reduce this test value by 1 until you either reach a case where the 
+      test divides both <code>a</code> and <code>b</code> without remainder, or you reach 1. </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def gcdIter(a, b):
+    '''
+    a, b: positive integers
+    
+    returns: a positive integer, the greatest common divisor of a &amp; b.
+    '''
+    # Your code here
+</initial_display>
+      <answer_display>
+def gcdIter(a, b):
+    '''
+    a, b: positive integers
+    
+    returns: a positive integer, the greatest common divisor of a &amp; b.
+    '''
+    testValue = min(a, b)
+
+    # Keep looping until testValue divides both a &amp; b evenly
+    while a % testValue != 0 or b % testValue != 0:
+        testValue -= 1
+
+    return testValue
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L5/gcdIter/grade_gcdIter.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

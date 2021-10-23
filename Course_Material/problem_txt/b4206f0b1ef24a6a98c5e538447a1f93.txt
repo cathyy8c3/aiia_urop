@@ -1,0 +1,54 @@
+
+  
+
+    
+
+      Write a Python function called 
+satisfiesF
+run_satisfiesF(L, satisfiesF)
+def satisfiesF(L):
+    """
+    Assumes L is a list of strings
+    Assume function f is already defined for you and it maps a string to a Boolean
+    Mutates L such that it contains all of the strings, s, originally in L such
+            that f(s) returns True, and no other elements. Remaining elements in L
+            should be in the same order.
+    Returns the length of L after mutation
+    """
+    # Your function implementation here
+
+run_satisfiesF(L, satisfiesF)
+For your own testing of 
+satisfiesF
+f
+def f(s):
+    return 'a' in s
+      
+L = ['a', 'b', 'a']
+print satisfiesF(L)
+print L
+Should print:
+2
+['a', 'a']
+Paste your entire function 
+satisfiesF
+After you define your function, make a function call to 
+run_satisfiesF(L, satisfiesF)
+f
+run_satisfiesF
+Note that we ask you to write a function only -- you cannot rely on any variables defined outside your function for your code to work correctly.
+
+      For this question, you will 
+not be able to see the test cases we run
+check to make sure you have no indentation errors
+run_satisfiesF(L, satisfiesF)
+
+    
+
+      
+# Paste your function here
+
+      
+
+        {"grader": "quiz/60001r_s2015/satisfiesF/grade_satisfiesF.py", "hide_output": true}
+

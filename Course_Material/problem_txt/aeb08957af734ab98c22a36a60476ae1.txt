@@ -1,0 +1,13 @@
+
+  
+Assume a 
+break
+
+    
+
+      
+The program might immediately terminate.
+The function might immediately terminate.
+The loop will always immediately terminate.
+All of the above.
+None of the above.

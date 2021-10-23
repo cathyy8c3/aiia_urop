@@ -1,0 +1,52 @@
+
+  
+For this problem, the graders will use our implementation of the 
+Message
+PlaintextMessage
+Given an encrypted message, if you know the shift used to encode the message, decoding it is trivial.
+    If 
+message
+s
+apply_shift(message, 26-s)
+The problem, of course, is that you don’t know the shift. But our encryption
+method only has 26 distinct possible values for the shift! We know English is the
+main language of these emails, so if we can write a program that tries each shift
+and maximizes the number of English words in the decoded message, we can
+decrypt their cipher! A simple indication of whether or not the correct shift has been found is if most of the words obtained after a shift are valid words. Note that this only means that most of the words obtained are actual words. It is possible to have a message that can be decoded by two separate shifts into different sets of words. While there are various strategies for deciding between ambiguous decryptions, for this problem we are only looking for a simple solution.
+Fill in the methods in the class 
+CiphertextMessage
+
+    
+__init__(self, text)
+decrypt_message(self)
+is_word(wordlist, word)
+method 
+split()
+is_word
+
+    
+Hints
+
+      
+
+        
+Using string.split 
+
+        
+You may find the function 
+string.split
+>>> 'Hello world!'.split('o')
+['Hell', ' w', 'rld!']
+>>> '6.00.1x is pretty fun'.split(' ')
+['6.00.1x', 'is', 'pretty', 'fun']
+Paste your implementation of the entire 
+CipertextMessage
+
+    
+
+      
+
+
+
+{"grader": "ps06/caesar3/grade_ciphertextmessage.py"}
+

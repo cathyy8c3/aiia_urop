@@ -1,0 +1,36 @@
+<problem display_name="Exercise: for exercise 1" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" weight="5.0">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 5 minutes</b>
+    </p>
+    <p>In this problem you'll be given a chance to practice writing some for loops.</p>
+    <p>1. Convert the following code into code that uses a for loop.</p>
+    <p>prints <code>2</code><br/>
+prints <code>4</code><br/>
+prints <code>6</code><br/>
+prints <code>8</code><br/>
+prints <code>10</code><br/>
+prints <code>Goodbye!</code></p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="10" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display/>
+      <answer_display>
+# There are many ways to solve this problem! Here is one:
+for count in range(11):
+    if count != 0 and count % 2 == 0:
+        print(count)
+print("Goodbye!")
+
+# Here is another:
+for count in range(2, 12, 2):
+    print(count)
+print("Goodbye!")
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L3/for5a/grade_for5a.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

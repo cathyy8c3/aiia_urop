@@ -1,0 +1,24 @@
+<problem>
+  <text>
+    <p>
+      Write a function <code>is_triangular</code> that meets the specification below. A triangular number is a number obtained by the continued summation of integers starting from 1. For example, 1, 1+2, 1+2+3, 1+2+3+4, etc., corresponding to 1, 3, 6, 10, etc., are triangular numbers.  </p>
+    <pre>def is_triangular(k):
+    """
+    k, a positive integer
+    returns True if k is triangular and False if not
+    """
+    #YOUR CODE HERE</pre>
+    <p>Paste your entire function, including the definition, in the box below. Do not leave any debugging print statements.</p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display># Paste your function here</initial_display>
+      <answer_display>
+      </answer_display>
+      <grader_payload>
+        {"grader": "ase/is_triangular/grade_is_triangular.py", "hide_output": true}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

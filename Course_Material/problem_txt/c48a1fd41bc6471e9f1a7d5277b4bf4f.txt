@@ -1,0 +1,147 @@
+
+  
+
+    
+Assume the two files below are in the same folder. You run inventory.py. What happens?
+
+      
+TWO FILES
+
+        
+
+          
+FILE: batteries.py
+
+          
+aa = "AA"
+aaa = "AAA"
+c = "C"
+d = "D" 
+
+        
+
+          
+FILE: inventory.py
+
+          
+aa = "aa"
+tripleA = "aaa"
+print(aa)
+            
+
+      
+
+        
+prints 
+aa
+prints 
+AA
+There is an error.
+Assume the two files below are in the same folder. You run inventory.py. What happens?
+
+      
+TWO FILES
+
+        
+
+          
+FILE: batteries.py
+
+          
+aa = "AA"
+aaa = "AAA"
+c = "C"
+d = "D" 
+
+        
+
+          
+FILE: inventory.py
+
+          
+aa = "aa"
+tripleA = "aaa"
+print(batteries.aa)
+            
+
+      
+
+        
+prints 
+aa
+prints 
+AA
+There is an error.
+Assume the two files below are in the same folder. You run inventory.py. What happens?
+
+      
+TWO FILES
+
+        
+
+          
+FILE: batteries.py
+
+          
+aa = "AA"
+aaa = "AAA"
+c = "C"
+d = "D" 
+
+        
+
+          
+FILE: inventory.py
+
+          
+import batteries
+aa = "aa"
+tripleA = "aaa"
+print(batteries.aa)
+            
+
+      
+
+        
+prints 
+aa
+prints 
+AA
+There is an error.
+Assume the two files below are in the same folder. You run inventory.py. What happens?
+
+      
+TWO FILES
+
+        
+
+          
+FILE: batteries.py
+
+          
+aa = "AA"
+aaa = "AAA"
+c = "C"
+d = "D" 
+
+        
+
+          
+FILE: inventory.py
+
+          
+from batteries import *
+aa = "aa"
+print(aa, aaa, c, d)
+            
+
+      
+
+        
+prints 
+AA AAA C D
+prints 
+aa aaa c d
+prints 
+aa AAA C D
+There is an error.

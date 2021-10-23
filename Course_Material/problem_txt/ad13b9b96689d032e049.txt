@@ -1,0 +1,39 @@
+
+  
+
+    
+Write a simple procedure, 
+myLog(x, b)
+x
+b
+x = 16
+b = 2
+x = 15
+b = 3
+In other words, 
+myLog
+b
+b
+x
+x
+b
+b
+def myLog(x, b):
+    '''
+    x: a positive integer
+    b: a positive integer; b >= 2
+
+    returns: log_b(x), or, the logarithm of x relative to a base b.
+    '''
+    # Your Code Here
+Do 
+not
+log
+
+    
+
+      
+# Paste your function here
+
+        {"grader": "exam1/F2012/myLog/grade_myLog.py", "hide_output":false}
+      

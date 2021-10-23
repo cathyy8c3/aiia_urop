@@ -1,0 +1,22 @@
+<problem>
+  <text>
+    <p>
+      Implement a function that meets the specifications below. </p>
+    <pre>def sum_digits(s):
+    """ assumes s a string
+        Returns an int that is the sum of all of the digits in s.
+          If there are no digits in s it raises a ValueError exception. """
+    # Your code here</pre>
+    <p/>
+    <p>For example, <code>sum_digits("a;35d4")</code> returns <code>12</code>.</p>
+    <p>Paste your entire function, including the definition, in the box below. Do not leave any debugging print statements.</p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <grader_payload>
+{"grader": "quiz/60001_s2017/sum_digits/grade_sum_digits.py", "hide_output": true}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

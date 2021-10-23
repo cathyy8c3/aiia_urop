@@ -1,0 +1,17 @@
+<problem display_name="Problem 4-3" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" max_attempts="1" showanswer="never">
+  <text>
+    <p>
+Consider the following Python procedure. Specify its order of growth. </p>
+    <pre>def foo(n):
+    if n &lt;= 1:
+        return 1
+    return foo(n/2) + 1
+   
+    </pre>
+    <p>
+      <optionresponse>
+        <optioninput options="('O(1)','O(log(n))','O(n)','O(n log(n))','O(n^2)','O(n^3)','O(2^n)')" correct="O(log(n))"/>
+      </optionresponse>
+    </p>
+  </text>
+</problem>

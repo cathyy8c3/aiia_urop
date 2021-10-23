@@ -1,0 +1,156 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 8 minutes
+
+def test_csv(expect, ans):
+   # Take out all spaces in expected answer
+   expect = [i.strip(' ') for i in str(expect).split(',')]
+   # Take out all spaces in student solution
+   ans = ans.rstrip(' ')
+   ans = ans.rstrip(',')
+   ans = [i.strip(' ') for i in str(ans).split(',')]
+   
+
+   def strip_q(x):
+      # Strip quotes around strings if students have entered them
+      stripped_ans = []
+      for item in x:
+         if item[0] == "'" and item[-1]=="'":
+            item = item.strip("'")
+         elif item[0] == '"' and item[-1] == '"':
+            item = item.strip('"') #" (quote to fix syntax highlighting in emacs)
+         stripped_ans.append(item)
+      return stripped_ans 
+
+   return strip_q(expect) == strip_q(ans)
+
+
+Below are some short Python programs. For each program, answer the associated question. 
+
+Try to answer the questions without running the code. Check your answers, then run the code for the ones you get wrong. 
+
+This question is going to ask you what some simple loops print out. If you're asked what code like this prints: 
+num = 5
+if num > 2:
+    print(num)
+    num -= 1
+print(num)
+
+write what it prints out, separating what appears on a new line by a comma and a space. So the answer for the above code would be: 
+5, 4
+
+If a given loop will not terminate, write the phrase 'infinite loop' (no quotes) in the box. Recall that you can stop an infinite loop in your program by typing CTRL+c in the console.
+
+      
+
+        
+
+          
+Note: What does 
++=
+-=
+*=
+/=
+
+          
+a += b  
+ a = a + b
+a -= b 
+a = a - b
+a *= b  
+a = a * b
+a /= b 
+a = a / b
+
+    
+
+      
+
+        
+num = 0
+while num <= 5:
+    print(num)
+    num += 1
+
+print("Outside of loop")
+print(num) 
+
+          
+
+            
+
+              
+
+        
+numberOfLoops = 0
+numberOfApples = 2
+while numberOfLoops < 10:
+    numberOfApples *= 2
+    numberOfApples += numberOfLoops
+    numberOfLoops -= 1
+print("Number of apples: " + str(numberOfApples))
+
+          
+
+            
+
+              
+
+        
+num = 10
+while num > 3:
+    num -= 1
+    print(num) 
+
+          
+
+            
+
+              
+
+        
+num = 10
+while True:
+    if num < 7:
+        print('Breaking out of loop')
+        break
+    print(num)
+    num -= 1
+print('Outside of loop')
+Note:
+break
+break
+
+          
+
+            
+
+              
+
+        
+num = 100
+while not False:
+    if num < 0:
+        break
+print('num is: ' + str(num)) 
+
+          
+
+            
+
+              
+
+      
+
+        
+Explanation:
+For the last exercise, the code never breaks. You enter the loop with 
+num
+num
+num < 0
+True
+break

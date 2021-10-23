@@ -1,0 +1,12 @@
+<problem display_name="Problem 1-5" group_access="{}" markdown="null" max_attempts="1" showanswer="never" weight="1.0">
+  <p>The following code will enter an infinite loop for all values of <code>i</code> and <code>j</code>.</p>
+  <pre>while i &gt;= 0:
+    while j &gt;= 0:
+        print(i, j)</pre>
+  <multiplechoiceresponse>
+    <choicegroup label="8" type="MultipleChoice">
+      <choice correct="false">True</choice>
+      <choice correct="true">False</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

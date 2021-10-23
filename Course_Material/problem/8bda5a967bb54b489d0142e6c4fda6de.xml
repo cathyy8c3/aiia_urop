@@ -1,0 +1,37 @@
+<problem display_name="Exercise: odd" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" weight="5.0">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 3 minutes</b>
+    </p>
+    <p>
+Write a Python function, <code>odd</code>, that takes in one number and returns <code>True</code> when the number is odd and <code>False</code> otherwise. </p>
+    <p>
+You should use the <code>%</code> (mod) operator, not <code>if</code>. </p>
+    <p>
+This function takes in one number and returns a boolean. </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def odd(x):
+    '''
+    x: int
+
+    returns: True if x is odd, False otherwise
+    '''
+    # Your code here
+</initial_display>
+      <answer_display>
+def odd(x):
+    '''
+    x: int
+    '''
+    return (x % 2 == 1)
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L4/odd/grade_odd.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

@@ -1,0 +1,15 @@
+<video youtube="1.00:08V2ukhKe1k" url_name="99b310fa29e84c498d7430ed2acb9889" sub="" transcripts="{&quot;en&quot;: &quot;9bf9b268-95ab-423f-ae63-6dd63d33461b-en.srt&quot;}" display_name="Video: Hierarchies" download_track="true" download_video="true" edx_video_id="9bf9b268-95ab-423f-ae63-6dd63d33461b" handout="/asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture9.zip" html5_sources="[]" youtube_id_1_0="08V2ukhKe1k">
+  <handout src="/asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture9.zip"/>
+  <video_asset client_video_id="L9_S6.mp4" duration="952.3" image="video-images/09624645a8f24353824267bdc64dc8c7.jpeg">
+    <encoded_video profile="hls" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V005800/MITX60012016-V005800.m3u8" file_size="0" bitrate="0"/>
+    <encoded_video profile="audio_mp3" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V005800_AUD.mp3" file_size="22857070" bitrate="192"/>
+    <encoded_video profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V005800_MB2.mp4" file_size="25161877" bitrate="211"/>
+    <encoded_video profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V005800_DTH.mp4" file_size="43259231" bitrate="363"/>
+    <encoded_video profile="youtube" url="08V2ukhKe1k" file_size="0" bitrate="0"/>
+    <encoded_video profile="mobile_high" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V005800_MB1.mp4" file_size="28514877" bitrate="239"/>
+    <transcripts>
+      <transcript language_code="en" file_format="srt" provider="Custom"/>
+    </transcripts>
+  </video_asset>
+  <transcript language="en" src="9bf9b268-95ab-423f-ae63-6dd63d33461b-en.srt"/>
+</video>

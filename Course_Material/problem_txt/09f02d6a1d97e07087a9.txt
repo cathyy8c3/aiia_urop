@@ -1,0 +1,43 @@
+
+  
+
+    
+
+      Write a Python function that returns a list of keys in 
+aDict
+aDict
+aDict
+This function takes in a dictionary and returns a list.
+def uniqueValues(aDict):
+    '''
+    aDict: a dictionary
+    '''
+    # Your code here
+    
+
+    
+
+      
+
+def uniqueValues(aDict):
+    '''
+    aDict: a dictionary
+    '''
+    # Your code here
+          
+
+def uniqueValues(aDict):
+    counts = {}
+    unique = []
+    for i in aDict.values():
+        counts[i] = 0  
+    for i in aDict.keys():
+        counts[aDict[i]] += 1
+    for i in aDict.keys():
+        if counts[aDict[i]] == 1:
+            unique.append(i)
+    unique.sort()
+    return unique
+
+        {"grader": "finger_exercises/L6/unique_values/grade_unique_values.py"}
+

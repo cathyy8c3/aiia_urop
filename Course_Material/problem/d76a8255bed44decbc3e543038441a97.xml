@@ -1,0 +1,9 @@
+<problem display_name="Problem 1-4" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" max_attempts="1" showanswer="never">
+  <p>For large values of <code>n</code>, an algorithm that takes <code>20000n^2</code> steps has better time complexity (takes less time) than one that takes <code>0.001n^5</code> steps</p>
+  <multiplechoiceresponse>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">True</choice>
+      <choice correct="false">False</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

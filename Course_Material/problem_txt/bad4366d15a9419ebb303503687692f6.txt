@@ -1,0 +1,33 @@
+
+  
+
+    
+
+      Write a Python function that returns the sum of the pairwise products of 
+listA
+listB
+listA
+listB
+listA = [1, 2, 3]
+listB = [4, 5, 6]
+1*4 + 2*5 + 3*6
+32
+Hint: You will need to traverse both lists in parallel.
+This function takes in two lists of numbers and returns a number.
+def dotProduct(listA, listB):
+    '''
+    listA: a list of numbers
+    listB: a list of numbers of the same length as listA
+    '''
+    # Your code here
+    
+
+    
+
+      
+# Paste your function here
+
+
+
+{"grader": "finger_exercises/L6/dot_product/grade_dot_product.py"}
+

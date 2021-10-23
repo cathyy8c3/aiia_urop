@@ -1,0 +1,114 @@
+<problem display_name="Exercise 6" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 3 minutes</b>
+    </p>
+    <script type="text/python" system_path="python_lib">
+def test_str(expect, ans):
+  e = expect[expect.find('return')+7:].replace(' ', '')
+  a = ans[ans.find('return')+7:].replace(' ', '')
+  return (expect == ans or e == a)
+</script>
+    <p>
+Consider the following function definition: </p>
+    <pre>
+def rem(x, a):
+    """
+    x: a non-negative integer argument
+    a: a positive integer argument
+
+    returns: integer, the remainder when x is divided by a.
+    """
+    if x == a:
+        return 0
+    elif x &lt; a:
+        return x
+    else:
+        rem(x-a, a)
+</pre>
+    <p>
+When we call </p>
+    <pre>
+rem(2, 5)
+</pre>
+    <p>
+the shell returns 2. When we call </p>
+    <pre>
+rem(5, 5)
+</pre>
+    <p>
+the shell returns 0. But when we call </p>
+    <pre>
+rem(7, 5)
+</pre>
+    <p>
+the shell does not return anything! Using this information, choose what line of code should be changed from the following choices: </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="false" name="1">
+            <span>
+              <text>
+                <code>if x == a:</code>
+              </text>
+            </span>
+          </choice>
+          <choice correct="false" name="2">
+            <span>
+              <text>
+                <code>return 0</code>
+              </text>
+            </span>
+          </choice>
+          <choice correct="false" name="3">
+            <span>
+              <text>
+                <code>elif x &lt; a:</code>
+              </text>
+            </span>
+          </choice>
+          <choice correct="false" name="4">
+            <span>
+              <text>
+                <code>return x</code>
+              </text>
+            </span>
+          </choice>
+          <choice correct="false" name="5">
+            <span>
+              <text>
+                <code>else:</code>
+              </text>
+            </span>
+          </choice>
+          <choice correct="true" name="6">
+            <span>
+              <text>
+                <code>rem(x-a, a)</code>
+              </text>
+            </span>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+How should this line be rewritten? </p>
+    <p>
+      <customresponse cfn="test_str" expect="return rem(x-a, a)">
+        <textline size="50" correct_answer="return rem(x-a, a)"/>
+      </customresponse>
+    </p>
+    <p>
+      <solution>
+        <div class="detailed-solution">
+          <p>
+            <b>Explanation:</b>
+          </p>
+          <p>
+In the conditional, the final clause contains a recursive call that we never return the results of! Thus the final line - <code>rem(x-a, a)</code> - simply needs to be modified such that we return its value. Easy enough! The solution is thus </p>
+          <pre> return rem(x-a, a) </pre>
+        </div>
+      </solution>
+    </p>
+  </text>
+</problem>

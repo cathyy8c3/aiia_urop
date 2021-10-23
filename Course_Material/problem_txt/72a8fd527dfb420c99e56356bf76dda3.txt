@@ -1,0 +1,92 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 4 minutes
+
+Consider the following code specification: 
+
+def size(aSet):
+   """
+   aSet is a collection of objects, which might be empty.
+   Objects are assumed to be of the same type.
+   """
+
+
+Here is a set of possible test cases to include in a black box test suite. Indicate which of the following conditions would make a good black box test suite for the function 
+size
+
+      
+
+        
+
+          
+Review: Black Box Test Suites
+
+          
+Black-box testing is a method of software testing that tests the 
+	  
+functionality
+The possible paths through the specification. 
+ The possible boundary cases.
+size
+size
+
+      
+
+        
+
+          
+
+            
+
+              
+ Empty set
+
+            
+
+              
+ Set of size 1
+
+            
+
+              
+ Set of odd size
+
+            
+
+              
+ Set of even size
+
+            
+
+              
+ Set of size greater than 1
+
+            
+
+              
+ Set whose size is a prime number
+
+      
+
+        
+
+          
+
+            
+Explanation:
+A good black box test suite would contain tests for the following 
+	    conditions: Empty set, Set of size 1, and Set of size greater than 1.
+Black-box testing is a method of software testing that tests the 
+	    functionality of an application. Recall from the lecture that a way 
+	    to think about black-box testing is to look at both the paths through the 
+	    specification and the possible boundary cases. In this example, the boundary 
+	    cases all have to do with the size of 
+aSet
+aSet
+The remaining conditions would not further test the functionality of the 
+	    
+size

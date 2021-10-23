@@ -1,0 +1,36 @@
+<problem title="Hangman, Part 1c" attempts="30" type="lecture" display_name="Problem 3" markdown="null" max_attempts="30" showanswer="never">
+  <text>
+    <p> Next, implement the function <code>getAvailableLetters</code> that takes in one parameter - a list 
+      of letters, <code>lettersGuessed</code>. This function returns a string that is comprised of lowercase English
+      letters - all lowercase English letters that are <b>not</b> in <code>lettersGuessed</code>.</p>
+    <p>Example Usage:</p>
+    <pre>&gt;&gt;&gt; lettersGuessed = ['e', 'i', 'k', 'p', 'r', 's']
+&gt;&gt;&gt; print(getAvailableLetters(lettersGuessed))
+abcdfghjlmnoqtuvwxyz</pre>
+    <p>Note that this function should return the letters in alphabetical order, as in the example above.</p>
+    <p>For this function, you may assume that all the letters in
+  <code>lettersGuessed</code> are lowercase.</p>
+    <p><b>Hint:</b> You might consider using <code>string.ascii_lowercase</code>, which is a string 
+  comprised of all lowercase letters:</p>
+    <pre>&gt;&gt;&gt; import string
+&gt;&gt;&gt; print(string.ascii_lowercase)
+abcdefghijklmnopqrstuvwxyz</pre>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="70" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def getAvailableLetters(lettersGuessed):
+    '''
+    lettersGuessed: list, what letters have been guessed so far
+    returns: string, comprised of letters that represents what letters have not
+      yet been guessed.
+    '''
+    # FILL IN YOUR CODE HERE...
+</initial_display>
+      <grader_payload>
+{"grader": "ps03/hangman1c/grade_getAvailableLetters.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

@@ -1,0 +1,15 @@
+<video youtube="1.00:23btiMw7SqY" url_name="197d9e2127a4456db7e389143d8e5115" sub="" transcripts="{&quot;en&quot;: &quot;815fa939-aaeb-4093-9e08-318ef3eaaaa8-en.srt&quot;}" display_name="Video: Big Oh Notation" download_track="true" download_video="true" edx_video_id="815fa939-aaeb-4093-9e08-318ef3eaaaa8" handout="/asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture11.zip" html5_sources="[]" youtube_id_1_0="23btiMw7SqY">
+  <handout src="/asset-v1:MITx+6.00.1x+2T2017+type@asset+block@Lecture11.zip"/>
+  <video_asset client_video_id="L11_S2.mp4" duration="521.26" image="video-images/2e42bb08102f42a99aecf8d62656cc22.jpeg">
+    <encoded_video profile="hls" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006400/MITX60012016-V006400.m3u8" file_size="0" bitrate="0"/>
+    <encoded_video profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006400_DTH.mp4" file_size="20637747" bitrate="316"/>
+    <encoded_video profile="audio_mp3" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006400_AUD.mp3" file_size="12511954" bitrate="192"/>
+    <encoded_video profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006400_MB2.mp4" file_size="12887313" bitrate="197"/>
+    <encoded_video profile="youtube" url="23btiMw7SqY" file_size="0" bitrate="0"/>
+    <encoded_video profile="mobile_high" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006400_MB1.mp4" file_size="14527913" bitrate="222"/>
+    <transcripts>
+      <transcript language_code="en" file_format="srt" provider="Custom"/>
+    </transcripts>
+  </video_asset>
+  <transcript language="en" src="815fa939-aaeb-4093-9e08-318ef3eaaaa8-en.srt"/>
+</video>

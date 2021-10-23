@@ -1,0 +1,69 @@
+<problem display_name="Exercise 2" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 5 minutes</b>
+    </p>
+    <p>
+Consider the following code specification: </p>
+    <pre>
+def union(set1, set2):
+   """
+   set1 and set2 are collections of objects, each of which might be empty.
+   Each set has no duplicates within itself, but there may be objects that
+   are in both sets. Objects are assumed to be of the same type.
+
+   This function returns one set containing all elements from
+   both input sets, but with no duplicates.
+   """
+</pre>
+    <p>
+Indicate which of the conditions below would combine to make a good black box test suite for the function <code>union</code> by selecting the appropriate choice(s). </p>
+    <p>
+      <choiceresponse>
+        <checkboxgroup direction="vertical">
+          <choice correct="true" name="1">
+            <span>
+              <text><code>set1</code> is an empty set; <code>set2</code> is an empty set</text>
+            </span>
+          </choice>
+          <choice correct="true" name="2">
+            <span>
+              <text><code>set1</code> is an empty set; <code>set2</code> is of size greater than or equal to 1</text>
+            </span>
+          </choice>
+          <choice correct="true" name="3">
+            <span>
+              <text><code>set1</code> is of size greater than or equal to 1; <code>set2</code> is an empty set</text>
+            </span>
+          </choice>
+          <choice correct="true" name="4">
+            <span>
+              <text><code>set1</code> and <code>set2</code> are both nonempty sets which do not contain any objects in common</text>
+            </span>
+          </choice>
+          <choice correct="true" name="5">
+            <span>
+              <text><code>set1</code> and <code>set2</code> are both nonempty sets which contain objects in common</text>
+            </span>
+          </choice>
+        </checkboxgroup>
+      </choiceresponse>
+    </p>
+    <p>
+      <solution>
+        <div class="detailed-solution">
+          <p>
+            <b>Explanation:</b>
+          </p>
+          <p>A good black box test suite would contain tests for all of the given 
+	    conditions! Black-box testing tests the functionality of an application,
+	    by looking at the paths through its specifications.</p>
+          <p>According to the specifications, the possibilities for <code>set1</code> and <code>set2</code>
+	    are as follows: both sets are empty; one of the sets is empty and one has at least one object;
+	    both sets are not empty. The tests list all the combinations of those possibilities for 
+	    <code>set1</code> and <code>set2</code>. </p>
+        </div>
+      </solution>
+    </p>
+  </text>
+</problem>

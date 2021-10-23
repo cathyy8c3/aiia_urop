@@ -1,0 +1,10 @@
+<problem display_name="Problem 2-3" markdown="null" max_attempts="1" showanswer="never">
+  <p>A dictionary is an immutable object because its keys are immutable.</p>
+  <multiplechoiceresponse>
+    <choicegroup label="7" type="MultipleChoice">
+      <choice correct="false">True</choice>
+      <choice correct="false">False because its keys can be mutable</choice>
+      <choice correct="true">False because a dictionary is mutable</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

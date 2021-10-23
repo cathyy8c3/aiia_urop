@@ -1,0 +1,34 @@
+<problem display_name="Exercise: for exercise 2" group_access="{&quot;51&quot;: [1, 2]}" markdown="null" weight="5.0">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 5 minutes</b>
+    </p>
+    <p>2. Convert the following code into code that uses a for loop.</p>
+    <p>prints <code>Hello!</code><br/>
+prints <code>10</code><br/>
+prints <code>8</code><br/>
+prints <code>6</code><br/>
+prints <code>4</code><br/>
+      prints <code>2</code></p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="10" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display/>
+      <answer_display>
+# There are always many ways to solve a programming problem. Here is one:
+print("Hello!")
+for num in range(0, 10, 2):
+    print(10 - num)
+
+# Here is another:
+print("Hello!")
+for num in range(10, 0, -2):
+    print(num)
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L3/for5b/grade_for5b.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

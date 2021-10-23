@@ -1,0 +1,16 @@
+<problem display_name="Problem 1-8" group_access="{}" markdown="null" max_attempts="1" showanswer="never" weight="1.0">
+  <p>A program that keeps running and does not stop is an example of a syntax error.  
+    </p>
+  <p>
+    <choiceresponse>
+      <radiogroup direction="vertical">
+        <choice correct="false" name="1">
+          <span>True </span>
+        </choice>
+        <choice correct="true" name="2">
+          <span>False </span>
+        </choice>
+      </radiogroup>
+    </choiceresponse>
+  </p>
+</problem>

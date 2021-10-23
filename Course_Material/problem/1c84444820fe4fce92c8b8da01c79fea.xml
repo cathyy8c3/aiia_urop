@@ -1,0 +1,124 @@
+<problem display_name="Exercise 6" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <script type="text/python" system_path="python_lib">
+def test_str(expect, ans):
+  return ans[:6] == expect[:6]
+
+def test_float(expect, ans):
+    try:
+        ans.index('.') # throws exception if '.' not there
+        return float(expect) == float(ans)
+    except:
+        return False
+</script>
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 5 minutes</b>
+      <br/>
+      <b>      Note that you will have to answer all questions before you can click the Check button.</b>
+    </p>
+    <p>
+For each of the following expressions, indicate the value returned, or if the evaluation would lead to an error, write the word 'error' (note this is a word, not a string, no quotes). While you could simply type these expressions into an IDE, we encourage you to answer them directly since this will help reinforce your understanding of basic Python expressions. </p>
+    <p>
+For decimal answers, give the full result, or four decimal places of accuracy (whichever is shortest). </p>
+    <section class="hints">
+      <div class="collapsible">
+        <header>
+          <a href="#" id="imp1">Floating point errors</a>
+        </header>
+        <section id="imp1">
+          <p>Decimal numbers cannot be stored exactly in the computer because the computer does not have an infinite amount of memory. So decimal numbers are rounded when stored. When you do calculations with these numbers, your final result will be different than the actual result. For example, you may get something like 5.0000000044 instead of 5.0. This is called floating-point rounding error.</p>
+        </section>
+      </div>
+    </section>
+    <p/>
+    <ul class="enumerate">
+      <li>
+        <p>
+          <code>6 + 12 -3</code>
+          <stringresponse answer="15">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>2 * 3.0</code>
+          <customresponse cfn="test_float" expect="6.0">
+            <textline size="50" correct_answer="6.0"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>- - 4</code>
+          <stringresponse answer="4">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>10/3</code>
+          <customresponse cfn="test_float" expect="3.3333">
+            <textline size="50" correct_answer="3.3333"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>10.0/3.0</code>
+          <customresponse cfn="test_float" expect="3.3333">
+            <textline size="50" correct_answer="3.3333"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>(2 + 3) * 4</code>
+          <stringresponse answer="20">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>2 + 3 * 4</code>
+          <stringresponse answer="14">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>2**3 + 1</code>
+          <stringresponse answer="9">
+            <textline size="50"/>
+          </stringresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>2.1 ** 2.0</code>
+          <customresponse cfn="test_float" expect="4.41">
+            <textline size="50" correct_answer="4.41"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>2.2 * 3.0</code>
+          <customresponse cfn="test_float" expect="6.6">
+            <textline size="50" correct_answer="6.6"/>
+          </customresponse>
+        </p>
+      </li>
+    </ul>
+    <solution>
+      <p>
+        <b>Explanation:</b>
+      </p>
+      <p>
+      For the last problem (10), typing the expression into your Python interpreter may give a result that is not exact. For example, 6.6000000000000005 instead of 6.6. This is because computers have difficulty storing fractions exactly in binary. So when performing calculations, numbers first get converted to binary then the calculation is performed and the result converted back into decimal. However, fractions cannot be stored exactly in binary (for example, there is no way to store 0.33333 repeating exactly) so we introduce these small rounding errors that propagate until the final answer. </p>
+    </solution>
+  </text>
+</problem>

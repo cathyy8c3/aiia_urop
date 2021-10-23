@@ -1,0 +1,29 @@
+<problem>
+  <text>
+    <p>Write a Python function that takes in a string and prints out a version of this string that does not contain any vowels, according to the specification below. Vowels are uppercase and lowercase 'a', 'e', 'i', 'o', 'u'.</p>
+
+
+    <p>For example, if <code>s = "This is great!"</code> then <code>print_without_vowels</code> will print <code>Ths s grt!</code>. If <code>s = "a"</code> then <code>print_without_vowels</code> will print the empty string <code/>.
+</p>
+    <pre>def print_without_vowels(s):
+    '''
+    s: the string to convert
+    Finds a version of s without vowels and whose characters appear in the 
+    same order they appear in s. Prints this version of s.
+    Does not return anything
+    '''
+    # Your code here</pre>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="10" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display># Paste your function here</initial_display>
+      <answer_display>
+</answer_display>
+      <grader_payload>
+{"grader": "quiz/60001_f2015/print_without_vowels/grade_print_without_vowels.py", "hide_output":true}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <p><b><font color="red">The "None" in each test case comes from the function call being printed. Your function does not return anything, only prints a string as described above.</font></b></p>
+</problem>

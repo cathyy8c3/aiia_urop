@@ -1,0 +1,18 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 2 minutes
+
+Write a piece of Python code that prints out the string 
+hello world
+
+    
+
+      
+print('hello world')
+
+{"grader" : "finger_exercises/L2/hello_world/grade_hello.py"}
+

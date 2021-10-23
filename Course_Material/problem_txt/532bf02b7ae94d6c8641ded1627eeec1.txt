@@ -1,0 +1,103 @@
+
+  
+
+    
+
+      
+ESTIMATED TIME TO COMPLETE: 5 minutes
+
+      
+True or False? The internal computer representation of any number is always an approximation. 
+
+        
+
+          
+
+            
+
+              
+
+                
+True 
+
+              
+
+                
+False
+The decimal 11 is what binary?:
+
+        
+
+          
+
+            
+
+              
+
+                
+11
+
+              
+
+                
+1011
+
+              
+
+                
+1101
+
+              
+
+                
+cannot be converted
+True or False? The internal representation of the decimal number 1/10 = 0.1 requires an infinite number of digits.
+
+        
+
+          
+
+            
+
+              
+
+                
+True
+
+              
+
+                
+False
+After many computations, you get two floating numbers stored in variables 
+a
+b
+a == b
+
+        
+
+          
+
+            
+
+              
+
+                
+Doing the comparison will always lead to a correct program.
+
+              
+
+                
+Doing the comparison will sometimes lead to a correct program.
+
+              
+
+                
+Doing the comparison will never lead to a correct program.
+
+    
+1. Some numbers, like integers, can be represented exactly.
+3. Look back at the last slide in the video. "If there is no integer p such that a power of 2
+multiplied by x gives me a whole number, then the best I'm going to get is an internal representation that's close." That is the case for this example. 
+4. When you do many computations on floats, you accumulate floating point errors. The errors accumulated for 
+a
+b

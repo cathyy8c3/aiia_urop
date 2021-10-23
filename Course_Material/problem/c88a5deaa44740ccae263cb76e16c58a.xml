@@ -1,0 +1,9 @@
+<problem display_name="Problem 1-4" group_access="{}" markdown="null" max_attempts="1" showanswer="never" weight="1.0">
+  <p>Suppose you have two different functions that each assign a variable called <code>x</code>. Modifying <code>x</code> in one function means you always modify <code>x</code> in the other function for any <code>x</code>. </p>
+  <multiplechoiceresponse>
+    <choicegroup label="7" type="MultipleChoice">
+      <choice correct="false">True</choice>
+      <choice correct="true">False</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

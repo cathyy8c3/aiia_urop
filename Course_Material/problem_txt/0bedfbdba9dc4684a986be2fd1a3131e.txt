@@ -1,0 +1,50 @@
+
+  
+
+    
+The following Python code is supposed to compute the square
+    of an integer by using successive additions.
+
+def Square(x):
+    return SquareHelper(abs(x), abs(x))
+
+def SquareHelper(n, x):
+    if n == 0:
+        return 0
+    return SquareHelper(n-1, x) + x
+
+Not considering recursion depth limitations, what is wrong with this implementation of procedure 
+Square
+
+      
+
+        
+
+          
+
+            
+It is going to return a wrong value.
+
+            
+The term 
+Square
+
+            
+Function names cannot start with a capital letter.
+
+            
+The function is never going to return anything.
+
+            
+Python has arbitrary precision arithmetic.
+
+            
+This function will not work for negative numbers.
+
+            
+The call 
+SquareHelper(abs(x), abs(x))
+abs(x)
+
+            
+Nothing is wrong; the code is fine as-is.

@@ -1,0 +1,7 @@
+<vertical display_name="Resources to Help you Succeed">
+  <html url_name="7c30ed023cc645d4a96f2890741cadfd"/>
+  <recommender url_name="22cee568d29d4980957e89ad44801e7c" intro_enabled="true" disable_dev_ux="true" entries_per_page="7" page_span="2">
+    <resources>{}</resources>
+  </recommender>
+  <discussion url_name="b977903e193340e2aa50cbb99c29b8d2" xblock-family="xblock.v1" display_name="Resources" discussion_category="Install" discussion_target="Resources"/>
+</vertical>

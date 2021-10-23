@@ -1,0 +1,197 @@
+<problem display_name="Exercise 2" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 14 minutes</b>
+    </p>
+    <script type="text/python" system_path="python_lib">
+def test_csv(expect, ans):
+   # Take out all spaces in expected answer
+   expect = [i.strip(' ') for i in str(expect).split(',')]
+   # Take out all spaces in student solution
+   ans = [i.strip(' ') for i in str(ans).split(',')]
+
+   def strip_q(x):
+      # Strip quotes around strings if students have entered them
+      stripped_ans = []
+      for item in x:
+         if item[0] == "'" and item[-1]=="'":
+            item = item.strip("'")
+         elif item[0] == '"' and item[-1] == '"':
+            item = item.strip('"') #" (quote to fix syntax highlighting in emacs)
+         stripped_ans.append(item)
+      return stripped_ans 
+
+   return strip_q(expect) == strip_q(ans)
+</script>
+    <p>
+Below are some short Python programs. For each program, answer the associated question. </p>
+    <p>
+Try to answer the questions without running the code. Check your answers, then run the code for the ones you get wrong. </p>
+    <p>
+These questions will ask you to write what the code prints out. If an exception is raised that is not handled by the code write 
+
+      "error" (no quotes), in addition to any other text that is output.</p>
+    <p>
+  The function in the following questions takes a list of integers <code>numbers</code>and a position <code>index</code>, and divides each entry in the list of numbers by the value at entry <code>index</code>.</p>
+    <p>
+Write what it prints out, separating what appears on a new line by a comma and a space. </p>
+    <p>
+    </p>
+    <ol class="enumerate">
+      <li>
+        <pre>def fancy_divide(numbers,index):
+    try:
+        denom = numbers[index]
+        for i in range(len(numbers)):
+            numbers[i] /= denom
+    except IndexError:
+        print("-1")
+    else:
+        print("1")
+    finally:
+        print("0")
+        </pre>
+        <p/>
+        <p> 
+          What does <code>fancy_divide([0, 2, 4], 1)</code> print out?
+          <customresponse cfn="test_csv" expect="1, 0"><textline size="50" correct_answer="1, 0"/></customresponse>
+        </p>
+        <p/>
+        <p> 
+          What does <code>fancy_divide([0, 2, 4], 4)</code> print out?
+          <customresponse cfn="test_csv" expect="-1, 0"><textline size="50" correct_answer="-1, 0"/></customresponse>
+        </p>
+        <p/>
+        <p> 
+          What does <code>fancy_divide([0, 2, 4], 0)</code> print out?
+          <customresponse cfn="test_csv" expect="0, error"><textline size="50" correct_answer="0, error"/></customresponse>
+        </p>
+      </li>
+      <li>
+        <pre>def fancy_divide(numbers, index):
+    try:
+        denom = numbers[index]
+        for i in range(len(numbers)):
+            numbers[i] /= denom
+    except IndexError:
+        fancy_divide(numbers, len(numbers) - 1)
+    except ZeroDivisionError:
+        print("-2")
+    else:
+        print("1")
+    finally:
+        print("0")
+        </pre>
+        <p/>
+        <p> 
+          What does <code>fancy_divide([0, 2, 4], 1)</code> print out?
+          <customresponse cfn="test_csv" expect="1, 0"><textline size="50" correct_answer="1, 0"/></customresponse>
+        </p>
+        <p/>
+        <p> 
+          What does <code>fancy_divide([0, 2, 4], 4)</code> print out?
+          <customresponse cfn="test_csv" expect="1, 0, 0"><textline size="50" correct_answer="1, 0, 0"/></customresponse>
+        </p>
+        <p/>
+        <p> 
+          What does <code>fancy_divide([0, 2, 4], 0)</code> print out?
+          <customresponse cfn="test_csv" expect="-2, 0"><textline size="50" correct_answer="-2, 0"/></customresponse>
+        </p>
+      </li>
+      <li>
+        <pre>def fancy_divide(numbers, index):
+    try:
+        try:
+            denom = numbers[index]
+            for i in range(len(numbers)):
+                numbers[i] /= denom
+        except IndexError:
+            fancy_divide(numbers, len(numbers) - 1)
+        else:
+            print("1")
+        finally:
+            print("0")
+    except ZeroDivisionError:
+        print("-2")
+        </pre>
+        <p/>
+        <p> 
+          What does <code>fancy_divide([0, 2, 4], 1)</code> print out?
+          <customresponse cfn="test_csv" expect="1, 0"><textline size="50" correct_answer="1, 0"/></customresponse>
+        </p>
+        <p/>
+        <p> 
+          What does <code>fancy_divide([0, 2, 4], 4)</code> print out?
+          <customresponse cfn="test_csv" expect="1, 0, 0"><textline size="50" correct_answer="1, 0, 0"/></customresponse>
+        </p>
+        <p/>
+        <p> 
+          What does <code>fancy_divide([0, 2, 4], 0)</code> print out?
+          <customresponse cfn="test_csv" expect="0, -2"><textline size="50" correct_answer="0, -2"/></customresponse>
+        </p>
+      </li>
+      <li>
+        <pre>def fancy_divide(list_of_numbers, index):
+    try:
+        try:
+            raise Exception("0")
+        finally:
+            denom = list_of_numbers[index]
+            for i in range(len(list_of_numbers)):
+                list_of_numbers[i] /= denom
+    except Exception as ex:
+        print(ex)
+        </pre>
+        <p/>
+        <p> Does this code print 0 when you call <code>fancy_divide([0, 2, 4], 0)</code>?</p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="false" name="1">
+                <span>
+                  <text>Yes.</text>
+                </span>
+              </choice>
+              <choice correct="true" name="2">
+                <span>
+                  <text>No.</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+      </li>
+      <li>
+        <pre>def fancy_divide(list_of_numbers, index):
+    try:
+        try:
+            denom = list_of_numbers[index]
+            for i in range(len(list_of_numbers)):
+                list_of_numbers[i] /= denom
+        finally:
+            raise Exception("0")
+    except Exception as ex:
+        print(ex)
+        </pre>
+        <p/>
+        <p> Does this print 0 when you call <code>fancy_divide([0, 2, 4], 0)</code>?</p>
+        <p>
+          <choiceresponse>
+            <radiogroup direction="vertical">
+              <choice correct="true" name="1">
+                <span>
+                  <text>Yes.</text>
+                </span>
+              </choice>
+              <choice correct="false" name="2">
+                <span>
+                  <text>No.</text>
+                </span>
+              </choice>
+            </radiogroup>
+          </choiceresponse>
+        </p>
+      </li>
+    </ol>
+  </text>
+</problem>

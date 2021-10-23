@@ -1,0 +1,96 @@
+<problem display_name="Exercise 1" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 4 minutes</b>
+    </p>
+    <p>
+Consider the following code specification: </p>
+    <pre>
+def size(aSet):
+   """
+   aSet is a collection of objects, which might be empty.
+   Objects are assumed to be of the same type.
+   """
+</pre>
+    <p>
+Here is a set of possible test cases to include in a black box test suite. Indicate which of the following conditions would make a good black box test suite for the function <code>size</code> by clicking on the appropriate choice(s). </p>
+    <section class="hints">
+      <div class="collapsible">
+        <header>
+          <a href="#" id="ht1">Review: Black Box Test Suites</a>
+        </header>
+        <section id="ht1">
+          <p>Black-box testing is a method of software testing that tests the 
+	  <i>functionality</i> of an application. Recall from the lecture that a way 
+	  to think about black-box testing is to look at both:
+	  <ul><li>The possible paths through the specification. </li><li> The possible boundary cases.</li></ul>
+	  Undoubtably many - if not all - of the listed tests look like they would be pretty good
+	  for testing the function <code>size</code>. However, we want you to think critically about
+	  the way <code>size</code> is specified - including possible boundary cases - and pick
+	  a set of tests that adequately and fully tests all paths and boundary conditions. Be sure
+	  the set of tests you pick does not have extraneous, useless, or repetitive tests.
+        </p>
+        </section>
+      </div>
+    </section>
+    <p>
+      <choiceresponse>
+        <checkboxgroup direction="vertical">
+          <choice correct="true" name="1">
+            <span>
+              <text> Empty set</text>
+            </span>
+          </choice>
+          <choice correct="true" name="2">
+            <span>
+              <text> Set of size 1</text>
+            </span>
+          </choice>
+          <choice correct="false" name="3">
+            <span>
+              <text> Set of odd size</text>
+            </span>
+          </choice>
+          <choice correct="false" name="4">
+            <span>
+              <text> Set of even size</text>
+            </span>
+          </choice>
+          <choice correct="true" name="5">
+            <span>
+              <text> Set of size greater than 1</text>
+            </span>
+          </choice>
+          <choice correct="false" name="6">
+            <span>
+              <text> Set whose size is a prime number</text>
+            </span>
+          </choice>
+        </checkboxgroup>
+      </choiceresponse>
+    </p>
+    <p>
+      <solution>
+        <div class="detailed-solution">
+          <p>
+            <b>Explanation:</b>
+          </p>
+          <p>A good black box test suite would contain tests for the following 
+	    conditions: Empty set, Set of size 1, and Set of size greater than 1.</p>
+          <p>Black-box testing is a method of software testing that tests the 
+	    functionality of an application. Recall from the lecture that a way 
+	    to think about black-box testing is to look at both the paths through the 
+	    specification and the possible boundary cases. In this example, the boundary 
+	    cases all have to do with the size of <code>aSet</code>. Specifically these 
+	    boundary cases are when <code>aSet</code> contains zero, one, or many items.</p>
+          <p>The remaining conditions would not further test the functionality of the 
+	    <code>size</code> function because an odd, even, or prime sized set are 
+	    all sets of size greater than 1. Nothing in the function specification suggests
+	    there is anything special or unique about odd, even, or prime sized sets, so testing
+	    those cases specifically simply repeats the test "Set of size greater than 1".
+	  </p>
+        </div>
+      </solution>
+    </p>
+  </text>
+</problem>

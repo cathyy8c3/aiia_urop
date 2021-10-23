@@ -1,0 +1,26 @@
+<problem display_name="Problem 2-5" markdown="null" max_attempts="1" showanswer="never" weight="1.0">
+  <p>Consider the code:</p>
+  <pre>L = [1,2,3]
+d = {'a': 'b'}
+def f(x):
+    return 3</pre>
+  <p>Which of the following does NOT cause an exception to be thrown?</p>
+  <multiplechoiceresponse>
+    <choicegroup label="10" type="MultipleChoice">
+      <choice correct="false">
+        <code>print(L[3])</code>
+      </choice>
+      <choice correct="false">
+        <code>print(d['b'])</code>
+      </choice>
+      <choice correct="true">
+        <pre>for i in range(1000001, -1, -2):
+    print(f)</pre>
+      </choice>
+      <choice correct="false">
+        <code>print(int('abc'))</code>
+      </choice>
+      <choice correct="false">None of the above</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

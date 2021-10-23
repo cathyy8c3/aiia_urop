@@ -1,0 +1,43 @@
+<problem display_name="len iter" markdown="null" weight="5.0">
+  <p>
+    <b>ESTIMATED TIME TO COMPLETE: 3 minutes</b>
+  </p>
+  <text>
+    <p>Although Python provides a built-in function for computing the length of a string, 
+      we can write our own. </p>
+    <p>Write an iterative function, <code>lenIter</code>, which computes the length of an input 
+      argument (a string), by counting up the number of characters in the string. </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.00x">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def lenIter(aStr):
+    '''
+    aStr: a string
+    
+    returns: int, the length of aStr
+    '''
+    # Your code here
+</initial_display>
+      <answer_display>
+def lenIter(aStr):
+    '''
+    aStr: a string
+    
+    returns: int, the length of aStr
+    '''
+    # Initialize a variable to hold our final count
+    count = 0
+
+    # Iterate over each character in the string, counting each one
+    for char in aStr:
+        count += 1
+    return count
+</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L5/lenIter/grade_lenIter.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

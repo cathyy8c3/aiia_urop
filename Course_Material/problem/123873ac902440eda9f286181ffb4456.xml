@@ -1,0 +1,51 @@
+<problem display_name="Exercise 5" group_access="{&quot;51&quot;: [1, 2]}" markdown="null">
+  <text>
+    <p>
+      <b>ESTIMATED TIME TO COMPLETE: 10 minutes</b>
+    </p>
+    <p>
+For each of the following expressions, select the order of growth class that best describes it from the following list: [mathjaxinline]O(1), O(\log (n)), O(n), O(n\log (n)), O(n^ c)[/mathjaxinline] or [mathjaxinline]O(c^ n)[/mathjaxinline]. </p>
+    <ul class="enumerate">
+      <li>
+        <p>
+[mathjaxinline]5n[/mathjaxinline] <optionresponse><optioninput options="('O(1)','O(log(n))','O(n)','O(n log(n))','O(n^c)','O(c^n)')" correct="O(n)"/></optionresponse> </p>
+      </li>
+      <li>
+        <p>
+[mathjaxinline]3n^2 + 2n - 100[/mathjaxinline] <optionresponse><optioninput options="('O(1)','O(log(n))','O(n)','O(n log(n))','O(n^c)','O(c^n)')" correct="O(n^c)"/></optionresponse> </p>
+      </li>
+      <li>
+        <p>
+[mathjaxinline]10 \log (n) + 5n[/mathjaxinline] <optionresponse><optioninput options="('O(1)','O(log(n))','O(n)','O(n log(n))','O(n^c)','O(c^n)')" correct="O(n)"/></optionresponse> </p>
+      </li>
+      <li>
+        <p>
+[mathjaxinline]10 \log (n) + 5n^2[/mathjaxinline] <optionresponse><optioninput options="('O(1)','O(log(n))','O(n)','O(n log(n))','O(n^c)','O(c^n)')" correct="O(n^c)"/></optionresponse> </p>
+      </li>
+      <li>
+        <p>
+[mathjaxinline]3n^3 - 2000 n^2[/mathjaxinline] <optionresponse><optioninput options="('O(1)','O(log(n))','O(n)','O(n log(n))','O(n^c)','O(c^n)')" correct="O(n^c)"/></optionresponse> </p>
+      </li>
+      <li>
+        <p>
+[mathjaxinline]2n^2[/mathjaxinline] <optionresponse><optioninput options="('O(1)','O(log(n))','O(n)','O(n log(n))','O(n^c)','O(c^n)')" correct="O(n^c)"/></optionresponse> </p>
+      </li>
+      <li>
+        <p>
+[mathjaxinline]50n + n\log (n)[/mathjaxinline] <optionresponse><optioninput options="('O(1)','O(log(n))','O(n)','O(n log(n))','O(n^c)','O(c^n)')" correct="O(n log(n))"/></optionresponse> </p>
+      </li>
+      <li>
+        <p>
+[mathjaxinline]1000 + 2000000[/mathjaxinline] <optionresponse><optioninput options="('O(1)','O(log(n))','O(n)','O(n log(n))','O(n^c)','O(c^n)')" correct="O(1)"/></optionresponse> </p>
+      </li>
+      <li>
+        <p>
+[mathjaxinline]2^ n + n^2[/mathjaxinline] <optionresponse><optioninput options="('O(1)','O(log(n))','O(n)','O(n log(n))','O(n^c)','O(c^n)')" correct="O(c^n)"/></optionresponse> </p>
+      </li>
+      <li>
+        <p>
+[mathjaxinline]\log n + 1000[/mathjaxinline] <optionresponse><optioninput options="('O(1)','O(log(n))','O(n)','O(n log(n))','O(n^c)','O(c^n)')" correct="O(log(n))"/></optionresponse> </p>
+      </li>
+    </ul>
+  </text>
+</problem>
